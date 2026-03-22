@@ -15,21 +15,35 @@ PROVIDER_ALIASES = {
     "ai21": "ai21",
     "ai21 labs": "ai21",
     "alibaba": "alibaba",
+    "allenai": "allen-institute-for-ai",
+    "allen institute for ai": "allen-institute-for-ai",
     "amazon": "amazon",
     "anthropic": "anthropic",
     "cohere": "cohere",
+    "cohere for ai": "cohere",
     "deepseek": "deepseek",
     "google": "google",
+    "ibm": "ibm",
+    "ibm granite": "ibm",
     "kimi": "moonshot-ai",
+    "liquid": "liquid-ai",
+    "liquid ai": "liquid-ai",
     "meta": "meta",
+    "meta llama": "meta",
     "minimax": "minimax",
     "mistral": "mistral",
+    "mistralai": "mistral",
     "moonshot": "moonshot-ai",
     "moonshot ai": "moonshot-ai",
+    "moonshotai": "moonshot-ai",
     "nvidia": "nvidia",
+    "nousresearch": "nous-research",
+    "nous research": "nous-research",
     "openai": "openai",
+    "qwen": "alibaba",
     "technology innovation institute": "tii",
     "tii": "tii",
+    "tii uae": "tii",
     "x ai": "xai",
     "x-ai": "xai",
     "xai": "xai",
@@ -56,6 +70,30 @@ STOP_TOKENS = {
     "labs",
     "latest",
 }
+
+LEADING_PROVIDER_PREFIXES = (
+    ("openai",),
+    ("google",),
+    ("anthropic",),
+    ("meta",),
+    ("moonshot", "ai"),
+    ("moonshotai",),
+    ("moonshot",),
+    ("xai",),
+    ("alibaba",),
+    ("minimax",),
+    ("xiaomi",),
+    ("nvidia",),
+    ("bytedance", "seed"),
+    ("bytedance",),
+    ("liquid", "ai"),
+    ("liquidai",),
+    ("liquid",),
+    ("amazon",),
+    ("cohere",),
+    ("z", "ai"),
+    ("zai",),
+)
 
 
 def ensure_dir(path: Path) -> None:
@@ -161,6 +199,12 @@ def normalized_name(value: str | None) -> str:
     value = value.replace("non reasoning", "nonreasoning")
     value = value.replace("high reasoning", "reasoning")
     tokens = [token for token in value.split() if token and token not in STOP_TOKENS]
+    for prefix in LEADING_PROVIDER_PREFIXES:
+        if tokens[: len(prefix)] == list(prefix):
+            candidate = tokens[len(prefix) :]
+            if len(candidate) >= 2:
+                tokens = candidate
+            break
     return " ".join(tokens)
 
 

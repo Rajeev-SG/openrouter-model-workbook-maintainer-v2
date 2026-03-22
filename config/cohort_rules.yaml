@@ -1,28 +1,21 @@
 version: 2
 description: >
-  The primary guide cohort requires strong pricing, performance, and application-quality coverage
-  from OpenRouter, Artificial Analysis, and Vals. LiveBench is tracked as a strict enrichment layer:
-  models with LiveBench coverage receive explicit badges and qualify for the stricter cohort, but
-  sparse LiveBench coverage does not collapse the broader guide into an empty set.
+  The primary live guide cohort requires strong routed-pricing and benchmark coverage from
+  OpenRouter plus Artificial Analysis. Vals and LiveBench are tracked as enrichment layers:
+  models with Vals or LiveBench receive explicit badges and qualify for stricter benchmark subsets,
+  but missing enrichment data does not exclude otherwise useful OpenRouter + AA models from the
+  live recommendation surface.
 required_sources:
   - openrouter
   - artificial_analysis
-  - vals
 required_metrics:
   - openrouter_input_price_per_million
   - openrouter_output_price_per_million
   - openrouter_context_tokens
-  - aa_intelligence_index
-  - aa_coding_index
-  - aa_median_tokens_per_second
-  - vals_accuracy
-  - vals_latency_seconds
-  - vals_cost_per_test
 strict_required_sources:
   - openrouter
   - artificial_analysis
   - vals
-  - livebench
 strict_required_metrics:
   - openrouter_input_price_per_million
   - openrouter_output_price_per_million
@@ -33,6 +26,6 @@ strict_required_metrics:
   - vals_accuracy
   - vals_latency_seconds
   - vals_cost_per_test
-  - livebench_overall_score
 preferred_sources:
+  - vals
   - livebench

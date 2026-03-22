@@ -14,9 +14,9 @@ Turn the original workbook maintainer into a production-grade model intelligence
 1. `Master registry`
    All discovered candidates from OpenRouter, Artificial Analysis, Vals, and LiveBench.
 2. `Guide cohort`
-   Models with strong recommendation-grade coverage from OpenRouter, AA, and Vals.
+   Models with matched OpenRouter and Artificial Analysis coverage for the live guide.
 3. `Strict cohort`
-   Guide cohort rows that are also LiveBench-enriched.
+   Guide cohort rows that are also Vals-enriched for the stricter application-quality subset.
 4. `Workbook vNext`
    Analysis and audit sheets for pricing, coverage, benchmarks, recommendations, and source manifests.
 5. `Interactive guide`

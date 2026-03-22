@@ -149,6 +149,8 @@ export default function App() {
     : null
   const excludedCount = data.master.filter((row) => !row.cohort_eligible).length
   const strictCount = data.master.filter((row) => row.strict_cohort_eligible).length
+  const valsEnrichedCount = data.master.filter((row) => row.vals_enriched).length
+  const livebenchCount = data.master.filter((row) => row.livebench_enriched).length
   const workbookUrl = `${import.meta.env.BASE_URL}downloads/model-intelligence-workbook.xlsx`
 
   return (
@@ -166,14 +168,17 @@ export default function App() {
                 </h1>
                 <p className="max-w-2xl text-sm leading-6 text-[var(--ink-muted)]">
                   Daily-built recommendations from OpenRouter pricing, Artificial Analysis,
-                  Vals, and LiveBench. Sparse or weakly matched models stay in the registry but
-                  do not reach the guide cohort.
+                  Vals, and LiveBench. Any model with matched OpenRouter + Artificial Analysis
+                  coverage reaches the live guide; Vals and LiveBench remain explicit enrichment
+                  layers instead of silent hard gates.
                 </p>
               </div>
             </div>
-            <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-4">
-              <Stat label="Guide cohort" value={`${data.cohort.length}`} meta="fully matched models" />
-              <Stat label="LiveBench strict" value={`${strictCount}`} meta="strict cohort rows" />
+            <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-5">
+              <Stat label="Guide cohort" value={`${data.cohort.length}`} meta="OpenRouter + AA" />
+              <Stat label="Vals enriched" value={`${valsEnrichedCount}`} meta="application-quality rows" />
+              <Stat label="LiveBench enriched" value={`${livebenchCount}`} meta="benchmark rows" />
+              <Stat label="Vals strict" value={`${strictCount}`} meta="OpenRouter + AA + Vals" />
               <Stat label="Registry backlog" value={`${excludedCount}`} meta="tracked but excluded" />
               <Stat
                 label="Workbook"
@@ -477,18 +482,22 @@ export default function App() {
                 </p>
                 <div className="space-y-2">
                   <Glossary term="Guide cohort">
-                    Models with matched OpenRouter, Artificial Analysis, and Vals coverage for the
-                    configured guide metrics. LiveBench coverage upgrades a model into the stricter
-                    enrichment tier instead of being silently ignored.
+                    Models with matched OpenRouter and Artificial Analysis coverage for the live
+                    guide metrics. This is the default recommendation universe shown in the app.
                   </Glossary>
                   <Glossary term="Registry backlog">
                     Discovered candidates with partial or ambiguous coverage. They remain visible in
                     the data pipeline and workbook diagnostics instead of silently disappearing.
                   </Glossary>
-                  <Glossary term="Strict cohort">
-                    Guide cohort rows that are also backed by LiveBench. This is the smaller,
-                    benchmark-enriched subset used when you want the highest-confidence cross-source
-                    agreement.
+                  <Glossary term="Vals strict cohort">
+                    Guide cohort rows that are also backed by Vals. This is the tighter
+                    application-quality subset when you want an additional benchmark layer instead
+                    of raw OpenRouter + AA coverage alone.
+                  </Glossary>
+                  <Glossary term="LiveBench enriched">
+                    A badge, not an admission rule. Models with matched LiveBench data expose
+                    category and task scores, but missing LiveBench does not exclude them from the
+                    live guide.
                   </Glossary>
                   <Glossary term="Scenario score">
                     A weighted blend of normalized cost, coding, reasoning, latency, context, and
@@ -560,6 +569,10 @@ export default function App() {
                   <div className="flex justify-between gap-3">
                     <dt className="text-[var(--ink-muted)]">Coverage score</dt>
                     <dd>{formatNumber(topRecommendation.coverage_score * 100, 0)}%</dd>
+                  </div>
+                  <div className="flex justify-between gap-3">
+                    <dt className="text-[var(--ink-muted)]">Vals enriched</dt>
+                    <dd>{topRecommendation.vals_enriched ? 'Yes' : 'No'}</dd>
                   </div>
                   <div className="flex justify-between gap-3">
                     <dt className="text-[var(--ink-muted)]">LiveBench enriched</dt>

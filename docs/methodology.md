@@ -19,14 +19,22 @@ Each canonical row carries:
 Requires:
 
 - OpenRouter pricing and context
-- Artificial Analysis intelligence and speed metrics
-- Vals accuracy, latency, and cost metrics
+- a matched Artificial Analysis record
+
+The live guide is intentionally inclusive: if a model is on OpenRouter and has an Artificial Analysis row, it belongs in the app even if some AA sub-metrics or enrichment sources are missing.
 
 ### Strict cohort
 
 Requires everything in the guide cohort plus:
 
-- LiveBench overall coverage
+- Vals accuracy, latency, and cost metrics
+
+### Enrichment flags
+
+- `vals_enriched`
+  The model has matched Vals data.
+- `livebench_enriched`
+  The model has matched LiveBench data.
 
 ## Recommendation scoring
 
@@ -45,8 +53,8 @@ Weights live in [config/scenarios/default_profiles.yaml](/Users/rajeev/Code/open
 
 - missing values remain null
 - ambiguous joins become diagnostics
-- strict cohort flags do not silently downgrade guide cohort provenance
+- enrichment flags do not silently downgrade guide cohort provenance
 
 ## Why LiveBench is not the primary gate
 
-The current LiveBench public model universe is materially narrower than the combined OpenRouter + AA + Vals universe. Treating it as a strict enrichment layer keeps recommendations useful while still making strict coverage visible and auditable.
+The current LiveBench public model universe is materially narrower than the combined OpenRouter + AA universe. Treating it as an enrichment layer keeps recommendations useful while still making stricter coverage visible and auditable.

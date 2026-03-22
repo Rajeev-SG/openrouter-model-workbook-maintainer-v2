@@ -21,15 +21,17 @@ def fetch_livebench_scores(fetcher: CachedFetcher) -> list[dict[str, Any]]:
         "model_judgment_leaderboard",
         "parquet",
     )
+    rows = _aggregate_livebench(parquet_path)
     fetcher.write_snapshot_metadata(
         "livebench",
         {
             "source_url": LIVEBENCH_PARQUET_URL,
             "parser_version": "2026-03-22-livebench-v1",
             "artifact": str(parquet_path.name),
+            "record_count": len(rows),
         },
     )
-    return _aggregate_livebench(parquet_path)
+    return rows
 
 
 def _aggregate_livebench(parquet_path: Path) -> list[dict[str, Any]]:

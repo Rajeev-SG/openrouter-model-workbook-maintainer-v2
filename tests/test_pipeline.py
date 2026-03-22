@@ -37,21 +37,32 @@ def test_apply_cohort_rules_sets_primary_and_strict_flags() -> None:
             "vals_cost_per_test": 0.2,
             "livebench_overall_score": None,
         },
+        {
+            "canonical_model_id": "gpt-4.1",
+            "has_openrouter": True,
+            "has_aa": True,
+            "has_vals": False,
+            "has_livebench": False,
+            "openrouter_input_price_per_million": 2.0,
+            "openrouter_output_price_per_million": 8.0,
+            "openrouter_context_tokens": 1_000_000,
+            "aa_intelligence_index": 45.0,
+            "aa_coding_index": 33.0,
+            "aa_median_tokens_per_second": 71.0,
+            "vals_accuracy": None,
+            "vals_latency_seconds": None,
+            "vals_cost_per_test": None,
+            "livebench_overall_score": None,
+        },
     ]
     cohort_rules = {
-        "required_sources": ["openrouter", "artificial_analysis", "vals"],
+        "required_sources": ["openrouter", "artificial_analysis"],
         "required_metrics": [
             "openrouter_input_price_per_million",
             "openrouter_output_price_per_million",
             "openrouter_context_tokens",
-            "aa_intelligence_index",
-            "aa_coding_index",
-            "aa_median_tokens_per_second",
-            "vals_accuracy",
-            "vals_latency_seconds",
-            "vals_cost_per_test",
         ],
-        "strict_required_sources": ["openrouter", "artificial_analysis", "vals", "livebench"],
+        "strict_required_sources": ["openrouter", "artificial_analysis", "vals"],
         "strict_required_metrics": [
             "openrouter_input_price_per_million",
             "openrouter_output_price_per_million",
@@ -62,16 +73,21 @@ def test_apply_cohort_rules_sets_primary_and_strict_flags() -> None:
             "vals_accuracy",
             "vals_latency_seconds",
             "vals_cost_per_test",
-            "livebench_overall_score",
         ],
-        "preferred_sources": ["livebench"],
+        "preferred_sources": ["vals", "livebench"],
     }
 
     result = _apply_cohort_rules(rows, cohort_rules)
 
     assert result[0]["cohort_eligible"] is True
     assert result[0]["strict_cohort_eligible"] is True
+    assert result[0]["vals_enriched"] is True
     assert result[0]["livebench_enriched"] is True
     assert result[1]["cohort_eligible"] is True
-    assert result[1]["strict_cohort_eligible"] is False
-    assert "missing:livebench" in result[1]["strict_exclusion_reasons"]
+    assert result[1]["strict_cohort_eligible"] is True
+    assert result[1]["vals_enriched"] is True
+    assert result[1]["livebench_enriched"] is False
+    assert result[2]["cohort_eligible"] is True
+    assert result[2]["strict_cohort_eligible"] is False
+    assert result[2]["vals_enriched"] is False
+    assert "missing:vals" in result[2]["strict_exclusion_reasons"]

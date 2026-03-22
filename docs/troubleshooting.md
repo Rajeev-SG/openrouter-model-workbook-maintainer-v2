@@ -28,9 +28,11 @@ Inspect:
 Common causes:
 
 - stale manual slugs
-- missing Vals Index coverage
+- provider alias or normalized-name drift between sources
+- missing Artificial Analysis matches
+- missing Vals enrichment for stricter subsets
 - sparse LiveBench coverage
-- ambiguous AA variant joins
+- ambiguous variant joins
 
 ## Workbook build fails on nested values
 

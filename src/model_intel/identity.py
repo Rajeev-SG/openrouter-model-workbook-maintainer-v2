@@ -62,6 +62,22 @@ def choose_unique_match(anchor_name: str, candidates: list[dict[str, Any]], name
     return top["candidate"], []
 
 
+def choose_exact_unique_match(anchor_name: str, candidates: list[dict[str, Any]], name_key: str) -> tuple[dict[str, Any] | None, list[dict[str, Any]]]:
+    if not candidates:
+        return None, []
+    anchor_normalized = normalized_name(anchor_name)
+    exact_matches = [
+        candidate
+        for candidate in candidates
+        if normalized_name(candidate.get(name_key, "")) == anchor_normalized
+    ]
+    if len(exact_matches) == 1:
+        return exact_matches[0], []
+    if len(exact_matches) > 1:
+        return None, exact_matches[:3]
+    return None, []
+
+
 def build_canonical_registry(
     openrouter_models: list[dict[str, Any]],
     aa_models: list[dict[str, Any]],
@@ -191,6 +207,39 @@ def build_canonical_registry(
         aa_match, aa_ambiguous = choose_unique_match(anchor_name, aa_candidates, "normalized_name")
         vals_match, vals_ambiguous = choose_unique_match(anchor_name, vals_candidates, "normalized_name")
         livebench_match, livebench_ambiguous = choose_unique_match(anchor_name, livebench_candidates, "livebench_normalized_name")
+
+        if aa_match is None and not aa_ambiguous:
+            aa_match, aa_ambiguous = choose_exact_unique_match(
+                anchor_name,
+                [
+                    candidate
+                    for candidate in aa_models
+                    if candidate["reasoning_mode"] == reasoning_mode
+                    and candidate["aa_source_key"] not in consumed["aa"]
+                ],
+                "normalized_name",
+            )
+        if vals_match is None and not vals_ambiguous:
+            vals_match, vals_ambiguous = choose_exact_unique_match(
+                anchor_name,
+                [
+                    candidate
+                    for candidate in vals_models
+                    if candidate["reasoning_mode"] == reasoning_mode
+                    and candidate["vals_model_url"] not in consumed["vals"]
+                ],
+                "normalized_name",
+            )
+        if livebench_match is None and not livebench_ambiguous:
+            livebench_match, livebench_ambiguous = choose_exact_unique_match(
+                anchor_name,
+                [
+                    candidate
+                    for candidate in livebench_models
+                    if candidate["livebench_model_name"] not in consumed["livebench"]
+                ],
+                "livebench_normalized_name",
+            )
 
         row = {
             "canonical_model_id": slugify(openrouter_model["openrouter_slug"]),

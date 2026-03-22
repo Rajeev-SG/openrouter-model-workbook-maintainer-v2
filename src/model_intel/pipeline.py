@@ -164,6 +164,7 @@ def _apply_cohort_rules(rows: list[dict[str, Any]], cohort_rules: dict[str, Any]
         row["coverage_score"] = sum(int(value) for value in available_sources.values()) / len(available_sources)
         row["source_flags"] = available_sources
         row["preferred_source_flags"] = {name: available_sources[name] for name in preferred_sources}
+        row["vals_enriched"] = available_sources["vals"]
         row["livebench_enriched"] = available_sources["livebench"]
     return rows
 

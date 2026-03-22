@@ -8,8 +8,9 @@ This repo builds and maintains two outputs from cached, auditable source data:
 The project expands the original workbook maintainer into a daily-refreshable pipeline with:
 
 - a `master registry` for all discovered candidates
-- a `guide cohort` for models with strong cross-source coverage
-- a `strict cohort` flag for rows that are also LiveBench-enriched
+- a `guide cohort` for all models with matched OpenRouter + Artificial Analysis coverage
+- a `strict cohort` flag for the smaller OpenRouter + AA + Vals subset
+- explicit `vals_enriched` and `livebench_enriched` flags
 - explicit source manifests, mapping diagnostics, and exclusion reasons
 
 ## What it uses
@@ -62,16 +63,20 @@ The repo intentionally maintains two model universes:
 1. `Master registry`
    All discovered candidates across the source systems, including partial coverage and ambiguous backlog entries.
 2. `Guide cohort`
-   Models with strong OpenRouter + Artificial Analysis + Vals coverage across the required metrics used by the recommendation engine.
+   Models with matched OpenRouter + Artificial Analysis coverage. This is the live guide universe.
 
-LiveBench is tracked as a strict enrichment layer:
+Vals and LiveBench are tracked as enrichment layers:
 
 - `cohort_eligible=true`
-  Strong guide-grade coverage from OpenRouter + AA + Vals.
+  Matched OpenRouter + AA coverage for the live guide.
 - `strict_cohort_eligible=true`
-  Guide-grade coverage plus LiveBench.
+  Guide rows that also have Vals coverage for the stricter application-quality subset.
+- `vals_enriched=true`
+  The row has Vals coverage and can expose application-style benchmark signals.
+- `livebench_enriched=true`
+  The row has LiveBench coverage and can expose category and task benchmark signals.
 
-This prevents the guide from collapsing into an empty set when LiveBench public coverage lags the other sources, while still preserving an explicit stricter flag and full provenance.
+This prevents the live guide from hiding useful OpenRouter + AA models just because a secondary benchmark source has gaps, while still preserving explicit provenance and stricter benchmark subsets.
 
 The current cohort rules live in [config/cohort_rules.yaml](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/config/cohort_rules.yaml).
 

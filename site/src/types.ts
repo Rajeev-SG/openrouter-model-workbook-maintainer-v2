@@ -50,6 +50,9 @@ export type GuideRow = {
   livebench_overall_score?: number | null
   livebench_categories?: Record<string, number>
   cohort_eligible: boolean
+  strict_cohort_eligible: boolean
+  vals_enriched?: boolean
+  livebench_enriched?: boolean
   exclusion_reasons: string
   coverage_score: number
   source_flags: Record<string, boolean>

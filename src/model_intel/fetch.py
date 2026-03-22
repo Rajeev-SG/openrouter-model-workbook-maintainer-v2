@@ -28,8 +28,13 @@ class CachedFetcher:
         path = self._payload_path(family, name, "json")
         if path.exists() and not self.refresh:
             return read_json(path)
-        response = self.session.get(url, timeout=self.timeout, headers=headers or {})
-        response.raise_for_status()
+        try:
+            response = self.session.get(url, timeout=self.timeout, headers=headers or {})
+            response.raise_for_status()
+        except requests.RequestException:
+            if path.exists():
+                return read_json(path)
+            raise
         payload = response.json()
         write_json(path, payload)
         return payload
@@ -45,8 +50,13 @@ class CachedFetcher:
         path = self._payload_path(family, name, suffix)
         if path.exists() and not self.refresh:
             return path.read_text(encoding="utf-8")
-        response = self.session.get(url, timeout=self.timeout, headers=headers or {})
-        response.raise_for_status()
+        try:
+            response = self.session.get(url, timeout=self.timeout, headers=headers or {})
+            response.raise_for_status()
+        except requests.RequestException:
+            if path.exists():
+                return path.read_text(encoding="utf-8")
+            raise
         text = response.text
         path.write_text(text, encoding="utf-8")
         return text
@@ -55,8 +65,13 @@ class CachedFetcher:
         path = self._payload_path(family, name, suffix)
         if path.exists() and not self.refresh:
             return path
-        response = self.session.get(url, timeout=self.timeout)
-        response.raise_for_status()
+        try:
+            response = self.session.get(url, timeout=self.timeout)
+            response.raise_for_status()
+        except requests.RequestException:
+            if path.exists():
+                return path
+            raise
         path.write_bytes(response.content)
         return path
 
