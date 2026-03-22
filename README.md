@@ -110,15 +110,12 @@ Two GitHub Actions workflows are included:
 
 The daily workflow needs:
 
-- Infisical OIDC access configured through GitHub repository variables:
-  - `INFISICAL_IDENTITY_ID`
-  - `INFISICAL_PROJECT_SLUG`
+- Runtime secrets provided through one of these paths:
+  - recommended now: GitHub repository secret `AA_API_KEY`
+  - optional: GitHub repository secret `OPENROUTER_API_KEY`
+  - optional later: Infisical OIDC with `INFISICAL_IDENTITY_ID` and `INFISICAL_PROJECT_SLUG` repository variables
 
-- Runtime secrets stored in Infisical:
-  - `AA_API_KEY`
-  - `OPENROUTER_API_KEY` (optional)
-
-See [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md) for the runtime secret contract.
+See [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md) for the current runtime secret contract and migration path.
 
 ## Deployment
 

@@ -22,7 +22,7 @@ Optional:
 
 - `OPENROUTER_API_KEY`
 
-Infisical is the source of truth for both keys. For local runs, prefer `infisical run --env=prod -- make refresh`. For GitHub Actions, configure the Infisical OIDC repository variables described in [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md).
+For local runs, prefer `infisical run --env=prod -- make refresh` once this repo has been linked to the right project. For GitHub Actions, the workflow currently prefers repository secrets for `AA_API_KEY` and `OPENROUTER_API_KEY`, and can optionally fetch them from Infisical OIDC when the repository variables described in [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md) are configured.
 
 ## Generated artifacts
 
@@ -47,7 +47,7 @@ Infisical is the source of truth for both keys. For local runs, prefer `infisica
 - rebuilds the site
 - uploads workbook and dataset artifacts
 - deploys the static guide to GitHub Pages
-- fetches runtime secrets from Infisical with OIDC instead of storing them as long-lived GitHub Actions secrets
+- uses repository secrets by default for runtime API keys, with optional Infisical OIDC support when the repo-specific identity wiring exists
 
 ## Manual preview deploy
 

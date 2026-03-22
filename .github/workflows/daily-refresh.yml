@@ -17,6 +17,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     env:
+      AA_API_KEY: ${{ secrets.AA_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       INFISICAL_DOMAIN: ${{ vars.INFISICAL_DOMAIN || 'https://app.infisical.com' }}
       INFISICAL_ENV_SLUG: ${{ vars.INFISICAL_ENV_SLUG || 'prod' }}
     steps:
@@ -42,15 +44,20 @@ jobs:
           cache: "pnpm"
           cache-dependency-path: site/pnpm-lock.yaml
 
-      - name: Validate Infisical workflow config
+      - name: Validate secret source
         env:
           INFISICAL_IDENTITY_ID: ${{ vars.INFISICAL_IDENTITY_ID }}
           INFISICAL_PROJECT_SLUG: ${{ vars.INFISICAL_PROJECT_SLUG }}
         run: |
+          if [ -n "${AA_API_KEY}" ]; then
+            echo "Using GitHub Actions secrets for runtime API keys."
+            exit 0
+          fi
+
           missing=0
           for name in INFISICAL_IDENTITY_ID INFISICAL_PROJECT_SLUG; do
             if [ -z "${!name}" ]; then
-              echo "::error::$name GitHub variable is required for Infisical OIDC secret loading."
+              echo "::error::$name GitHub variable is required when AA_API_KEY is not provided as a repository secret."
               missing=1
             fi
           done
@@ -59,6 +66,7 @@ jobs:
           fi
 
       - name: Fetch secrets from Infisical
+        if: ${{ env.AA_API_KEY == '' }}
         uses: Infisical/secrets-action@v1.0.15
         with:
           method: "oidc"
