@@ -43,6 +43,7 @@ For local runs, prefer `infisical run --env=prod -- make refresh` once this repo
 ### Daily refresh
 
 - runs scheduled source refresh
+- falls back to the checked-in datasets when Artificial Analysis returns a 429 during refresh
 - rebuilds datasets and workbook
 - rebuilds the site
 - uploads workbook and dataset artifacts

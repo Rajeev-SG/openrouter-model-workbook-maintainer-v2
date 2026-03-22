@@ -62,6 +62,47 @@ def run_pipeline(config: RunConfig, refresh: bool = False) -> dict[str, Any]:
     }
 
 
+def rebuild_from_saved_outputs(config: RunConfig) -> dict[str, Any]:
+    master_rows = _read_saved_payload(config.data_dir, "master_registry")
+    cohort_rows = _read_saved_payload(config.data_dir, "guide_cohort")
+    scenario_rows = _read_saved_payload(config.data_dir, "scenario_scores")
+    diagnostics = _read_saved_payload(config.data_dir, "mapping_diagnostics")
+    source_manifest = _read_saved_payload(config.data_dir, "source_manifest")
+    cohort_rules = _read_saved_payload(config.data_dir, "cohort_rules")
+    scenario_profiles = _read_saved_payload(config.data_dir, "scenario_profiles")
+
+    _sync_site_payloads(
+        config,
+        config.data_dir,
+        [
+            "master_registry",
+            "guide_cohort",
+            "scenario_scores",
+            "mapping_diagnostics",
+            "source_manifest",
+            "cohort_rules",
+            "scenario_profiles",
+        ],
+    )
+    build_workbook(
+        config.workbook_path,
+        cohort_rows,
+        master_rows,
+        scenario_rows,
+        diagnostics,
+        source_manifest,
+    )
+    return {
+        "master_rows": master_rows,
+        "cohort_rows": cohort_rows,
+        "scenario_rows": scenario_rows,
+        "diagnostics": diagnostics,
+        "source_manifest": source_manifest,
+        "cohort_rules": cohort_rules,
+        "scenario_profiles": scenario_profiles,
+    }
+
+
 def _enrich_registry_rows(
     registry_rows: list[dict[str, Any]],
     openrouter_index: list[dict[str, Any]],
@@ -199,7 +240,6 @@ def _write_outputs(
     scenario_profiles: dict[str, Any],
 ) -> None:
     config.data_dir.mkdir(parents=True, exist_ok=True)
-    config.site_data_dir.mkdir(parents=True, exist_ok=True)
     payloads = {
         "master_registry": master_rows,
         "guide_cohort": cohort_rows,
@@ -212,10 +252,10 @@ def _write_outputs(
     for name, payload in payloads.items():
         json_path = config.data_dir / f"{name}.json"
         write_json(json_path, payload)
-        (config.site_data_dir / f"{name}.json").write_text(json_path.read_text(encoding="utf-8"), encoding="utf-8")
         if isinstance(payload, list) and payload:
             frame = pd.json_normalize(payload, sep=".")
             frame.to_parquet(config.data_dir / f"{name}.parquet", index=False)
+    _sync_site_payloads(config, config.data_dir, payloads.keys())
 
 
 def _load_source_manifest(cache_dir: Path) -> dict[str, Any]:
@@ -223,6 +263,23 @@ def _load_source_manifest(cache_dir: Path) -> dict[str, Any]:
     for manifest_path in sorted(cache_dir.glob("*/manifest.json")):
         manifest[manifest_path.parent.name] = read_json(manifest_path)
     return manifest
+
+
+def _read_saved_payload(data_dir: Path, name: str) -> Any:
+    path = data_dir / f"{name}.json"
+    if not path.exists():
+        raise FileNotFoundError(f"Saved dataset is missing: {path}")
+    return read_json(path)
+
+
+def _sync_site_payloads(config: RunConfig, data_dir: Path, names: Any) -> None:
+    config.site_data_dir.mkdir(parents=True, exist_ok=True)
+    for name in names:
+        json_path = data_dir / f"{name}.json"
+        (config.site_data_dir / f"{name}.json").write_text(
+            json_path.read_text(encoding="utf-8"),
+            encoding="utf-8",
+        )
 
 
 def _blend_price(openrouter: dict[str, Any] | None) -> float | None:

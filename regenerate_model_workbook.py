@@ -18,6 +18,7 @@ def main() -> int:
     parser.add_argument("--data-dir", type=Path, default=Path("data/latest"))
     parser.add_argument("--site-data-dir", type=Path, default=Path("site/public/data/latest"))
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--reuse-existing-data", action="store_true")
     args = parser.parse_args()
 
     repo_root = Path.cwd()
@@ -29,7 +30,12 @@ def main() -> int:
         site_data_dir=(repo_root / args.site_data_dir).resolve(),
         mapping_csv=(repo_root / args.mapping_csv).resolve(),
     )
-    run_pipeline(config, refresh=args.refresh)
+    if args.reuse_existing_data:
+        from model_intel.pipeline import rebuild_from_saved_outputs
+
+        rebuild_from_saved_outputs(config)
+    else:
+        run_pipeline(config, refresh=args.refresh)
     print(f"Wrote workbook to: {config.workbook_path}")
     print(f"Wrote datasets to: {config.data_dir}")
     return 0

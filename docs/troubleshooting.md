@@ -49,3 +49,5 @@ Check:
 - if using the OIDC path, whether the Infisical machine identity trusts this repository and workflow context
 - if using the OIDC path, whether `AA_API_KEY` exists in the Infisical environment the workflow requests
 - whether a source schema changed
+
+If the workflow fails on `429 Client Error` from Artificial Analysis, the GitHub Actions path should fall back to `make rebuild-from-data`. If that fallback also fails, verify the checked-in dataset JSON files still exist under `data/latest/`.

@@ -108,6 +108,8 @@ Two GitHub Actions workflows are included:
 - `daily-refresh.yml`
   Scheduled refresh, static-site deployment, and artifact upload.
 
+If Artificial Analysis temporarily rate limits the live refresh, the workflow rebuilds the workbook and guide from the repo's last committed datasets so the deploy path stays green while the source recovers.
+
 The daily workflow needs:
 
 - Runtime secrets provided through one of these paths:
