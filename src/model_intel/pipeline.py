@@ -94,12 +94,29 @@ def _enrich_registry_rows(
             ),
             "openrouter_release_date": openrouter_pages.get(row.get("openrouter_slug") or "", {}).get("openrouter_release_date"),
             "openrouter_page_url": openrouter_pages.get(row.get("openrouter_slug") or "", {}).get("openrouter_page_url"),
+            "aa_release_date": aa.get("aa_release_date") if aa else None,
             "aa_intelligence_index": aa.get("aa_intelligence_index") if aa else None,
             "aa_coding_index": aa.get("aa_coding_index") if aa else None,
             "aa_math_index": aa.get("aa_math_index") if aa else None,
+            "aa_aime": aa.get("aa_aime") if aa else None,
+            "aa_aime_25": aa.get("aa_aime_25") if aa else None,
+            "aa_gpqa": aa.get("aa_gpqa") if aa else None,
+            "aa_hle": aa.get("aa_hle") if aa else None,
+            "aa_ifbench": aa.get("aa_ifbench") if aa else None,
+            "aa_lcr": aa.get("aa_lcr") if aa else None,
+            "aa_livecodebench": aa.get("aa_livecodebench") if aa else None,
+            "aa_math_500": aa.get("aa_math_500") if aa else None,
+            "aa_mmlu_pro": aa.get("aa_mmlu_pro") if aa else None,
+            "aa_scicode": aa.get("aa_scicode") if aa else None,
+            "aa_tau2": aa.get("aa_tau2") if aa else None,
+            "aa_terminalbench_hard": aa.get("aa_terminalbench_hard") if aa else None,
             "aa_median_tokens_per_second": aa.get("aa_median_tokens_per_second") if aa else None,
             "aa_median_ttft_seconds": aa.get("aa_median_ttft_seconds") if aa else None,
+            "aa_median_ttfat_seconds": aa.get("aa_median_ttfat_seconds") if aa else None,
             "aa_blended_price_per_million": aa.get("aa_blended_price_per_million") if aa else None,
+            "aa_input_price_per_million": aa.get("aa_input_price_per_million") if aa else None,
+            "aa_output_price_per_million": aa.get("aa_output_price_per_million") if aa else None,
+            "aa_model_url": aa.get("aa_model_url") if aa else None,
             "aa_provider_url": aa.get("aa_provider_url") if aa else None,
             "aa_fastest_provider": aa_page.get("aa_fastest_provider") if aa_page else None,
             "aa_fastest_tokens_per_second": aa_page.get("aa_fastest_tokens_per_second") if aa_page else None,
@@ -107,6 +124,8 @@ def _enrich_registry_rows(
             "aa_lowest_latency_seconds": aa_page.get("aa_lowest_latency_seconds") if aa_page else None,
             "aa_cheapest_provider": aa_page.get("aa_cheapest_provider") if aa_page else None,
             "aa_cheapest_blended_price_per_million": aa_page.get("aa_cheapest_blended_price_per_million") if aa_page else None,
+            "aa_json_support": aa_page.get("aa_json_support") if aa_page else None,
+            "aa_function_calling": aa_page.get("aa_function_calling") if aa_page else None,
             "vals_release_date": vals.get("vals_release_date") if vals else None,
             "vals_accuracy": vals.get("vals_accuracy") if vals else None,
             "vals_ci_plus_minus": vals.get("vals_ci_plus_minus") if vals else None,
@@ -124,8 +143,8 @@ def _enrich_registry_rows(
             "livebench_overall_score": livebench.get("livebench_overall_score") if livebench else None,
             "livebench_categories": livebench.get("livebench_categories") if livebench else {},
             "livebench_tasks": livebench.get("livebench_tasks") if livebench else {},
-            "source_freshness": _source_freshness(row),
         }
+        merged["source_freshness"] = _source_freshness(merged)
         rows.append(merged)
     return rows
 
@@ -237,5 +256,6 @@ def _population_for(vals: dict[str, Any] | None, benchmark_name: str) -> int | N
 def _source_freshness(row: dict[str, Any]) -> dict[str, Any]:
     return {
         "openrouter_last_seen": row.get("openrouter_release_date"),
+        "artificial_analysis_last_seen": row.get("aa_release_date"),
         "vals_last_seen": row.get("vals_release_date"),
     }

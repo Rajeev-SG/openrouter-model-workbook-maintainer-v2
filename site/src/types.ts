@@ -31,13 +31,45 @@ export type GuideRow = {
   openrouter_blended_price_per_million?: number | null
   openrouter_context_tokens?: number | null
   openrouter_release_date?: string | null
+  openrouter_page_url?: string | null
+  openrouter_pricing_url?: string | null
+  aa_release_date?: string | null
   aa_intelligence_index?: number | null
   aa_coding_index?: number | null
+  aa_math_index?: number | null
+  aa_aime?: number | null
+  aa_aime_25?: number | null
+  aa_gpqa?: number | null
+  aa_hle?: number | null
+  aa_ifbench?: number | null
+  aa_lcr?: number | null
+  aa_livecodebench?: number | null
+  aa_math_500?: number | null
+  aa_mmlu_pro?: number | null
+  aa_scicode?: number | null
+  aa_tau2?: number | null
+  aa_terminalbench_hard?: number | null
   aa_median_tokens_per_second?: number | null
+  aa_median_ttft_seconds?: number | null
+  aa_median_ttfat_seconds?: number | null
+  aa_blended_price_per_million?: number | null
+  aa_input_price_per_million?: number | null
+  aa_output_price_per_million?: number | null
+  aa_model_url?: string | null
+  aa_provider_url?: string | null
+  aa_fastest_provider?: string | null
+  aa_fastest_tokens_per_second?: number | null
+  aa_lowest_latency_provider?: string | null
+  aa_lowest_latency_seconds?: number | null
+  aa_cheapest_provider?: string | null
+  aa_cheapest_blended_price_per_million?: number | null
+  aa_json_support?: string | null
+  aa_function_calling?: string | null
   vals_accuracy?: number | null
   vals_release_date?: string | null
   vals_latency_seconds?: number | null
   vals_cost_per_test?: number | null
+  vals_model_url?: string | null
   vals_benchmarks?: Array<{
     benchmark: string
     score: number | null

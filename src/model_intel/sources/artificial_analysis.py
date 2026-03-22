@@ -46,14 +46,28 @@ def fetch_aa_index(fetcher: CachedFetcher) -> list[dict[str, Any]]:
                 "provider": provider,
                 "reasoning_mode": detect_reasoning_mode(display_name, item.get("slug")),
                 "normalized_name": normalized_name(display_name),
+                "aa_release_date": item.get("release_date"),
                 "aa_intelligence_index": parse_float(evaluations.get("artificial_analysis_intelligence_index")),
                 "aa_coding_index": parse_float(evaluations.get("artificial_analysis_coding_index")),
                 "aa_math_index": parse_float(evaluations.get("artificial_analysis_math_index")),
+                "aa_aime": parse_float(evaluations.get("aime")),
+                "aa_aime_25": parse_float(evaluations.get("aime_25")),
+                "aa_gpqa": parse_float(evaluations.get("gpqa")),
+                "aa_hle": parse_float(evaluations.get("hle")),
+                "aa_ifbench": parse_float(evaluations.get("ifbench")),
+                "aa_lcr": parse_float(evaluations.get("lcr")),
+                "aa_livecodebench": parse_float(evaluations.get("livecodebench")),
+                "aa_math_500": parse_float(evaluations.get("math_500")),
+                "aa_mmlu_pro": parse_float(evaluations.get("mmlu_pro")),
+                "aa_scicode": parse_float(evaluations.get("scicode")),
+                "aa_tau2": parse_float(evaluations.get("tau2")),
+                "aa_terminalbench_hard": parse_float(evaluations.get("terminalbench_hard")),
                 "aa_blended_price_per_million": parse_float(pricing.get("price_1m_blended_3_to_1")),
                 "aa_input_price_per_million": parse_float(pricing.get("price_1m_input_tokens")),
                 "aa_output_price_per_million": parse_float(pricing.get("price_1m_output_tokens")),
                 "aa_median_tokens_per_second": parse_float(item.get("median_output_tokens_per_second")),
                 "aa_median_ttft_seconds": parse_float(item.get("median_time_to_first_token_seconds")),
+                "aa_median_ttfat_seconds": parse_float(item.get("median_time_to_first_answer_token")),
                 "aa_model_url": f"https://artificialanalysis.ai/models/{item.get('slug')}",
                 "aa_provider_url": f"https://artificialanalysis.ai/models/{item.get('slug')}/providers",
             }
@@ -113,7 +127,15 @@ def parse_aa_provider_page(html: str) -> dict[str, Any]:
     match = re.search(r"JSON(?: output| mode)?[^0-9]*(\d+\s*/\s*\d+)", text, re.I)
     if match:
         result["aa_json_support"] = match.group(1)
+    elif re.search(r"\bAll providers(?: of [^.]+)? support JSON mode\b", text, re.I):
+        result["aa_json_support"] = "All providers"
+    elif re.search(r"\b(?:Some|Selected|Most) providers(?: of [^.]+)? support JSON mode\b", text, re.I):
+        result["aa_json_support"] = "Partial support"
     match = re.search(r"Function Calling[^0-9]*(\d+\s*/\s*\d+)", text, re.I)
     if match:
         result["aa_function_calling"] = match.group(1)
+    elif re.search(r"\bAll providers(?: of [^.]+)? support function calling\b", text, re.I):
+        result["aa_function_calling"] = "All providers"
+    elif re.search(r"\b(?:Some|Selected|Most) providers(?: of [^.]+)? support function calling\b", text, re.I):
+        result["aa_function_calling"] = "Partial support"
     return result

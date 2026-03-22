@@ -20,7 +20,12 @@ Use:
 
 - intelligence index
 - coding index
-- speed
+- math index
+- benchmark sub-scores from the public model payload:
+  GPQA, HLE, MMLU-Pro, LiveCodeBench, SciCode, TerminalBench Hard, IFBench, TAU2, LCR,
+  AIME, AIME 2025, and Math-500
+- speed and latency metrics including TTFT and time-to-first-answer
+- AA input, output, and blended pricing
 - provider-level enrichment where available
 
 Primary inputs:

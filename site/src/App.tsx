@@ -62,6 +62,24 @@ const tableColumns = [
   { key: 'context', label: 'Context' },
 ]
 
+const aaBenchmarkLabels: Array<[keyof GuideRow, string]> = [
+  ['aa_intelligence_index', 'AA Intelligence'],
+  ['aa_coding_index', 'AA Coding'],
+  ['aa_math_index', 'AA Math'],
+  ['aa_gpqa', 'GPQA'],
+  ['aa_hle', 'HLE'],
+  ['aa_mmlu_pro', 'MMLU-Pro'],
+  ['aa_livecodebench', 'LiveCodeBench'],
+  ['aa_scicode', 'SciCode'],
+  ['aa_terminalbench_hard', 'TerminalBench Hard'],
+  ['aa_ifbench', 'IFBench'],
+  ['aa_tau2', 'TAU2'],
+  ['aa_lcr', 'LCR'],
+  ['aa_aime', 'AIME'],
+  ['aa_aime_25', 'AIME 2025'],
+  ['aa_math_500', 'Math-500'],
+]
+
 export default function App() {
   const [data, setData] = useState<LoadState | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -456,21 +474,64 @@ export default function App() {
                 <h3 className="font-[var(--font-serif)] text-2xl">
                   {topRecommendation?.canonical_family ?? 'No recommendation available'}
                 </h3>
-                <div className="grid gap-3 md:grid-cols-2">
-                  {Object.entries(topRecommendation?.livebench_categories ?? {}).map(([category, score]) => (
-                    <MetricBar key={category} label={titleCase(category)} value={score} />
-                  ))}
-                </div>
-                <div className="space-y-2 border-t border-[var(--ghost-line)] pt-4">
-                  {(topRecommendation?.vals_benchmarks ?? []).slice(0, 8).map((benchmark) => (
-                    <div key={benchmark.benchmark} className="flex items-center justify-between gap-3 text-sm">
-                      <span className="text-[var(--ink)]">{benchmark.benchmark}</span>
-                      <span className="text-[var(--ink-muted)]">
-                        rank {benchmark.rank}/{benchmark.population}
-                      </span>
+                {topRecommendation ? (
+                  <>
+                    <div className="border border-[var(--ghost-line)] bg-[var(--surface)] p-3">
+                      <p className="text-[11px] uppercase tracking-[0.28em] text-[var(--ink-soft)]">
+                        Artificial Analysis benchmark sweep
+                      </p>
+                      <div className="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-3">
+                        {aaBenchmarkEntries(topRecommendation).map((metric) => (
+                          <MiniStat
+                            key={metric.label}
+                            label={metric.label}
+                            value={formatNumber(metric.value, 1)}
+                          />
+                        ))}
+                      </div>
                     </div>
-                  ))}
-                </div>
+
+                    <div className="border border-[var(--ghost-line)] bg-[var(--surface)] p-3">
+                      <p className="text-[11px] uppercase tracking-[0.28em] text-[var(--ink-soft)]">
+                        Artificial Analysis routing and pricing
+                      </p>
+                      <div className="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-3">
+                        {aaRoutingStats(topRecommendation).map((metric) => (
+                          <MiniStat key={metric.label} label={metric.label} value={metric.value} />
+                        ))}
+                      </div>
+                    </div>
+
+                    {Object.keys(topRecommendation.livebench_categories ?? {}).length ? (
+                      <div className="border-t border-[var(--ghost-line)] pt-4">
+                        <p className="text-[11px] uppercase tracking-[0.28em] text-[var(--ink-soft)]">
+                          LiveBench categories
+                        </p>
+                        <div className="mt-3 grid gap-3 md:grid-cols-2">
+                          {Object.entries(topRecommendation.livebench_categories ?? {}).map(([category, score]) => (
+                            <MetricBar key={category} label={titleCase(category)} value={score} />
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+
+                    {(topRecommendation.vals_benchmarks ?? []).length ? (
+                      <div className="space-y-2 border-t border-[var(--ghost-line)] pt-4">
+                        <p className="text-[11px] uppercase tracking-[0.28em] text-[var(--ink-soft)]">
+                          Vals benchmark ranks
+                        </p>
+                        {(topRecommendation.vals_benchmarks ?? []).slice(0, 8).map((benchmark) => (
+                          <div key={benchmark.benchmark} className="flex items-center justify-between gap-3 text-sm">
+                            <span className="text-[var(--ink)]">{benchmark.benchmark}</span>
+                            <span className="text-[var(--ink-muted)]">
+                              rank {benchmark.rank}/{benchmark.population}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                  </>
+                ) : null}
               </div>
               <div className="space-y-4 border-l border-[var(--ghost-line)] pl-0 lg:pl-5">
                 <p className="text-[11px] uppercase tracking-[0.28em] text-[var(--ink-soft)]">
@@ -565,6 +626,10 @@ export default function App() {
                     <dd>{topRecommendation.openrouter_release_date ?? '—'}</dd>
                   </div>
                   <div className="flex justify-between gap-3">
+                    <dt className="text-[var(--ink-muted)]">AA release</dt>
+                    <dd>{topRecommendation.aa_release_date ?? '—'}</dd>
+                  </div>
+                  <div className="flex justify-between gap-3">
                     <dt className="text-[var(--ink-muted)]">Vals page release</dt>
                     <dd>{topRecommendation.vals_release_date ?? '—'}</dd>
                   </div>
@@ -579,6 +644,14 @@ export default function App() {
                   <div className="flex justify-between gap-3">
                     <dt className="text-[var(--ink-muted)]">LiveBench enriched</dt>
                     <dd>{topRecommendation.livebench_enriched ? 'Yes' : 'No'}</dd>
+                  </div>
+                  <div className="flex justify-between gap-3">
+                    <dt className="text-[var(--ink-muted)]">AA JSON support</dt>
+                    <dd>{topRecommendation.aa_json_support ?? '—'}</dd>
+                  </div>
+                  <div className="flex justify-between gap-3">
+                    <dt className="text-[var(--ink-muted)]">AA function calling</dt>
+                    <dd>{topRecommendation.aa_function_calling ?? '—'}</dd>
                   </div>
                 </dl>
               </div>
@@ -727,6 +800,47 @@ function MetricBar({ label, value }: { label: string; value: number }) {
       </div>
     </div>
   )
+}
+
+function aaBenchmarkEntries(row: GuideRow) {
+  return aaBenchmarkLabels
+    .map(([key, label]) => {
+      const value = row[key]
+      return typeof value === 'number' ? { label, value } : null
+    })
+    .filter((item): item is { label: string; value: number } => item !== null)
+}
+
+function aaRoutingStats(row: GuideRow) {
+  return [
+    { label: 'AA t/s', value: formatNumber(row.aa_median_tokens_per_second, 1) },
+    { label: 'AA TTFT', value: `${formatNumber(row.aa_median_ttft_seconds, 2)}s` },
+    { label: 'AA TTFAT', value: `${formatNumber(row.aa_median_ttfat_seconds, 2)}s` },
+    { label: 'AA in $/M', value: formatCurrency(row.aa_input_price_per_million) },
+    { label: 'AA out $/M', value: formatCurrency(row.aa_output_price_per_million) },
+    { label: 'AA blend $/M', value: formatCurrency(row.aa_blended_price_per_million) },
+    {
+      label: 'Fastest route',
+      value:
+        row.aa_fastest_provider && row.aa_fastest_tokens_per_second !== null && row.aa_fastest_tokens_per_second !== undefined
+          ? `${row.aa_fastest_provider} · ${formatNumber(row.aa_fastest_tokens_per_second, 1)} t/s`
+          : row.aa_fastest_provider ?? '—',
+    },
+    {
+      label: 'Lowest latency',
+      value:
+        row.aa_lowest_latency_provider && row.aa_lowest_latency_seconds !== null && row.aa_lowest_latency_seconds !== undefined
+          ? `${row.aa_lowest_latency_provider} · ${formatNumber(row.aa_lowest_latency_seconds, 2)}s`
+          : row.aa_lowest_latency_provider ?? '—',
+    },
+    {
+      label: 'Cheapest route',
+      value:
+        row.aa_cheapest_provider && row.aa_cheapest_blended_price_per_million !== null && row.aa_cheapest_blended_price_per_million !== undefined
+          ? `${row.aa_cheapest_provider} · ${formatCurrency(row.aa_cheapest_blended_price_per_million)}`
+          : row.aa_cheapest_provider ?? '—',
+    },
+  ]
 }
 
 function Glossary({

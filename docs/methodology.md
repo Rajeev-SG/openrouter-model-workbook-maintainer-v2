@@ -23,6 +23,13 @@ Requires:
 
 The live guide is intentionally inclusive: if a model is on OpenRouter and has an Artificial Analysis row, it belongs in the app even if some AA sub-metrics or enrichment sources are missing.
 
+The normalized datasets still preserve the full current Artificial Analysis payload when present, including:
+
+- AA pricing
+- AA throughput and latency
+- AA provider-route recommendations
+- AA benchmark sub-scores such as GPQA, HLE, LiveCodeBench, SciCode, TerminalBench Hard, and related public evaluations
+
 ### Strict cohort
 
 Requires everything in the guide cohort plus:

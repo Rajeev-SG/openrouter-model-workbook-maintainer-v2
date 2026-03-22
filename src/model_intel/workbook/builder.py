@@ -38,9 +38,36 @@ def build_workbook(
             "OpenRouter Output $/M": row.get("openrouter_output_price_per_million"),
             "OpenRouter Blended $/M": row.get("openrouter_blended_price_per_million"),
             "Context Tokens": row.get("openrouter_context_tokens"),
+            "AA Release": row.get("aa_release_date"),
             "AA Intelligence": row.get("aa_intelligence_index"),
             "AA Coding": row.get("aa_coding_index"),
+            "AA Math": row.get("aa_math_index"),
+            "AA GPQA": row.get("aa_gpqa"),
+            "AA HLE": row.get("aa_hle"),
+            "AA MMLU-Pro": row.get("aa_mmlu_pro"),
+            "AA LiveCodeBench": row.get("aa_livecodebench"),
+            "AA SciCode": row.get("aa_scicode"),
+            "AA TerminalBench Hard": row.get("aa_terminalbench_hard"),
+            "AA IFBench": row.get("aa_ifbench"),
+            "AA TAU2": row.get("aa_tau2"),
+            "AA LCR": row.get("aa_lcr"),
+            "AA AIME": row.get("aa_aime"),
+            "AA AIME 2025": row.get("aa_aime_25"),
+            "AA Math-500": row.get("aa_math_500"),
             "AA Tokens/Sec": row.get("aa_median_tokens_per_second"),
+            "AA TTFT (s)": row.get("aa_median_ttft_seconds"),
+            "AA TTFAT (s)": row.get("aa_median_ttfat_seconds"),
+            "AA Input $/M": row.get("aa_input_price_per_million"),
+            "AA Output $/M": row.get("aa_output_price_per_million"),
+            "AA Blended $/M": row.get("aa_blended_price_per_million"),
+            "AA Fastest Provider": row.get("aa_fastest_provider"),
+            "AA Fastest T/S": row.get("aa_fastest_tokens_per_second"),
+            "AA Lowest Latency Provider": row.get("aa_lowest_latency_provider"),
+            "AA Lowest Latency (s)": row.get("aa_lowest_latency_seconds"),
+            "AA Cheapest Provider": row.get("aa_cheapest_provider"),
+            "AA Cheapest Blended $/M": row.get("aa_cheapest_blended_price_per_million"),
+            "AA JSON Support": row.get("aa_json_support"),
+            "AA Function Calling": row.get("aa_function_calling"),
             "Vals Accuracy": row.get("vals_accuracy"),
             "Vals Latency (s)": row.get("vals_latency_seconds"),
             "Vals Cost/Test": row.get("vals_cost_per_test"),
@@ -71,13 +98,17 @@ def build_workbook(
         {
             "canonical_model_id": row["canonical_model_id"],
             "canonical_family": row["canonical_family"],
+            "canonical_variant": row["canonical_variant"],
             "openrouter_release_date": row.get("openrouter_release_date"),
+            "aa_release_date": row.get("aa_release_date"),
             "vals_release_date": row.get("vals_release_date"),
             "source_freshness": row.get("source_freshness"),
         }
         for row in master_rows
     ]
     recommendation_rows = _build_recommendation_rows(cohort_rows, scenario_rows)
+    aa_benchmark_rows = _flatten_aa_benchmarks(master_rows)
+    aa_provider_rows = _build_aa_provider_rows(master_rows)
     vals_benchmark_rows = _flatten_vals_benchmarks(master_rows)
     livebench_category_rows = _flatten_livebench_metrics(master_rows, "livebench_categories", "category", "score")
     livebench_task_rows = _flatten_livebench_metrics(master_rows, "livebench_tasks", "task", "score")
@@ -89,6 +120,8 @@ def build_workbook(
     _write_table(workbook.create_sheet("Coverage"), _headers_for(coverage_rows), coverage_rows)
     _write_table(workbook.create_sheet("Exclusion_Backlog"), _headers_for(exclusion_rows), exclusion_rows)
     _write_table(workbook.create_sheet("Scenario_Scores"), _headers_for(scenario_rows), scenario_rows)
+    _write_table(workbook.create_sheet("AA_Benchmarks"), _headers_for(aa_benchmark_rows), aa_benchmark_rows)
+    _write_table(workbook.create_sheet("AA_Providers"), _headers_for(aa_provider_rows), aa_provider_rows)
     _write_table(workbook.create_sheet("Vals_Benchmarks"), _headers_for(vals_benchmark_rows), vals_benchmark_rows)
     _write_table(workbook.create_sheet("LiveBench_Categories"), _headers_for(livebench_category_rows), livebench_category_rows)
     _write_table(workbook.create_sheet("LiveBench_Tasks"), _headers_for(livebench_task_rows), livebench_task_rows)
@@ -157,6 +190,75 @@ def _flatten_vals_benchmarks(rows: list[dict[str, Any]]) -> list[dict[str, Any]]
                 }
             )
     return flattened
+
+
+def _flatten_aa_benchmarks(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    metric_labels = {
+        "aa_intelligence_index": "Artificial Analysis Intelligence",
+        "aa_coding_index": "Artificial Analysis Coding",
+        "aa_math_index": "Artificial Analysis Math",
+        "aa_gpqa": "GPQA",
+        "aa_hle": "HLE",
+        "aa_mmlu_pro": "MMLU-Pro",
+        "aa_livecodebench": "LiveCodeBench",
+        "aa_scicode": "SciCode",
+        "aa_terminalbench_hard": "TerminalBench Hard",
+        "aa_ifbench": "IFBench",
+        "aa_tau2": "TAU2",
+        "aa_lcr": "LCR",
+        "aa_aime": "AIME",
+        "aa_aime_25": "AIME 2025",
+        "aa_math_500": "Math-500",
+    }
+    flattened = []
+    for row in rows:
+        for field_name, metric_name in metric_labels.items():
+            value = row.get(field_name)
+            if value in (None, ""):
+                continue
+            flattened.append(
+                {
+                    "canonical_model_id": row["canonical_model_id"],
+                    "canonical_family": row["canonical_family"],
+                    "canonical_variant": row["canonical_variant"],
+                    "provider": row["provider"],
+                    "metric_key": field_name,
+                    "metric_name": metric_name,
+                    "metric_value": value,
+                }
+            )
+    return flattened
+
+
+def _build_aa_provider_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    payload = []
+    for row in rows:
+        payload.append(
+            {
+                "canonical_model_id": row["canonical_model_id"],
+                "canonical_family": row["canonical_family"],
+                "canonical_variant": row["canonical_variant"],
+                "provider": row["provider"],
+                "aa_release_date": row.get("aa_release_date"),
+                "aa_model_url": row.get("aa_model_url"),
+                "aa_provider_url": row.get("aa_provider_url"),
+                "aa_input_price_per_million": row.get("aa_input_price_per_million"),
+                "aa_output_price_per_million": row.get("aa_output_price_per_million"),
+                "aa_blended_price_per_million": row.get("aa_blended_price_per_million"),
+                "aa_median_tokens_per_second": row.get("aa_median_tokens_per_second"),
+                "aa_median_ttft_seconds": row.get("aa_median_ttft_seconds"),
+                "aa_median_ttfat_seconds": row.get("aa_median_ttfat_seconds"),
+                "aa_fastest_provider": row.get("aa_fastest_provider"),
+                "aa_fastest_tokens_per_second": row.get("aa_fastest_tokens_per_second"),
+                "aa_lowest_latency_provider": row.get("aa_lowest_latency_provider"),
+                "aa_lowest_latency_seconds": row.get("aa_lowest_latency_seconds"),
+                "aa_cheapest_provider": row.get("aa_cheapest_provider"),
+                "aa_cheapest_blended_price_per_million": row.get("aa_cheapest_blended_price_per_million"),
+                "aa_json_support": row.get("aa_json_support"),
+                "aa_function_calling": row.get("aa_function_calling"),
+            }
+        )
+    return payload
 
 
 def _flatten_livebench_metrics(

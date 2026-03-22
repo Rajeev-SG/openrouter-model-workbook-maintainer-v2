@@ -43,6 +43,22 @@ def test_parse_aa_provider_page_extracts_fastest_and_cheapest() -> None:
     assert payload["aa_cheapest_blended_price_per_million"] == 0.55
 
 
+def test_parse_aa_provider_page_extracts_capability_support_statements() -> None:
+    payload = parse_aa_provider_page(
+        """
+        <html>
+          <body>
+            All providers of Claude 3 Opus support function calling (tool use).
+            All providers of Claude 3 Opus support JSON mode.
+          </body>
+        </html>
+        """
+    )
+
+    assert payload["aa_function_calling"] == "All providers"
+    assert payload["aa_json_support"] == "All providers"
+
+
 def test_extract_first_match_raises_on_missing_pattern() -> None:
     try:
         _extract_first_match("hello world", r'component-url="(?P<path>[^"]+)"', "missing")

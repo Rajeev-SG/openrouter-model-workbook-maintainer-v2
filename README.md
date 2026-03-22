@@ -11,6 +11,7 @@ The project expands the original workbook maintainer into a daily-refreshable pi
 - a `guide cohort` for all models with matched OpenRouter + Artificial Analysis coverage
 - a `strict cohort` flag for the smaller OpenRouter + AA + Vals subset
 - explicit `vals_enriched` and `livebench_enriched` flags
+- the full currently exposed Artificial Analysis metric family carried into normalized outputs
 - explicit source manifests, mapping diagnostics, and exclusion reasons
 
 ## What it uses

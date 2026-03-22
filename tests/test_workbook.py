@@ -18,9 +18,21 @@ def test_build_workbook_handles_nested_values(tmp_path: Path) -> None:
             "openrouter_output_price_per_million": 0.38,
             "openrouter_blended_price_per_million": 0.29,
             "openrouter_context_tokens": 163840,
+            "aa_release_date": "2026-03-20",
             "aa_intelligence_index": 50.0,
             "aa_coding_index": 36.7,
+            "aa_math_index": 42.0,
+            "aa_gpqa": 61.0,
+            "aa_livecodebench": 57.0,
             "aa_median_tokens_per_second": 41.2,
+            "aa_median_ttft_seconds": 0.8,
+            "aa_median_ttfat_seconds": 1.4,
+            "aa_input_price_per_million": 0.3,
+            "aa_output_price_per_million": 0.6,
+            "aa_blended_price_per_million": 0.38,
+            "aa_fastest_provider": "OpenRouter",
+            "aa_fastest_tokens_per_second": 49.0,
+            "aa_json_support": "5 / 5",
             "vals_accuracy": 58.0,
             "vals_latency_seconds": 240.0,
             "vals_cost_per_test": 0.14,
@@ -57,5 +69,7 @@ def test_build_workbook_handles_nested_values(tmp_path: Path) -> None:
 
     assert out_path.exists()
     assert "Overview" in workbook.sheetnames
+    assert "AA_Benchmarks" in workbook.sheetnames
+    assert "AA_Providers" in workbook.sheetnames
     assert "Vals_Benchmarks" in workbook.sheetnames
     assert "LiveBench_Categories" in workbook.sheetnames
