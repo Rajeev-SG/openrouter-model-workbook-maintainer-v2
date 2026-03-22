@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.cache_model_workbook/**/*.html
+.cache_model_workbook/**/*.json
+.cache_model_workbook/**/*.txt
+out/*.xlsx
+out/*.zip
+.DS_Store
