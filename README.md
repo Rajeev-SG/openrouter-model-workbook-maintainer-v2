@@ -1,185 +1,135 @@
-# OpenRouter / Artificial Analysis / Vals workbook maintainer
+# Model Intelligence Maintainer
 
-This repo regenerates an XLSX workbook that combines:
-- **OpenRouter** model metadata and pricing
-- **Artificial Analysis** model and provider metrics
-- **Vals AI** model-guide metrics and benchmark rankings
+This repo builds and maintains two outputs from cached, auditable source data:
 
-The workbook generator is `regenerate_model_workbook.py`.
+- a deterministic model intelligence dataset plus workbook
+- a static interactive guide for answering "what model should I use?"
 
-## What this repo is for
+The project expands the original workbook maintainer into a daily-refreshable pipeline with:
 
-Use this when you want a repeatable way to maintain and expand a workbook like:
-- `Overview`
-- `Pricing_OpenRouter`
-- `ArtificialAnalysis`
-- `ValsAI`
-- `Vals_Benchmarks`
-- `Sources_Notes`
+- a `master registry` for all discovered candidates
+- a `guide cohort` for models with strong cross-source coverage
+- a `strict cohort` flag for rows that are also LiveBench-enriched
+- explicit source manifests, mapping diagnostics, and exclusion reasons
 
-The generator intentionally mixes APIs and HTML scraping because the three source systems do not expose all desired fields through one clean shared API surface.
+## What it uses
 
-## Repo layout
+- OpenRouter for routed model metadata and pricing
+- Artificial Analysis for model performance and provider data
+- Vals for application-style quality, latency, and cost signals
+- LiveBench for public benchmark enrichment
 
-```text
-.
-├── AGENT_TASK.md
-├── Makefile
-├── README.md
-├── regenerate_model_workbook.py
-├── requirements.txt
-├── config/
-│   └── model_map.csv
-├── scripts/
-│   ├── bootstrap.sh
-│   ├── run_build.sh
-│   └── run_refresh.sh
-├── .env.example
-└── out/
-```
+## Outputs
 
-## What each input source is used for
+- `data/latest/*.json`
+  Deterministic machine-readable datasets for the guide and workbook.
+- `data/latest/*.parquet`
+  Columnar exports for list-shaped datasets.
+- `out/openrouter_model_pricing_performance.xlsx`
+  The workbook with cohort, coverage, benchmark, recommendation, and diagnostics sheets.
+- `site/dist/`
+  Static build of the guide.
 
-- **OpenRouter**: model universe, slugs, context window, pricing
-- **Artificial Analysis API**: model-level intelligence / speed / pricing fields
-- **Artificial Analysis provider pages**: provider-level breakout fields such as cheapest provider, fastest provider, provider latency, provider tokens/sec
-- **Vals AI public model pages**: accuracy, latency, cost, context, default provider, benchmark rank rows
-
-## First run
-
-1. Unzip the repo.
-2. Open a terminal in the repo root.
-3. Run:
+## Quickstart
 
 ```bash
 make bootstrap
-```
-
-4. Edit `.env` and set at least:
-
-```bash
-AA_API_KEY=your_key_here
-```
-
-`OPENROUTER_API_KEY` is supported but optional.
-
-5. Refresh the workbook:
-
-```bash
 make refresh
+make serve-site
 ```
 
-Your workbook will be written to:
+`make bootstrap` installs and pins an `uv`-managed Python `3.13` environment because the workbook pipeline depends on wheels that are not consistently available on Python `3.14` yet.
+
+## Common commands
+
+```bash
+make bootstrap
+make doctor
+make validate
+make test
+make build
+make refresh
+make refresh-from-cache
+make build-site
+make serve-site
+make build-all
+```
+
+## Cohort policy
+
+The repo intentionally maintains two model universes:
+
+1. `Master registry`
+   All discovered candidates across the source systems, including partial coverage and ambiguous backlog entries.
+2. `Guide cohort`
+   Models with strong OpenRouter + Artificial Analysis + Vals coverage across the required metrics used by the recommendation engine.
+
+LiveBench is tracked as a strict enrichment layer:
+
+- `cohort_eligible=true`
+  Strong guide-grade coverage from OpenRouter + AA + Vals.
+- `strict_cohort_eligible=true`
+  Guide-grade coverage plus LiveBench.
+
+This prevents the guide from collapsing into an empty set when LiveBench public coverage lags the other sources, while still preserving an explicit stricter flag and full provenance.
+
+The current cohort rules live in [config/cohort_rules.yaml](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/config/cohort_rules.yaml).
+
+## Repo structure
 
 ```text
-out/openrouter_model_pricing_performance.xlsx
+.
+├── config/
+│   ├── cohort_rules.yaml
+│   ├── model_map.csv
+│   └── scenarios/default_profiles.yaml
+├── data/latest/
+├── docs/
+├── site/
+├── src/model_intel/
+├── tests/
+├── Makefile
+├── pyproject.toml
+└── regenerate_model_workbook.py
 ```
 
-## Daily commands
+## Daily automation
 
-Build using cached source snapshots where possible:
+Two GitHub Actions workflows are included:
 
-```bash
-make build
-```
+- `ci.yml`
+  Fast repo validation on pushes and pull requests.
+- `daily-refresh.yml`
+  Scheduled refresh, static-site deployment, and artifact upload.
 
-Refresh remote data and rebuild:
+The daily workflow needs:
 
-```bash
-make refresh
-```
+- `AA_API_KEY`
 
-Run syntax checks:
+Optional:
 
-```bash
-make validate
-```
+- `OPENROUTER_API_KEY`
 
-Print environment and path status:
+## Deployment
 
-```bash
-make doctor
-```
+The static guide is set up for GitHub Pages-style hosting via the `VITE_BASE_PATH` env var. The daily workflow deploys `site/dist` as a Pages artifact after a successful refresh.
 
-Package the repo for handoff:
+For manual preview deployments, the repo now includes [vercel.json](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/vercel.json), which tells Vercel to build and publish the static guide from `site/dist` instead of trying to treat the ETL repo root as a Python web app.
 
-```bash
-make zip
-```
+## Docs
 
-## How to add or expand models
+- [PRD](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/prd.md)
+- [Task Breakdown](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/task-breakdown.md)
+- [Methodology](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/methodology.md)
+- [Data Sources](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/data-sources.md)
+- [Identity And Mapping](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/identity-and-mapping.md)
+- [Operations](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/operations.md)
+- [Troubleshooting](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/troubleshooting.md)
+- [Maintainer Notes](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/maintainer-notes.md)
 
-Edit `config/model_map.csv`.
+## Notes
 
-Each logical model family should map:
-- one OpenRouter slug and page URL
-- zero or more Artificial Analysis variants
-- zero or more Vals variants
-
-The workbook is most reliable when you explicitly map variants instead of trying to infer cross-source equivalence from names alone.
-
-### Mapping columns
-
-- `family`
-- `openrouter_slug`
-- `openrouter_page_url`
-- `notes`
-- `aa_variant`
-- `aa_model_slug`
-- `aa_creator_slug`
-- `aa_provider_url`
-- `aa_intelligence_url`
-- `aa_preferred`
-- `vals_variant`
-- `vals_model_url`
-- `vals_preferred`
-
-## Determinism / reproducibility
-
-The generator is designed to be reproducible **if you keep the cache directory and mapping file stable**.
-
-Mechanisms:
-- raw remote responses are cached under `.cache_model_workbook/`
-- rerunning without `--refresh` reuses the cached source payloads
-- the workbook structure and formulas are generated from code
-- cross-source joins are controlled by `config/model_map.csv`
-
-For the most deterministic workflow:
-1. run `make refresh`
-2. commit `config/model_map.csv`
-3. optionally preserve a timestamped snapshot of `.cache_model_workbook/`
-4. rerun `make build` for identical-source rebuilds
-
-## Operational notes
-
-- If a source page layout changes, the scraper portion may need a parser adjustment.
-- If a model exists on OpenRouter but not yet in Artificial Analysis or Vals, leave the missing side blank rather than inventing a join.
-- Do not silently merge reasoning and non-reasoning variants.
-- Keep the workbook formulas in place rather than replacing them with hardcoded values.
-
-## Troubleshooting
-
-### `AA_API_KEY` missing
-Set it in `.env` and rerun `make refresh`.
-
-### Workbook builds but some fields are blank
-This usually means one of:
-- no mapping exists for that variant
-- the public page layout changed
-- the source site no longer exposes the field in the same way
-
-Check:
-- `config/model_map.csv`
-- the cached raw source file in `.cache_model_workbook/`
-- the `Sources_Notes` sheet in the workbook
-
-### I want a bigger model list
-Add rows to `config/model_map.csv`, then rerun:
-
-```bash
-make refresh
-```
-
-## Agent handoff
-
-If you are giving this to Claude Code or Codex, point it at `AGENT_TASK.md` first.
+- Raw source payloads are cached under `.cache_model_workbook/`.
+- Rebuilds are deterministic from cache when source files and config remain unchanged.
+- The guide reads generated datasets only. It does not scrape live sources at runtime.
+- Missing values are preserved. Ambiguous joins fail into diagnostics instead of being silently invented.

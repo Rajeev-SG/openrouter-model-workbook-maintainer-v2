@@ -1,56 +1,56 @@
-# Agent task: maintain and expand the model workbook
+# Agent task: maintain the model intelligence pipeline
 
-You are operating inside a small repo that regenerates an XLSX workbook comparing models across OpenRouter, Artificial Analysis, and Vals AI.
+You are operating inside a repo that maintains:
 
-## Objective
+- a deterministic model registry and workbook
+- a static interactive guide
+- daily refresh and deploy automation
 
-Maintain this repo so that it can reliably regenerate the workbook and expand to additional models when requested.
+## First reads
 
-## Your immediate workflow
+1. [README.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/README.md)
+2. [config/cohort_rules.yaml](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/config/cohort_rules.yaml)
+3. [config/model_map.csv](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/config/model_map.csv)
+4. [docs/methodology.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/methodology.md)
+5. [docs/identity-and-mapping.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/identity-and-mapping.md)
 
-1. Read `README.md`.
-2. Read `config/model_map.csv`.
-3. Read `regenerate_model_workbook.py`.
-4. Run:
+## Main workflow
 
 ```bash
 make bootstrap
 make doctor
 make validate
+make test
+make build
 ```
 
-5. If environment variables are populated, run:
+If credentials are available:
 
 ```bash
 make refresh
 ```
 
-6. Inspect the resulting workbook and the `Sources_Notes` sheet for parser warnings or missing fields.
+## Guardrails
 
-## Rules
+- Do not invent cross-source joins.
+- Keep reasoning and non-reasoning variants explicit.
+- Preserve raw source cache files when debugging parser drift.
+- Keep cohort policy and scenario weights in versioned config.
+- If a source goes sparse or stale, prefer clear diagnostics and cohort exclusion over silent coercion.
+- Update docs when the workflow, inclusion rules, or source assumptions change.
 
-- Prefer official source pages and documented APIs.
-- Do not invent joins across sources.
-- Do not silently collapse reasoning and non-reasoning variants.
-- Keep `config/model_map.csv` explicit and versioned.
-- Preserve cached raw source files when debugging parser drift.
-- If a scraper breaks, fix the parser and explain what changed on the source page.
-- If you add models, update the README where necessary.
+## Key outputs
 
-## When asked to add models
+- `data/latest/`
+- `out/openrouter_model_pricing_performance.xlsx`
+- `site/public/data/latest/`
+- `site/dist/`
 
-For each requested model family:
-- confirm the current OpenRouter slug and page URL
-- identify the relevant Artificial Analysis model slug(s) and provider page(s)
-- identify the relevant Vals model page(s)
-- append rows to `config/model_map.csv`
-- run `make refresh`
-- inspect the workbook for blanks, parser failures, or inconsistent variants
-
-## Acceptance criteria
+## Acceptance bar
 
 - `make validate` passes
-- `make refresh` completes when credentials are present
-- workbook is generated under `out/`
-- mapping changes are explicit in `config/model_map.csv`
-- README stays aligned with how the repo actually works
+- `make test` passes
+- `make build` passes from cache
+- `make refresh` passes when credentials are present
+- workbook and guide both reflect the latest generated datasets
+- docs stay aligned with the actual pipeline and cohort logic

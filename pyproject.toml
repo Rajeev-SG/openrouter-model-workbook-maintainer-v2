@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "model-intelligence-workbook-maintainer"
+version = "0.1.0"
+description = "Deterministic model intelligence datasets, workbook generation, and guide build tooling."
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "beautifulsoup4>=4.12.0,<5.0.0",
+  "openpyxl>=3.1.0,<4.0.0",
+  "pandas>=2.2.0,<3.0.0",
+  "playwright>=1.54.0,<2.0.0",
+  "pyarrow>=21.0.0,<22.0.0",
+  "python-dateutil>=2.9.0,<3.0.0",
+  "PyYAML>=6.0.0,<7.0.0",
+  "rapidfuzz>=3.13.0,<4.0.0",
+  "requests>=2.32.0,<3.0.0",
+]
+
+[project.scripts]
+model-intel = "model_intel.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3.0,<9.0.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/model_intel"]
