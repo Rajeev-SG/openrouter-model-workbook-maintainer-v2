@@ -16,6 +16,9 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      INFISICAL_DOMAIN: ${{ vars.INFISICAL_DOMAIN || 'https://app.infisical.com' }}
+      INFISICAL_ENV_SLUG: ${{ vars.INFISICAL_ENV_SLUG || 'prod' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,10 +42,32 @@ jobs:
           cache: "pnpm"
           cache-dependency-path: site/pnpm-lock.yaml
 
-      - name: Refresh
+      - name: Validate Infisical workflow config
         env:
-          AA_API_KEY: ${{ secrets.AA_API_KEY }}
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          INFISICAL_IDENTITY_ID: ${{ vars.INFISICAL_IDENTITY_ID }}
+          INFISICAL_PROJECT_SLUG: ${{ vars.INFISICAL_PROJECT_SLUG }}
+        run: |
+          missing=0
+          for name in INFISICAL_IDENTITY_ID INFISICAL_PROJECT_SLUG; do
+            if [ -z "${!name}" ]; then
+              echo "::error::$name GitHub variable is required for Infisical OIDC secret loading."
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Fetch secrets from Infisical
+        uses: Infisical/secrets-action@v1.0.15
+        with:
+          method: "oidc"
+          identity-id: ${{ vars.INFISICAL_IDENTITY_ID }}
+          project-slug: ${{ vars.INFISICAL_PROJECT_SLUG }}
+          env-slug: ${{ env.INFISICAL_ENV_SLUG }}
+          domain: ${{ env.INFISICAL_DOMAIN }}
+
+      - name: Refresh
         run: make refresh
 
       - name: Upload workbook artifact

@@ -110,11 +110,15 @@ Two GitHub Actions workflows are included:
 
 The daily workflow needs:
 
-- `AA_API_KEY`
+- Infisical OIDC access configured through GitHub repository variables:
+  - `INFISICAL_IDENTITY_ID`
+  - `INFISICAL_PROJECT_SLUG`
 
-Optional:
+- Runtime secrets stored in Infisical:
+  - `AA_API_KEY`
+  - `OPENROUTER_API_KEY` (optional)
 
-- `OPENROUTER_API_KEY`
+See [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md) for the runtime secret contract.
 
 ## Deployment
 
@@ -130,6 +134,7 @@ For manual preview deployments, the repo now includes [vercel.json](/Users/rajee
 - [Data Sources](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/data-sources.md)
 - [Identity And Mapping](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/identity-and-mapping.md)
 - [Operations](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/operations.md)
+- [Secrets](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md)
 - [Troubleshooting](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/troubleshooting.md)
 - [Maintainer Notes](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/maintainer-notes.md)
 

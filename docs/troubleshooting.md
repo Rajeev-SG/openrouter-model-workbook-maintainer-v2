@@ -44,5 +44,7 @@ Check:
 
 - workflow logs
 - source manifest output
-- whether `AA_API_KEY` is configured
+- whether `INFISICAL_IDENTITY_ID` and `INFISICAL_PROJECT_SLUG` GitHub repository variables are configured
+- whether the Infisical machine identity trusts this repository and workflow context
+- whether `AA_API_KEY` exists in the Infisical environment the workflow requests
 - whether a source schema changed
