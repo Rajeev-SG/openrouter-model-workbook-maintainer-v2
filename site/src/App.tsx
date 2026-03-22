@@ -433,6 +433,7 @@ export default function App() {
                           <p className="text-xs uppercase tracking-[0.22em] text-[var(--ink-soft)]">
                             {row.canonical_variant} · {row.provider}
                           </p>
+                          <SourceLinks row={row} className="mt-2" />
                         </td>
                         <td className="table-cell-strong">{formatNumber(scenario?.scenario_score, 2)}</td>
                         <td className="table-cell">{formatNumber(row.livebench_overall_score, 2)}</td>
@@ -523,6 +524,7 @@ export default function App() {
                   {topRecommendation.canonical_variant} · {topRecommendation.provider} · score{' '}
                   {formatNumber(topScenario.scenario_score, 2)}
                 </p>
+                <SourceLinks row={topRecommendation} className="mt-3" />
                 <div className="mt-4 space-y-2">
                   {Object.entries(topScenario.explanation).map(([factor, detail]) => (
                     <div key={factor} className="border-l-2 border-[var(--teal-700)] pl-3">
@@ -601,6 +603,7 @@ export default function App() {
                       <p className="text-xs uppercase tracking-[0.2em] text-[var(--ink-soft)]">
                         {row.canonical_variant}
                       </p>
+                      <SourceLinks row={row} className="mt-2" />
                       <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
                         <MiniStat label="Score" value={formatNumber(scenario?.scenario_score, 2)} />
                         <MiniStat label="Cost" value={formatCurrency(row.openrouter_blended_price_per_million)} />
@@ -638,6 +641,59 @@ function Panel({
       </div>
       {children}
     </section>
+  )
+}
+
+function SourceLinks({
+  row,
+  className = '',
+}: {
+  row: GuideRow
+  className?: string
+}) {
+  const links = [
+    {
+      label: 'OpenRouter',
+      href:
+        typeof row.openrouter_page_url === 'string'
+          ? row.openrouter_page_url
+          : typeof row.openrouter_pricing_url === 'string'
+            ? row.openrouter_pricing_url
+            : null,
+    },
+    {
+      label: 'AA',
+      href:
+        typeof row.aa_model_url === 'string'
+          ? row.aa_model_url
+          : typeof row.aa_provider_url === 'string'
+            ? row.aa_provider_url
+            : null,
+    },
+    {
+      label: 'Vals',
+      href: typeof row.vals_model_url === 'string' ? row.vals_model_url : null,
+    },
+  ].filter((item): item is { label: string; href: string } => Boolean(item.href))
+
+  if (links.length === 0) {
+    return null
+  }
+
+  return (
+    <div className={`flex flex-wrap gap-2 ${className}`.trim()}>
+      {links.map((link) => (
+        <a
+          key={link.label}
+          href={link.href}
+          target="_blank"
+          rel="noreferrer"
+          className="chip hover:border-[var(--teal-700)] hover:text-[var(--teal-700)]"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
   )
 }
 
