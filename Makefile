@@ -52,7 +52,7 @@ bootstrap:
 	$(PNPM) --dir $(SITE_DIR) install
 	@mkdir -p out $(CACHE_DIR) $(DATA_DIR) $(SITE_DATA_DIR) $(SITE_DOWNLOAD_DIR)
 	@if [ ! -f .env ]; then cp .env.example .env; echo "Created .env from .env.example"; fi
-	@echo "Bootstrap complete. Edit .env, then run: make refresh"
+	@echo "Bootstrap complete. Prefer: infisical run --env=prod -- make refresh"
 
 install: bootstrap
 
