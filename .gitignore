@@ -3,8 +3,13 @@ __pycache__/
 *.pyc
 .env
 .cache_model_workbook/**/*.html
+.cache_model_workbook/**/*.js
 .cache_model_workbook/**/*.json
+.cache_model_workbook/**/*.parquet
 .cache_model_workbook/**/*.txt
 out/*.xlsx
 out/*.zip
+site/dist/
+site/public/downloads/model-intelligence-workbook.xlsx
 .DS_Store
+.vercel
