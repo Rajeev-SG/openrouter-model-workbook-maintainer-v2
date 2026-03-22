@@ -383,12 +383,12 @@
     "canonical_model_id": "openai-gpt-5.4-nano-20260317",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.3543,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6265938069216758,
+        "contribution": 0.2193078324225865
       },
       "value": {
         "weight": 0.2,
@@ -402,13 +402,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.21342058406349654,
+        "contribution": 0.021342058406349656
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.62475442043222,
+        "contribution": 0.09371316306483299
       },
       "long_context": {
         "weight": 0.1,
@@ -421,12 +421,12 @@
     "canonical_model_id": "openai-gpt-5.4-mini-20260317",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.3738,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6721311475409836,
+        "contribution": 0.23524590163934422
       },
       "value": {
         "weight": 0.2,
@@ -440,13 +440,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.2612280825293993,
+        "contribution": 0.02612280825293993
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6168958742632613,
+        "contribution": 0.0925343811394892
       },
       "long_context": {
         "weight": 0.1,
@@ -763,7 +763,7 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.2339,
+    "scenario_score": 0.2743,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -782,13 +782,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.26915520628683687,
+        "contribution": 0.04037328094302553
       },
       "long_context": {
         "weight": 0.1,
@@ -1181,12 +1181,12 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-customtools-20260219",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.5643,
+    "scenario_score": 0.0524,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": 1.0,
-        "contribution": 0.35
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "value": {
         "weight": 0.2,
@@ -1200,13 +1200,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": 0.11913647932238172,
-        "contribution": 0.011913647932238173
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": 1.0,
-        "contribution": 0.15
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "long_context": {
         "weight": 0.1,
@@ -1295,12 +1295,12 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-20260219",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0524,
+    "scenario_score": 0.5643,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.35
       },
       "value": {
         "weight": 0.2,
@@ -1314,13 +1314,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11913647932238172,
+        "contribution": 0.011913647932238173
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.15
       },
       "long_context": {
         "weight": 0.1,
@@ -1447,12 +1447,12 @@
     "canonical_model_id": "minimax-minimax-m2.5-20260211",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0097,
+    "scenario_score": 0.3536,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6703096539162112,
+        "contribution": 0.2346083788706739
       },
       "value": {
         "weight": 0.2,
@@ -1466,13 +1466,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.04396471073465651,
+        "contribution": 0.004396471073465652
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.699410609037328,
+        "contribution": 0.1049115913555992
       },
       "long_context": {
         "weight": 0.1,
@@ -1903,12 +1903,12 @@
     "canonical_model_id": "liquid-lfm-2.5-1.2b-instruct-20260120",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0015,
+    "scenario_score": 0.0078,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.003642987249544628,
+        "contribution": 0.0012750455373406197
       },
       "value": {
         "weight": 0.2,
@@ -1922,13 +1922,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.03339882121807466,
+        "contribution": 0.005009823182711199
       },
       "long_context": {
         "weight": 0.1,
@@ -3461,12 +3461,12 @@
     "canonical_model_id": "openai-gpt-5.1-20251113",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.4339,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8032786885245902,
+        "contribution": 0.28114754098360656
       },
       "value": {
         "weight": 0.2,
@@ -3480,13 +3480,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.1079873650748941,
+        "contribution": 0.010798736507489411
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8133595284872299,
+        "contribution": 0.12200392927308448
       },
       "long_context": {
         "weight": 0.1,
@@ -3537,12 +3537,12 @@
     "canonical_model_id": "openai-gpt-5.1-codex-20251113",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.3701,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6557377049180328,
+        "contribution": 0.22950819672131148
       },
       "value": {
         "weight": 0.2,
@@ -3556,13 +3556,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.12222378705724948,
+        "contribution": 0.01222237870572495
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7229862475442044,
+        "contribution": 0.10844793713163066
       },
       "long_context": {
         "weight": 0.1,
@@ -4943,12 +4943,12 @@
     "canonical_model_id": "openai-gpt-5-codex",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.3962,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.697632058287796,
+        "contribution": 0.24417122040072856
       },
       "value": {
         "weight": 0.2,
@@ -4962,13 +4962,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.19232649612200348,
+        "contribution": 0.01923264961220035
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7524557956777996,
+        "contribution": 0.11286836935166994
       },
       "long_context": {
         "weight": 0.1,
@@ -5779,12 +5779,12 @@
     "canonical_model_id": "openai-gpt-5-chat-2025-08-07",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1949,
     "explanation": {
       "coding": {
         "weight": 0.35,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.37522768670309653,
+        "contribution": 0.13132969034608377
       },
       "value": {
         "weight": 0.2,
@@ -5798,13 +5798,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11568601808725743,
+        "contribution": 0.011568601808725744
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.3045186640471512,
+        "contribution": 0.04567779960707268
       },
       "long_context": {
         "weight": 0.1,
@@ -12087,7 +12087,7 @@
     "canonical_model_id": "openai-gpt-4-turbo-preview",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0467,
+    "scenario_score": 0.0063,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -12106,13 +12106,13 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": 0.0,
+        "normalized_input": null,
         "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": 0.26915520628683687,
-        "contribution": 0.04037328094302553
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "long_context": {
         "weight": 0.1,
@@ -12999,12 +12999,12 @@
     "canonical_model_id": "openai-gpt-5.4-nano-20260317",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0298,
+    "scenario_score": 0.3637,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.62475442043222,
+        "contribution": 0.249901768172888
       },
       "value": {
         "weight": 0.2,
@@ -13013,8 +13013,8 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.21342058406349654,
+        "contribution": 0.021342058406349656
       },
       "budget": {
         "weight": 0.05,
@@ -13023,8 +13023,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6265938069216758,
+        "contribution": 0.06265938069216757
       },
       "long_context": {
         "weight": 0.15,
@@ -13037,12 +13037,12 @@
     "canonical_model_id": "openai-gpt-5.4-mini-20260317",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0298,
+    "scenario_score": 0.3699,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6168958742632613,
+        "contribution": 0.24675834970530452
       },
       "value": {
         "weight": 0.2,
@@ -13051,8 +13051,8 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.2612280825293993,
+        "contribution": 0.02612280825293993
       },
       "budget": {
         "weight": 0.05,
@@ -13061,8 +13061,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6721311475409836,
+        "contribution": 0.06721311475409836
       },
       "long_context": {
         "weight": 0.15,
@@ -13379,12 +13379,12 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2601,
+    "scenario_score": 0.3677,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.26915520628683687,
+        "contribution": 0.10766208251473475
       },
       "value": {
         "weight": 0.2,
@@ -13393,7 +13393,7 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "budget": {
@@ -13797,12 +13797,12 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-customtools-20260219",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.5905,
+    "scenario_score": 0.0786,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": 1.0,
-        "contribution": 0.4
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "value": {
         "weight": 0.2,
@@ -13811,8 +13811,8 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": 0.11913647932238172,
-        "contribution": 0.011913647932238173
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.05,
@@ -13821,8 +13821,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": 1.0,
-        "contribution": 0.1
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "long_context": {
         "weight": 0.15,
@@ -13911,12 +13911,12 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-20260219",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0786,
+    "scenario_score": 0.5905,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.4
       },
       "value": {
         "weight": 0.2,
@@ -13925,8 +13925,8 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11913647932238172,
+        "contribution": 0.011913647932238173
       },
       "budget": {
         "weight": 0.05,
@@ -13935,8 +13935,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.1
       },
       "long_context": {
         "weight": 0.15,
@@ -14063,12 +14063,12 @@
     "canonical_model_id": "minimax-minimax-m2.5-20260211",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0146,
+    "scenario_score": 0.3658,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.699410609037328,
+        "contribution": 0.2797642436149312
       },
       "value": {
         "weight": 0.2,
@@ -14077,8 +14077,8 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.04396471073465651,
+        "contribution": 0.004396471073465652
       },
       "budget": {
         "weight": 0.05,
@@ -14087,8 +14087,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6703096539162112,
+        "contribution": 0.06703096539162112
       },
       "long_context": {
         "weight": 0.15,
@@ -14519,12 +14519,12 @@
     "canonical_model_id": "liquid-lfm-2.5-1.2b-instruct-20260120",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0023,
+    "scenario_score": 0.016,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.03339882121807466,
+        "contribution": 0.013359528487229863
       },
       "value": {
         "weight": 0.2,
@@ -14533,7 +14533,7 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "budget": {
@@ -14543,8 +14543,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.003642987249544628,
+        "contribution": 0.0003642987249544628
       },
       "long_context": {
         "weight": 0.15,
@@ -16077,12 +16077,12 @@
     "canonical_model_id": "openai-gpt-5.1-20251113",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0298,
+    "scenario_score": 0.4463,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8133595284872299,
+        "contribution": 0.325343811394892
       },
       "value": {
         "weight": 0.2,
@@ -16091,8 +16091,8 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.1079873650748941,
+        "contribution": 0.010798736507489411
       },
       "budget": {
         "weight": 0.05,
@@ -16101,8 +16101,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8032786885245902,
+        "contribution": 0.08032786885245902
       },
       "long_context": {
         "weight": 0.15,
@@ -16153,12 +16153,12 @@
     "canonical_model_id": "openai-gpt-5.1-codex-20251113",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0298,
+    "scenario_score": 0.3968,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7229862475442044,
+        "contribution": 0.28919449901768174
       },
       "value": {
         "weight": 0.2,
@@ -16167,8 +16167,8 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.12222378705724948,
+        "contribution": 0.01222237870572495
       },
       "budget": {
         "weight": 0.05,
@@ -16177,8 +16177,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6557377049180328,
+        "contribution": 0.06557377049180328
       },
       "long_context": {
         "weight": 0.15,
@@ -17559,12 +17559,12 @@
     "canonical_model_id": "openai-gpt-5-codex",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0298,
+    "scenario_score": 0.4198,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7524557956777996,
+        "contribution": 0.3009823182711199
       },
       "value": {
         "weight": 0.2,
@@ -17573,8 +17573,8 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.19232649612200348,
+        "contribution": 0.01923264961220035
       },
       "budget": {
         "weight": 0.05,
@@ -17583,8 +17583,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.697632058287796,
+        "contribution": 0.0697632058287796
       },
       "long_context": {
         "weight": 0.15,
@@ -18395,12 +18395,12 @@
     "canonical_model_id": "openai-gpt-5-chat-2025-08-07",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0094,
+    "scenario_score": 0.1803,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.3045186640471512,
+        "contribution": 0.1218074656188605
       },
       "value": {
         "weight": 0.2,
@@ -18409,8 +18409,8 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11568601808725743,
+        "contribution": 0.011568601808725744
       },
       "budget": {
         "weight": 0.05,
@@ -18419,8 +18419,8 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.37522768670309653,
+        "contribution": 0.03752276867030965
       },
       "long_context": {
         "weight": 0.15,
@@ -24703,12 +24703,12 @@
     "canonical_model_id": "openai-gpt-4-turbo-preview",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1171,
+    "scenario_score": 0.0094,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
-        "normalized_input": 0.26915520628683687,
-        "contribution": 0.10766208251473475
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "value": {
         "weight": 0.2,
@@ -24717,7 +24717,7 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": 0.0,
+        "normalized_input": null,
         "contribution": 0.0
       },
       "budget": {
@@ -25615,7 +25615,7 @@
     "canonical_model_id": "openai-gpt-5.4-nano-20260317",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0101,
+    "scenario_score": 0.1565,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -25629,18 +25629,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.21342058406349654,
+        "contribution": 0.021342058406349656
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6265938069216758,
+        "contribution": 0.06265938069216757
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.62475442043222,
+        "contribution": 0.062475442043222
       },
       "long_context": {
         "weight": 0.05,
@@ -25653,7 +25653,7 @@
     "canonical_model_id": "openai-gpt-5.4-mini-20260317",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0101,
+    "scenario_score": 0.1651,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -25667,18 +25667,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.2612280825293993,
+        "contribution": 0.02612280825293993
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6721311475409836,
+        "contribution": 0.06721311475409836
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6168958742632613,
+        "contribution": 0.06168958742632613
       },
       "long_context": {
         "weight": 0.05,
@@ -25995,7 +25995,7 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.2078,
+    "scenario_score": 0.2347,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -26009,7 +26009,7 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "coding": {
@@ -26019,8 +26019,8 @@
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.26915520628683687,
+        "contribution": 0.026915520628683687
       },
       "long_context": {
         "weight": 0.05,
@@ -26413,7 +26413,7 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-customtools-20260219",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.2382,
+    "scenario_score": 0.0263,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -26427,18 +26427,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": 0.11913647932238172,
-        "contribution": 0.011913647932238173
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": 1.0,
-        "contribution": 0.1
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": 1.0,
-        "contribution": 0.1
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "long_context": {
         "weight": 0.05,
@@ -26527,7 +26527,7 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-20260219",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0263,
+    "scenario_score": 0.2382,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -26541,18 +26541,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11913647932238172,
+        "contribution": 0.011913647932238173
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.1
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.1
       },
       "long_context": {
         "weight": 0.05,
@@ -26679,7 +26679,7 @@
     "canonical_model_id": "minimax-minimax-m2.5-20260211",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.005,
+    "scenario_score": 0.1463,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -26693,18 +26693,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.04396471073465651,
+        "contribution": 0.004396471073465652
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6703096539162112,
+        "contribution": 0.06703096539162112
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.699410609037328,
+        "contribution": 0.0699410609037328
       },
       "long_context": {
         "weight": 0.05,
@@ -27135,7 +27135,7 @@
     "canonical_model_id": "liquid-lfm-2.5-1.2b-instruct-20260120",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0009,
+    "scenario_score": 0.0046,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -27149,18 +27149,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.003642987249544628,
+        "contribution": 0.0003642987249544628
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.03339882121807466,
+        "contribution": 0.0033398821218074658
       },
       "long_context": {
         "weight": 0.05,
@@ -28693,7 +28693,7 @@
     "canonical_model_id": "openai-gpt-5.1-20251113",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0101,
+    "scenario_score": 0.1825,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -28707,18 +28707,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.1079873650748941,
+        "contribution": 0.010798736507489411
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8032786885245902,
+        "contribution": 0.08032786885245902
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8133595284872299,
+        "contribution": 0.081335952848723
       },
       "long_context": {
         "weight": 0.05,
@@ -28769,7 +28769,7 @@
     "canonical_model_id": "openai-gpt-5.1-codex-20251113",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0101,
+    "scenario_score": 0.1602,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -28783,18 +28783,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.12222378705724948,
+        "contribution": 0.01222237870572495
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6557377049180328,
+        "contribution": 0.06557377049180328
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7229862475442044,
+        "contribution": 0.07229862475442043
       },
       "long_context": {
         "weight": 0.05,
@@ -30175,7 +30175,7 @@
     "canonical_model_id": "openai-gpt-5-codex",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0101,
+    "scenario_score": 0.1743,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -30189,18 +30189,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.19232649612200348,
+        "contribution": 0.01923264961220035
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.697632058287796,
+        "contribution": 0.0697632058287796
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7524557956777996,
+        "contribution": 0.07524557956777997
       },
       "long_context": {
         "weight": 0.05,
@@ -31011,7 +31011,7 @@
     "canonical_model_id": "openai-gpt-5-chat-2025-08-07",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0033,
+    "scenario_score": 0.0828,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -31025,18 +31025,18 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11568601808725743,
+        "contribution": 0.011568601808725744
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.37522768670309653,
+        "contribution": 0.03752276867030965
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.3045186640471512,
+        "contribution": 0.030451866404715124
       },
       "long_context": {
         "weight": 0.05,
@@ -37319,7 +37319,7 @@
     "canonical_model_id": "openai-gpt-4-turbo-preview",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0302,
+    "scenario_score": 0.0032,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -37333,7 +37333,7 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": 0.0,
+        "normalized_input": null,
         "contribution": 0.0
       },
       "coding": {
@@ -37343,8 +37343,8 @@
       },
       "reasoning": {
         "weight": 0.1,
-        "normalized_input": 0.26915520628683687,
-        "contribution": 0.026915520628683687
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "long_context": {
         "weight": 0.05,
@@ -38231,12 +38231,12 @@
     "canonical_model_id": "openai-gpt-5.4-nano-20260317",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.2617,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.21342058406349654,
+        "contribution": 0.08536823362539862
       },
       "value": {
         "weight": 0.15,
@@ -38250,13 +38250,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6265938069216758,
+        "contribution": 0.06265938069216757
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.62475442043222,
+        "contribution": 0.09371316306483299
       },
       "long_context": {
         "weight": 0.1,
@@ -38269,12 +38269,12 @@
     "canonical_model_id": "openai-gpt-5.4-mini-20260317",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.2842,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.2612280825293993,
+        "contribution": 0.10449123301175972
       },
       "value": {
         "weight": 0.15,
@@ -38288,13 +38288,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6721311475409836,
+        "contribution": 0.06721311475409836
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6168958742632613,
+        "contribution": 0.0925343811394892
       },
       "long_context": {
         "weight": 0.1,
@@ -38611,11 +38611,11 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1885,
+    "scenario_score": 0.2289,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "value": {
@@ -38635,8 +38635,8 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.26915520628683687,
+        "contribution": 0.04037328094302553
       },
       "long_context": {
         "weight": 0.1,
@@ -39029,12 +39029,12 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-customtools-20260219",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.35,
+    "scenario_score": 0.0524,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": 0.11913647932238172,
-        "contribution": 0.04765459172895269
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "value": {
         "weight": 0.15,
@@ -39048,13 +39048,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": 1.0,
-        "contribution": 0.1
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": 1.0,
-        "contribution": 0.15
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "long_context": {
         "weight": 0.1,
@@ -39143,12 +39143,12 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-20260219",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0524,
+    "scenario_score": 0.35,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11913647932238172,
+        "contribution": 0.04765459172895269
       },
       "value": {
         "weight": 0.15,
@@ -39162,13 +39162,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.1
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.15
       },
       "long_context": {
         "weight": 0.1,
@@ -39295,12 +39295,12 @@
     "canonical_model_id": "minimax-minimax-m2.5-20260211",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0097,
+    "scenario_score": 0.1993,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.04396471073465651,
+        "contribution": 0.017585884293862607
       },
       "value": {
         "weight": 0.15,
@@ -39314,13 +39314,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6703096539162112,
+        "contribution": 0.06703096539162112
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.699410609037328,
+        "contribution": 0.1049115913555992
       },
       "long_context": {
         "weight": 0.1,
@@ -39751,11 +39751,11 @@
     "canonical_model_id": "liquid-lfm-2.5-1.2b-instruct-20260120",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0015,
+    "scenario_score": 0.0069,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "value": {
@@ -39770,13 +39770,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.003642987249544628,
+        "contribution": 0.0003642987249544628
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.03339882121807466,
+        "contribution": 0.005009823182711199
       },
       "long_context": {
         "weight": 0.1,
@@ -41309,12 +41309,12 @@
     "canonical_model_id": "openai-gpt-5.1-20251113",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.2654,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.1079873650748941,
+        "contribution": 0.043194946029957645
       },
       "value": {
         "weight": 0.15,
@@ -41328,13 +41328,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8032786885245902,
+        "contribution": 0.08032786885245902
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8133595284872299,
+        "contribution": 0.12200392927308448
       },
       "long_context": {
         "weight": 0.1,
@@ -41385,12 +41385,12 @@
     "canonical_model_id": "openai-gpt-5.1-codex-20251113",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.2428,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.12222378705724948,
+        "contribution": 0.0488895148228998
       },
       "value": {
         "weight": 0.15,
@@ -41404,13 +41404,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6557377049180328,
+        "contribution": 0.06557377049180328
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7229862475442044,
+        "contribution": 0.10844793713163066
       },
       "long_context": {
         "weight": 0.1,
@@ -42791,12 +42791,12 @@
     "canonical_model_id": "openai-gpt-5-codex",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0199,
+    "scenario_score": 0.2795,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.19232649612200348,
+        "contribution": 0.0769305984488014
       },
       "value": {
         "weight": 0.15,
@@ -42810,13 +42810,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.697632058287796,
+        "contribution": 0.0697632058287796
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7524557956777996,
+        "contribution": 0.11286836935166994
       },
       "long_context": {
         "weight": 0.1,
@@ -43627,12 +43627,12 @@
     "canonical_model_id": "openai-gpt-5-chat-2025-08-07",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1358,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11568601808725743,
+        "contribution": 0.046274407234902976
       },
       "value": {
         "weight": 0.15,
@@ -43646,13 +43646,13 @@
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.37522768670309653,
+        "contribution": 0.03752276867030965
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.3045186640471512,
+        "contribution": 0.04567779960707268
       },
       "long_context": {
         "weight": 0.1,
@@ -49935,11 +49935,11 @@
     "canonical_model_id": "openai-gpt-4-turbo-preview",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0467,
+    "scenario_score": 0.0063,
     "explanation": {
       "latency": {
         "weight": 0.4,
-        "normalized_input": 0.0,
+        "normalized_input": null,
         "contribution": 0.0
       },
       "value": {
@@ -49959,8 +49959,8 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": 0.26915520628683687,
-        "contribution": 0.04037328094302553
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "long_context": {
         "weight": 0.1,
@@ -50847,7 +50847,7 @@
     "canonical_model_id": "openai-gpt-5.4-nano-20260317",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0796,
+    "scenario_score": 0.2573,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -50861,18 +50861,18 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.62475442043222,
+        "contribution": 0.09371316306483299
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6265938069216758,
+        "contribution": 0.06265938069216757
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.21342058406349654,
+        "contribution": 0.021342058406349656
       },
       "budget": {
         "weight": 0.1,
@@ -50885,7 +50885,7 @@
     "canonical_model_id": "openai-gpt-5.4-mini-20260317",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0796,
+    "scenario_score": 0.2654,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -50899,18 +50899,18 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6168958742632613,
+        "contribution": 0.0925343811394892
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6721311475409836,
+        "contribution": 0.06721311475409836
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.2612280825293993,
+        "contribution": 0.02612280825293993
       },
       "budget": {
         "weight": 0.1,
@@ -51227,7 +51227,7 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.3458,
+    "scenario_score": 0.3862,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -51241,8 +51241,8 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.26915520628683687,
+        "contribution": 0.04037328094302553
       },
       "coding": {
         "weight": 0.1,
@@ -51251,7 +51251,7 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "budget": {
@@ -51645,7 +51645,7 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-customtools-20260219",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.4714,
+    "scenario_score": 0.2095,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -51659,18 +51659,18 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": 1.0,
-        "contribution": 0.15
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": 1.0,
-        "contribution": 0.1
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": 0.11913647932238172,
-        "contribution": 0.011913647932238173
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -51759,7 +51759,7 @@
     "canonical_model_id": "google-gemini-3.1-pro-preview-20260219",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2095,
+    "scenario_score": 0.4714,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -51773,18 +51773,18 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.15
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.1
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11913647932238172,
+        "contribution": 0.011913647932238173
       },
       "budget": {
         "weight": 0.1,
@@ -51911,7 +51911,7 @@
     "canonical_model_id": "minimax-minimax-m2.5-20260211",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0388,
+    "scenario_score": 0.2152,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -51925,18 +51925,18 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.699410609037328,
+        "contribution": 0.1049115913555992
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6703096539162112,
+        "contribution": 0.06703096539162112
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.04396471073465651,
+        "contribution": 0.004396471073465652
       },
       "budget": {
         "weight": 0.1,
@@ -52367,7 +52367,7 @@
     "canonical_model_id": "liquid-lfm-2.5-1.2b-instruct-20260120",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.006,
+    "scenario_score": 0.0114,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -52381,17 +52381,17 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.03339882121807466,
+        "contribution": 0.005009823182711199
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.003642987249544628,
+        "contribution": 0.0003642987249544628
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
+        "normalized_input": 0.0,
         "contribution": 0.0
       },
       "budget": {
@@ -53925,7 +53925,7 @@
     "canonical_model_id": "openai-gpt-5.1-20251113",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0796,
+    "scenario_score": 0.2927,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -53939,18 +53939,18 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8133595284872299,
+        "contribution": 0.12200392927308448
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8032786885245902,
+        "contribution": 0.08032786885245902
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.1079873650748941,
+        "contribution": 0.010798736507489411
       },
       "budget": {
         "weight": 0.1,
@@ -54001,7 +54001,7 @@
     "canonical_model_id": "openai-gpt-5.1-codex-20251113",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0796,
+    "scenario_score": 0.2658,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -54015,18 +54015,18 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7229862475442044,
+        "contribution": 0.10844793713163066
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6557377049180328,
+        "contribution": 0.06557377049180328
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.12222378705724948,
+        "contribution": 0.01222237870572495
       },
       "budget": {
         "weight": 0.1,
@@ -55407,7 +55407,7 @@
     "canonical_model_id": "openai-gpt-5-codex",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0796,
+    "scenario_score": 0.2814,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -55421,18 +55421,18 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7524557956777996,
+        "contribution": 0.11286836935166994
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.697632058287796,
+        "contribution": 0.0697632058287796
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.19232649612200348,
+        "contribution": 0.01923264961220035
       },
       "budget": {
         "weight": 0.1,
@@ -56243,7 +56243,7 @@
     "canonical_model_id": "openai-gpt-5-chat-2025-08-07",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0251,
+    "scenario_score": 0.1199,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -56257,18 +56257,18 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.3045186640471512,
+        "contribution": 0.04567779960707268
       },
       "coding": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.37522768670309653,
+        "contribution": 0.03752276867030965
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.11568601808725743,
+        "contribution": 0.011568601808725744
       },
       "budget": {
         "weight": 0.1,
@@ -62551,7 +62551,7 @@
     "canonical_model_id": "openai-gpt-4-turbo-preview",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0655,
+    "scenario_score": 0.0251,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -62565,8 +62565,8 @@
       },
       "reasoning": {
         "weight": 0.15,
-        "normalized_input": 0.26915520628683687,
-        "contribution": 0.04037328094302553
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "coding": {
         "weight": 0.1,
@@ -62575,7 +62575,7 @@
       },
       "latency": {
         "weight": 0.1,
-        "normalized_input": 0.0,
+        "normalized_input": null,
         "contribution": 0.0
       },
       "budget": {

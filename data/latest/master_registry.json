@@ -354,8 +354,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -454,8 +454,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -776,8 +776,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -1056,8 +1056,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -1451,8 +1451,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -1551,8 +1551,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -1946,8 +1946,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -2285,8 +2285,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -2385,8 +2385,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -2485,8 +2485,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -2506,11 +2506,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "openai/gpt-5.4-nano-20260317",
-    "aa_model_slug": null,
+    "aa_model_slug": "gpt-5-4-nano-medium",
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 0.19999999999999998,
@@ -2519,30 +2519,30 @@
     "openrouter_context_tokens": 400000,
     "openrouter_release_date": "2026-03-17",
     "openrouter_page_url": "https://openrouter.ai/openai/gpt-5.4-nano-20260317/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
-    "aa_coding_index": null,
+    "aa_release_date": "2026-03-17",
+    "aa_intelligence_index": 38.1,
+    "aa_coding_index": 35.0,
     "aa_math_index": null,
     "aa_aime": null,
     "aa_aime_25": null,
-    "aa_gpqa": null,
-    "aa_hle": null,
-    "aa_ifbench": null,
-    "aa_lcr": null,
+    "aa_gpqa": 0.761,
+    "aa_hle": 0.147,
+    "aa_ifbench": 0.644,
+    "aa_lcr": 0.573,
     "aa_livecodebench": null,
     "aa_math_500": null,
     "aa_mmlu_pro": null,
-    "aa_scicode": null,
-    "aa_tau2": null,
-    "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
+    "aa_scicode": 0.384,
+    "aa_tau2": 0.526,
+    "aa_terminalbench_hard": 0.333,
+    "aa_median_tokens_per_second": 212.155,
+    "aa_median_ttft_seconds": 3.447,
+    "aa_median_ttfat_seconds": 3.447,
+    "aa_blended_price_per_million": 0.463,
+    "aa_input_price_per_million": 0.2,
+    "aa_output_price_per_million": 1.25,
+    "aa_model_url": "https://artificialanalysis.ai/models/gpt-5-4-nano-medium",
+    "aa_provider_url": "https://artificialanalysis.ai/models/gpt-5-4-nano-medium/providers",
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -2570,29 +2570,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2026-03-17",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2026-03-17",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.25,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": null,
-    "coding_strength_score": null,
-    "latency_score": null,
+    "reasoning_strength_score": 0.62475442043222,
+    "coding_strength_score": 0.6265938069216758,
+    "latency_score": 0.21342058406349654,
     "context_score": 0.19886880274948227,
     "value_cost_score": 0.00026196873320749603,
     "overall_value_score": null
@@ -2606,11 +2606,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "openai/gpt-5.4-mini-20260317",
-    "aa_model_slug": null,
+    "aa_model_slug": "gpt-5-4-mini-medium",
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 0.75,
@@ -2619,32 +2619,32 @@
     "openrouter_context_tokens": 400000,
     "openrouter_release_date": "2026-03-17",
     "openrouter_page_url": "https://openrouter.ai/openai/gpt-5.4-mini-20260317/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
-    "aa_coding_index": null,
+    "aa_release_date": "2026-03-17",
+    "aa_intelligence_index": 37.7,
+    "aa_coding_index": 37.5,
     "aa_math_index": null,
     "aa_aime": null,
     "aa_aime_25": null,
-    "aa_gpqa": null,
-    "aa_hle": null,
-    "aa_ifbench": null,
-    "aa_lcr": null,
+    "aa_gpqa": 0.823,
+    "aa_hle": 0.171,
+    "aa_ifbench": 0.648,
+    "aa_lcr": 0.613,
     "aa_livecodebench": null,
     "aa_math_500": null,
     "aa_mmlu_pro": null,
-    "aa_scicode": null,
-    "aa_tau2": null,
-    "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
-    "aa_fastest_provider": null,
-    "aa_fastest_tokens_per_second": null,
+    "aa_scicode": 0.442,
+    "aa_tau2": 0.365,
+    "aa_terminalbench_hard": 0.341,
+    "aa_median_tokens_per_second": 259.679,
+    "aa_median_ttft_seconds": 4.648,
+    "aa_median_ttfat_seconds": 4.648,
+    "aa_blended_price_per_million": 1.688,
+    "aa_input_price_per_million": 0.75,
+    "aa_output_price_per_million": 4.5,
+    "aa_model_url": "https://artificialanalysis.ai/models/gpt-5-4-mini-medium",
+    "aa_provider_url": "https://artificialanalysis.ai/models/gpt-5-4-mini-medium/providers",
+    "aa_fastest_provider": "varies significantly across providers. OpenAI",
+    "aa_fastest_tokens_per_second": 234.4,
     "aa_lowest_latency_provider": null,
     "aa_lowest_latency_seconds": null,
     "aa_cheapest_provider": null,
@@ -2670,29 +2670,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2026-03-17",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2026-03-17",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.25,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": null,
-    "coding_strength_score": null,
-    "latency_score": null,
+    "reasoning_strength_score": 0.6168958742632613,
+    "coding_strength_score": 0.6721311475409836,
+    "latency_score": 0.2612280825293993,
     "context_score": 0.19886880274948227,
     "value_cost_score": 0.00026074405468567985,
     "overall_value_score": null
@@ -2870,8 +2870,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -2970,8 +2970,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -3081,8 +3081,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -3181,8 +3181,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -3281,8 +3281,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -3381,8 +3381,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -3481,8 +3481,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -3581,8 +3581,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -3602,11 +3602,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "openai/gpt-5.4-20260305",
-    "aa_model_slug": null,
+    "aa_model_slug": "gpt-4-5",
     "vals_model_url": null,
     "livebench_model_name": "gpt-4.5-preview-2025-02-27",
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": true,
     "openrouter_input_price_per_million": 2.5,
@@ -3615,8 +3615,8 @@
     "openrouter_context_tokens": 1050000,
     "openrouter_release_date": "2026-03-05",
     "openrouter_page_url": "https://openrouter.ai/openai/gpt-5.4-20260305/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
+    "aa_release_date": "2025-02-27",
+    "aa_intelligence_index": 20.0,
     "aa_coding_index": null,
     "aa_math_index": null,
     "aa_aime": null,
@@ -3631,14 +3631,14 @@
     "aa_scicode": null,
     "aa_tau2": null,
     "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
+    "aa_median_tokens_per_second": 0.0,
+    "aa_median_ttft_seconds": 0.0,
+    "aa_median_ttfat_seconds": 0.0,
+    "aa_blended_price_per_million": 0.0,
+    "aa_input_price_per_million": 0.0,
+    "aa_output_price_per_million": 0.0,
+    "aa_model_url": "https://artificialanalysis.ai/models/gpt-4-5",
+    "aa_provider_url": "https://artificialanalysis.ai/models/gpt-4-5/providers",
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -3677,29 +3677,29 @@
     },
     "source_freshness": {
       "openrouter_last_seen": "2026-03-05",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2025-02-27",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.5,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:aa_coding_index; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.75,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
-    "reasoning_strength_score": null,
+    "reasoning_strength_score": 0.26915520628683687,
     "coding_strength_score": null,
-    "latency_score": null,
+    "latency_score": 0.0,
     "context_score": 0.5243283516325051,
     "value_cost_score": 0.0002568075880081677,
     "overall_value_score": 0.9071058549986285
@@ -3792,8 +3792,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -3935,8 +3935,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -4046,8 +4046,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -4146,8 +4146,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -4251,8 +4251,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -4351,8 +4351,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -4451,8 +4451,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -4551,8 +4551,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -4651,8 +4651,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -4751,8 +4751,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -4772,11 +4772,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "google/gemini-3.1-pro-preview-customtools-20260219",
-    "aa_model_slug": "gemini-3-1-pro-preview",
+    "aa_model_slug": null,
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": true,
+    "has_aa": false,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 2.0,
@@ -4785,30 +4785,30 @@
     "openrouter_context_tokens": 1048576,
     "openrouter_release_date": "2026-02-25",
     "openrouter_page_url": "https://openrouter.ai/google/gemini-3.1-pro-preview-customtools-20260219/pricing",
-    "aa_release_date": "2026-02-19",
-    "aa_intelligence_index": 57.2,
-    "aa_coding_index": 55.5,
+    "aa_release_date": null,
+    "aa_intelligence_index": null,
+    "aa_coding_index": null,
     "aa_math_index": null,
     "aa_aime": null,
     "aa_aime_25": null,
-    "aa_gpqa": 0.941,
-    "aa_hle": 0.447,
-    "aa_ifbench": 0.771,
-    "aa_lcr": 0.727,
+    "aa_gpqa": null,
+    "aa_hle": null,
+    "aa_ifbench": null,
+    "aa_lcr": null,
     "aa_livecodebench": null,
     "aa_math_500": null,
     "aa_mmlu_pro": null,
-    "aa_scicode": 0.589,
-    "aa_tau2": 0.956,
-    "aa_terminalbench_hard": 0.538,
-    "aa_median_tokens_per_second": 118.43,
-    "aa_median_ttft_seconds": 31.447,
-    "aa_median_ttfat_seconds": 31.447,
-    "aa_blended_price_per_million": 4.5,
-    "aa_input_price_per_million": 2.0,
-    "aa_output_price_per_million": 12.0,
-    "aa_model_url": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview",
-    "aa_provider_url": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview/providers",
+    "aa_scicode": null,
+    "aa_tau2": null,
+    "aa_terminalbench_hard": null,
+    "aa_median_tokens_per_second": null,
+    "aa_median_ttft_seconds": null,
+    "aa_median_ttfat_seconds": null,
+    "aa_blended_price_per_million": null,
+    "aa_input_price_per_million": null,
+    "aa_output_price_per_million": null,
+    "aa_model_url": null,
+    "aa_provider_url": null,
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -4836,29 +4836,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2026-02-25",
-      "artificial_analysis_last_seen": "2026-02-19",
+      "artificial_analysis_last_seen": null,
       "vals_last_seen": null
     },
-    "cohort_eligible": true,
-    "exclusion_reasons": "",
+    "cohort_eligible": false,
+    "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.5,
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": true,
+      "artificial_analysis": false,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": 1.0,
-    "coding_strength_score": 1.0,
-    "latency_score": 0.11913647932238172,
+    "reasoning_strength_score": null,
+    "coding_strength_score": null,
+    "latency_score": null,
     "context_score": 0.5236153448669522,
     "value_cost_score": 0.0002579322927731553,
     "overall_value_score": null
@@ -4951,8 +4951,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -5051,8 +5051,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -5072,11 +5072,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "google/gemini-3.1-pro-preview-20260219",
-    "aa_model_slug": null,
+    "aa_model_slug": "gemini-3-1-pro-preview",
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 2.0,
@@ -5085,30 +5085,30 @@
     "openrouter_context_tokens": 1048576,
     "openrouter_release_date": "2026-02-19",
     "openrouter_page_url": "https://openrouter.ai/google/gemini-3.1-pro-preview-20260219/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
-    "aa_coding_index": null,
+    "aa_release_date": "2026-02-19",
+    "aa_intelligence_index": 57.2,
+    "aa_coding_index": 55.5,
     "aa_math_index": null,
     "aa_aime": null,
     "aa_aime_25": null,
-    "aa_gpqa": null,
-    "aa_hle": null,
-    "aa_ifbench": null,
-    "aa_lcr": null,
+    "aa_gpqa": 0.941,
+    "aa_hle": 0.447,
+    "aa_ifbench": 0.771,
+    "aa_lcr": 0.727,
     "aa_livecodebench": null,
     "aa_math_500": null,
     "aa_mmlu_pro": null,
-    "aa_scicode": null,
-    "aa_tau2": null,
-    "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
+    "aa_scicode": 0.589,
+    "aa_tau2": 0.956,
+    "aa_terminalbench_hard": 0.538,
+    "aa_median_tokens_per_second": 118.43,
+    "aa_median_ttft_seconds": 31.447,
+    "aa_median_ttfat_seconds": 31.447,
+    "aa_blended_price_per_million": 4.5,
+    "aa_input_price_per_million": 2.0,
+    "aa_output_price_per_million": 12.0,
+    "aa_model_url": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview",
+    "aa_provider_url": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview/providers",
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -5136,29 +5136,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2026-02-19",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2026-02-19",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.25,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": null,
-    "coding_strength_score": null,
-    "latency_score": null,
+    "reasoning_strength_score": 1.0,
+    "coding_strength_score": 1.0,
+    "latency_score": 0.11913647932238172,
     "context_score": 0.5236153448669522,
     "value_cost_score": 0.0002579322927731553,
     "overall_value_score": null
@@ -5266,8 +5266,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -5366,8 +5366,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -5466,8 +5466,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -5487,11 +5487,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "minimax/minimax-m2.5-20260211",
-    "aa_model_slug": null,
+    "aa_model_slug": "minimax-m2-5",
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 0.19999999999999998,
@@ -5500,32 +5500,32 @@
     "openrouter_context_tokens": 196608,
     "openrouter_release_date": "2026-02-12",
     "openrouter_page_url": "https://openrouter.ai/minimax/minimax-m2.5-20260211/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
-    "aa_coding_index": null,
+    "aa_release_date": "2026-02-12",
+    "aa_intelligence_index": 41.9,
+    "aa_coding_index": 37.4,
     "aa_math_index": null,
     "aa_aime": null,
     "aa_aime_25": null,
-    "aa_gpqa": null,
-    "aa_hle": null,
-    "aa_ifbench": null,
-    "aa_lcr": null,
+    "aa_gpqa": 0.848,
+    "aa_hle": 0.191,
+    "aa_ifbench": 0.716,
+    "aa_lcr": 0.66,
     "aa_livecodebench": null,
     "aa_math_500": null,
     "aa_mmlu_pro": null,
-    "aa_scicode": null,
-    "aa_tau2": null,
-    "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
-    "aa_fastest_provider": null,
-    "aa_fastest_tokens_per_second": null,
+    "aa_scicode": 0.426,
+    "aa_tau2": 0.953,
+    "aa_terminalbench_hard": 0.348,
+    "aa_median_tokens_per_second": 43.704,
+    "aa_median_ttft_seconds": 2.973,
+    "aa_median_ttfat_seconds": 48.736,
+    "aa_blended_price_per_million": 0.525,
+    "aa_input_price_per_million": 0.3,
+    "aa_output_price_per_million": 1.2,
+    "aa_model_url": "https://artificialanalysis.ai/models/minimax-m2-5",
+    "aa_provider_url": "https://artificialanalysis.ai/models/minimax-m2-5/providers",
+    "aa_fastest_provider": "Output speed for MiniMax-M2.5 varies significantly across providers. SambaNova",
+    "aa_fastest_tokens_per_second": 399.7,
     "aa_lowest_latency_provider": null,
     "aa_lowest_latency_seconds": null,
     "aa_cheapest_provider": null,
@@ -5551,29 +5551,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2026-02-12",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2026-02-12",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.25,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": null,
-    "coding_strength_score": null,
-    "latency_score": null,
+    "reasoning_strength_score": 0.699410609037328,
+    "coding_strength_score": 0.6703096539162112,
+    "latency_score": 0.04396471073465651,
     "context_score": 0.09702900495499646,
     "value_cost_score": 0.00026198872795890615,
     "overall_value_score": null
@@ -5666,8 +5666,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -5907,8 +5907,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -6007,8 +6007,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -6107,8 +6107,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -6207,8 +6207,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -6307,8 +6307,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -6407,8 +6407,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -6507,8 +6507,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -6607,8 +6607,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -6707,8 +6707,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -6807,8 +6807,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -6828,11 +6828,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "liquid/lfm-2.5-1.2b-instruct-20260120",
-    "aa_model_slug": null,
+    "aa_model_slug": "lfm2-5-1-2b-instruct",
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 0.0,
@@ -6841,30 +6841,30 @@
     "openrouter_context_tokens": 32768,
     "openrouter_release_date": "2026-01-20",
     "openrouter_page_url": "https://openrouter.ai/liquid/lfm-2.5-1.2b-instruct-20260120/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
-    "aa_coding_index": null,
+    "aa_release_date": "2026-01-05",
+    "aa_intelligence_index": 8.0,
+    "aa_coding_index": 0.8,
     "aa_math_index": null,
     "aa_aime": null,
     "aa_aime_25": null,
-    "aa_gpqa": null,
-    "aa_hle": null,
-    "aa_ifbench": null,
-    "aa_lcr": null,
+    "aa_gpqa": 0.326,
+    "aa_hle": 0.068,
+    "aa_ifbench": 0.438,
+    "aa_lcr": 0.0,
     "aa_livecodebench": null,
     "aa_math_500": null,
     "aa_mmlu_pro": null,
-    "aa_scicode": null,
-    "aa_tau2": null,
-    "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
+    "aa_scicode": 0.023,
+    "aa_tau2": 0.108,
+    "aa_terminalbench_hard": 0.0,
+    "aa_median_tokens_per_second": 0.0,
+    "aa_median_ttft_seconds": 0.0,
+    "aa_median_ttfat_seconds": 0.0,
+    "aa_blended_price_per_million": 0.0,
+    "aa_input_price_per_million": 0.0,
+    "aa_output_price_per_million": 0.0,
+    "aa_model_url": "https://artificialanalysis.ai/models/lfm2-5-1-2b-instruct",
+    "aa_provider_url": "https://artificialanalysis.ai/models/lfm2-5-1-2b-instruct/providers",
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -6892,29 +6892,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2026-01-20",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2026-01-05",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.25,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": null,
-    "coding_strength_score": null,
-    "latency_score": null,
+    "reasoning_strength_score": 0.03339882121807466,
+    "coding_strength_score": 0.003642987249544628,
+    "latency_score": 0.0,
     "context_score": 0.014993170356543439,
     "value_cost_score": 0.00026243111183310575,
     "overall_value_score": null
@@ -7007,8 +7007,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -7107,8 +7107,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -7207,8 +7207,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -7307,8 +7307,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -7407,8 +7407,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -7507,8 +7507,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -7607,8 +7607,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -7707,8 +7707,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -7807,8 +7807,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -7907,8 +7907,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -8007,8 +8007,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -8107,8 +8107,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -8222,8 +8222,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -8322,8 +8322,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -8422,8 +8422,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -8522,8 +8522,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -8622,8 +8622,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -8765,8 +8765,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -8865,8 +8865,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -8965,8 +8965,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -9065,8 +9065,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -9165,8 +9165,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -9265,8 +9265,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -9365,8 +9365,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -9480,8 +9480,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -9580,8 +9580,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -9680,8 +9680,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -9780,8 +9780,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -9885,8 +9885,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -9985,8 +9985,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -10085,8 +10085,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -10185,8 +10185,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -10290,8 +10290,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -10390,8 +10390,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -10490,8 +10490,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -10590,8 +10590,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -10690,8 +10690,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -10790,8 +10790,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -10890,8 +10890,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -10990,8 +10990,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -11011,11 +11011,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "openai/gpt-5.1-20251113",
-    "aa_model_slug": null,
+    "aa_model_slug": "gpt-5-1",
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 1.25,
@@ -11024,30 +11024,30 @@
     "openrouter_context_tokens": 400000,
     "openrouter_release_date": "2025-11-13",
     "openrouter_page_url": "https://openrouter.ai/openai/gpt-5.1-20251113/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
-    "aa_coding_index": null,
-    "aa_math_index": null,
+    "aa_release_date": "2025-11-13",
+    "aa_intelligence_index": 47.7,
+    "aa_coding_index": 44.7,
+    "aa_math_index": 94.0,
     "aa_aime": null,
-    "aa_aime_25": null,
-    "aa_gpqa": null,
-    "aa_hle": null,
-    "aa_ifbench": null,
-    "aa_lcr": null,
-    "aa_livecodebench": null,
+    "aa_aime_25": 0.94,
+    "aa_gpqa": 0.873,
+    "aa_hle": 0.265,
+    "aa_ifbench": 0.729,
+    "aa_lcr": 0.75,
+    "aa_livecodebench": 0.868,
     "aa_math_500": null,
-    "aa_mmlu_pro": null,
-    "aa_scicode": null,
-    "aa_tau2": null,
-    "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
+    "aa_mmlu_pro": 0.87,
+    "aa_scicode": 0.433,
+    "aa_tau2": 0.819,
+    "aa_terminalbench_hard": 0.455,
+    "aa_median_tokens_per_second": 107.347,
+    "aa_median_ttft_seconds": 18.437,
+    "aa_median_ttfat_seconds": 18.437,
+    "aa_blended_price_per_million": 3.438,
+    "aa_input_price_per_million": 1.25,
+    "aa_output_price_per_million": 10.0,
+    "aa_model_url": "https://artificialanalysis.ai/models/gpt-5-1",
+    "aa_provider_url": "https://artificialanalysis.ai/models/gpt-5-1/providers",
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -11075,29 +11075,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2025-11-13",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2025-11-13",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.25,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": null,
-    "coding_strength_score": null,
-    "latency_score": null,
+    "reasoning_strength_score": 0.8133595284872299,
+    "coding_strength_score": 0.8032786885245902,
+    "latency_score": 0.1079873650748941,
     "context_score": 0.19886880274948227,
     "value_cost_score": 0.00025899451394006956,
     "overall_value_score": null
@@ -11190,8 +11190,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -11211,11 +11211,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "openai/gpt-5.1-codex-20251113",
-    "aa_model_slug": null,
+    "aa_model_slug": "gpt-5-1-codex",
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 1.25,
@@ -11224,30 +11224,30 @@
     "openrouter_context_tokens": 400000,
     "openrouter_release_date": "2025-11-13",
     "openrouter_page_url": "https://openrouter.ai/openai/gpt-5.1-codex-20251113/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
-    "aa_coding_index": null,
-    "aa_math_index": null,
+    "aa_release_date": "2025-11-13",
+    "aa_intelligence_index": 43.1,
+    "aa_coding_index": 36.6,
+    "aa_math_index": 95.7,
     "aa_aime": null,
-    "aa_aime_25": null,
-    "aa_gpqa": null,
-    "aa_hle": null,
-    "aa_ifbench": null,
-    "aa_lcr": null,
-    "aa_livecodebench": null,
+    "aa_aime_25": 0.957,
+    "aa_gpqa": 0.86,
+    "aa_hle": 0.234,
+    "aa_ifbench": 0.7,
+    "aa_lcr": 0.673,
+    "aa_livecodebench": 0.849,
     "aa_math_500": null,
-    "aa_mmlu_pro": null,
-    "aa_scicode": null,
-    "aa_tau2": null,
-    "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
+    "aa_mmlu_pro": 0.86,
+    "aa_scicode": 0.402,
+    "aa_tau2": 0.83,
+    "aa_terminalbench_hard": 0.348,
+    "aa_median_tokens_per_second": 121.499,
+    "aa_median_ttft_seconds": 6.676,
+    "aa_median_ttfat_seconds": 6.676,
+    "aa_blended_price_per_million": 3.438,
+    "aa_input_price_per_million": 1.25,
+    "aa_output_price_per_million": 10.0,
+    "aa_model_url": "https://artificialanalysis.ai/models/gpt-5-1-codex",
+    "aa_provider_url": "https://artificialanalysis.ai/models/gpt-5-1-codex/providers",
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -11275,29 +11275,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2025-11-13",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2025-11-13",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.25,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": null,
-    "coding_strength_score": null,
-    "latency_score": null,
+    "reasoning_strength_score": 0.7229862475442044,
+    "coding_strength_score": 0.6557377049180328,
+    "latency_score": 0.12222378705724948,
     "context_score": 0.19886880274948227,
     "value_cost_score": 0.00025899451394006956,
     "overall_value_score": null
@@ -11390,8 +11390,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -11490,8 +11490,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -11773,8 +11773,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -11873,8 +11873,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -11973,8 +11973,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -12073,8 +12073,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -12173,8 +12173,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -12273,8 +12273,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -12373,8 +12373,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -12473,8 +12473,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -12573,8 +12573,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -12673,8 +12673,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -12773,8 +12773,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -12873,8 +12873,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -13084,8 +13084,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -13184,8 +13184,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -13284,8 +13284,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -13384,8 +13384,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -13484,8 +13484,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -13584,8 +13584,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -13684,8 +13684,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -13784,8 +13784,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -13884,8 +13884,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -13984,8 +13984,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14084,8 +14084,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14184,8 +14184,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14284,8 +14284,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14384,8 +14384,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14484,8 +14484,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14584,8 +14584,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14684,8 +14684,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14784,8 +14784,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14884,8 +14884,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -14984,8 +14984,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -15084,8 +15084,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -15184,8 +15184,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -15205,11 +15205,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "openai/gpt-5-codex",
-    "aa_model_slug": null,
+    "aa_model_slug": "gpt-5-codex",
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 1.25,
@@ -15218,30 +15218,30 @@
     "openrouter_context_tokens": 400000,
     "openrouter_release_date": "2025-09-23",
     "openrouter_page_url": "https://openrouter.ai/openai/gpt-5-codex/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
-    "aa_coding_index": null,
-    "aa_math_index": null,
+    "aa_release_date": "2025-09-23",
+    "aa_intelligence_index": 44.6,
+    "aa_coding_index": 38.9,
+    "aa_math_index": 98.7,
     "aa_aime": null,
-    "aa_aime_25": null,
-    "aa_gpqa": null,
-    "aa_hle": null,
-    "aa_ifbench": null,
-    "aa_lcr": null,
-    "aa_livecodebench": null,
+    "aa_aime_25": 0.987,
+    "aa_gpqa": 0.837,
+    "aa_hle": 0.256,
+    "aa_ifbench": 0.741,
+    "aa_lcr": 0.69,
+    "aa_livecodebench": 0.84,
     "aa_math_500": null,
-    "aa_mmlu_pro": null,
-    "aa_scicode": null,
-    "aa_tau2": null,
-    "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
+    "aa_mmlu_pro": 0.865,
+    "aa_scicode": 0.409,
+    "aa_tau2": 0.868,
+    "aa_terminalbench_hard": 0.379,
+    "aa_median_tokens_per_second": 191.186,
+    "aa_median_ttft_seconds": 7.602,
+    "aa_median_ttfat_seconds": 7.602,
+    "aa_blended_price_per_million": 3.438,
+    "aa_input_price_per_million": 1.25,
+    "aa_output_price_per_million": 10.0,
+    "aa_model_url": "https://artificialanalysis.ai/models/gpt-5-codex",
+    "aa_provider_url": "https://artificialanalysis.ai/models/gpt-5-codex/providers",
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -15269,29 +15269,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2025-09-23",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2025-09-23",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.25,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": null,
-    "coding_strength_score": null,
-    "latency_score": null,
+    "reasoning_strength_score": 0.7524557956777996,
+    "coding_strength_score": 0.697632058287796,
+    "latency_score": 0.19232649612200348,
     "context_score": 0.19886880274948227,
     "value_cost_score": 0.00025899451394006956,
     "overall_value_score": null
@@ -15384,8 +15384,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -15484,8 +15484,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -15584,8 +15584,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -15684,8 +15684,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -15784,8 +15784,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -15884,8 +15884,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -15984,8 +15984,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -16084,8 +16084,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -16184,8 +16184,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -16284,8 +16284,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -16384,8 +16384,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -16484,8 +16484,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -16584,8 +16584,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -16684,8 +16684,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -16784,8 +16784,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -16884,8 +16884,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -17111,8 +17111,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -17211,8 +17211,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -17311,8 +17311,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -17411,8 +17411,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -17526,8 +17526,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -17547,11 +17547,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "openai/gpt-5-chat-2025-08-07",
-    "aa_model_slug": null,
+    "aa_model_slug": "gpt-5-chatgpt",
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": false,
+    "has_aa": true,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 1.25,
@@ -17560,30 +17560,30 @@
     "openrouter_context_tokens": 128000,
     "openrouter_release_date": "2025-08-07",
     "openrouter_page_url": "https://openrouter.ai/openai/gpt-5-chat-2025-08-07/pricing",
-    "aa_release_date": null,
-    "aa_intelligence_index": null,
-    "aa_coding_index": null,
-    "aa_math_index": null,
+    "aa_release_date": "2025-08-07",
+    "aa_intelligence_index": 21.8,
+    "aa_coding_index": 21.2,
+    "aa_math_index": 48.3,
     "aa_aime": null,
-    "aa_aime_25": null,
-    "aa_gpqa": null,
-    "aa_hle": null,
-    "aa_ifbench": null,
-    "aa_lcr": null,
-    "aa_livecodebench": null,
+    "aa_aime_25": 0.483,
+    "aa_gpqa": 0.686,
+    "aa_hle": 0.058,
+    "aa_ifbench": 0.45,
+    "aa_lcr": 0.637,
+    "aa_livecodebench": 0.543,
     "aa_math_500": null,
-    "aa_mmlu_pro": null,
-    "aa_scicode": null,
-    "aa_tau2": null,
-    "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": null,
-    "aa_median_ttft_seconds": null,
-    "aa_median_ttfat_seconds": null,
-    "aa_blended_price_per_million": null,
-    "aa_input_price_per_million": null,
-    "aa_output_price_per_million": null,
-    "aa_model_url": null,
-    "aa_provider_url": null,
+    "aa_mmlu_pro": 0.82,
+    "aa_scicode": 0.378,
+    "aa_tau2": 0.0,
+    "aa_terminalbench_hard": 0.129,
+    "aa_median_tokens_per_second": 115.0,
+    "aa_median_ttft_seconds": 0.564,
+    "aa_median_ttfat_seconds": 0.564,
+    "aa_blended_price_per_million": 3.438,
+    "aa_input_price_per_million": 1.25,
+    "aa_output_price_per_million": 10.0,
+    "aa_model_url": "https://artificialanalysis.ai/models/gpt-5-chatgpt",
+    "aa_provider_url": "https://artificialanalysis.ai/models/gpt-5-chatgpt/providers",
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -17611,29 +17611,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2025-08-07",
-      "artificial_analysis_last_seen": null,
+      "artificial_analysis_last_seen": "2025-08-07",
       "vals_last_seen": null
     },
-    "cohort_eligible": false,
-    "exclusion_reasons": "missing:artificial_analysis",
+    "cohort_eligible": true,
+    "exclusion_reasons": "",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.25,
+    "strict_exclusion_reasons": "missing:vals; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": false,
+      "artificial_analysis": true,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": null,
-    "coding_strength_score": null,
-    "latency_score": null,
+    "reasoning_strength_score": 0.3045186640471512,
+    "coding_strength_score": 0.37522768670309653,
+    "latency_score": 0.11568601808725743,
     "context_score": 0.06267649921689425,
     "value_cost_score": 0.00025899451394006956,
     "overall_value_score": null
@@ -17726,8 +17726,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -17826,8 +17826,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -17926,8 +17926,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18026,8 +18026,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18126,8 +18126,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18226,8 +18226,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18326,8 +18326,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18426,8 +18426,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18526,8 +18526,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18626,8 +18626,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18726,8 +18726,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18826,8 +18826,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -18926,8 +18926,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -19026,8 +19026,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -19137,8 +19137,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -19237,8 +19237,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -19337,8 +19337,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -19437,8 +19437,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -19537,8 +19537,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -19637,8 +19637,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -19737,8 +19737,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -19837,8 +19837,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -19937,8 +19937,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -20037,8 +20037,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -20137,8 +20137,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -20237,8 +20237,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -20337,8 +20337,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -20437,8 +20437,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -20537,8 +20537,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -20637,8 +20637,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -20878,8 +20878,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -20978,8 +20978,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -21078,8 +21078,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -21189,8 +21189,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -21289,8 +21289,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -21516,8 +21516,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -21625,8 +21625,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -21725,8 +21725,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -21836,8 +21836,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -21951,8 +21951,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -22051,8 +22051,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -22151,8 +22151,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -22251,8 +22251,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -22351,8 +22351,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -22451,8 +22451,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -22551,8 +22551,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -22651,8 +22651,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -22751,8 +22751,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -22851,8 +22851,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -22951,8 +22951,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23051,8 +23051,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23151,8 +23151,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23251,8 +23251,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23351,8 +23351,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23451,8 +23451,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23551,8 +23551,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23651,8 +23651,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23751,8 +23751,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23851,8 +23851,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -23962,8 +23962,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -24245,8 +24245,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -24500,8 +24500,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -24741,8 +24741,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -24841,8 +24841,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -24941,8 +24941,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -25041,8 +25041,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -25153,8 +25153,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -25253,8 +25253,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -25575,8 +25575,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -25858,8 +25858,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -25958,8 +25958,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -26069,8 +26069,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -26174,8 +26174,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -26274,8 +26274,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -26374,8 +26374,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -26474,8 +26474,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -26574,8 +26574,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -26863,8 +26863,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -26963,8 +26963,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -27063,8 +27063,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -27163,8 +27163,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -27263,8 +27263,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -27363,8 +27363,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -27463,8 +27463,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -27575,8 +27575,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -27686,8 +27686,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -27786,8 +27786,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -27886,8 +27886,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -27986,8 +27986,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -28086,8 +28086,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -28197,8 +28197,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -28297,8 +28297,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -28440,8 +28440,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -28540,8 +28540,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -28640,8 +28640,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -28740,8 +28740,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -28840,8 +28840,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -28940,8 +28940,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -29040,8 +29040,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -29140,8 +29140,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -29437,8 +29437,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -29537,8 +29537,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -29637,8 +29637,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -29737,8 +29737,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -29841,8 +29841,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -29952,8 +29952,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -30052,8 +30052,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -30152,8 +30152,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -30263,8 +30263,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -30363,8 +30363,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -30463,8 +30463,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -30563,8 +30563,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -30663,8 +30663,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -30778,8 +30778,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -30878,8 +30878,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -30989,8 +30989,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -31100,8 +31100,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -31226,8 +31226,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -31326,8 +31326,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -31522,8 +31522,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -31887,8 +31887,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -31987,8 +31987,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -32087,8 +32087,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -32187,8 +32187,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -32299,8 +32299,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -32399,8 +32399,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -32499,8 +32499,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -32599,8 +32599,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -32710,8 +32710,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -32810,8 +32810,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -32910,8 +32910,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -33010,8 +33010,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -33110,8 +33110,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -33210,8 +33210,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -33339,8 +33339,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -33439,8 +33439,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -33539,8 +33539,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -33651,8 +33651,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -33763,8 +33763,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -33863,8 +33863,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -33963,8 +33963,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -34063,8 +34063,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -34163,8 +34163,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -34263,8 +34263,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -34363,8 +34363,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -34463,8 +34463,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -34620,8 +34620,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -34777,8 +34777,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -34888,8 +34888,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -35141,8 +35141,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -35241,8 +35241,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -35368,8 +35368,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -35495,8 +35495,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -35595,8 +35595,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -35695,8 +35695,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -35795,8 +35795,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -35895,8 +35895,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -36080,8 +36080,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -36180,8 +36180,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -36295,8 +36295,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -36395,8 +36395,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -36536,8 +36536,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": true
+      "livebench": true,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": true,
@@ -36636,8 +36636,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -36747,8 +36747,8 @@
       "livebench": true
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": true
+      "livebench": true,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": true,
@@ -36847,8 +36847,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -36868,11 +36868,11 @@
     "match_strategy": "auto",
     "normalization_notes": "",
     "openrouter_slug": "openai/gpt-4-turbo-preview",
-    "aa_model_slug": "gpt-4-5",
+    "aa_model_slug": null,
     "vals_model_url": null,
     "livebench_model_name": null,
     "has_openrouter": true,
-    "has_aa": true,
+    "has_aa": false,
     "has_vals": false,
     "has_livebench": false,
     "openrouter_input_price_per_million": 10.0,
@@ -36881,8 +36881,8 @@
     "openrouter_context_tokens": 128000,
     "openrouter_release_date": "2024-01-25",
     "openrouter_page_url": "https://openrouter.ai/openai/gpt-4-turbo-preview/pricing",
-    "aa_release_date": "2025-02-27",
-    "aa_intelligence_index": 20.0,
+    "aa_release_date": null,
+    "aa_intelligence_index": null,
     "aa_coding_index": null,
     "aa_math_index": null,
     "aa_aime": null,
@@ -36897,14 +36897,14 @@
     "aa_scicode": null,
     "aa_tau2": null,
     "aa_terminalbench_hard": null,
-    "aa_median_tokens_per_second": 0.0,
-    "aa_median_ttft_seconds": 0.0,
-    "aa_median_ttfat_seconds": 0.0,
-    "aa_blended_price_per_million": 0.0,
-    "aa_input_price_per_million": 0.0,
-    "aa_output_price_per_million": 0.0,
-    "aa_model_url": "https://artificialanalysis.ai/models/gpt-4-5",
-    "aa_provider_url": "https://artificialanalysis.ai/models/gpt-4-5/providers",
+    "aa_median_tokens_per_second": null,
+    "aa_median_ttft_seconds": null,
+    "aa_median_ttfat_seconds": null,
+    "aa_blended_price_per_million": null,
+    "aa_input_price_per_million": null,
+    "aa_output_price_per_million": null,
+    "aa_model_url": null,
+    "aa_provider_url": null,
     "aa_fastest_provider": null,
     "aa_fastest_tokens_per_second": null,
     "aa_lowest_latency_provider": null,
@@ -36932,29 +36932,29 @@
     "livebench_tasks": {},
     "source_freshness": {
       "openrouter_last_seen": "2024-01-25",
-      "artificial_analysis_last_seen": "2025-02-27",
+      "artificial_analysis_last_seen": null,
       "vals_last_seen": null
     },
-    "cohort_eligible": true,
-    "exclusion_reasons": "",
+    "cohort_eligible": false,
+    "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:vals; missing_metric:aa_coding_index; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
-    "coverage_score": 0.5,
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
-      "artificial_analysis": true,
+      "artificial_analysis": false,
       "vals": false,
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
-    "reasoning_strength_score": 0.26915520628683687,
+    "reasoning_strength_score": null,
     "coding_strength_score": null,
-    "latency_score": 0.0,
+    "latency_score": null,
     "context_score": 0.06267649921689425,
     "value_cost_score": 0.00024743504829982665,
     "overall_value_score": null
@@ -37076,8 +37076,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -37176,8 +37176,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -37276,8 +37276,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -37376,8 +37376,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -37476,8 +37476,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -37591,8 +37591,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": true,
-      "livebench": false
+      "livebench": false,
+      "vals": true
     },
     "vals_enriched": true,
     "livebench_enriched": false,
@@ -37691,8 +37691,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -37791,8 +37791,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -37891,8 +37891,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -37991,8 +37991,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -38091,8 +38091,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -38191,8 +38191,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,
@@ -38291,8 +38291,8 @@
       "livebench": false
     },
     "preferred_source_flags": {
-      "vals": false,
-      "livebench": false
+      "livebench": false,
+      "vals": false
     },
     "vals_enriched": false,
     "livebench_enriched": false,

@@ -7,7 +7,7 @@ from typing import Any
 
 from rapidfuzz import fuzz
 
-from .helpers import canonical_provider, detect_reasoning_mode, normalized_name, slugify
+from .helpers import canonical_provider, detect_reasoning_mode, match_normalized_name, normalized_name, slugify
 
 
 def load_manual_links(path: Path) -> list[dict[str, Any]]:
@@ -42,6 +42,16 @@ def choose_unique_match(anchor_name: str, candidates: list[dict[str, Any]], name
         return exact_matches[0], []
     if len(exact_matches) > 1:
         return None, exact_matches[:3]
+    anchor_match_normalized = match_normalized_name(anchor_name)
+    alias_exact_matches = [
+        candidate
+        for candidate in candidates
+        if match_normalized_name(candidate.get(name_key, "")) == anchor_match_normalized
+    ]
+    if len(alias_exact_matches) == 1:
+        return alias_exact_matches[0], []
+    if len(alias_exact_matches) > 1:
+        return None, alias_exact_matches[:3]
     scored = sorted(
         (
             {
@@ -75,6 +85,16 @@ def choose_exact_unique_match(anchor_name: str, candidates: list[dict[str, Any]]
         return exact_matches[0], []
     if len(exact_matches) > 1:
         return None, exact_matches[:3]
+    anchor_match_normalized = match_normalized_name(anchor_name)
+    alias_exact_matches = [
+        candidate
+        for candidate in candidates
+        if match_normalized_name(candidate.get(name_key, "")) == anchor_match_normalized
+    ]
+    if len(alias_exact_matches) == 1:
+        return alias_exact_matches[0], []
+    if len(alias_exact_matches) > 1:
+        return None, alias_exact_matches[:3]
     return None, []
 
 

@@ -1,26 +1,35 @@
 from model_intel.identity import choose_unique_match
 
 
-def test_choose_unique_match_prefers_exact_normalized_name() -> None:
-    candidates = [
-        {"display_name": "DeepSeek V3.2 Exp"},
-        {"display_name": "DeepSeek V3.2"},
-        {"display_name": "DeepSeek V3.2 Speciale"},
-    ]
+def test_choose_unique_match_accepts_alias_exact_match_for_cosmetic_suffixes() -> None:
+    match, ambiguous = choose_unique_match(
+        "GPT-5.4 Nano",
+        [
+            {"aa_model_slug": "gpt-5-4-nano-medium", "normalized_name": "gpt 5 4 nano medium"},
+            {"aa_model_slug": "gpt-4", "normalized_name": "gpt 4"},
+            {"aa_model_slug": "gpt-4-1-nano", "normalized_name": "gpt 4 1 nano"},
+        ],
+        "normalized_name",
+    )
 
-    match, ambiguous = choose_unique_match("DeepSeek V3.2", candidates, "display_name")
-
-    assert match == {"display_name": "DeepSeek V3.2"}
     assert ambiguous == []
+    assert match is not None
+    assert match["aa_model_slug"] == "gpt-5-4-nano-medium"
 
 
-def test_choose_unique_match_reports_exact_ambiguity() -> None:
-    candidates = [
-        {"display_name": "GPT-5.4 Mini"},
-        {"display_name": "GPT 5.4 Mini"},
-    ]
-
-    match, ambiguous = choose_unique_match("GPT 5.4 Mini", candidates, "display_name")
+def test_choose_unique_match_keeps_ambiguous_alias_collisions_loud() -> None:
+    match, ambiguous = choose_unique_match(
+        "Gemini 3.1 Pro Preview",
+        [
+            {"aa_model_slug": "gemini-3-pro", "normalized_name": "gemini 3 pro preview high"},
+            {"aa_model_slug": "gemini-3-pro-low", "normalized_name": "gemini 3 pro preview low"},
+            {"aa_model_slug": "gemini-1-0-pro", "normalized_name": "gemini 1 0 pro"},
+        ],
+        "normalized_name",
+    )
 
     assert match is None
-    assert ambiguous == candidates
+    assert [item["aa_model_slug"] for item in ambiguous] == [
+        "gemini-3-pro",
+        "gemini-3-pro-low",
+    ]

@@ -71,6 +71,19 @@ STOP_TOKENS = {
     "latest",
 }
 
+MATCH_DROP_TOKENS = {
+    "base",
+    "custom",
+    "free",
+    "high",
+    "low",
+    "medium",
+    "miniimal",
+    "minimal",
+    "preview",
+    "tools",
+}
+
 LEADING_PROVIDER_PREFIXES = (
     ("openai",),
     ("google",),
@@ -206,6 +219,18 @@ def normalized_name(value: str | None) -> str:
                 tokens = candidate
             break
     return " ".join(tokens)
+
+
+def match_normalized_name(value: str | None) -> str:
+    base = normalized_name(value)
+    if not base:
+        return ""
+    tokens = [token for token in base.split() if token not in MATCH_DROP_TOKENS]
+    normalized = " ".join(tokens)
+    normalized = normalized.replace("chatgpt", "chat")
+    normalized = re.sub(r"\b([a-z]+)\s+3\s+1\s+(pro|flash)\b", r"\1 3 \2", normalized)
+    normalized = re.sub(r"\s+", " ", normalized).strip()
+    return normalized
 
 
 def coalesce(*values: Any) -> Any:
