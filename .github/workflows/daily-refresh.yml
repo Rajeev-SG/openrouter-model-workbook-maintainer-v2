@@ -16,6 +16,11 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      AA_API_KEY: ${{ secrets.AA_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      INFISICAL_DOMAIN: ${{ vars.INFISICAL_DOMAIN || 'https://app.infisical.com' }}
+      INFISICAL_ENV_SLUG: ${{ vars.INFISICAL_ENV_SLUG || 'prod' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,11 +44,50 @@ jobs:
           cache: "pnpm"
           cache-dependency-path: site/pnpm-lock.yaml
 
-      - name: Refresh
+      - name: Validate secret source
         env:
-          AA_API_KEY: ${{ secrets.AA_API_KEY }}
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: make refresh
+          INFISICAL_IDENTITY_ID: ${{ vars.INFISICAL_IDENTITY_ID }}
+          INFISICAL_PROJECT_SLUG: ${{ vars.INFISICAL_PROJECT_SLUG }}
+        run: |
+          if [ -n "${AA_API_KEY}" ]; then
+            echo "Using GitHub Actions secrets for runtime API keys."
+            exit 0
+          fi
+
+          missing=0
+          for name in INFISICAL_IDENTITY_ID INFISICAL_PROJECT_SLUG; do
+            if [ -z "${!name}" ]; then
+              echo "::error::$name GitHub variable is required when AA_API_KEY is not provided as a repository secret."
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Fetch secrets from Infisical
+        if: ${{ env.AA_API_KEY == '' }}
+        uses: Infisical/secrets-action@v1.0.15
+        with:
+          method: "oidc"
+          identity-id: ${{ vars.INFISICAL_IDENTITY_ID }}
+          project-slug: ${{ vars.INFISICAL_PROJECT_SLUG }}
+          env-slug: ${{ env.INFISICAL_ENV_SLUG }}
+          domain: ${{ env.INFISICAL_DOMAIN }}
+
+      - name: Refresh
+        run: |
+          set -o pipefail
+          refresh_log="$(mktemp)"
+          if make refresh 2>&1 | tee "$refresh_log"; then
+            exit 0
+          fi
+          if grep -Fq "429 Client Error: Too Many Requests" "$refresh_log"; then
+            echo "::warning::Artificial Analysis rate limited the refresh. Rebuilding from checked-in datasets instead."
+            make rebuild-from-data
+            exit 0
+          fi
+          exit 1
 
       - name: Upload workbook artifact
         uses: actions/upload-artifact@v4

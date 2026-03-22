@@ -108,13 +108,16 @@ Two GitHub Actions workflows are included:
 - `daily-refresh.yml`
   Scheduled refresh, static-site deployment, and artifact upload.
 
+If Artificial Analysis temporarily rate limits the live refresh, the workflow rebuilds the workbook and guide from the repo's last committed datasets so the deploy path stays green while the source recovers.
+
 The daily workflow needs:
 
-- `AA_API_KEY`
+- Runtime secrets provided through one of these paths:
+  - recommended now: GitHub repository secret `AA_API_KEY`
+  - optional: GitHub repository secret `OPENROUTER_API_KEY`
+  - optional later: Infisical OIDC with `INFISICAL_IDENTITY_ID` and `INFISICAL_PROJECT_SLUG` repository variables
 
-Optional:
-
-- `OPENROUTER_API_KEY`
+See [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md) for the current runtime secret contract and migration path.
 
 ## Deployment
 
@@ -130,6 +133,7 @@ For manual preview deployments, the repo now includes [vercel.json](/Users/rajee
 - [Data Sources](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/data-sources.md)
 - [Identity And Mapping](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/identity-and-mapping.md)
 - [Operations](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/operations.md)
+- [Secrets](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md)
 - [Troubleshooting](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/troubleshooting.md)
 - [Maintainer Notes](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/maintainer-notes.md)
 

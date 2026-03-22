@@ -19,7 +19,7 @@ include .env
 export
 endif
 
-.PHONY: help bootstrap install doctor validate test build refresh refresh-from-cache build-site serve-site build-all clean nuke zip paths
+.PHONY: help bootstrap install doctor validate test build refresh refresh-from-cache rebuild-from-data build-site serve-site build-all clean nuke zip paths
 
 help:
 	@echo "Targets:"
@@ -30,6 +30,7 @@ help:
 	@echo "  make build              - rebuild data/workbook/site from cache"
 	@echo "  make refresh            - refresh remote sources and rebuild everything"
 	@echo "  make refresh-from-cache - alias for cached rebuilds"
+	@echo "  make rebuild-from-data  - rebuild workbook/site from checked-in datasets"
 	@echo "  make build-site         - build the interactive guide from generated data"
 	@echo "  make serve-site         - run the guide locally"
 	@echo "  make build-all          - refresh or rebuild all outputs"
@@ -52,7 +53,7 @@ bootstrap:
 	$(PNPM) --dir $(SITE_DIR) install
 	@mkdir -p out $(CACHE_DIR) $(DATA_DIR) $(SITE_DATA_DIR) $(SITE_DOWNLOAD_DIR)
 	@if [ ! -f .env ]; then cp .env.example .env; echo "Created .env from .env.example"; fi
-	@echo "Bootstrap complete. Edit .env, then run: make refresh"
+	@echo "Bootstrap complete. Prefer: infisical run --env=prod -- make refresh"
 
 install: bootstrap
 
@@ -102,6 +103,18 @@ refresh: bootstrap validate
 	@echo "Refresh complete."
 
 refresh-from-cache: build
+
+rebuild-from-data: bootstrap
+	mkdir -p "$(dir $(OUT))" "$(DATA_DIR)" "$(SITE_DATA_DIR)" "$(SITE_DOWNLOAD_DIR)"
+	$(PY) regenerate_model_workbook.py \
+		--out "$(OUT)" \
+		--cache-dir "$(CACHE_DIR)" \
+		--mapping-csv "$(MAPPING_CSV)" \
+		--data-dir "$(DATA_DIR)" \
+		--site-data-dir "$(SITE_DATA_DIR)" \
+		--reuse-existing-data
+	$(MAKE) build-site
+	@echo "Rebuilt from checked-in datasets."
 
 build-site: bootstrap
 	@test -f "$(OUT)"
