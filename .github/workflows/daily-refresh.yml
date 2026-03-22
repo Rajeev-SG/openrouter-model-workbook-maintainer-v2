@@ -82,7 +82,7 @@ jobs:
           if make refresh 2>&1 | tee "$refresh_log"; then
             exit 0
           fi
-          if grep -q "429 Client Error: Too Many Requests for url: https://artificialanalysis.ai/api/v2/data/llms/models" "$refresh_log"; then
+          if grep -Fq "429 Client Error: Too Many Requests" "$refresh_log"; then
             echo "::warning::Artificial Analysis rate limited the refresh. Rebuilding from checked-in datasets instead."
             make rebuild-from-data
             exit 0
