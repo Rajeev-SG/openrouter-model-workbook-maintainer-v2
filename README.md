@@ -112,18 +112,19 @@ If Artificial Analysis temporarily rate limits the live refresh, the workflow re
 
 The daily workflow needs:
 
-- Runtime secrets provided through one of these paths:
-  - recommended now: GitHub repository secret `AA_API_KEY`
-  - optional: GitHub repository secret `OPENROUTER_API_KEY`
-  - optional later: Infisical OIDC with `INFISICAL_IDENTITY_ID` and `INFISICAL_PROJECT_SLUG` repository variables
+- Runtime secrets from Infisical via GitHub OIDC:
+  - required: `AA_API_KEY`
+  - required: `VERCEL_TOKEN`
+  - optional: `OPENROUTER_API_KEY`
+  - repository variables: `INFISICAL_IDENTITY_ID` and `INFISICAL_PROJECT_SLUG`
 
-See [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md) for the current runtime secret contract and migration path.
+See [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/docs/ops/secrets.md) for the current runtime secret contract.
 
 ## Deployment
 
-The static guide is set up for GitHub Pages-style hosting via the `VITE_BASE_PATH` env var. The daily workflow deploys `site/dist` as a Pages artifact after a successful refresh.
+The static guide is hosted on Vercel. The daily workflow refreshes the data, rebuilds `site/dist`, and pushes a production deploy to Vercel after a successful refresh.
 
-For manual preview deployments, the repo now includes [vercel.json](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/vercel.json), which tells Vercel to build and publish the static guide from `site/dist` instead of trying to treat the ETL repo root as a Python web app.
+For manual preview deployments, the repo includes [vercel.json](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/vercel.json), which tells Vercel to build and publish the static guide from `site/dist` instead of trying to treat the ETL repo root as a Python web app.
 
 ## Docs
 

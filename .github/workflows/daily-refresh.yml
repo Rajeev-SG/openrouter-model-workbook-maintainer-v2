@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
   id-token: write
 
 jobs:
@@ -15,12 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     env:
-      AA_API_KEY: ${{ secrets.AA_API_KEY }}
-      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       INFISICAL_DOMAIN: ${{ vars.INFISICAL_DOMAIN || 'https://app.infisical.com' }}
       INFISICAL_ENV_SLUG: ${{ vars.INFISICAL_ENV_SLUG || 'prod' }}
+      VERCEL_ORG_ID: team_48scplPIjV88LCscQpDUoNWo
+      VERCEL_PROJECT_ID: prj_nMlpkIMU9wkuDl8eK904g5C63p9b
     steps:
       - uses: actions/checkout@v4
 
@@ -44,20 +42,15 @@ jobs:
           cache: "pnpm"
           cache-dependency-path: site/pnpm-lock.yaml
 
-      - name: Validate secret source
+      - name: Validate Infisical configuration
         env:
           INFISICAL_IDENTITY_ID: ${{ vars.INFISICAL_IDENTITY_ID }}
           INFISICAL_PROJECT_SLUG: ${{ vars.INFISICAL_PROJECT_SLUG }}
         run: |
-          if [ -n "${AA_API_KEY}" ]; then
-            echo "Using GitHub Actions secrets for runtime API keys."
-            exit 0
-          fi
-
           missing=0
           for name in INFISICAL_IDENTITY_ID INFISICAL_PROJECT_SLUG; do
             if [ -z "${!name}" ]; then
-              echo "::error::$name GitHub variable is required when AA_API_KEY is not provided as a repository secret."
+              echo "::error::$name GitHub variable is required for Infisical OIDC."
               missing=1
             fi
           done
@@ -66,7 +59,6 @@ jobs:
           fi
 
       - name: Fetch secrets from Infisical
-        if: ${{ env.AA_API_KEY == '' }}
         uses: Infisical/secrets-action@v1.0.15
         with:
           method: "oidc"
@@ -74,6 +66,19 @@ jobs:
           project-slug: ${{ vars.INFISICAL_PROJECT_SLUG }}
           env-slug: ${{ env.INFISICAL_ENV_SLUG }}
           domain: ${{ env.INFISICAL_DOMAIN }}
+
+      - name: Validate fetched secrets
+        run: |
+          missing=0
+          for name in AA_API_KEY VERCEL_TOKEN; do
+            if [ -z "${!name}" ]; then
+              echo "::error::$name is required from Infisical for this workflow."
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
 
       - name: Refresh
         run: |
@@ -101,14 +106,19 @@ jobs:
           name: model-intelligence-data
           path: data/latest
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+      - name: Pull Vercel project settings
+        run: pnpm dlx vercel@latest pull --yes --environment=production --token="${VERCEL_TOKEN}"
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site/dist
+      - name: Build Vercel deployment
+        run: pnpm dlx vercel@latest build --prod --token="${VERCEL_TOKEN}"
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to Vercel
+        id: vercel_deploy
+        run: |
+          deployment_url="$(pnpm dlx vercel@latest deploy --prebuilt --prod --token="${VERCEL_TOKEN}" | tail -n 1)"
+          echo "deployment_url=${deployment_url}" >> "$GITHUB_OUTPUT"
+          {
+            echo "## Vercel Deploy"
+            echo
+            echo "- Production URL: ${deployment_url}"
+          } >> "$GITHUB_STEP_SUMMARY"
