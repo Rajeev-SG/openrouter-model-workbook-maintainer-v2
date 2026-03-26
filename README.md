@@ -114,7 +114,7 @@ The daily workflow needs:
 
 - Runtime secrets from Infisical via GitHub OIDC:
   - required: `AA_API_KEY`
-  - required: `VERCEL_TOKEN`
+  - required: `VERCEL_REFRESH_TOKEN`
   - optional: `OPENROUTER_API_KEY`
   - repository variables: `INFISICAL_IDENTITY_ID` and `INFISICAL_PROJECT_SLUG`
 
