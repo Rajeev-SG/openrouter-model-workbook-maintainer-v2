@@ -52,7 +52,7 @@ For GitHub Actions, the workflow fetches runtime secrets from Infisical via OIDC
 - deploys the static guide to Vercel
 - pins the Vercel CLI version instead of using `latest`
 - uses Node 24-compatible GitHub Actions majors for checkout, toolchain setup, and artifact upload
-- exchanges the GitHub OIDC token with Infisical directly and fetches secrets via the Infisical API, avoiding the deprecated Node 20 Infisical action runtime
+- exchanges the GitHub OIDC token with Infisical directly, masks the returned values, and fetches secrets via the Infisical API, avoiding the deprecated Node 20 Infisical action runtime
 - verifies the resulting production deployment with `vercel inspect` plus a `curl` smoke check against the public production alias because direct deployment URLs are protected by Vercel SSO
 - uses Infisical OIDC for runtime API keys and a dedicated Vercel access token for deploys
 

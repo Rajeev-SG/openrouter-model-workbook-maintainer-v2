@@ -118,6 +118,7 @@ jobs:
 
           with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as github_env:
               for key, value in secrets.items():
+                  print(f"::add-mask::{value}")
                   delimiter = f"EOF_{uuid.uuid4().hex}"
                   github_env.write(f"{key}<<{delimiter}\n{value}\n{delimiter}\n")
 
