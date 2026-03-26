@@ -40,6 +40,7 @@ For GitHub Actions, the workflow fetches runtime secrets from Infisical via OIDC
 - validates Python and frontend code
 - runs tests
 - proves the site can build from generated datasets
+- uses Node 24-compatible GitHub Actions majors so GitHub's runtime transition does not strand the workflow on deprecated action runtimes
 
 ### Daily refresh
 
@@ -50,6 +51,7 @@ For GitHub Actions, the workflow fetches runtime secrets from Infisical via OIDC
 - uploads workbook and dataset artifacts
 - deploys the static guide to Vercel
 - pins the Vercel CLI version instead of using `latest`
+- uses Node 24-compatible GitHub Actions majors for checkout, toolchain setup, and artifact upload
 - verifies the resulting production deployment with `vercel inspect` plus a `curl` smoke check
 - uses Infisical OIDC for runtime API keys and a dedicated Vercel access token for deploys
 

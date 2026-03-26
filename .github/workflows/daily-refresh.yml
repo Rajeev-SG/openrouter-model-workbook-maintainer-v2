@@ -19,15 +19,15 @@ jobs:
       VERCEL_PROJECT_ID: prj_nMlpkIMU9wkuDl8eK904g5C63p9b
       VERCEL_CLI_VERSION: 50.37.1
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
 
       - name: Set up uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v7
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
@@ -35,7 +35,7 @@ jobs:
           version: 10
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: "pnpm"
@@ -94,13 +94,13 @@ jobs:
           exit 1
 
       - name: Upload workbook artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: model-intelligence-workbook
           path: out/openrouter_model_pricing_performance.xlsx
 
       - name: Upload dataset artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: model-intelligence-data
           path: data/latest
