@@ -634,7 +634,7 @@ export default function App() {
                 <div className="flex flex-wrap gap-2">
                   {Object.entries(topRecommendation.source_flags).map(([source, present]) => (
                     <span key={source} className={clsx('chip', present ? 'chip-good' : 'chip-bad')}>
-                      {titleCase(source)} {present ? 'present' : 'missing'}
+                      {titleCase(source)} {present ? 'present' : 'not matched'}
                     </span>
                   ))}
                 </div>

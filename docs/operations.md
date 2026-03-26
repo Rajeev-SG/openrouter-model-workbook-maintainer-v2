@@ -51,8 +51,9 @@ For GitHub Actions, the workflow fetches runtime secrets from Infisical via OIDC
 - deploys the static guide to Vercel
 - uses Infisical OIDC for runtime API keys and a dedicated Vercel access token for deploys
 
-## Manual preview deploy
+## Manual Vercel deploy
 
 - `vercel.json` points Vercel at the static site build in `site/dist`
 - run `VITE_BASE_PATH=/ pnpm --dir site build`
-- run `vercel deploy -y --scope <team>`
+- run `vercel build --prod -y --scope <team>` to generate `.vercel/output`
+- run `vercel deploy --prebuilt --prod -y --scope <team>`

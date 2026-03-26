@@ -124,7 +124,7 @@ See [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintaine
 
 The static guide is hosted on Vercel. The daily workflow refreshes the data, rebuilds `site/dist`, and pushes a production deploy to Vercel after a successful refresh.
 
-For manual preview deployments, the repo includes [vercel.json](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/vercel.json), which tells Vercel to build and publish the static guide from `site/dist` instead of trying to treat the ETL repo root as a Python web app.
+For manual Vercel deploys, build the static output locally and then use a prebuilt deploy from the repo root. That avoids Vercel trying to infer the ETL repo as a Python app or re-running a flaky remote `pnpm --dir site install` step. The repo includes [vercel.json](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/vercel.json), which tells Vercel to publish the static guide from `site/dist`.
 
 ## Docs
 
