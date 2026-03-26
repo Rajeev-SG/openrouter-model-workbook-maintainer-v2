@@ -44,10 +44,12 @@ Check:
 
 - workflow logs
 - source manifest output
-- whether `AA_API_KEY` is configured as a GitHub repository secret
-- if using the OIDC path, whether `INFISICAL_IDENTITY_ID` and `INFISICAL_PROJECT_SLUG` GitHub repository variables are configured
-- if using the OIDC path, whether the Infisical machine identity trusts this repository and workflow context
-- if using the OIDC path, whether `AA_API_KEY` exists in the Infisical environment the workflow requests
+- whether `INFISICAL_IDENTITY_ID` and `INFISICAL_PROJECT_SLUG` GitHub repository variables are configured
+- whether the Infisical machine identity trusts this repository and workflow context
+- whether `AA_API_KEY` exists in the Infisical environment the workflow requests
+- whether `VERCEL_REFRESH_TOKEN` exists in the Infisical `prod` environment
 - whether a source schema changed
 
 If the workflow fails on `429 Client Error` from Artificial Analysis, the GitHub Actions path should fall back to `make rebuild-from-data`. If that fallback also fails, verify the checked-in dataset JSON files still exist under `data/latest/`.
+
+If the workflow fails on Vercel auth, refresh the `VERCEL_REFRESH_TOKEN` secret from the local Vercel CLI session in `~/Library/Application Support/com.vercel.cli/auth.json`. Use the `refreshToken` value, not the short-lived `token`.
