@@ -23,7 +23,7 @@ Optional:
 - `OPENROUTER_API_KEY`
 
 For local runs, prefer `infisical run --env=prod -- make refresh` once this repo has been linked to the right project.
-For GitHub Actions, the workflow fetches runtime secrets from Infisical via OIDC. `AA_API_KEY` and `VERCEL_REFRESH_TOKEN` are required in Infisical `prod`, and `OPENROUTER_API_KEY` remains optional.
+For GitHub Actions, the workflow fetches runtime secrets from Infisical via OIDC. `AA_API_KEY` and `VERCEL_TOKEN` are required in Infisical `prod`, and `OPENROUTER_API_KEY` remains optional.
 
 ## Generated artifacts
 
@@ -49,7 +49,7 @@ For GitHub Actions, the workflow fetches runtime secrets from Infisical via OIDC
 - rebuilds the site
 - uploads workbook and dataset artifacts
 - deploys the static guide to Vercel
-- uses Infisical OIDC for runtime API keys and a Vercel refresh token that the CLI exchanges for a fresh access token at deploy time
+- uses Infisical OIDC for runtime API keys and a dedicated Vercel access token for deploys
 
 ## Manual preview deploy
 
