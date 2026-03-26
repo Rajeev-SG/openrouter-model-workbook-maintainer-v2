@@ -167,7 +167,7 @@ export default function App() {
   }
 
   const providers = ['all', ...new Set(data.cohort.map((row) => row.provider).sort())]
-  const filteredRows = data.cohort
+  const eligibleRows = data.cohort
     .filter((row) => {
       const needle = search.toLowerCase()
       return (
@@ -179,17 +179,20 @@ export default function App() {
     .filter((row) => reasoningFilter === 'all' || row.reasoning_mode === reasoningFilter)
     .filter((row) => (row.openrouter_blended_price_per_million ?? 10_000) <= budgetCeiling)
     .filter((row) => (row.openrouter_context_tokens ?? 0) >= contextFloor)
-    .sort((left, right) =>
-      compareRows(left, right, sortKey, sortDirection, scenarioScores, activeProfile),
-    )
+  const rankedRows = [...eligibleRows].sort((left, right) =>
+    compareRows(left, right, 'scenario', 'desc', scenarioScores, activeProfile),
+  )
+  const tableRows = [...eligibleRows].sort((left, right) =>
+    compareRows(left, right, sortKey, sortDirection, scenarioScores, activeProfile),
+  )
 
-  const topRecommendation = filteredRows[0]
+  const topRecommendation = rankedRows[0]
   const topScenario = topRecommendation
     ? scenarioScores.get(`${topRecommendation.canonical_model_id}::${activeProfile}`)
     : null
-  const selectedDetails = filteredRows.filter((row) => selectedModels.includes(row.canonical_model_id))
-  const alternatives = filteredRows.slice(1, 4)
-  const visibleRows = filteredRows.slice(0, visibleCount)
+  const selectedDetails = rankedRows.filter((row) => selectedModels.includes(row.canonical_model_id))
+  const alternatives = rankedRows.slice(1, 4)
+  const visibleRows = tableRows.slice(0, visibleCount)
   const excludedCount = data.master.filter((row) => !row.cohort_eligible).length
   const valsEnrichedCount = data.master.filter((row) => row.vals_enriched).length
   const livebenchCount = data.master.filter((row) => row.livebench_enriched).length
@@ -199,6 +202,18 @@ export default function App() {
   const prioritySentence = buildPrioritySentence(data.profiles, activeProfile)
   const winnerReasons = topRecommendation && topScenario ? describeWhyItWon(topRecommendation, topScenario) : []
   const winnerWarnings = topRecommendation ? describeTradeoffs(topRecommendation) : []
+  const benchmarkCoverageBadges = [
+    {
+      key: 'vals',
+      label: valsEnrichedCount > 0 ? 'Vals matched' : 'Vals unavailable',
+      present: valsEnrichedCount > 0,
+    },
+    {
+      key: 'livebench',
+      label: livebenchCount > 0 ? 'LiveBench matched' : 'LiveBench unavailable',
+      present: livebenchCount > 0,
+    },
+  ]
 
   return (
     <main className="min-h-screen bg-[var(--surface)] text-[var(--ink)]">
@@ -296,7 +311,7 @@ export default function App() {
               <div>
                 <p className="section-kicker">Narrow the field</p>
                 <p className="section-copy">
-                  {filteredRows.length} of {data.cohort.length} matched models fit the current filters.
+                  {eligibleRows.length} of {data.cohort.length} matched models fit the current filters.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 text-xs text-[var(--ink-muted)]">
@@ -402,7 +417,7 @@ export default function App() {
                 <div className="winner-shell">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="chip chip-good">Best fit for {activePreset.shortLabel}</span>
-                    <span className="chip">Rank #1 of {filteredRows.length}</span>
+                    <span className="chip">Rank #1 of {rankedRows.length}</span>
                     <span className="chip">Fit {formatFitScore(topScenario.scenario_score)}</span>
                   </div>
                   <h2 className="mt-4 font-[var(--font-serif)] text-4xl leading-none md:text-5xl">
@@ -617,7 +632,7 @@ export default function App() {
               })}
             </div>
 
-            {visibleCount < filteredRows.length ? (
+            {visibleCount < tableRows.length ? (
               <div className="mt-4 flex justify-center">
                 <button className="chip chip-good" onClick={() => setVisibleCount((count) => count + 20)}>
                   Show 20 more
@@ -628,23 +643,24 @@ export default function App() {
         </section>
 
         <aside className="space-y-5 xl:sticky xl:top-4 xl:h-fit">
-          <Panel title="Source confidence" icon={FileClock}>
+          <Panel title="Source coverage" icon={FileClock}>
             {topRecommendation ? (
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-2">
-                  {Object.entries(topRecommendation.source_flags).map(([source, present]) => (
-                    <span key={source} className={clsx('chip', present ? 'chip-good' : 'chip-bad')}>
-                      {titleCase(source)} {present ? 'present' : 'not matched'}
+                  {benchmarkCoverageBadges.map((badge) => (
+                    <span key={badge.key} className={clsx('chip', badge.present ? 'chip-good' : 'chip-bad')}>
+                      {badge.label}
                     </span>
                   ))}
                 </div>
                 <div className="surface-panel space-y-3">
+                  <p className="section-kicker">Current winner coverage</p>
                   <CompactFact label="OpenRouter release" value={topRecommendation.openrouter_release_date ?? '—'} />
                   <CompactFact label="AA release" value={topRecommendation.aa_release_date ?? '—'} />
                   <CompactFact label="Vals release" value={topRecommendation.vals_release_date ?? '—'} />
                   <CompactFact label="Coverage score" value={`${formatNumber(topRecommendation.coverage_score * 100, 0)}%`} />
-                  <CompactFact label="Vals enriched" value={topRecommendation.vals_enriched ? 'Yes' : 'No'} />
-                  <CompactFact label="LiveBench enriched" value={topRecommendation.livebench_enriched ? 'Yes' : 'No'} />
+                  <CompactFact label="Winner Vals data" value={topRecommendation.vals_enriched ? 'Matched' : 'Not matched'} />
+                  <CompactFact label="Winner LiveBench data" value={topRecommendation.livebench_enriched ? 'Matched' : 'Not matched'} />
                 </div>
 
                 <div className="surface-panel">
