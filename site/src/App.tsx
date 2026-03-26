@@ -486,7 +486,7 @@ export default function App() {
                         {buildAlternativeSummary(row, topRecommendation)}
                       </p>
                       <p className="mt-3 text-xs text-[var(--ink-muted)]">{shortModelLine(row)}</p>
-                      <SourceLinks row={row} className="mt-3" />
+                      <SourceLinks row={row} className="source-links-compact mt-3" />
                       <div className="mt-4 grid gap-2">
                         <MiniStat label="Fit" value={formatFitScore(scenario?.scenario_score)} />
                         <MiniStat label="Cost" value={formatCurrency(row.openrouter_blended_price_per_million)} />
@@ -620,7 +620,7 @@ export default function App() {
                     <p className="mt-3 text-sm leading-6 text-[var(--ink-muted)]">
                       {buildAlternativeSummary(row, topRecommendation)}
                     </p>
-                    <SourceLinks row={row} className="mt-3" />
+                    <SourceLinks row={row} className="source-links-compact mt-3" />
                     <div className="mt-4 grid grid-cols-2 gap-2">
                       <MiniStat label="Fit" value={formatFitScore(scenario?.scenario_score)} />
                       <MiniStat label="Cost" value={formatCurrency(row.openrouter_blended_price_per_million)} />
@@ -695,7 +695,7 @@ export default function App() {
                         {shortModelLine(row)}
                       </p>
                       <h3 className="mt-2 text-lg font-semibold leading-tight">{row.canonical_family}</h3>
-                      <SourceLinks row={row} className="mt-3" />
+                      <SourceLinks row={row} className="source-links-compact mt-3" />
                       <div className="mt-4 grid grid-cols-2 gap-2">
                         <MiniStat label="Fit" value={formatFitScore(scenario?.scenario_score)} />
                         <MiniStat label="Cost" value={formatCurrency(row.openrouter_blended_price_per_million)} />
@@ -829,7 +829,7 @@ function SourceLinks({
   }
 
   return (
-    <div className={`flex flex-wrap gap-2 ${className}`.trim()}>
+    <div className={`source-links flex flex-wrap gap-2 ${className}`.trim()}>
       {links.map((link) => (
         <a
           key={link.label}
@@ -839,7 +839,7 @@ function SourceLinks({
           className="chip chip-link"
           aria-label={`Open ${link.label} in a new tab`}
         >
-          <span>{link.label}</span>
+          <span className="chip-link-label">{link.label}</span>
           <span className="chip-link-action">Open</span>
         </a>
       ))}

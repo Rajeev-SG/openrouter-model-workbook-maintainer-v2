@@ -100,6 +100,8 @@ code {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
+  min-width: 0;
+  max-width: 100%;
   border-color: rgba(0, 77, 77, 0.28);
   background:
     linear-gradient(180deg, rgba(0, 77, 77, 0.05), rgba(255, 252, 246, 0.98)),
@@ -115,6 +117,11 @@ code {
     box-shadow 140ms ease;
 }
 
+.chip-link-label {
+  min-width: 0;
+  white-space: nowrap;
+}
+
 .chip-link:hover,
 .chip-link:focus-visible {
   transform: translateY(-1px);
@@ -124,9 +131,30 @@ code {
 }
 
 .chip-link-action {
+  flex: 0 0 auto;
   border-left: 1px solid rgba(0, 77, 77, 0.18);
   padding-left: 0.5rem;
   letter-spacing: 0.16em;
+}
+
+.source-links {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.source-links-compact {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.source-links-compact .chip-link {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.source-links-compact .chip-link-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .chip-good {
