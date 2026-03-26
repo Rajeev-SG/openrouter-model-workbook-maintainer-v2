@@ -59,6 +59,8 @@ def test_enrich_model_scores_uses_tool_use_benchmarks_for_coding_strength() -> N
             "aa_terminalbench_hard": 0.83,
             "aa_ifbench": 0.8,
             "aa_tau2": 0.91,
+            "swebench_bash_resolved": 76.0,
+            "toolathlon_pass_at_1": 47.0,
             "aa_median_tokens_per_second": 36.0,
             "openrouter_context_tokens": 200000,
             "openrouter_blended_price_per_million": 8.0,
@@ -75,6 +77,8 @@ def test_enrich_model_scores_uses_tool_use_benchmarks_for_coding_strength() -> N
             "aa_terminalbench_hard": 0.12,
             "aa_ifbench": 0.2,
             "aa_tau2": 0.24,
+            "swebench_bash_resolved": 52.0,
+            "toolathlon_pass_at_1": 18.0,
             "aa_median_tokens_per_second": 36.0,
             "openrouter_context_tokens": 200000,
             "openrouter_blended_price_per_million": 8.0,
@@ -100,6 +104,67 @@ def test_enrich_model_scores_uses_tool_use_benchmarks_for_coding_strength() -> N
     by_id = {row["canonical_model_id"]: row for row in scenario_rows}
 
     assert by_id["tool-use-winner"]["scenario_score"] > by_id["coding-index-only"]["scenario_score"]
+
+
+def test_enrich_model_scores_can_rank_opus_above_gpt51_when_external_coding_benchmarks_support_it() -> None:
+    rows = [
+        {
+            "canonical_model_id": "gpt-5.1",
+            "aa_intelligence_index": 55.0,
+            "aa_coding_index": 44.7,
+            "aa_livecodebench": 0.868,
+            "aa_scicode": 0.433,
+            "aa_terminalbench_hard": 0.455,
+            "aa_ifbench": 0.729,
+            "aa_tau2": 0.819,
+            "swebench_bash_resolved": 66.0,
+            "toolathlon_pass_at_1": 37.0,
+            "aa_median_tokens_per_second": 60.0,
+            "openrouter_context_tokens": 400000,
+            "openrouter_blended_price_per_million": 3.4375,
+            "vals_index_rank": 4,
+            "vals_index_population": 10,
+            "livebench_overall_score": 70.0,
+        },
+        {
+            "canonical_model_id": "claude-opus-4.6",
+            "aa_intelligence_index": 58.0,
+            "aa_coding_index": 47.6,
+            "aa_livecodebench": None,
+            "aa_scicode": 0.457,
+            "aa_terminalbench_hard": 0.485,
+            "aa_ifbench": 0.446,
+            "aa_tau2": 0.848,
+            "swebench_bash_resolved": 75.6,
+            "toolathlon_pass_at_1": 47.2,
+            "aa_median_tokens_per_second": 42.0,
+            "openrouter_context_tokens": 200000,
+            "openrouter_blended_price_per_million": 10.0,
+            "vals_index_rank": 5,
+            "vals_index_population": 10,
+            "livebench_overall_score": 68.0,
+        },
+    ]
+    profiles = {
+        "profiles": {
+            "coding": {
+                "label": "Best coding model",
+                "weights": {
+                    "coding": 0.75,
+                    "reasoning": 0.10,
+                    "latency": 0.10,
+                    "long_context": 0.05,
+                },
+            }
+        }
+    }
+
+    enriched, scenario_rows = enrich_model_scores(rows, profiles)
+    coding_scores = {row["canonical_model_id"]: row["coding_strength_score"] for row in enriched}
+    scenario_scores = {row["canonical_model_id"]: row["scenario_score"] for row in scenario_rows}
+
+    assert coding_scores["claude-opus-4.6"] > coding_scores["gpt-5.1"]
+    assert scenario_scores["claude-opus-4.6"] > scenario_scores["gpt-5.1"]
 
 
 def test_enrich_model_scores_budget_profile_can_exclude_expensive_models() -> None:

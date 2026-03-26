@@ -329,6 +329,8 @@ export default function App() {
                     <MetricCard label="Context window" value={`${formatCompact(topRecommendation.openrouter_context_tokens)} tokens`} />
                     <MetricCard label="Reasoning score" value={formatNumber(topRecommendation.aa_intelligence_index, 1)} />
                     <MetricCard label="Coding score" value={formatNumber(topRecommendation.aa_coding_index, 1)} />
+                    <MetricCard label="SWE-bench bash" value={formatPercent(topRecommendation.swebench_bash_resolved)} />
+                    <MetricCard label="Toolathlon Pass@1" value={formatPercent(topRecommendation.toolathlon_pass_at_1)} />
                     <MetricCard label="Vals accuracy" value={formatPercent(topRecommendation.vals_accuracy)} />
                     <MetricCard label="LiveBench" value={formatNumber(topRecommendation.livebench_overall_score, 1)} />
                   </div>
@@ -423,6 +425,8 @@ export default function App() {
                     <CompactFact label="OpenRouter release" value={topRecommendation.openrouter_release_date ?? '—'} />
                     <CompactFact label="AA release" value={topRecommendation.aa_release_date ?? '—'} />
                     <CompactFact label="Vals release" value={topRecommendation.vals_release_date ?? '—'} />
+                    <CompactFact label="SWE-bench bash" value={formatPercent(topRecommendation.swebench_bash_resolved)} />
+                    <CompactFact label="Toolathlon Pass@1" value={formatPercent(topRecommendation.toolathlon_pass_at_1)} />
                     <CompactFact label="Coverage score" value={`${formatNumber(topRecommendation.coverage_score * 100, 0)}%`} />
                     <CompactFact label="Winner Vals data" value={topRecommendation.vals_enriched ? 'Matched' : 'Not matched'} />
                     <CompactFact label="Winner LiveBench data" value={topRecommendation.livebench_enriched ? 'Matched' : 'Not matched'} />
@@ -848,6 +852,14 @@ function SourceLinks({
       label: 'Vals',
       href: typeof row.vals_model_url === 'string' ? row.vals_model_url : null,
     },
+    {
+      label: 'SWE-bench',
+      href: typeof row.swebench_leaderboard_url === 'string' ? row.swebench_leaderboard_url : null,
+    },
+    {
+      label: 'Toolathlon',
+      href: typeof row.toolathlon_leaderboard_url === 'string' ? row.toolathlon_leaderboard_url : null,
+    },
   ].filter((item): item is { label: string; href: string } => Boolean(item.href))
 
   if (links.length === 0) {
@@ -965,6 +977,8 @@ function formatSourceLabel(value: string) {
     livebench: 'LiveBench',
     openrouter_api: 'OpenRouter API',
     openrouter_pages: 'OpenRouter pages',
+    swebench: 'SWE-bench',
+    toolathlon: 'Toolathlon',
     vals_bundle: 'Vals bundle',
   }
 
@@ -999,7 +1013,7 @@ function latestManifestDate(manifest: SourceManifest) {
 function buildPrioritySentence(profiles: ScenarioProfiles, activeProfile: string) {
   const profileLabel = profiles.profiles[activeProfile]?.label ?? titleCase(activeProfile)
   const narratives: Record<string, string> = {
-    coding: 'This preset privileges coding-specific benchmark strength first, then checks that the winner still feels usable on speed, reasoning, and context.',
+    coding: 'This preset privileges coding-specific and tool-use benchmark strength first, using AA, SWE-bench, and Toolathlon where available before checking speed, reasoning, and context.',
     reasoning: 'This preset is willing to pay for top-end reasoning, as long as the model still feels credible on coding and context-heavy work.',
     budget: 'This preset only treats a model as budget-worthy if it stays cheap and still clears a minimum usefulness bar on reasoning, coding, and speed.',
     latency: 'This preset prioritises interactive responsiveness first, then checks that the fast model is still worth using.',
@@ -1013,7 +1027,7 @@ function buildWinnerSummary(row: GuideRow, activeProfile: string) {
     ? `${formatCompact(row.openrouter_context_tokens)}-token context`
     : 'usable context headroom'
   const summaries: Record<string, string> = {
-    coding: `${row.canonical_family} wins coding because it leads on the coding-heavy benchmark blend while still preserving ${context} and usable throughput.`,
+    coding: `${row.canonical_family} wins coding because it leads on the coding benchmark blend, including tool-use and software-engineering leaderboards where available, while still preserving ${context} and usable throughput.`,
     reasoning: `${row.canonical_family} wins reasoning because it leads on harder analysis without turning into a slow or brittle specialist pick.`,
     budget: `${row.canonical_family} wins budget because it stays genuinely inexpensive while still clearing the usefulness bar on speed and core capability.`,
     latency: `${row.canonical_family} wins latency because it is fast enough for interactive work without collapsing on the basics that make a model usable.`,
@@ -1039,8 +1053,8 @@ function factorExplanation(factor: string, normalizedInput: number | null) {
   const normalized = normalizedInput ?? 0
   if (factor === 'coding') {
     return normalized >= 0.75
-      ? 'Its coding-related benchmark signal is near the top of the current preset cohort.'
-      : 'Its coding signal is solid enough to stay competitive for implementation-heavy work.'
+      ? 'Its coding and tool-use benchmark stack is near the top of the current preset cohort.'
+      : 'Its coding benchmark stack is solid enough to stay competitive for implementation-heavy work.'
   }
   if (factor === 'reasoning') {
     return normalized >= 0.75
@@ -1061,7 +1075,18 @@ function factorExplanation(factor: string, normalizedInput: number | null) {
 
 function factorMetric(factor: string, row: GuideRow) {
   if (factor === 'coding') {
-    return `AA coding ${formatNumber(row.aa_coding_index, 1)}`
+    const parts = [
+      row.aa_coding_index !== null && row.aa_coding_index !== undefined
+        ? `AA ${formatNumber(row.aa_coding_index, 1)}`
+        : null,
+      row.swebench_bash_resolved !== null && row.swebench_bash_resolved !== undefined
+        ? `SWE ${formatNumber(row.swebench_bash_resolved, 1)}%`
+        : null,
+      row.toolathlon_pass_at_1 !== null && row.toolathlon_pass_at_1 !== undefined
+        ? `Tool ${formatNumber(row.toolathlon_pass_at_1, 1)}%`
+        : null,
+    ].filter((value): value is string => Boolean(value))
+    return parts.join(' · ')
   }
   if (factor === 'reasoning') {
     return `AA int. ${formatNumber(row.aa_intelligence_index, 1)}`
@@ -1121,6 +1146,12 @@ function buildAlternativeSummary(row: GuideRow, leader?: GuideRow) {
   }
   if ((row.livebench_overall_score ?? -1) > (leader.livebench_overall_score ?? -1)) {
     notes.push('stronger LiveBench')
+  }
+  if ((row.swebench_bash_resolved ?? -1) > (leader.swebench_bash_resolved ?? -1)) {
+    notes.push('stronger SWE-bench')
+  }
+  if ((row.toolathlon_pass_at_1 ?? -1) > (leader.toolathlon_pass_at_1 ?? -1)) {
+    notes.push('stronger Toolathlon')
   }
   if (notes.length === 0) {
     return 'Still competitive if you want a different balance of cost, speed, or context than the current winner.'

@@ -1,0 +1,26 @@
+{
+  "desktop-full": {
+    "viewport": {
+      "width": 1440,
+      "height": 2200
+    },
+    "claude_opus_index": 6295,
+    "gpt_51_index": 6693,
+    "winner_has_swebench_card": true,
+    "opus_before_gpt51": true,
+    "opus_snippet_has_swebench": true,
+    "opus_snippet_has_toolathlon": true
+  },
+  "mobile-full": {
+    "viewport": {
+      "width": 430,
+      "height": 2200
+    },
+    "claude_opus_index": 6400,
+    "gpt_51_index": 6904,
+    "winner_has_swebench_card": true,
+    "opus_before_gpt51": true,
+    "opus_snippet_has_swebench": true,
+    "opus_snippet_has_toolathlon": true
+  }
+}

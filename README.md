@@ -18,6 +18,8 @@ The project expands the original workbook maintainer into a daily-refreshable pi
 
 - OpenRouter for routed model metadata and pricing
 - Artificial Analysis for model performance and provider data
+- SWE-bench for software-engineering task resolution signal
+- Toolathlon for tool-use and agent benchmark signal
 - Vals for application-style quality, latency, and cost signals
 - LiveBench for public benchmark enrichment
 
@@ -86,7 +88,7 @@ The current cohort rules live in [config/cohort_rules.yaml](/Users/rajeev/Code/o
 The recommendation presets are intentionally opinionated:
 
 - `Best coding model`
-  Calibrated against coding-heavy AA signals, with extra weight on coding index, SciCode, TerminalBench Hard, LiveCodeBench, and related tool-use signal instead of treating coding as a value preset.
+  Calibrated against coding-heavy AA signals plus official SWE-bench and Toolathlon results, so coding recommendations are anchored in software-engineering and tool-use evidence instead of drifting on secondary traits.
 - `Cheap all-rounder`
   Uses ranked price normalization plus explicit minimum floors for coding, reasoning, and speed, so extremely cheap but weak rows do not outrank better-balanced budget options.
 

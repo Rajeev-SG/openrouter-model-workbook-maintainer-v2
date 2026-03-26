@@ -33,6 +33,29 @@ Primary inputs:
 - `https://artificialanalysis.ai/api/v2/data/llms/models`
 - provider pages under `https://artificialanalysis.ai/models/{slug}/providers`
 
+## SWE-bench
+
+Use:
+
+- software-engineering task resolution rates
+- bash-only leaderboard signal for coding calibration
+
+Primary inputs:
+
+- `https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json`
+- human reference page: `https://www.swebench.com/verified.html`
+
+## Toolathlon
+
+Use:
+
+- tool-use benchmark signal for coding calibration
+- Pass@1, Pass@3, and trajectory context where available
+
+Primary input:
+
+- `https://toolathlon.xyz/docs/leaderboard`
+
 ## Vals
 
 Use:

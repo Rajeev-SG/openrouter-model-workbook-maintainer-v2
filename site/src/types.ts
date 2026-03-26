@@ -65,6 +65,18 @@ export type GuideRow = {
   aa_cheapest_blended_price_per_million?: number | null
   aa_json_support?: string | null
   aa_function_calling?: string | null
+  swebench_bash_resolved?: number | null
+  swebench_bash_date?: string | null
+  swebench_verified_resolved?: number | null
+  swebench_verified_date?: string | null
+  swebench_leaderboard_url?: string | null
+  toolathlon_pass_at_1?: number | null
+  toolathlon_pass_at_3?: number | null
+  toolathlon_pass_power_3?: number | null
+  toolathlon_turns?: number | null
+  toolathlon_agent?: string | null
+  toolathlon_date?: string | null
+  toolathlon_leaderboard_url?: string | null
   vals_accuracy?: number | null
   vals_release_date?: string | null
   vals_latency_seconds?: number | null

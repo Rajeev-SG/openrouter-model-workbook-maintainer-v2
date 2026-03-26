@@ -15,12 +15,15 @@ SCORE_FIELDS = {
 }
 
 CODING_COMPONENT_WEIGHTS = {
-    "aa_coding_index": 0.35,
-    "aa_scicode": 0.20,
-    "aa_terminalbench_hard": 0.20,
-    "aa_livecodebench": 0.10,
-    "aa_ifbench": 0.10,
-    "aa_tau2": 0.05,
+    "aa_coding_index": 0.20,
+    "aa_scicode": 0.14,
+    "aa_terminalbench_hard": 0.14,
+    "aa_livecodebench": 0.08,
+    "aa_ifbench": 0.04,
+    "aa_tau2": 0.03,
+    "swebench_bash_resolved": 0.20,
+    "toolathlon_pass_at_1": 0.10,
+    "coding_external_evidence_score": 0.07,
 }
 
 
@@ -59,6 +62,14 @@ def enrich_model_scores(rows: list[dict[str, Any]], profiles: dict[str, Any]) ->
 
 
 def _derive_metric_scores(rows: list[dict[str, Any]]) -> None:
+    for row in rows:
+        row["coding_external_evidence_score"] = mean(
+            [
+                1.0 if row.get("swebench_bash_resolved") is not None else 0.0,
+                1.0 if row.get("toolathlon_pass_at_1") is not None else 0.0,
+            ]
+        )
+
     base_metrics = {
         "reasoning_strength_score": [row.get("aa_intelligence_index") for row in rows],
         "latency_score": [row.get("aa_median_tokens_per_second") for row in rows],

@@ -194,6 +194,8 @@ def test_enrich_registry_rows_carries_all_available_aa_metrics() -> None:
         aa_provider_pages,
         [],
         [],
+        [],
+        [],
     )
 
     row = rows[0]
@@ -210,6 +212,66 @@ def test_enrich_registry_rows_carries_all_available_aa_metrics() -> None:
     assert row["aa_json_support"] == "8 / 8"
     assert row["aa_function_calling"] == "8 / 8"
     assert row["source_freshness"]["artificial_analysis_last_seen"] == "2026-02-05"
+
+
+def test_enrich_registry_rows_attaches_swebench_and_toolathlon_metrics() -> None:
+    registry_rows = [
+        {
+            "canonical_model_id": "anthropic-claude-4.6-opus-20260205",
+            "canonical_family": "Claude Opus 4.6",
+            "canonical_variant": "Standard",
+            "provider": "anthropic",
+            "reasoning_mode": "standard",
+            "openrouter_slug": "anthropic/claude-4.6-opus",
+            "aa_model_slug": "claude-opus-4-6",
+            "vals_model_url": None,
+            "livebench_model_name": None,
+        }
+    ]
+
+    rows = _enrich_registry_rows(
+        registry_rows,
+        [],
+        {},
+        [],
+        {},
+        [],
+        [],
+        [
+            {
+                "swebench_board": "bash-only",
+                "swebench_model_name": "Claude Opus 4.6",
+                "swebench_model_tag": "claude-opus-4-6",
+                "provider": "anthropic",
+                "normalized_name": "claude opus 4 6",
+                "swebench_resolved": 75.6,
+                "swebench_date": "2026-02-17",
+                "swebench_leaderboard_url": "https://www.swebench.com/verified.html",
+            }
+        ],
+        [
+            {
+                "toolathlon_model_name": "Claude-4.6-Opus",
+                "provider": "anthropic",
+                "normalized_name": "claude 4 6 opus",
+                "toolathlon_pass_at_1": 47.2,
+                "toolathlon_pass_at_3": None,
+                "toolathlon_pass_power_3": None,
+                "toolathlon_turns": None,
+                "toolathlon_agent": "Claude Agent SDK",
+                "toolathlon_date": "2026-03-06",
+                "toolathlon_leaderboard_url": "https://toolathlon.xyz/docs/leaderboard",
+            }
+        ],
+    )
+
+    row = rows[0]
+    assert row["swebench_bash_resolved"] == 75.6
+    assert row["swebench_leaderboard_url"] == "https://www.swebench.com/verified.html"
+    assert row["toolathlon_pass_at_1"] == 47.2
+    assert row["toolathlon_agent"] == "Claude Agent SDK"
+    assert row["source_freshness"]["swebench_last_seen"] == "2026-02-17"
+    assert row["source_freshness"]["toolathlon_last_seen"] == "2026-03-06"
 
 
 def test_blend_price_ignores_negative_openrouter_sentinel_values() -> None:

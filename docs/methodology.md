@@ -58,7 +58,7 @@ Weights live in [config/scenarios/default_profiles.yaml](/Users/rajeev/Code/open
 The two most calibration-sensitive presets are:
 
 - `coding`
-  Uses a coding-first composite that weights Artificial Analysis coding-specific signals such as coding index, SciCode, TerminalBench Hard, LiveCodeBench, IFBench, and TAU2. The strongest coding pick is no longer treated as a budget-sensitive preset.
+  Uses a coding-first composite that weights Artificial Analysis coding-specific signals together with official SWE-bench bash-only resolution rates and Toolathlon Pass@1 where available. This keeps the coding lane anchored to software-engineering and tool-use outcomes instead of letting speed or price-adjacent traits distort the ordering.
 - `budget`
   Uses ranked cost normalization rather than raw min-max price spread, so genuinely cheap models separate from merely cheaper frontier models. The preset also keeps explicit floors on coding, reasoning, and speed so "cheap" does not silently mean weak.
 
