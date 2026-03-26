@@ -126,6 +126,7 @@ jobs:
           (config_dir / "config.json").write_text(json.dumps(config) + "\n")
           PY
           echo "VERCEL_GLOBAL_CONFIG=$VERCEL_GLOBAL_CONFIG" >> "$GITHUB_ENV"
+          echo "VERCEL_TOKEN=" >> "$GITHUB_ENV"
 
       - name: Pull Vercel project settings
         run: pnpm dlx vercel@latest --global-config "$VERCEL_GLOBAL_CONFIG" pull --yes --environment=production
