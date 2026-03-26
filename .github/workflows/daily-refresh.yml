@@ -17,6 +17,7 @@ jobs:
       INFISICAL_ENV_SLUG: ${{ vars.INFISICAL_ENV_SLUG || 'prod' }}
       VERCEL_ORG_ID: team_48scplPIjV88LCscQpDUoNWo
       VERCEL_PROJECT_ID: prj_nMlpkIMU9wkuDl8eK904g5C63p9b
+      VERCEL_CLI_VERSION: 50.37.1
     steps:
       - uses: actions/checkout@v4
 
@@ -105,18 +106,25 @@ jobs:
           path: data/latest
 
       - name: Pull Vercel project settings
-        run: pnpm dlx vercel@latest pull --yes --environment=production --token="${VERCEL_TOKEN}"
+        run: pnpm dlx vercel@${VERCEL_CLI_VERSION} pull --yes --environment=production --token="${VERCEL_TOKEN}"
 
       - name: Build Vercel deployment
-        run: pnpm dlx vercel@latest build --prod --token="${VERCEL_TOKEN}"
+        run: pnpm dlx vercel@${VERCEL_CLI_VERSION} build --prod --token="${VERCEL_TOKEN}"
 
       - name: Deploy to Vercel
         id: vercel_deploy
         run: |
-          deployment_url="$(pnpm dlx vercel@latest deploy --prebuilt --prod --token="${VERCEL_TOKEN}" | tail -n 1)"
+          deployment_url="$(pnpm dlx vercel@${VERCEL_CLI_VERSION} deploy --prebuilt --prod --token="${VERCEL_TOKEN}" | tail -n 1)"
           echo "deployment_url=${deployment_url}" >> "$GITHUB_OUTPUT"
           {
             echo "## Vercel Deploy"
             echo
             echo "- Production URL: ${deployment_url}"
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify production deployment
+        run: |
+          deployment_url="${{ steps.vercel_deploy.outputs.deployment_url }}"
+          pnpm dlx vercel@${VERCEL_CLI_VERSION} inspect "${deployment_url}" --token="${VERCEL_TOKEN}"
+          curl --fail --silent --show-error "${deployment_url}" > /tmp/vercel-deploy.html
+          grep -Fq '<div id="root"></div>' /tmp/vercel-deploy.html

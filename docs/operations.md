@@ -49,11 +49,14 @@ For GitHub Actions, the workflow fetches runtime secrets from Infisical via OIDC
 - rebuilds the site
 - uploads workbook and dataset artifacts
 - deploys the static guide to Vercel
+- pins the Vercel CLI version instead of using `latest`
+- verifies the resulting production deployment with `vercel inspect` plus a `curl` smoke check
 - uses Infisical OIDC for runtime API keys and a dedicated Vercel access token for deploys
 
 ## Manual Vercel deploy
 
-- `vercel.json` points Vercel at the static site build in `site/dist`
+- the Vercel project root directory is `site`, so remote Git builds use the app lockfile directly
+- [site/vercel.json](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/site/vercel.json) matches that shape and expects a `dist` output from the site root
 - run `VITE_BASE_PATH=/ pnpm --dir site build`
 - run `vercel build --prod -y --scope <team>` to generate `.vercel/output`
 - run `vercel deploy --prebuilt --prod -y --scope <team>`
