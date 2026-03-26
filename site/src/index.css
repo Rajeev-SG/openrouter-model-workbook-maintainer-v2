@@ -96,6 +96,39 @@ code {
   letter-spacing: 0.2em;
 }
 
+.chip-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border-color: rgba(0, 77, 77, 0.28);
+  background:
+    linear-gradient(180deg, rgba(0, 77, 77, 0.05), rgba(255, 252, 246, 0.98)),
+    var(--surface-bright);
+  color: var(--teal-ink);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease,
+    background-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.chip-link:hover,
+.chip-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(0, 77, 77, 0.55);
+  box-shadow: 0 8px 18px rgba(0, 77, 77, 0.09);
+  outline: none;
+}
+
+.chip-link-action {
+  border-left: 1px solid rgba(0, 77, 77, 0.18);
+  padding-left: 0.5rem;
+  letter-spacing: 0.16em;
+}
+
 .chip-good {
   border-color: rgba(0, 77, 77, 0.35);
   color: var(--teal-700);

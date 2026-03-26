@@ -820,9 +820,11 @@ function SourceLinks({
           href={link.href}
           target="_blank"
           rel="noreferrer"
-          className="chip hover:border-[var(--teal-700)] hover:text-[var(--teal-700)]"
+          className="chip chip-link"
+          aria-label={`Open ${link.label} in a new tab`}
         >
-          {link.label}
+          <span>{link.label}</span>
+          <span className="chip-link-action">Open</span>
         </a>
       ))}
     </div>
