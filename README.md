@@ -81,6 +81,15 @@ This prevents the live guide from hiding useful OpenRouter + AA models just beca
 
 The current cohort rules live in [config/cohort_rules.yaml](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/config/cohort_rules.yaml).
 
+## Preset calibration
+
+The recommendation presets are intentionally opinionated:
+
+- `Best coding model`
+  Calibrated against coding-heavy AA signals, with extra weight on coding index, SciCode, TerminalBench Hard, LiveCodeBench, and related tool-use signal instead of treating coding as a value preset.
+- `Cheap all-rounder`
+  Uses ranked price normalization plus explicit minimum floors for coding, reasoning, and speed, so extremely cheap but weak rows do not outrank better-balanced budget options.
+
 ## Repo structure
 
 ```text

@@ -30,6 +30,10 @@ def score_match(anchor_name: str, candidate_name: str) -> int:
     return int(fuzz.token_set_ratio(anchor_name, candidate_name))
 
 
+def _numeric_signature(value: str) -> tuple[str, ...]:
+    return tuple(re.findall(r"\d+", value))
+
+
 def choose_unique_match(anchor_name: str, candidates: list[dict[str, Any]], name_key: str) -> tuple[dict[str, Any] | None, list[dict[str, Any]]]:
     if not candidates:
         return None, []
@@ -66,6 +70,10 @@ def choose_unique_match(anchor_name: str, candidates: list[dict[str, Any]], name
     )
     top = scored[0]
     second = scored[1] if len(scored) > 1 else None
+    anchor_signature = _numeric_signature(anchor_name)
+    top_signature = _numeric_signature(top["candidate"].get(name_key, ""))
+    if anchor_signature and top_signature and top_signature != anchor_signature:
+        return None, [item["candidate"] for item in scored[:3]]
     if top["score"] < 92:
         return None, [item["candidate"] for item in scored[:3]]
     if second and second["score"] >= top["score"] - 3:
@@ -114,6 +122,14 @@ LIVEBENCH_VARIANT_TOKENS = {
     "preview",
     "thinking",
 }
+
+AA_EXPLICIT_VARIANT_TOKENS = (
+    "adaptive",
+    "non-reasoning",
+    "nonreasoning",
+    "nonthinking",
+    "thinking",
+)
 
 
 def choose_livebench_match(
@@ -192,6 +208,48 @@ def _choose_livebench_variant_candidate(
         reasoning_matches = [candidate for candidate in pool if _has_livebench_token(candidate["livebench_model_name"], "thinking")]
         if len(reasoning_matches) == 1:
             return reasoning_matches[0]
+
+    return None
+
+
+def _candidate_variant_text(candidate: dict[str, Any]) -> str:
+    return " ".join(
+        str(value or "")
+        for value in (
+            candidate.get("aa_display_name"),
+            candidate.get("display_name"),
+            candidate.get("aa_model_slug"),
+        )
+    ).lower()
+
+
+def _choose_preferred_aa_variant_candidate(
+    candidates: list[dict[str, Any]],
+    variant_label: str | None,
+) -> dict[str, Any] | None:
+    if not candidates:
+        return None
+
+    variant_text = (variant_label or "").lower()
+    plain_candidates = [
+        candidate
+        for candidate in candidates
+        if not any(token in _candidate_variant_text(candidate) for token in AA_EXPLICIT_VARIANT_TOKENS)
+    ]
+    if len(plain_candidates) == 1:
+        return plain_candidates[0]
+
+    if "reason" in variant_text or "thinking" in variant_text:
+        reasoning_candidates = [candidate for candidate in candidates if candidate.get("reasoning_mode") == "reasoning"]
+        if len(reasoning_candidates) == 1:
+            return reasoning_candidates[0]
+
+    if "standard" in variant_text or "non-reasoning" in variant_text or "nonthinking" in variant_text:
+        non_reasoning_candidates = [
+            candidate for candidate in candidates if candidate.get("reasoning_mode") == "non_reasoning"
+        ]
+        if len(non_reasoning_candidates) == 1:
+            return non_reasoning_candidates[0]
 
     return None
 
@@ -343,7 +401,7 @@ def build_canonical_registry(
                 for candidate in livebench_models
                 if candidate["livebench_model_name"] not in consumed["livebench"]
             ]
-        aa_match, aa_ambiguous = choose_unique_match(anchor_name, aa_candidates, "normalized_name")
+        aa_match, aa_ambiguous = choose_exact_unique_match(anchor_name, aa_candidates, "normalized_name")
         vals_match, vals_ambiguous = choose_unique_match(anchor_name, vals_candidates, "normalized_name")
         livebench_match, livebench_ambiguous = choose_livebench_match(
             openrouter_model["display_name"],
@@ -354,6 +412,52 @@ def build_canonical_registry(
 
         if aa_match is None and not aa_ambiguous:
             aa_match, aa_ambiguous = choose_exact_unique_match(
+                anchor_name,
+                [
+                    candidate
+                    for candidate in aa_models
+                    if candidate["provider"] == provider
+                    and candidate["aa_source_key"] not in consumed["aa"]
+                ],
+                "normalized_name",
+            )
+            if aa_match is None and aa_ambiguous:
+                aa_match = _choose_preferred_aa_variant_candidate(
+                    aa_ambiguous,
+                    openrouter_model.get("variant_label"),
+                )
+                if aa_match:
+                    aa_ambiguous = []
+        if aa_match is None and not aa_ambiguous:
+            aa_match, aa_ambiguous = choose_exact_unique_match(
+                anchor_name,
+                [
+                    candidate
+                    for candidate in aa_models
+                    if candidate["reasoning_mode"] == reasoning_mode
+                    and candidate["aa_source_key"] not in consumed["aa"]
+                ],
+                "normalized_name",
+            )
+        if aa_match is None and not aa_ambiguous:
+            aa_match, aa_ambiguous = choose_unique_match(
+                anchor_name,
+                aa_candidates,
+                "normalized_name",
+            )
+        if aa_match is None and not aa_ambiguous:
+            aa_match, aa_ambiguous = choose_unique_match(
+                anchor_name,
+                [
+                    candidate
+                    for candidate in aa_models
+                    if candidate["provider"] == provider
+                    and candidate["aa_source_key"] not in consumed["aa"]
+                ],
+                "normalized_name",
+            )
+        if aa_match is None and not aa_ambiguous:
+            aa_match, aa_ambiguous = choose_unique_match(
                 anchor_name,
                 [
                     candidate

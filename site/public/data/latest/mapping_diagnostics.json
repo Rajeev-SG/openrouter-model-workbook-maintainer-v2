@@ -164,10 +164,14 @@
     "openrouter_slug": "openai/gpt-5.3-chat-20260303",
     "aa_candidates": [
       "gpt-5-chatgpt",
-      "gpt-35-turbo",
-      "gpt-3-5-turbo-0613"
+      "gpt-4",
+      "gpt-35-turbo"
     ],
-    "vals_candidates": [],
+    "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
+      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
+      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
+    ],
     "livebench_candidates": []
   },
   {
@@ -293,16 +297,24 @@
     "canonical_model_id": "openai-gpt-5.3-codex-20260224",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-5.3-codex-20260224",
-    "aa_candidates": [
-      "gpt-5-codex",
-      "gpt-5-1-codex-mini",
-      "gpt-5-1-codex"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "aion-labs-aion-2.0-20260223",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "aion-labs/aion-2.0-20260223",
+    "aa_candidates": [
+      "ling-mini-2-0",
+      "ling-flash-2-0",
+      "ring-flash-2-0"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -314,6 +326,21 @@
       "https://www.vals.ai/models/google_gemini-1.0-pro-002",
       "https://www.vals.ai/models/google_gemini-1.5-pro-001",
       "https://www.vals.ai/models/google_gemini-1.5-pro-002"
+    ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "anthropic-claude-4.6-sonnet-20260217",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "anthropic/claude-4.6-sonnet-20260217",
+    "aa_candidates": [
+      "claude-sonnet-4-6",
+      "claude-sonnet-4-6-non-reasoning-low-effort"
+    ],
+    "vals_candidates": [
+      "https://www.vals.ai/models/anthropic_claude-3-sonnet-20240229",
+      "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620",
+      "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20241022"
     ],
     "livebench_candidates": []
   },
@@ -363,11 +390,7 @@
     "canonical_model_id": "anthropic-claude-4.6-opus-20260205",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "anthropic/claude-4.6-opus-20260205",
-    "aa_candidates": [
-      "claude-3-opus",
-      "claude-2",
-      "claude-21"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
       "https://www.vals.ai/models/anthropic_claude-3-opus-20240229",
       "https://www.vals.ai/models/anthropic_claude-3-5-haiku-20241022",
@@ -388,6 +411,30 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "openrouter-free",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "openrouter/free",
+    "aa_candidates": [
+      "grok-code-fast-1",
+      "devstral-2",
+      "mistral-large-3"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "arcee-ai-trinity-large-preview",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "arcee-ai/trinity-large-preview",
+    "aa_candidates": [
+      "o1-preview",
+      "gpt-4-5",
+      "QwQ-32B-Preview"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "upstage-solar-pro-3",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "upstage/solar-pro-3",
@@ -398,13 +445,25 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "writer-palmyra-x5-20250428",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "writer/palmyra-x5-20250428",
+    "aa_candidates": [
+      "nova-premier",
+      "qwen3-max-preview",
+      "granite-4-0-h-350m"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "openai-gpt-audio",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-audio",
     "aa_candidates": [
+      "gpt-4",
       "gpt-4-turbo",
-      "gpt-4-1",
-      "gpt-4-1-nano"
+      "gpt-4-1"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
@@ -420,7 +479,7 @@
     "aa_candidates": [
       "gpt-4o-mini",
       "gpt-4-1-mini",
-      "o1-mini"
+      "gpt-4"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-mini-2024-07-18",
@@ -443,15 +502,11 @@
     "canonical_model_id": "openai-gpt-5.2-codex-20260114",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-5.2-codex-20260114",
-    "aa_candidates": [
-      "gpt-5-codex",
-      "gpt-5-1-codex-mini",
-      "gpt-5-1-codex"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
     ],
     "livebench_candidates": []
   },
@@ -512,28 +567,18 @@
     "livebench_candidates": []
   },
   {
-    "canonical_model_id": "nvidia-nemotron-3-nano-30b-a3b",
-    "type": "ambiguous-auto-match",
-    "openrouter_slug": "nvidia/nemotron-3-nano-30b-a3b",
-    "aa_candidates": [
-      "llama-3-1-nemotron-instruct-70b"
-    ],
-    "vals_candidates": [],
-    "livebench_candidates": []
-  },
-  {
     "canonical_model_id": "openai-gpt-5.2-chat-20251211",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-5.2-chat-20251211",
     "aa_candidates": [
       "gpt-5-chatgpt",
-      "gpt-5-2-medium",
-      "gpt-5-low"
+      "gpt-4",
+      "gpt-5-2-medium"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
     ],
     "livebench_candidates": []
   },
@@ -544,12 +589,12 @@
     "aa_candidates": [
       "gpt-5-2-medium",
       "gpt-35-turbo",
-      "gpt-3-5-turbo-0613"
+      "gpt-4"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
     ],
     "livebench_candidates": []
   },
@@ -559,10 +604,38 @@
     "openrouter_slug": "openai/gpt-5.2-20251211",
     "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4.1-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "mistralai-devstral-2512",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "mistralai/devstral-2512",
+    "aa_candidates": [
+      "devstral-2",
+      "devstral-small-2",
+      "mistral-saba"
+    ],
+    "vals_candidates": [
+      "https://www.vals.ai/models/mistralai_devstral-2512",
+      "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
+      "https://www.vals.ai/models/mistralai_labs-devstral-small-2512"
+    ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "relace-relace-search-20251208",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "relace/relace-search-20251208",
+    "aa_candidates": [
+      "sonar-pro",
+      "claude-instant",
+      "mistral-large-3"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -571,6 +644,42 @@
     "openrouter_slug": "z-ai/glm-4.6-20251208",
     "aa_candidates": [
       "glm-4-5-air"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "nex-agi-deepseek-v3.1-nex-n1",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "nex-agi/deepseek-v3.1-nex-n1",
+    "aa_candidates": [
+      "deepseek-v3-0324",
+      "deepseek-v2-5-sep-2024",
+      "deepseek-v3"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "essentialai-rnj-1-instruct",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "essentialai/rnj-1-instruct",
+    "aa_candidates": [
+      "dbrx",
+      "arctic-instruct",
+      "llama-3-1-instruct-8b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "openrouter-bodybuilder",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "openrouter/bodybuilder",
+    "aa_candidates": [
+      "grok-beta",
+      "grok-voice",
+      "kimi-linear-48b-a3b-instruct"
     ],
     "vals_candidates": [],
     "livebench_candidates": []
@@ -585,9 +694,9 @@
       "gpt-4-1"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4.1-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13"
     ],
     "livebench_candidates": []
   },
@@ -595,7 +704,11 @@
     "canonical_model_id": "mistralai-ministral-14b-2512",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "mistralai/ministral-14b-2512",
-    "aa_candidates": [],
+    "aa_candidates": [
+      "ministral-3-14b",
+      "ministral-3-8b",
+      "ministral-3-3b"
+    ],
     "vals_candidates": [
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
       "https://www.vals.ai/models/mistralai_mistral-large-2512",
@@ -607,7 +720,11 @@
     "canonical_model_id": "mistralai-ministral-8b-2512",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "mistralai/ministral-8b-2512",
-    "aa_candidates": [],
+    "aa_candidates": [
+      "ministral-3-8b",
+      "ministral-3-3b",
+      "ministral-3-14b"
+    ],
     "vals_candidates": [
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
       "https://www.vals.ai/models/mistralai_mistral-large-2512",
@@ -619,7 +736,11 @@
     "canonical_model_id": "mistralai-ministral-3b-2512",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "mistralai/ministral-3b-2512",
-    "aa_candidates": [],
+    "aa_candidates": [
+      "ministral-3-3b",
+      "ministral-3-8b",
+      "ministral-3-14b"
+    ],
     "vals_candidates": [
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
       "https://www.vals.ai/models/mistralai_mistral-large-2512",
@@ -631,12 +752,28 @@
     "canonical_model_id": "mistralai-mistral-large-2512",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "mistralai/mistral-large-2512",
-    "aa_candidates": [],
+    "aa_candidates": [
+      "mistral-large-3",
+      "mistral-large-2",
+      "mistral-large-2407"
+    ],
     "vals_candidates": [
       "https://www.vals.ai/models/mistralai_mistral-large-2411",
       "https://www.vals.ai/models/mistralai_mistral-large-2512",
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "arcee-ai-trinity-mini-20251201",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "arcee-ai/trinity-mini-20251201",
+    "aa_candidates": [
+      "o1-mini",
+      "o3-mini",
+      "solar-mini"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -655,11 +792,7 @@
     "canonical_model_id": "anthropic-claude-4.5-opus-20251124",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "anthropic/claude-4.5-opus-20251124",
-    "aa_candidates": [
-      "claude-3-opus",
-      "claude-2",
-      "claude-21"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
       "https://www.vals.ai/models/anthropic_claude-3-opus-20240229",
       "https://www.vals.ai/models/anthropic_claude-3-5-haiku-20241022",
@@ -687,11 +820,7 @@
     "canonical_model_id": "x-ai-grok-4.1-fast",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "x-ai/grok-4.1-fast",
-    "aa_candidates": [
-      "grok-1",
-      "grok-4",
-      "grok-code-fast-1"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
       "https://www.vals.ai/models/grok_grok-2-1212",
       "https://www.vals.ai/models/grok_grok-3",
@@ -715,14 +844,26 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "deepcogito-cogito-v2.1-671b-20251118",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "deepcogito/cogito-v2.1-671b-20251118",
+    "aa_candidates": [
+      "deepseek-llm-67b-chat",
+      "deepseek-v2",
+      "deepseek-v2-5"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "openai-gpt-5.1-20251113",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-5.1-20251113",
     "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4.1-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4.1-mini-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4.1-nano-2025-04-14"
+      "https://www.vals.ai/models/openai_gpt-4.1-mini-2025-04-14"
     ],
     "livebench_candidates": []
   },
@@ -733,12 +874,12 @@
     "aa_candidates": [
       "gpt-4-1",
       "gpt-5-chatgpt",
-      "gpt-5-1-codex-mini"
+      "gpt-4"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4.1-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4.1-nano-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13"
+      "https://www.vals.ai/models/openai_gpt-4.1-nano-2025-04-14"
     ],
     "livebench_candidates": []
   },
@@ -748,9 +889,9 @@
     "openrouter_slug": "openai/gpt-5.1-codex-20251113",
     "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4.1-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13"
     ],
     "livebench_candidates": []
   },
@@ -762,7 +903,7 @@
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4.1-mini-2025-04-14",
       "https://www.vals.ai/models/openai_gpt-4o-mini-2024-07-18",
-      "https://www.vals.ai/models/openai_gpt-4.1-2025-04-14"
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo"
     ],
     "livebench_candidates": []
   },
@@ -811,7 +952,7 @@
     "aa_candidates": [
       "gpt-oss-20b-low",
       "gpt-oss-20b",
-      "gpt-oss-120b"
+      "gpt-4"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
@@ -864,8 +1005,8 @@
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-mini-2024-07-18",
-      "https://www.vals.ai/models/openai_gpt-4.1-mini-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13"
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
+      "https://www.vals.ai/models/openai_gpt-4.1-mini-2025-04-14"
     ],
     "livebench_candidates": []
   },
@@ -878,7 +1019,11 @@
       "claude-3-haiku",
       "claude-2"
     ],
-    "vals_candidates": [],
+    "vals_candidates": [
+      "https://www.vals.ai/models/anthropic_claude-3-5-haiku-20241022",
+      "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620",
+      "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20241022"
+    ],
     "livebench_candidates": []
   },
   {
@@ -915,13 +1060,13 @@
     "openrouter_slug": "openai/gpt-5-image",
     "aa_candidates": [
       "gpt-5",
-      "gpt-5-minimal",
-      "gpt-5-low"
+      "gpt-4",
+      "gpt-5-minimal"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
     ],
     "livebench_candidates": []
   },
@@ -1023,13 +1168,13 @@
     "openrouter_slug": "openai/gpt-5-pro-2025-10-06",
     "aa_candidates": [
       "gpt-5-low",
-      "gpt-35-turbo",
-      "gpt-3-5-turbo-0613"
+      "gpt-4",
+      "gpt-35-turbo"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4-turbo",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13"
     ],
     "livebench_candidates": []
   },
@@ -1050,12 +1195,12 @@
     "aa_candidates": [
       "claude-35-sonnet",
       "claude-35-sonnet-june-24",
-      "claude-2"
+      "claude-3-sonnet"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620",
       "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20241022",
-      "https://www.vals.ai/models/anthropic_claude-3-opus-20240229"
+      "https://www.vals.ai/models/anthropic_claude-3-sonnet-20240229"
     ],
     "livebench_candidates": []
   },
@@ -1076,10 +1221,38 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "thedrummer-cydonia-24b-v4.1",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "thedrummer/cydonia-24b-v4.1",
+    "aa_candidates": [
+      "magistral-medium-2509",
+      "command-r-03-2024",
+      "apriel-v1-6-15b-thinker"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "relace-relace-apply-3",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "relace/relace-apply-3",
+    "aa_candidates": [
+      "reka-flash-3",
+      "reka-flash",
+      "mistral-large-3"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "google-gemini-2.5-flash-lite-preview-09-2025",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "google/gemini-2.5-flash-lite-preview-09-2025",
-    "aa_candidates": [],
+    "aa_candidates": [
+      "gemini-2-0-flash-lite-preview",
+      "gemini-1-5-flash-8b",
+      "gemini-2-5-pro"
+    ],
     "vals_candidates": [
       "https://www.vals.ai/models/google_gemini-1.5-flash-001",
       "https://www.vals.ai/models/google_gemini-1.5-flash-002",
@@ -1149,9 +1322,9 @@
     "openrouter_slug": "openai/gpt-5-codex",
     "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
     ],
     "livebench_candidates": []
   },
@@ -1244,6 +1417,18 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "meituan-longcat-flash-chat",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "meituan/longcat-flash-chat",
+    "aa_candidates": [
+      "longcat-flash-lite",
+      "reka-flash-3",
+      "ling-flash-2-0"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "qwen-qwen-plus-2025-07-28",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "qwen/qwen-plus-2025-07-28",
@@ -1257,16 +1442,6 @@
       "https://www.vals.ai/models/fireworks_qwen3-235b-a22b",
       "https://www.vals.ai/models/alibaba_qwen3.5-flash"
     ],
-    "livebench_candidates": []
-  },
-  {
-    "canonical_model_id": "nvidia-nemotron-nano-9b-v2",
-    "type": "ambiguous-auto-match",
-    "openrouter_slug": "nvidia/nemotron-nano-9b-v2",
-    "aa_candidates": [
-      "llama-3-1-nemotron-instruct-70b"
-    ],
-    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -1348,9 +1523,9 @@
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-4o-audio-preview",
     "aa_candidates": [
+      "gpt-4",
       "gpt-4o-2024-08-06",
-      "gpt-4o-mini",
-      "gpt-4-turbo"
+      "gpt-4o-mini"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
@@ -1402,14 +1577,30 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "ai21-jamba-large-1.7",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "ai21/jamba-large-1.7",
+    "aa_candidates": [
+      "jamba-1-7-large",
+      "jamba-1-5-large",
+      "jamba-1-6-large"
+    ],
+    "vals_candidates": [
+      "https://www.vals.ai/models/ai21labs_jamba-large-1.7",
+      "https://www.vals.ai/models/ai21labs_jamba-1.5-large",
+      "https://www.vals.ai/models/ai21labs_jamba-large-1.6"
+    ],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "openai-gpt-5-chat-2025-08-07",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-5-chat-2025-08-07",
     "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
+      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
     ],
     "livebench_candidates": []
   },
@@ -1423,9 +1614,9 @@
       "gpt-5-minimal"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
       "https://www.vals.ai/models/openai_gpt-4-turbo",
-      "https://www.vals.ai/models/openai_gpt-4.1-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4.1-mini-2025-04-14"
+      "https://www.vals.ai/models/openai_gpt-4.1-2025-04-14"
     ],
     "livebench_candidates": []
   },
@@ -1440,8 +1631,8 @@
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4.1-nano-2025-04-14",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
+      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13"
     ],
     "livebench_candidates": []
   },
@@ -1486,8 +1677,8 @@
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/anthropic_claude-3-opus-20240229",
-      "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620",
-      "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20241022"
+      "https://www.vals.ai/models/anthropic_claude-3-5-haiku-20241022",
+      "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620"
     ],
     "livebench_candidates": []
   },
@@ -1558,6 +1749,18 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "z-ai-glm-4-32b-0414",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "z-ai/glm-4-32b-0414",
+    "aa_candidates": [
+      "glm-4-6v-reasoning",
+      "glm-4-6v",
+      "glm-4-5v-reasoning"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "qwen-qwen3-coder-480b-a35b-07-25",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "qwen/qwen3-coder-480b-a35b-07-25",
@@ -1571,6 +1774,18 @@
       "https://www.vals.ai/models/alibaba_qwen3-vl-plus-2025-09-23",
       "https://www.vals.ai/models/together_Qwen_Qwen2.5-7B-Instruct-Turbo"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "bytedance-ui-tars-1.5-7b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "bytedance/ui-tars-1.5-7b",
+    "aa_candidates": [
+      "apertus-70b-instruct",
+      "apertus-8b-instruct",
+      "mistral-7b-instruct"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -1598,10 +1813,25 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "switchpoint-router",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "switchpoint/router",
+    "aa_candidates": [
+      "sonar-pro",
+      "claude-instant",
+      "claude-3-sonnet"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "moonshotai-kimi-k2",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "moonshotai/kimi-k2",
-    "aa_candidates": [],
+    "aa_candidates": [
+      "kimi-k2",
+      "kimi-linear-48b-a3b-instruct"
+    ],
     "vals_candidates": [
       "https://www.vals.ai/models/together_moonshotai_Kimi-K2-Instruct"
     ],
@@ -1617,9 +1847,9 @@
       "mistral-medium-3"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/mistralai_devstral-2512",
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
-      "https://www.vals.ai/models/mistralai_mistral-large-2411",
-      "https://www.vals.ai/models/mistralai_labs-devstral-small-2512"
+      "https://www.vals.ai/models/mistralai_mistral-large-2411"
     ],
     "livebench_candidates": []
   },
@@ -1630,24 +1860,32 @@
     "aa_candidates": [
       "devstral-small-2",
       "mistral-small-3-1",
-      "mistral-small-3-2"
+      "devstral-2"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/mistralai_labs-devstral-small-2512",
       "https://www.vals.ai/models/mistralai_mistral-small-2503",
-      "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1"
+      "https://www.vals.ai/models/mistralai_devstral-2512"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "venice-uncensored",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "venice/uncensored",
+    "aa_candidates": [
+      "grok-voice",
+      "gemini-3-pro-low",
+      "claude-35-sonnet-june-24"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
     "canonical_model_id": "x-ai-grok-4-07-09",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "x-ai/grok-4-07-09",
-    "aa_candidates": [
-      "grok-1",
-      "grok-3",
-      "grok-voice"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
       "https://www.vals.ai/models/grok_grok-2-1212",
       "https://www.vals.ai/models/grok_grok-3",
@@ -1672,6 +1910,54 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "tencent-hunyuan-a13b-instruct",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "tencent/hunyuan-a13b-instruct",
+    "aa_candidates": [
+      "dbrx",
+      "arctic-instruct",
+      "qwen2-72b-instruct"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "tngtech-deepseek-r1t2-chimera",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "tngtech/deepseek-r1t2-chimera",
+    "aa_candidates": [
+      "deepseek-v2-5-sep-2024",
+      "deepseek-v2",
+      "deepseek-coder-v2"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "morph-morph-v3-large",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "morph/morph-v3-large",
+    "aa_candidates": [
+      "mistral-large-3",
+      "mistral-large-2",
+      "pixtral-large-2411"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "morph-morph-v3-fast",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "morph/morph-v3-fast",
+    "aa_candidates": [
+      "mimo-v2-0206",
+      "grok-voice",
+      "deepseek-v2"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "baidu-ernie-4.5-vl-424b-a47b",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "baidu/ernie-4.5-vl-424b-a47b",
@@ -1679,6 +1965,34 @@
       "ernie-4-5-300b-a47b"
     ],
     "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "inception-mercury",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "inception/mercury",
+    "aa_candidates": [
+      "command-r-03-2024",
+      "gpt-5-medium",
+      "phi-4-mini"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "mistralai-mistral-small-3.2-24b-instruct-2506",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "mistralai/mistral-small-3.2-24b-instruct-2506",
+    "aa_candidates": [
+      "mistral-small-3-2",
+      "mistral-small-3-1",
+      "mistral-small"
+    ],
+    "vals_candidates": [
+      "https://www.vals.ai/models/mistralai_mistral-small-2503",
+      "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
+      "https://www.vals.ai/models/mistralai_mistral-large-2512"
+    ],
     "livebench_candidates": []
   },
   {
@@ -1696,11 +2010,7 @@
     "canonical_model_id": "google-gemini-2.5-flash",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "google/gemini-2.5-flash",
-    "aa_candidates": [
-      "gemini-2-0-flash-experimental",
-      "gemini-2-0-flash",
-      "gemini-1-5-flash"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
       "https://www.vals.ai/models/google_gemini-1.5-flash-001",
       "https://www.vals.ai/models/google_gemini-1.5-flash-002",
@@ -1736,11 +2046,7 @@
     "canonical_model_id": "x-ai-grok-3",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "x-ai/grok-3",
-    "aa_candidates": [
-      "grok-1",
-      "grok-voice",
-      "grok-beta"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
       "https://www.vals.ai/models/grok_grok-2-1212",
       "https://www.vals.ai/models/grok_grok-2-vision-1212"
@@ -1780,15 +2086,32 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "anthropic-claude-4-opus-20250522",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "anthropic/claude-4-opus-20250522",
+    "aa_candidates": [
+      "claude-3-opus",
+      "claude-2",
+      "claude-21"
+    ],
+    "vals_candidates": [
+      "https://www.vals.ai/models/anthropic_claude-3-opus-20240229",
+      "https://www.vals.ai/models/anthropic_claude-3-sonnet-20240229",
+      "https://www.vals.ai/models/anthropic_claude-3-5-haiku-20241022"
+    ],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "anthropic-claude-4-sonnet-20250522",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "anthropic/claude-4-sonnet-20250522",
     "aa_candidates": [
+      "claude-3-sonnet",
       "claude-35-sonnet",
-      "claude-35-sonnet-june-24",
-      "claude-2"
+      "claude-35-sonnet-june-24"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/anthropic_claude-3-sonnet-20240229",
       "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620",
       "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20241022"
     ],
@@ -1822,7 +2145,7 @@
     "vals_candidates": [
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
       "https://www.vals.ai/models/mistralai_mistral-large-2512",
-      "https://www.vals.ai/models/mistralai_mistral-large-2411"
+      "https://www.vals.ai/models/mistralai_mistral-small-2503"
     ],
     "livebench_candidates": []
   },
@@ -1840,6 +2163,66 @@
       "https://www.vals.ai/models/google_gemini-1.5-pro-002",
       "https://www.vals.ai/models/google_gemini-1.0-pro-002"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "arcee-ai-spotlight",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "arcee-ai/spotlight",
+    "aa_candidates": [
+      "pixtral-large-2411",
+      "gpt-5",
+      "mistral-large-3"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "arcee-ai-maestro-reasoning",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "arcee-ai/maestro-reasoning",
+    "aa_candidates": [
+      "glm-5",
+      "sonar-reasoning",
+      "glm-4-7"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "arcee-ai-virtuoso-large",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "arcee-ai/virtuoso-large",
+    "aa_candidates": [
+      "pixtral-large-2411",
+      "mistral-large-3",
+      "jamba-1-7-large"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "arcee-ai-coder-large",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "arcee-ai/coder-large",
+    "aa_candidates": [
+      "pixtral-large-2411",
+      "deepseek-coder-v2",
+      "mistral-large-3"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "inception-mercury-coder-small-beta",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "inception/mercury-coder-small-beta",
+    "aa_candidates": [
+      "qwen2-5-coder-7b-instruct",
+      "qwen2-5-coder-32b-instruct",
+      "qwen3-coder-480b-a35b-instruct"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -2011,6 +2394,30 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "eleutherai-llemma_7b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "eleutherai/llemma_7b",
+    "aa_candidates": [
+      "llama-2-chat-7b",
+      "llama-2-chat-70b",
+      "hermes-3-llama-3-1-70b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "alfredpros-codellama-7b-instruct-solidity",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "alfredpros/codellama-7b-instruct-solidity",
+    "aa_candidates": [
+      "dbrx",
+      "mistral-7b-instruct",
+      "arctic-instruct"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "x-ai-grok-3-mini-beta",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "x-ai/grok-3-mini-beta",
@@ -2025,25 +2432,11 @@
     "canonical_model_id": "x-ai-grok-3-beta",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "x-ai/grok-3-beta",
-    "aa_candidates": [
-      "grok-1",
-      "grok-2-1212",
-      "grok-voice"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
       "https://www.vals.ai/models/grok_grok-2-1212",
       "https://www.vals.ai/models/grok_grok-2-vision-1212"
     ],
-    "livebench_candidates": []
-  },
-  {
-    "canonical_model_id": "nvidia-llama-3.1-nemotron-ultra-253b-v1",
-    "type": "ambiguous-auto-match",
-    "openrouter_slug": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-    "aa_candidates": [
-      "llama-3-1-nemotron-instruct-70b"
-    ],
-    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -2086,11 +2479,15 @@
     "canonical_model_id": "mistralai-mistral-small-3.1-24b-instruct-2503",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "mistralai/mistral-small-3.1-24b-instruct-2503",
-    "aa_candidates": [],
+    "aa_candidates": [
+      "mistral-small-3-1",
+      "mistral-small-3-2",
+      "mistral-small-2402"
+    ],
     "vals_candidates": [
+      "https://www.vals.ai/models/mistralai_mistral-small-2503",
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
-      "https://www.vals.ai/models/mistralai_mistral-large-2512",
-      "https://www.vals.ai/models/mistralai_mistral-large-2411"
+      "https://www.vals.ai/models/mistralai_mistral-large-2512"
     ],
     "livebench_candidates": []
   },
@@ -2143,9 +2540,9 @@
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-4o-search-preview-2025-03-11",
     "aa_candidates": [
+      "gpt-4-5",
       "o1-preview",
-      "gpt-4o-2024-08-06",
-      "gpt-4o-2024-05-13"
+      "gpt-4"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
@@ -2168,6 +2565,18 @@
       "https://www.vals.ai/models/together_google_gemma-2-9b-it",
       "https://www.vals.ai/models/google_gemini-1.5-flash-002"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "thedrummer-skyfall-36b-v2",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "thedrummer/skyfall-36b-v2",
+    "aa_candidates": [
+      "k2-v2-medium",
+      "mimo-v2-0206",
+      "apriel-v1-6-15b-thinker"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -2209,11 +2618,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-lite-001",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "google/gemini-2.0-flash-lite-001",
-    "aa_candidates": [
-      "gemini-2-0-flash-experimental",
-      "gemini-2-0-flash",
-      "gemini-1-5-flash"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
       "https://www.vals.ai/models/google_gemini-2.0-flash-001",
       "https://www.vals.ai/models/google_gemini-2.0-flash-exp",
@@ -2225,12 +2630,9 @@
     "canonical_model_id": "anthropic-claude-3-7-sonnet-20250219",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "anthropic/claude-3-7-sonnet-20250219",
-    "aa_candidates": [
-      "claude-35-sonnet",
-      "claude-35-sonnet-june-24",
-      "claude-2"
-    ],
+    "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/anthropic_claude-3-sonnet-20240229",
       "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620",
       "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20241022"
     ],
@@ -2272,7 +2674,7 @@
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-mini-2024-07-18",
       "https://www.vals.ai/models/openai_gpt-4-turbo",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13"
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo"
     ],
     "livebench_candidates": []
   },
@@ -2283,7 +2685,7 @@
     "aa_candidates": [
       "gemini-2-0-flash-experimental",
       "gemini-2-0-flash",
-      "gemini-1-5-flash"
+      "gemini-2-0-flash-lite-001"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/google_gemini-2.0-flash-001",
@@ -2300,6 +2702,42 @@
       "qwen3-vl-4b-instruct",
       "qwen-chat-14b",
       "qwen-chat-72b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "aion-labs-aion-1.0",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "aion-labs/aion-1.0",
+    "aa_candidates": [
+      "gemini-1-0-ultra",
+      "ling-mini-2-0",
+      "gemini-1-0-pro"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "aion-labs-aion-1.0-mini",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "aion-labs/aion-1.0-mini",
+    "aa_candidates": [
+      "o1-mini",
+      "o3-mini",
+      "ling-mini-2-0"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "aion-labs-aion-rp-llama-3.1-8b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "aion-labs/aion-rp-llama-3.1-8b",
+    "aa_candidates": [
+      "llama-3-1-instruct-8b",
+      "ministral-3-8b",
+      "gemini-1-0-pro"
     ],
     "vals_candidates": [],
     "livebench_candidates": []
@@ -2400,14 +2838,14 @@
     "type": "ambiguous-auto-match",
     "openrouter_slug": "mistralai/mistral-small-24b-instruct-2501",
     "aa_candidates": [
-      "mistral-small",
-      "mistral-small-2402",
-      "magistral-small"
+      "mistral-small-3-1",
+      "mistral-small-3-2",
+      "mistral-small"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/mistralai_mistral-small-2503",
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
-      "https://www.vals.ai/models/mistralai_labs-devstral-small-2512",
-      "https://www.vals.ai/models/mistralai_mistral-large-2512"
+      "https://www.vals.ai/models/mistralai_labs-devstral-small-2512"
     ],
     "livebench_candidates": []
   },
@@ -2474,15 +2912,43 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "sao10k-l3.1-70b-hanami-x1",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "sao10k/l3.1-70b-hanami-x1",
+    "aa_candidates": [
+      "hermes-3-llama-3-1-70b",
+      "llama-3-1-instruct-70b",
+      "llama-2-chat-70b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "deepseek-deepseek-chat-v3",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "deepseek/deepseek-chat-v3",
-    "aa_candidates": [],
+    "aa_candidates": [
+      "deepseek-v3",
+      "deepseek-r1",
+      "deepseek-r1-qwen3-8b"
+    ],
     "vals_candidates": [
       "https://www.vals.ai/models/fireworks_deepseek-v3",
       "https://www.vals.ai/models/fireworks_deepseek-v3-0324",
       "https://www.vals.ai/models/fireworks_deepseek-v3p1"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "sao10k-l3.3-euryale-70b-v2.3",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "sao10k/l3.3-euryale-70b-v2.3",
+    "aa_candidates": [
+      "llama-2-chat-70b",
+      "llama-65b",
+      "llama-3-3-instruct-70b"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -2569,9 +3035,9 @@
     "type": "ambiguous-auto-match",
     "openrouter_slug": "mistralai/mistral-large-2411",
     "aa_candidates": [
+      "mistral-large-3",
       "mistral-large",
-      "mistral-large-2",
-      "mistral-large-2407"
+      "mistral-large-2"
     ],
     "vals_candidates": [],
     "livebench_candidates": []
@@ -2581,11 +3047,15 @@
     "type": "ambiguous-auto-match",
     "openrouter_slug": "mistralai/mistral-large-2407",
     "aa_candidates": [
+      "mistral-large-3",
       "mistral-large",
-      "mistral-large-2",
-      "mistral-large-2407"
+      "mistral-large-2"
     ],
-    "vals_candidates": [],
+    "vals_candidates": [
+      "https://www.vals.ai/models/mistralai_mistral-large-2512",
+      "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
+      "https://www.vals.ai/models/mistralai_mistral-small-2503"
+    ],
     "livebench_candidates": []
   },
   {
@@ -2594,9 +3064,9 @@
     "openrouter_slug": "mistralai/pixtral-large-2411",
     "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/mistralai_mistral-large-2512",
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
-      "https://www.vals.ai/models/together_mistralai_Mixtral-8x22B-Instruct-v0.1",
-      "https://www.vals.ai/models/mistralai_labs-devstral-small-2512"
+      "https://www.vals.ai/models/mistralai_mistral-small-2503"
     ],
     "livebench_candidates": []
   },
@@ -2615,14 +3085,27 @@
     ]
   },
   {
-    "canonical_model_id": "anthropic-claude-3-5-haiku",
+    "canonical_model_id": "thedrummer-unslopnemo-12b",
     "type": "ambiguous-auto-match",
-    "openrouter_slug": "anthropic/claude-3-5-haiku",
-    "aa_candidates": [],
-    "vals_candidates": [
-      "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620",
-      "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20241022"
+    "openrouter_slug": "thedrummer/unslopnemo-12b",
+    "aa_candidates": [
+      "hermes-3-llama-3-1-70b",
+      "gpt-5-nano-medium",
+      "gemma-3-12b"
     ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "anthracite-org-magnum-v4-72b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "anthracite-org/magnum-v4-72b",
+    "aa_candidates": [
+      "k2-v2-medium",
+      "command-r-03-2024",
+      "falcon-h1r-7b"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -2632,7 +3115,7 @@
     "aa_candidates": [
       "claude-35-sonnet",
       "claude-35-sonnet-june-24",
-      "claude-2"
+      "claude-3-sonnet"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620",
@@ -2656,6 +3139,42 @@
       "https://www.vals.ai/models/together_Qwen_Qwen2.5-7B-Instruct-Turbo",
       "https://www.vals.ai/models/together_Qwen_Qwen2.5-72B-Instruct-Turbo"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "inflection-inflection-3-pi",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "inflection/inflection-3-pi",
+    "aa_candidates": [
+      "phi-3-mini",
+      "phi-4-mini",
+      "falcon-h1r-7b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "inflection-inflection-3-productivity",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "inflection/inflection-3-productivity",
+    "aa_candidates": [
+      "phi-3-mini",
+      "phi-4-mini",
+      "mistral-7b-instruct"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "thedrummer-rocinante-12b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "thedrummer/rocinante-12b",
+    "aa_candidates": [
+      "granite-4-0-h-nano-1b",
+      "apriel-v1-6-15b-thinker",
+      "apriel-v1-5-15b-thinker"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -2709,7 +3228,7 @@
     "vals_candidates": [
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
       "https://www.vals.ai/models/together_mistralai_Mixtral-8x22B-Instruct-v0.1",
-      "https://www.vals.ai/models/together_mistralai_Mixtral-8x7B-v0.1"
+      "https://www.vals.ai/models/mistralai_mistral-small-2503"
     ],
     "livebench_candidates": []
   },
@@ -2744,6 +3263,18 @@
     "livebench_candidates": []
   },
   {
+    "canonical_model_id": "sao10k-l3.1-euryale-70b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "sao10k/l3.1-euryale-70b",
+    "aa_candidates": [
+      "llama-2-chat-70b",
+      "hermes-3-llama-3-1-70b",
+      "llama-3-1-instruct-70b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "qwen-qwen-2-vl-7b-instruct",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "qwen/qwen-2-vl-7b-instruct",
@@ -2774,6 +3305,18 @@
     "openrouter_slug": "nousresearch/hermes-3-llama-3.1-405b",
     "aa_candidates": [
       "hermes-3-llama-3-1-70b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "sao10k-l3-lunaris-8b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "sao10k/l3-lunaris-8b",
+    "aa_candidates": [
+      "llama-65b",
+      "llama-3-instruct-8b",
+      "llama-3-1-instruct-8b"
     ],
     "vals_candidates": [],
     "livebench_candidates": []
@@ -2840,14 +3383,26 @@
     "openrouter_slug": "mistralai/mistral-nemo",
     "aa_candidates": [
       "mistral-medium",
-      "mistral-medium-3-1",
-      "mistral-large-2"
+      "mistral-large-3",
+      "mistral-medium-3-1"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
-      "https://www.vals.ai/models/mistralai_labs-devstral-small-2512",
-      "https://www.vals.ai/models/together_mistralai_Mixtral-8x7B-v0.1"
+      "https://www.vals.ai/models/mistralai_mistral-large-2512",
+      "https://www.vals.ai/models/mistralai_mistral-small-2503"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "openai-gpt-4o-mini-2024-07-18",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "openai/gpt-4o-mini-2024-07-18",
+    "aa_candidates": [
+      "gpt-4o-mini-realtime-dec-2024",
+      "gpt-5-mini-medium",
+      "gpt-5-mini-minimal"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -2855,9 +3410,9 @@
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-4o-mini",
     "aa_candidates": [
+      "gpt-4o-mini-realtime-dec-2024",
       "gpt-5-mini-medium",
-      "gpt-5-mini-minimal",
-      "gpt-5-minimal"
+      "gpt-5-mini-minimal"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
@@ -2886,6 +3441,18 @@
       "gemma-3-270m",
       "gemma-3n-e4b",
       "gemma-3-27b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "sao10k-l3-euryale-70b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "sao10k/l3-euryale-70b",
+    "aa_candidates": [
+      "hermes-3-llama-3-1-70b",
+      "llama-3-1-instruct-70b",
+      "llama-2-chat-70b"
     ],
     "vals_candidates": [],
     "livebench_candidates": []
@@ -2941,7 +3508,11 @@
       "llama-3-1-instruct-70b",
       "llama-3-instruct-70b"
     ],
-    "vals_candidates": [],
+    "vals_candidates": [
+      "https://www.vals.ai/models/together_meta-llama_Llama-3.3-70B-Instruct-Turbo",
+      "https://www.vals.ai/models/together_meta-llama_Llama-2-70b-hf",
+      "https://www.vals.ai/models/together_meta-llama_Meta-Llama-3.1-405B-Instruct-Turbo"
+    ],
     "livebench_candidates": [
       "Meta-Llama-3-70B-Instruct",
       "meta-llama-3-70b-instruct"
@@ -2957,9 +3528,9 @@
       "llama-3-3-instruct-70b"
     ],
     "vals_candidates": [
+      "https://www.vals.ai/models/together_meta-llama_Llama-3.3-70B-Instruct-Turbo",
       "https://www.vals.ai/models/together_meta-llama_Meta-Llama-3.1-405B-Instruct-Turbo",
-      "https://www.vals.ai/models/together_togethercomputer_llama-2-7b",
-      "https://www.vals.ai/models/together_meta-llama_Llama-2-70b-hf"
+      "https://www.vals.ai/models/together_togethercomputer_llama-2-7b"
     ],
     "livebench_candidates": [
       "Meta-Llama-3-8B-Instruct",
@@ -2967,11 +3538,24 @@
     ]
   },
   {
+    "canonical_model_id": "microsoft-wizardlm-2-8x22b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "microsoft/wizardlm-2-8x22b",
+    "aa_candidates": [
+      "lfm2-1-2b",
+      "olmo-2-7b",
+      "ministral-3-8b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
     "canonical_model_id": "anthropic-claude-3-haiku",
     "type": "ambiguous-auto-match",
     "openrouter_slug": "anthropic/claude-3-haiku",
     "aa_candidates": [],
     "vals_candidates": [
+      "https://www.vals.ai/models/anthropic_claude-3-opus-20240229",
       "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20240620",
       "https://www.vals.ai/models/anthropic_claude-3-5-sonnet-20241022"
     ],
@@ -2982,15 +3566,11 @@
     "type": "ambiguous-auto-match",
     "openrouter_slug": "mistralai/mistral-large",
     "aa_candidates": [
+      "mistral-large-3",
       "mistral-large-2",
-      "mistral-large-2407",
-      "mistral-large"
+      "mistral-large-2407"
     ],
-    "vals_candidates": [
-      "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
-      "https://www.vals.ai/models/together_mistralai_Mixtral-8x7B-v0.1",
-      "https://www.vals.ai/models/mistralai_labs-devstral-small-2512"
-    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -3000,8 +3580,20 @@
     "aa_candidates": [
       "gpt-35-turbo",
       "gpt-3-5-turbo-0613",
-      "gpt-5-low"
+      "gpt-4"
     ],
+    "vals_candidates": [
+      "https://www.vals.ai/models/openai_gpt-3.5-turbo",
+      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
+      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06"
+    ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "openai-gpt-4-turbo-preview",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "openai/gpt-4-turbo-preview",
+    "aa_candidates": [],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
       "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
@@ -3010,19 +3602,27 @@
     "livebench_candidates": []
   },
   {
-    "canonical_model_id": "openai-gpt-4-turbo-preview",
+    "canonical_model_id": "alpindale-goliath-120b",
     "type": "ambiguous-auto-match",
-    "openrouter_slug": "openai/gpt-4-turbo-preview",
+    "openrouter_slug": "alpindale/goliath-120b",
     "aa_candidates": [
-      "o1-preview",
-      "gpt-35-turbo",
-      "gpt-3-5-turbo-0613"
+      "gpt-oss-120b",
+      "olmo-3-1-32b-think",
+      "gpt-oss-120b-low"
     ],
-    "vals_candidates": [
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "openrouter-auto",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "openrouter/auto",
+    "aa_candidates": [
+      "arctic-instruct",
+      "grok-voice",
+      "claude-3-opus"
     ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -3050,10 +3650,22 @@
       "gpt-3-5-turbo-0613",
       "gpt-5-low"
     ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "mistralai-mistral-7b-instruct-v0.1",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "mistralai/mistral-7b-instruct-v0.1",
+    "aa_candidates": [
+      "mistral-7b-instruct",
+      "mistral-small-3-1",
+      "mistral-medium-3-1"
+    ],
     "vals_candidates": [
-      "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
-      "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
+      "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
+      "https://www.vals.ai/models/mistralai_mistral-small-2503",
+      "https://www.vals.ai/models/mistralai_labs-devstral-small-2512"
     ],
     "livebench_candidates": []
   },
@@ -3071,6 +3683,42 @@
       "https://www.vals.ai/models/openai_gpt-4o-2024-08-06",
       "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
     ],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "mancer-weaver",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "mancer/weaver",
+    "aa_candidates": [
+      "command-r-plus-04-2024",
+      "gemini-3-pro-low",
+      "command-r-03-2024"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "undi95-remm-slerp-l2-13b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "undi95/remm-slerp-l2-13b",
+    "aa_candidates": [
+      "gemma-3-4b",
+      "gemma-3-1b",
+      "gemma-3-12b"
+    ],
+    "vals_candidates": [],
+    "livebench_candidates": []
+  },
+  {
+    "canonical_model_id": "gryphe-mythomax-l2-13b",
+    "type": "ambiguous-auto-match",
+    "openrouter_slug": "gryphe/mythomax-l2-13b",
+    "aa_candidates": [
+      "llama-2-chat-13b",
+      "mistral-small-3-1",
+      "ministral-3-8b"
+    ],
+    "vals_candidates": [],
     "livebench_candidates": []
   },
   {
@@ -3094,9 +3742,9 @@
     "type": "ambiguous-auto-match",
     "openrouter_slug": "openai/gpt-4",
     "aa_candidates": [
+      "gpt-4-5",
       "gpt-oss-120b-low",
-      "gpt-oss-20b",
-      "gpt-oss-120b"
+      "gpt-oss-20b"
     ],
     "vals_candidates": [
       "https://www.vals.ai/models/openai_gpt-4o-2024-05-13",
@@ -3119,12 +3767,6 @@
       "https://www.vals.ai/models/openai_gpt-4o-2024-11-20"
     ],
     "livebench_candidates": []
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "openai::gpt-5-3-codex",
-    "provider": "openai",
-    "display_name": "GPT-5.3 Codex (xhigh)"
   },
   {
     "type": "unmatched-aa",
@@ -3182,21 +3824,9 @@
   },
   {
     "type": "unmatched-aa",
-    "source_key": "openai::gpt-5-4",
-    "provider": "openai",
-    "display_name": "GPT-5.4 (xhigh)"
-  },
-  {
-    "type": "unmatched-aa",
     "source_key": "openai::gpt-5-4-mini-non-reasoning",
     "provider": "openai",
     "display_name": "GPT-5.4 mini (Non-Reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "openai::gpt-5-4-pro",
-    "provider": "openai",
-    "display_name": "GPT-5.4 Pro (xhigh)"
   },
   {
     "type": "unmatched-aa",
@@ -3302,12 +3932,6 @@
   },
   {
     "type": "unmatched-aa",
-    "source_key": "anthropic::claude-opus-4-6",
-    "provider": "anthropic",
-    "display_name": "Claude Opus 4.6 (Non-reasoning, High Effort)"
-  },
-  {
-    "type": "unmatched-aa",
     "source_key": "anthropic::claude-sonnet-4-6-non-reasoning-low-effort",
     "provider": "anthropic",
     "display_name": "Claude Sonnet 4.6 (Non-reasoning, Low Effort)"
@@ -3326,9 +3950,27 @@
   },
   {
     "type": "unmatched-aa",
+    "source_key": "mistral::ministral-3-8b",
+    "provider": "mistral",
+    "display_name": "Ministral 3 8B"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "mistral::devstral-2",
+    "provider": "mistral",
+    "display_name": "Devstral 2"
+  },
+  {
+    "type": "unmatched-aa",
     "source_key": "mistral::devstral-small-2",
     "provider": "mistral",
     "display_name": "Devstral Small 2"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "mistral::mistral-large-3",
+    "provider": "mistral",
+    "display_name": "Mistral Large 3"
   },
   {
     "type": "unmatched-aa",
@@ -3344,6 +3986,12 @@
   },
   {
     "type": "unmatched-aa",
+    "source_key": "mistral::ministral-3-14b",
+    "provider": "mistral",
+    "display_name": "Ministral 3 14B"
+  },
+  {
+    "type": "unmatched-aa",
     "source_key": "mistral::magistral-medium-2509",
     "provider": "mistral",
     "display_name": "Magistral Medium 1.2"
@@ -3353,6 +4001,12 @@
     "source_key": "mistral::mistral-small-4-non-reasoning",
     "provider": "mistral",
     "display_name": "Mistral Small 4 (Non-reasoning)"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "mistral::ministral-3-3b",
+    "provider": "mistral",
+    "display_name": "Ministral 3 3B"
   },
   {
     "type": "unmatched-aa",
@@ -3377,12 +4031,6 @@
     "source_key": "tii-uae::falcon-h1r-7b",
     "provider": "tii",
     "display_name": "Falcon-H1R-7B"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "xai::grok-3-mini-reasoning",
-    "provider": "xai",
-    "display_name": "Grok 3 mini Reasoning (high)"
   },
   {
     "type": "unmatched-aa",
@@ -3455,12 +4103,6 @@
     "source_key": "aws::nova-2-0-lite",
     "provider": "amazon",
     "display_name": "Nova 2.0 Lite (Non-reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "azure::phi-4",
-    "provider": "microsoft-azure",
-    "display_name": "Phi-4"
   },
   {
     "type": "unmatched-aa",
@@ -3554,27 +4196,9 @@
   },
   {
     "type": "unmatched-aa",
-    "source_key": "nvidia::nvidia-nemotron-3-nano-30b-a3b-reasoning",
-    "provider": "nvidia",
-    "display_name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
     "source_key": "nvidia::llama-nemotron-super-49b-v1-5",
     "provider": "nvidia",
     "display_name": "Llama Nemotron Super 49B v1.5 (Non-reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "nvidia::nvidia-nemotron-nano-9b-v2-reasoning",
-    "provider": "nvidia",
-    "display_name": "NVIDIA Nemotron Nano 9B V2 (Reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "nvidia::llama-3-1-nemotron-ultra-253b-v1-reasoning",
-    "provider": "nvidia",
-    "display_name": "Llama 3.1 Nemotron Ultra 253B v1 (Reasoning)"
   },
   {
     "type": "unmatched-aa",
@@ -3716,6 +4340,12 @@
   },
   {
     "type": "unmatched-aa",
+    "source_key": "xiaomi::mimo-v2-0206",
+    "provider": "xiaomi",
+    "display_name": "MiMo-V2-Flash (Feb 2026)"
+  },
+  {
+    "type": "unmatched-aa",
     "source_key": "meta::llama-65b",
     "provider": "meta",
     "display_name": "Llama 65B"
@@ -3743,12 +4373,6 @@
     "source_key": "deepcogito::cogito-v2-1-reasoning",
     "provider": "deep-cogito",
     "display_name": "Cogito v2.1 (Reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "kwaikat::kat-coder-pro-v1",
-    "provider": "kwaikat",
-    "display_name": "KAT-Coder-Pro V1"
   },
   {
     "type": "unmatched-aa",
@@ -3875,6 +4499,12 @@
     "source_key": "servicenow::apriel-v1-6-15b-thinker",
     "provider": "servicenow",
     "display_name": "Apriel-v1.6-15B-Thinker"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "ai21-labs::jamba-1-7-large",
+    "provider": "ai21",
+    "display_name": "Jamba 1.7 Large"
   },
   {
     "type": "unmatched-aa",
@@ -4088,15 +4718,15 @@
   },
   {
     "type": "unmatched-aa",
-    "source_key": "openai::gpt-5-2-codex",
-    "provider": "openai",
-    "display_name": "GPT-5.2 Codex (xhigh)"
-  },
-  {
-    "type": "unmatched-aa",
     "source_key": "openai::gpt-4o-realtime-dec-2024",
     "provider": "openai",
     "display_name": "GPT-4o Realtime (Dec '24)"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "openai::gpt-4o-mini-realtime-dec-2024",
+    "provider": "openai",
+    "display_name": "GPT-4o mini Realtime (Dec '24)"
   },
   {
     "type": "unmatched-aa",
@@ -4157,6 +4787,12 @@
     "source_key": "openai::gpt-5-2",
     "provider": "openai",
     "display_name": "GPT-5.2 (xhigh)"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "openai::gpt-4-5",
+    "provider": "openai",
+    "display_name": "GPT-4.5 (Preview)"
   },
   {
     "type": "unmatched-aa",
@@ -4280,12 +4916,6 @@
   },
   {
     "type": "unmatched-aa",
-    "source_key": "google::gemini-2-5-flash-reasoning",
-    "provider": "google",
-    "display_name": "Gemini 2.5 Flash (Reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
     "source_key": "google::palm-2",
     "provider": "google",
     "display_name": "PALM-2"
@@ -4310,12 +4940,6 @@
   },
   {
     "type": "unmatched-aa",
-    "source_key": "google::gemini-2-5-flash-lite-reasoning",
-    "provider": "google",
-    "display_name": "Gemini 2.5 Flash-Lite (Reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
     "source_key": "google::gemini-2-5-flash-preview-09-2025-reasoning",
     "provider": "google",
     "display_name": "Gemini 2.5 Flash Preview (Sep '25) (Reasoning)"
@@ -4331,6 +4955,12 @@
     "source_key": "google::gemini-2-0-flash-thinking-exp-1219",
     "provider": "google",
     "display_name": "Gemini 2.0 Flash Thinking Experimental (Dec '24)"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "google::gemini-2-0-flash-lite-001",
+    "provider": "google",
+    "display_name": "Gemini 2.0 Flash-Lite (Feb '25)"
   },
   {
     "type": "unmatched-aa",
@@ -4388,6 +5018,18 @@
   },
   {
     "type": "unmatched-aa",
+    "source_key": "anthropic::claude-3-opus",
+    "provider": "anthropic",
+    "display_name": "Claude 3 Opus"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "anthropic::claude-3-sonnet",
+    "provider": "anthropic",
+    "display_name": "Claude 3 Sonnet"
+  },
+  {
+    "type": "unmatched-aa",
     "source_key": "anthropic::claude-instant",
     "provider": "anthropic",
     "display_name": "Claude Instant"
@@ -4430,12 +5072,6 @@
   },
   {
     "type": "unmatched-aa",
-    "source_key": "anthropic::claude-3-7-sonnet",
-    "provider": "anthropic",
-    "display_name": "Claude 3.7 Sonnet (Non-reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
     "source_key": "anthropic::claude-4-opus-thinking",
     "provider": "anthropic",
     "display_name": "Claude 4 Opus (Reasoning)"
@@ -4451,12 +5087,6 @@
     "source_key": "anthropic::claude-4-sonnet-thinking",
     "provider": "anthropic",
     "display_name": "Claude 4 Sonnet (Reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "anthropic::claude-opus-4-5",
-    "provider": "anthropic",
-    "display_name": "Claude Opus 4.5 (Non-reasoning)"
   },
   {
     "type": "unmatched-aa",
@@ -4508,6 +5138,18 @@
   },
   {
     "type": "unmatched-aa",
+    "source_key": "mistral::mistral-7b-instruct",
+    "provider": "mistral",
+    "display_name": "Mistral 7B Instruct"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "mistral::mistral-small-3-1",
+    "provider": "mistral",
+    "display_name": "Mistral Small 3.1"
+  },
+  {
+    "type": "unmatched-aa",
     "source_key": "mistral::mistral-medium-3",
     "provider": "mistral",
     "display_name": "Mistral Medium 3"
@@ -4517,6 +5159,12 @@
     "source_key": "mistral::magistral-small",
     "provider": "mistral",
     "display_name": "Magistral Small 1"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "mistral::mistral-small-3-2",
+    "provider": "mistral",
+    "display_name": "Mistral Small 3.2"
   },
   {
     "type": "unmatched-aa",
@@ -4547,6 +5195,12 @@
     "source_key": "mistral::devstral-small-2505",
     "provider": "mistral",
     "display_name": "Devstral Small (May '25)"
+  },
+  {
+    "type": "unmatched-aa",
+    "source_key": "deepseek::deepseek-v3",
+    "provider": "deepseek",
+    "display_name": "DeepSeek V3 (Dec '24)"
   },
   {
     "type": "unmatched-aa",
@@ -4670,18 +5324,6 @@
   },
   {
     "type": "unmatched-aa",
-    "source_key": "xai::grok-3-reasoning",
-    "provider": "xai",
-    "display_name": "Grok 3 Reasoning Beta"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "xai::grok-4-fast-reasoning",
-    "provider": "xai",
-    "display_name": "Grok 4 Fast (Reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
     "source_key": "xai::grok-4-fast",
     "provider": "xai",
     "display_name": "Grok 4 Fast (Non-reasoning)"
@@ -4691,12 +5333,6 @@
     "source_key": "xai::grok-4-1-fast",
     "provider": "xai",
     "display_name": "Grok 4.1 Fast (Non-reasoning)"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "xai::grok-4-1-fast-reasoning",
-    "provider": "xai",
-    "display_name": "Grok 4.1 Fast (Reasoning)"
   },
   {
     "type": "unmatched-aa",
@@ -4760,6 +5396,12 @@
   },
   {
     "type": "unmatched-aa",
+    "source_key": "kimi::kimi-k2",
+    "provider": "moonshot-ai",
+    "display_name": "Kimi K2"
+  },
+  {
+    "type": "unmatched-aa",
     "source_key": "ai2::tulu3-405b",
     "provider": "allen-institute-for-ai",
     "display_name": "Llama 3.1 Tulu3 405B"
@@ -4787,12 +5429,6 @@
     "source_key": "nous-research::hermes-3-llama-3-1-70b",
     "provider": "nous-research",
     "display_name": "Hermes 3 - Llama-3.1 70B"
-  },
-  {
-    "type": "unmatched-aa",
-    "source_key": "xiaomi::mimo-v2-flash-reasoning",
-    "provider": "xiaomi",
-    "display_name": "MiMo-V2-Flash (Reasoning)"
   },
   {
     "type": "unmatched-aa",
@@ -5138,6 +5774,12 @@
   },
   {
     "type": "unmatched-vals",
+    "source_key": "https://www.vals.ai/models/ai21labs_jamba-large-1.7",
+    "provider": "ai21",
+    "display_name": "Jamba 1.7 Large"
+  },
+  {
+    "type": "unmatched-vals",
     "source_key": "https://www.vals.ai/models/ai21labs_jamba-mini-1.6",
     "provider": "ai21",
     "display_name": "Jamba 1.6 Mini"
@@ -5183,6 +5825,18 @@
     "source_key": "https://www.vals.ai/models/anthropic_claude-3-7-sonnet-20250219-thinking",
     "provider": "anthropic",
     "display_name": "Claude 3.7 Sonnet (Thinking)"
+  },
+  {
+    "type": "unmatched-vals",
+    "source_key": "https://www.vals.ai/models/anthropic_claude-3-opus-20240229",
+    "provider": "anthropic",
+    "display_name": "Claude 3 Opus"
+  },
+  {
+    "type": "unmatched-vals",
+    "source_key": "https://www.vals.ai/models/anthropic_claude-3-sonnet-20240229",
+    "provider": "anthropic",
+    "display_name": "Claude 3 Sonnet"
   },
   {
     "type": "unmatched-vals",
@@ -5558,6 +6212,12 @@
   },
   {
     "type": "unmatched-vals",
+    "source_key": "https://www.vals.ai/models/mistralai_devstral-2512",
+    "provider": "mistral",
+    "display_name": "Devstral 2"
+  },
+  {
+    "type": "unmatched-vals",
     "source_key": "https://www.vals.ai/models/mistralai_labs-devstral-small-2512",
     "provider": "mistral",
     "display_name": "Devstral Small 2"
@@ -5573,6 +6233,12 @@
     "source_key": "https://www.vals.ai/models/mistralai_magistral-small-2509",
     "provider": "mistral",
     "display_name": "Magistral Small 1.2 (09/2025)"
+  },
+  {
+    "type": "unmatched-vals",
+    "source_key": "https://www.vals.ai/models/mistralai_mistral-small-2503",
+    "provider": "mistral",
+    "display_name": "Mistral Small 3.1 (03/2025)"
   },
   {
     "type": "unmatched-vals",
@@ -5738,9 +6404,21 @@
   },
   {
     "type": "unmatched-vals",
+    "source_key": "https://www.vals.ai/models/together_meta-llama_Llama-3.3-70B-Instruct-Turbo",
+    "provider": "meta",
+    "display_name": "Llama 3.3 Instruct Turbo (70B)"
+  },
+  {
+    "type": "unmatched-vals",
     "source_key": "https://www.vals.ai/models/together_meta-llama_Meta-Llama-3.1-405B-Instruct-Turbo",
     "provider": "meta",
     "display_name": "Llama 3.1 Instruct Turbo (405B)"
+  },
+  {
+    "type": "unmatched-vals",
+    "source_key": "https://www.vals.ai/models/together_mistralai_Mistral-7B-v0.1",
+    "provider": "mistral",
+    "display_name": "Mistral (7B)"
   },
   {
     "type": "unmatched-vals",
@@ -6383,12 +7061,6 @@
     "source_key": "grok-2-mini",
     "provider": "unknown",
     "display_name": "grok-2-mini"
-  },
-  {
-    "type": "unmatched-livebench",
-    "source_key": "grok-3-mini-reasoning-beta",
-    "provider": "unknown",
-    "display_name": "grok-3-mini-reasoning-beta"
   },
   {
     "type": "unmatched-livebench",

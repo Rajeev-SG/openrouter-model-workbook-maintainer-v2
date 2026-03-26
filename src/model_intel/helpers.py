@@ -74,14 +74,20 @@ STOP_TOKENS = {
 MATCH_DROP_TOKENS = {
     "base",
     "custom",
+    "effort",
     "free",
     "high",
     "low",
     "medium",
     "miniimal",
     "minimal",
+    "nonreasoning",
+    "nonthinking",
     "preview",
+    "reasoning",
+    "thinking",
     "tools",
+    "xhigh",
 }
 
 LEADING_PROVIDER_PREFIXES = (

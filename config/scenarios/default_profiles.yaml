@@ -1,16 +1,12 @@
 version: 2
 profiles:
   coding:
-    label: Best value coding
+    label: Best coding model
     weights:
-      coding: 0.45
-      budget: 0.25
-      latency: 0.15
+      coding: 0.75
       reasoning: 0.10
+      latency: 0.1
       long_context: 0.05
-    hard_filters:
-      max_price_per_million: 2.5
-      min_tokens_per_second: 20
   reasoning:
     label: Premium reasoning
     weights:
@@ -22,16 +18,16 @@ profiles:
   budget:
     label: Cheap all-rounder
     weights:
-      budget: 0.55
-      latency: 0.20
+      budget: 0.70
+      latency: 0.08
       coding: 0.10
       reasoning: 0.10
-      long_context: 0.05
+      long_context: 0.02
     hard_filters:
-      max_price_per_million: 2.0
+      max_price_per_million: 1.0
       min_tokens_per_second: 20
-      min_coding_index: 20
-      min_reasoning_index: 20
+      min_coding_index: 30
+      min_reasoning_index: 35
   latency:
     label: Low-latency assistant
     weights:

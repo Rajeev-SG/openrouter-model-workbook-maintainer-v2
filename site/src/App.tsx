@@ -45,10 +45,10 @@ type LoadState = {
 const scenarioPresets = [
   {
     id: 'coding',
-    label: 'Best value coding',
+    label: 'Best coding model',
     shortLabel: 'Coding',
     icon: Workflow,
-    goal: 'Ship code quickly with strong implementation and review quality.',
+    goal: 'Pick the strongest coding model for implementation, debugging, and review work.',
   },
   {
     id: 'reasoning',
@@ -62,7 +62,7 @@ const scenarioPresets = [
     label: 'Cheap all-rounder',
     shortLabel: 'Budget',
     icon: Coins,
-    goal: 'Stay inexpensive without collapsing on capability or responsiveness.',
+    goal: 'Stay genuinely cheap without falling apart on reasoning, coding, or speed.',
   },
   {
     id: 'latency',
@@ -999,7 +999,7 @@ function latestManifestDate(manifest: SourceManifest) {
 function buildPrioritySentence(profiles: ScenarioProfiles, activeProfile: string) {
   const profileLabel = profiles.profiles[activeProfile]?.label ?? titleCase(activeProfile)
   const narratives: Record<string, string> = {
-    coding: 'This preset is trying to find the best day-to-day coding default, not the most expensive frontier model. Price discipline and usable speed both matter.',
+    coding: 'This preset privileges coding-specific benchmark strength first, then checks that the winner still feels usable on speed, reasoning, and context.',
     reasoning: 'This preset is willing to pay for top-end reasoning, as long as the model still feels credible on coding and context-heavy work.',
     budget: 'This preset only treats a model as budget-worthy if it stays cheap and still clears a minimum usefulness bar on reasoning, coding, and speed.',
     latency: 'This preset prioritises interactive responsiveness first, then checks that the fast model is still worth using.',
@@ -1013,7 +1013,7 @@ function buildWinnerSummary(row: GuideRow, activeProfile: string) {
     ? `${formatCompact(row.openrouter_context_tokens)}-token context`
     : 'usable context headroom'
   const summaries: Record<string, string> = {
-    coding: `${row.canonical_family} wins coding because it keeps coding quality high without drifting into premium-model pricing, while still preserving ${context}.`,
+    coding: `${row.canonical_family} wins coding because it leads on the coding-heavy benchmark blend while still preserving ${context} and usable throughput.`,
     reasoning: `${row.canonical_family} wins reasoning because it leads on harder analysis without turning into a slow or brittle specialist pick.`,
     budget: `${row.canonical_family} wins budget because it stays genuinely inexpensive while still clearing the usefulness bar on speed and core capability.`,
     latency: `${row.canonical_family} wins latency because it is fast enough for interactive work without collapsing on the basics that make a model usable.`,

@@ -1,4 +1,4 @@
-from model_intel.pipeline import _apply_cohort_rules, _enrich_registry_rows
+from model_intel.pipeline import _apply_cohort_rules, _blend_price, _enrich_registry_rows
 
 
 def test_apply_cohort_rules_sets_primary_and_strict_flags() -> None:
@@ -210,3 +210,18 @@ def test_enrich_registry_rows_carries_all_available_aa_metrics() -> None:
     assert row["aa_json_support"] == "8 / 8"
     assert row["aa_function_calling"] == "8 / 8"
     assert row["source_freshness"]["artificial_analysis_last_seen"] == "2026-02-05"
+
+
+def test_blend_price_ignores_negative_openrouter_sentinel_values() -> None:
+    assert _blend_price(
+        {
+            "openrouter_input_price_per_million": -1_000_000.0,
+            "openrouter_output_price_per_million": 0.4,
+        }
+    ) is None
+    assert _blend_price(
+        {
+            "openrouter_input_price_per_million": 0.1,
+            "openrouter_output_price_per_million": -1_000_000.0,
+        }
+    ) is None

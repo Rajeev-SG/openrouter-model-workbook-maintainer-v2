@@ -306,6 +306,8 @@ def _blend_price(openrouter: dict[str, Any] | None) -> float | None:
     output_price = openrouter.get("openrouter_output_price_per_million")
     if input_price is None or output_price is None:
         return None
+    if input_price < 0 or output_price < 0:
+        return None
     return (input_price * 3 + output_price) / 4
 
 

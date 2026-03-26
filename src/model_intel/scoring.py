@@ -14,6 +14,15 @@ SCORE_FIELDS = {
     "value": ("overall_value_score", False),
 }
 
+CODING_COMPONENT_WEIGHTS = {
+    "aa_coding_index": 0.35,
+    "aa_scicode": 0.20,
+    "aa_terminalbench_hard": 0.20,
+    "aa_livecodebench": 0.10,
+    "aa_ifbench": 0.10,
+    "aa_tau2": 0.05,
+}
+
 
 def enrich_model_scores(rows: list[dict[str, Any]], profiles: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     _derive_metric_scores(rows)
@@ -50,12 +59,10 @@ def enrich_model_scores(rows: list[dict[str, Any]], profiles: dict[str, Any]) ->
 
 
 def _derive_metric_scores(rows: list[dict[str, Any]]) -> None:
-    metrics = {
+    base_metrics = {
         "reasoning_strength_score": [row.get("aa_intelligence_index") for row in rows],
-        "coding_strength_score": [row.get("aa_coding_index") for row in rows],
         "latency_score": [row.get("aa_median_tokens_per_second") for row in rows],
         "context_score": [row.get("openrouter_context_tokens") for row in rows],
-        "value_cost_score": [row.get("openrouter_blended_price_per_million") for row in rows],
         "overall_value_score": [
             mean(
                 [
@@ -66,11 +73,30 @@ def _derive_metric_scores(rows: list[dict[str, Any]]) -> None:
             for row in rows
         ],
     }
-    normalized = {
-        name: _normalize(values, invert=name == "value_cost_score")
-        for name, values in metrics.items()
+
+    coding_components = {
+        name: _normalize([row.get(name) for row in rows])
+        for name in CODING_COMPONENT_WEIGHTS
     }
+    normalized = {
+        name: _normalize(values)
+        for name, values in base_metrics.items()
+    }
+    normalized["value_cost_score"] = _normalize_ranked(
+        [row.get("openrouter_blended_price_per_million") for row in rows],
+        invert=True,
+    )
     for index, row in enumerate(rows):
+        weighted_components = [
+            (coding_components[name][index], weight)
+            for name, weight in CODING_COMPONENT_WEIGHTS.items()
+            if coding_components[name][index] is not None
+        ]
+        row["coding_strength_score"] = (
+            sum(value * weight for value, weight in weighted_components) / sum(weight for _, weight in weighted_components)
+            if weighted_components
+            else None
+        )
         for score_name, values in normalized.items():
             row[score_name] = values[index]
 
@@ -90,6 +116,27 @@ def _normalize(values: list[float | int | None], invert: bool = False) -> list[f
             continue
         normalized = (float(value) - minimum) / (maximum - minimum)
         results.append(1 - normalized if invert else normalized)
+    return results
+
+
+def _normalize_ranked(values: list[float | int | None], invert: bool = False) -> list[float | None]:
+    present = sorted(float(value) for value in values if value is not None)
+    if not present:
+        return [None for _ in values]
+    if len(present) == 1:
+        return [1.0 if value is not None else None for value in values]
+
+    results: list[float | None] = []
+    for value in values:
+        if value is None:
+            results.append(None)
+            continue
+        current = float(value)
+        lower = sum(1 for item in present if item < current)
+        equal = sum(1 for item in present if item == current)
+        rank = lower + ((equal + 1) / 2)
+        normalized = 1 - ((rank - 1) / (len(present) - 1))
+        results.append(normalized if invert else 1 - normalized)
     return results
 
 
