@@ -12,8 +12,6 @@ permissions:
 jobs:
   refresh-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
     env:
       INFISICAL_DOMAIN: ${{ vars.INFISICAL_DOMAIN || 'https://app.infisical.com' }}
       INFISICAL_ENV_SLUG: ${{ vars.INFISICAL_ENV_SLUG || 'prod' }}
