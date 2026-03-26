@@ -73,3 +73,60 @@ def test_build_workbook_handles_nested_values(tmp_path: Path) -> None:
     assert "AA_Providers" in workbook.sheetnames
     assert "Vals_Benchmarks" in workbook.sheetnames
     assert "LiveBench_Categories" in workbook.sheetnames
+
+
+def test_build_workbook_skips_ineligible_recommendation_rows(tmp_path: Path) -> None:
+    out_path = tmp_path / "model-intelligence.xlsx"
+    cohort_rows = [
+        {
+            "canonical_model_id": "usable-model",
+            "canonical_family": "Usable Model",
+            "canonical_variant": "Standard",
+            "provider": "example",
+            "reasoning_mode": "standard",
+            "openrouter_input_price_per_million": 0.5,
+            "openrouter_output_price_per_million": 1.0,
+            "openrouter_blended_price_per_million": 0.625,
+            "openrouter_context_tokens": 128000,
+            "coverage_score": 1.0,
+            "has_openrouter": True,
+            "has_aa": True,
+            "has_vals": False,
+            "has_livebench": False,
+            "cohort_eligible": True,
+            "strict_cohort_eligible": False,
+            "exclusion_reasons": "",
+        }
+    ]
+    scenario_rows = [
+        {
+            "canonical_model_id": "off-cohort-model",
+            "scenario_profile": "budget",
+            "scenario_label": "Cheap all-rounder",
+            "scenario_score": None,
+            "preset_eligible": False,
+            "ineligibility_reasons": ["price_above_cap"],
+            "explanation": {},
+        },
+        {
+            "canonical_model_id": "usable-model",
+            "scenario_profile": "budget",
+            "scenario_label": "Cheap all-rounder",
+            "scenario_score": 0.42,
+            "preset_eligible": True,
+            "ineligibility_reasons": [],
+            "explanation": {},
+        },
+    ]
+    diagnostics = []
+    source_manifest = {"vals_bundle": {"fetched_at": "2026-03-17T00:00:00+00:00", "record_count": 157}}
+
+    build_workbook(out_path, cohort_rows, cohort_rows, scenario_rows, diagnostics, source_manifest)
+
+    workbook = load_workbook(out_path)
+    sheet = workbook["Recommendations"]
+    rows = list(sheet.iter_rows(min_row=2, values_only=True))
+
+    assert len(rows) == 1
+    assert rows[0][0] == "budget"
+    assert rows[0][2] == "usable-model"

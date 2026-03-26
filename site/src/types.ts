@@ -95,8 +95,10 @@ export type ScenarioRow = {
   canonical_model_id: string
   scenario_profile: string
   scenario_label: string
-  scenario_score: number
+  scenario_score: number | null
   explanation: Explanation
+  preset_eligible?: boolean
+  ineligibility_reasons?: string[]
 }
 
 export type ScenarioProfiles = {

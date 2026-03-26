@@ -1,59 +1,71 @@
 {
-  "version": 1,
+  "version": 2,
   "profiles": {
     "coding": {
-      "label": "Coding-heavy",
+      "label": "Best value coding",
       "weights": {
-        "coding": 0.35,
-        "value": 0.2,
-        "budget": 0.1,
-        "latency": 0.1,
-        "reasoning": 0.15,
-        "long_context": 0.1
+        "coding": 0.45,
+        "budget": 0.25,
+        "latency": 0.15,
+        "reasoning": 0.1,
+        "long_context": 0.05
+      },
+      "hard_filters": {
+        "max_price_per_million": 2.5,
+        "min_tokens_per_second": 20
       }
     },
     "reasoning": {
       "label": "Premium reasoning",
       "weights": {
-        "reasoning": 0.4,
-        "value": 0.2,
-        "latency": 0.1,
-        "budget": 0.05,
-        "coding": 0.1,
-        "long_context": 0.15
+        "reasoning": 0.6,
+        "coding": 0.15,
+        "long_context": 0.15,
+        "latency": 0.05,
+        "budget": 0.05
       }
     },
     "budget": {
-      "label": "Budget-heavy",
+      "label": "Cheap all-rounder",
       "weights": {
-        "budget": 0.45,
-        "value": 0.2,
-        "latency": 0.1,
+        "budget": 0.55,
+        "latency": 0.2,
         "coding": 0.1,
         "reasoning": 0.1,
         "long_context": 0.05
+      },
+      "hard_filters": {
+        "max_price_per_million": 2.0,
+        "min_tokens_per_second": 20,
+        "min_coding_index": 20,
+        "min_reasoning_index": 20
       }
     },
     "latency": {
       "label": "Low-latency assistant",
       "weights": {
-        "latency": 0.4,
-        "value": 0.15,
-        "budget": 0.1,
+        "latency": 0.55,
+        "budget": 0.15,
         "coding": 0.1,
-        "reasoning": 0.15,
+        "reasoning": 0.1,
         "long_context": 0.1
+      },
+      "hard_filters": {
+        "min_tokens_per_second": 30
       }
     },
     "long_context": {
       "label": "Long-context workhorse",
       "weights": {
-        "long_context": 0.4,
-        "value": 0.15,
+        "long_context": 0.55,
+        "latency": 0.15,
         "reasoning": 0.15,
         "coding": 0.1,
-        "latency": 0.1,
-        "budget": 0.1
+        "budget": 0.05
+      },
+      "hard_filters": {
+        "min_context_tokens": 500000,
+        "min_tokens_per_second": 20
       }
     }
   }

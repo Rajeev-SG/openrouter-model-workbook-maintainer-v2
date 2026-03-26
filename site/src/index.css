@@ -132,9 +132,11 @@ code {
 
 .chip-link-action {
   flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-left: 1px solid rgba(0, 77, 77, 0.18);
-  padding-left: 0.5rem;
-  letter-spacing: 0.16em;
+  padding-left: 0.45rem;
 }
 
 .source-links {

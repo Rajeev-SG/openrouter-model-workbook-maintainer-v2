@@ -2939,7 +2939,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -3039,7 +3039,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -3139,7 +3139,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -3239,7 +3239,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -3339,7 +3339,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -3439,7 +3439,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -4082,7 +4082,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -4182,7 +4182,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -4282,7 +4282,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -4382,7 +4382,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -4482,7 +4482,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -4582,7 +4582,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -4782,7 +4782,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -4882,7 +4882,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -4982,7 +4982,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -5297,7 +5297,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -5397,7 +5397,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -5597,7 +5597,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -5910,7 +5910,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -6110,7 +6110,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -6310,7 +6310,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -6410,7 +6410,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -6610,7 +6610,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -6910,7 +6910,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -7010,7 +7010,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -7110,7 +7110,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -7210,7 +7210,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -7510,7 +7510,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -7610,7 +7610,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -7810,7 +7810,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -8010,7 +8010,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -8225,7 +8225,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -8325,7 +8325,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -8425,7 +8425,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -8768,7 +8768,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -8868,7 +8868,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -8968,7 +8968,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -9068,7 +9068,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -9168,7 +9168,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -9268,7 +9268,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -9883,7 +9883,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -10183,7 +10183,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -10583,7 +10583,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -10683,7 +10683,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -10783,7 +10783,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -10883,7 +10883,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -11083,7 +11083,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -11383,7 +11383,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -11866,7 +11866,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -11966,7 +11966,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -12066,7 +12066,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -12166,7 +12166,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -12266,7 +12266,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -12766,7 +12766,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -13065,7 +13065,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -13265,7 +13265,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -13465,7 +13465,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -13565,7 +13565,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -13665,7 +13665,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -13765,7 +13765,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -13865,7 +13865,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -14065,7 +14065,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -14165,7 +14165,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -14265,7 +14265,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -14365,7 +14365,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -14465,7 +14465,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -14565,7 +14565,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -14765,7 +14765,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -15065,7 +15065,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -15265,7 +15265,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -15465,7 +15465,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -15565,7 +15565,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -15665,7 +15665,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -15865,7 +15865,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -15965,7 +15965,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -16065,7 +16065,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -16265,7 +16265,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -16465,7 +16465,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -16565,7 +16565,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -16665,7 +16665,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -16765,7 +16765,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -17092,7 +17092,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -17192,7 +17192,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -17292,7 +17292,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -17607,7 +17607,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -17707,7 +17707,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -17807,7 +17807,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -17907,7 +17907,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -18007,7 +18007,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -18107,7 +18107,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -18407,7 +18407,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -18607,7 +18607,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -18707,7 +18707,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -18807,7 +18807,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -18907,7 +18907,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -19207,7 +19207,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -19407,7 +19407,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -19507,7 +19507,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -19607,7 +19607,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -19707,7 +19707,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -19807,7 +19807,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -19907,7 +19907,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -20007,7 +20007,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -20107,7 +20107,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -20207,7 +20207,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -20307,7 +20307,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -20507,7 +20507,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -20848,7 +20848,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -20948,7 +20948,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -21470,7 +21470,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -21570,7 +21570,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -21670,7 +21670,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -21885,7 +21885,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -21985,7 +21985,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22085,7 +22085,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22185,7 +22185,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22285,7 +22285,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22385,7 +22385,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22485,7 +22485,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22585,7 +22585,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22685,7 +22685,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22785,7 +22785,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22885,7 +22885,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -22985,7 +22985,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -23085,7 +23085,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -23185,7 +23185,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -23285,7 +23285,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -23385,7 +23385,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -23585,7 +23585,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -23685,7 +23685,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -24636,7 +24636,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -24736,7 +24736,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -24948,7 +24948,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -25048,7 +25048,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -26256,7 +26256,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -26362,7 +26362,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -26851,7 +26851,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -26962,7 +26962,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -27062,7 +27062,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -27162,7 +27162,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -27273,7 +27273,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -27595,7 +27595,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -27706,7 +27706,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -27906,7 +27906,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -28122,7 +28122,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -28365,7 +28365,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -28465,7 +28465,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -28565,7 +28565,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -28665,7 +28665,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -28765,7 +28765,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -28865,7 +28865,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -28965,7 +28965,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -29434,7 +29434,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -29646,7 +29646,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -29868,7 +29868,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -29968,7 +29968,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -30079,7 +30079,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -30179,7 +30179,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -30390,7 +30390,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -30710,7 +30710,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -30810,7 +30810,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -31137,7 +31137,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -31998,7 +31998,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -32210,7 +32210,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -32310,7 +32310,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -32410,7 +32410,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -32621,7 +32621,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -32721,7 +32721,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -32821,7 +32821,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -33250,7 +33250,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -33350,7 +33350,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -33462,7 +33462,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -33574,7 +33574,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -33674,7 +33674,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -33774,7 +33774,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -33885,7 +33885,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -33985,7 +33985,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -34085,7 +34085,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -34197,7 +34197,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -34297,7 +34297,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -34711,7 +34711,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -35064,7 +35064,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -35418,7 +35418,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -35518,7 +35518,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -35630,7 +35630,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -35730,7 +35730,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -36015,7 +36015,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -36230,7 +36230,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -36588,7 +36588,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -36688,7 +36688,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -36788,7 +36788,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -37017,7 +37017,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -37117,7 +37117,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -37228,7 +37228,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.5,
     "source_flags": {
       "openrouter": true,
@@ -37328,7 +37328,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -37543,7 +37543,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -37643,7 +37643,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -37743,7 +37743,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -37843,7 +37843,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -37943,7 +37943,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -38043,7 +38043,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,
@@ -38143,7 +38143,7 @@
     "cohort_eligible": false,
     "exclusion_reasons": "missing:artificial_analysis",
     "strict_cohort_eligible": false,
-    "strict_exclusion_reasons": "missing:artificial_analysis; missing:vals; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
+    "strict_exclusion_reasons": "missing:vals; missing:artificial_analysis; missing_metric:aa_intelligence_index; missing_metric:aa_coding_index; missing_metric:aa_median_tokens_per_second; missing_metric:vals_accuracy; missing_metric:vals_latency_seconds; missing_metric:vals_cost_per_test",
     "coverage_score": 0.25,
     "source_flags": {
       "openrouter": true,

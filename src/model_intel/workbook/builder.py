@@ -155,6 +155,10 @@ def _build_recommendation_rows(
     by_model = {row["canonical_model_id"]: row for row in cohort_rows}
     best_by_profile: dict[str, dict[str, Any]] = {}
     for row in scenario_rows:
+        if row.get("canonical_model_id") not in by_model:
+            continue
+        if row.get("scenario_score") is None:
+            continue
         current = best_by_profile.get(row["scenario_profile"])
         if current is None or row["scenario_score"] > current["scenario_score"]:
             best_by_profile[row["scenario_profile"]] = row
@@ -170,6 +174,8 @@ def _build_recommendation_rows(
                 "canonical_variant": model.get("canonical_variant"),
                 "provider": model.get("provider"),
                 "scenario_score": row["scenario_score"],
+                "preset_eligible": row.get("preset_eligible"),
+                "ineligibility_reasons": row.get("ineligibility_reasons"),
                 "explanation": row.get("explanation"),
             }
         )

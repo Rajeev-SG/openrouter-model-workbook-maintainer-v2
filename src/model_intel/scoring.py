@@ -20,6 +20,7 @@ def enrich_model_scores(rows: list[dict[str, Any]], profiles: dict[str, Any]) ->
     scenario_rows: list[dict[str, Any]] = []
     for profile_name, config in profiles["profiles"].items():
         weights = config["weights"]
+        hard_filters = config.get("hard_filters", {})
         for row in rows:
             explanation = {}
             total = 0.0
@@ -33,13 +34,16 @@ def enrich_model_scores(rows: list[dict[str, Any]], profiles: dict[str, Any]) ->
                     "contribution": contribution,
                 }
                 total += contribution
+            preset_eligible, ineligibility_reasons = _apply_profile_filters(row, hard_filters)
             scenario_rows.append(
                 {
                     "canonical_model_id": row["canonical_model_id"],
                     "scenario_profile": profile_name,
                     "scenario_label": config["label"],
-                    "scenario_score": round(total, 4),
+                    "scenario_score": round(total, 4) if preset_eligible else None,
                     "explanation": explanation,
+                    "preset_eligible": preset_eligible,
+                    "ineligibility_reasons": ineligibility_reasons,
                 }
             )
     return rows, scenario_rows
@@ -87,3 +91,28 @@ def _normalize(values: list[float | int | None], invert: bool = False) -> list[f
         normalized = (float(value) - minimum) / (maximum - minimum)
         results.append(1 - normalized if invert else normalized)
     return results
+
+
+def _apply_profile_filters(row: dict[str, Any], hard_filters: dict[str, Any]) -> tuple[bool, list[str]]:
+    reasons: list[str] = []
+    max_price = hard_filters.get("max_price_per_million")
+    if max_price is not None and (row.get("openrouter_blended_price_per_million") or float("inf")) > max_price:
+        reasons.append("price_above_cap")
+
+    min_speed = hard_filters.get("min_tokens_per_second")
+    if min_speed is not None and (row.get("aa_median_tokens_per_second") or 0.0) < min_speed:
+        reasons.append("speed_below_floor")
+
+    min_context = hard_filters.get("min_context_tokens")
+    if min_context is not None and (row.get("openrouter_context_tokens") or 0) < min_context:
+        reasons.append("context_below_floor")
+
+    min_reasoning = hard_filters.get("min_reasoning_index")
+    if min_reasoning is not None and (row.get("aa_intelligence_index") or 0.0) < min_reasoning:
+        reasons.append("reasoning_below_floor")
+
+    min_coding = hard_filters.get("min_coding_index")
+    if min_coding is not None and (row.get("aa_coding_index") or 0.0) < min_coding:
+        reasons.append("coding_below_floor")
+
+    return not reasons, reasons

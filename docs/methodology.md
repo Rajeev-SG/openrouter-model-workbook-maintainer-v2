@@ -52,9 +52,16 @@ Scenario scores are transparent weighted blends over normalized inputs for:
 - latency
 - budget
 - long context
-- overall value
 
 Weights live in [config/scenarios/default_profiles.yaml](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/config/scenarios/default_profiles.yaml).
+
+Each preset can also carry hard eligibility filters. Those are used to prevent logically bad recommendations even when a model scores well on one dimension. Examples:
+
+- budget picks can require a real price cap plus minimum capability and speed floors
+- long-context picks can require both large context and usable throughput
+- coding picks can exclude premium-priced models that fail the "value coding" brief
+
+In the site UI, preset selection controls the winner and recommendation narrative. The browse-table filters are a separate exploration surface and do not change the preset winner.
 
 ## Missing data policy
 
