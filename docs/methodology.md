@@ -39,9 +39,9 @@ Requires everything in the guide cohort plus:
 ### Enrichment flags
 
 - `vals_enriched`
-  The model has matched Vals data.
+  The model has matched Vals benchmark metrics, not just a metadata-only Vals row.
 - `livebench_enriched`
-  The model has matched LiveBench data.
+  The model has a conservative LiveBench benchmark match that survived exact or slug-aware disambiguation.
 
 ## Recommendation scoring
 

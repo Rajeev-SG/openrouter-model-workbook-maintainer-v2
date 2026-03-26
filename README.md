@@ -73,9 +73,9 @@ Vals and LiveBench are tracked as enrichment layers:
 - `strict_cohort_eligible=true`
   Guide rows that also have Vals coverage for the stricter application-quality subset.
 - `vals_enriched=true`
-  The row has Vals coverage and can expose application-style benchmark signals.
+  The row has current Vals benchmark metrics and can expose application-style benchmark signals.
 - `livebench_enriched=true`
-  The row has LiveBench coverage and can expose category and task benchmark signals.
+  The row has a conservative LiveBench benchmark match and can expose category and task benchmark signals.
 
 This prevents the live guide from hiding useful OpenRouter + AA models just because a secondary benchmark source has gaps, while still preserving explicit provenance and stricter benchmark subsets.
 

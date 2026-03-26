@@ -12,6 +12,7 @@
 - Artificial Analysis provider pages can 404 for some model slugs.
 - OpenRouter canonical slugs can change to dated variants, so manual mappings may need refresh.
 - LiveBench model names often use different naming conventions from OpenRouter and AA.
+- LiveBench matching should stay conservative; exact, alias-exact, and slug-aware matches are fine, but fuzzy fallback is not.
 
 ## When adding a new model
 

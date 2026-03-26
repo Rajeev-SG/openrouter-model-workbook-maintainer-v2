@@ -54,6 +54,23 @@ def test_apply_cohort_rules_sets_primary_and_strict_flags() -> None:
             "vals_cost_per_test": None,
             "livebench_overall_score": None,
         },
+        {
+            "canonical_model_id": "gpt-4.1-metadata-only",
+            "has_openrouter": True,
+            "has_aa": True,
+            "has_vals": True,
+            "has_livebench": False,
+            "openrouter_input_price_per_million": 2.0,
+            "openrouter_output_price_per_million": 8.0,
+            "openrouter_context_tokens": 1_000_000,
+            "aa_intelligence_index": 45.0,
+            "aa_coding_index": 33.0,
+            "aa_median_tokens_per_second": 71.0,
+            "vals_accuracy": None,
+            "vals_latency_seconds": None,
+            "vals_cost_per_test": None,
+            "livebench_overall_score": None,
+        },
     ]
     cohort_rules = {
         "required_sources": ["openrouter", "artificial_analysis"],
@@ -91,6 +108,11 @@ def test_apply_cohort_rules_sets_primary_and_strict_flags() -> None:
     assert result[2]["strict_cohort_eligible"] is False
     assert result[2]["vals_enriched"] is False
     assert "missing:vals" in result[2]["strict_exclusion_reasons"]
+    assert result[3]["cohort_eligible"] is True
+    assert result[3]["strict_cohort_eligible"] is False
+    assert result[3]["vals_enriched"] is False
+    assert "missing:vals" not in result[3]["strict_exclusion_reasons"]
+    assert "missing_metric:vals_accuracy" in result[3]["strict_exclusion_reasons"]
 
 
 def test_enrich_registry_rows_carries_all_available_aa_metrics() -> None:

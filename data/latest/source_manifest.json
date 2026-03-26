@@ -1,41 +1,41 @@
 {
   "artificialanalysis_api": {
-    "fetched_at": "2026-03-22T03:27:45+00:00",
+    "fetched_at": "2026-03-26T13:47:10+00:00",
     "source_url": "https://artificialanalysis.ai/api/v2/data/llms/models",
     "parser_version": "2026-03-22-aa-index-v1",
     "record_count": 449
   },
   "artificialanalysis_provider_pages": {
-    "fetched_at": "2026-03-22T03:28:08+00:00",
+    "fetched_at": "2026-03-26T13:47:18+00:00",
     "source_url": "https://artificialanalysis.ai/models/{slug}/providers",
     "parser_version": "2026-03-22-aa-provider-v1",
     "record_count": 113,
     "failed_count": 3
   },
   "livebench": {
-    "fetched_at": "2026-03-22T03:27:45+00:00",
+    "fetched_at": "2026-03-26T13:47:10+00:00",
     "source_url": "https://huggingface.co/datasets/livebench/model_judgment/resolve/main/data/leaderboard-00000-of-00001.parquet",
     "parser_version": "2026-03-22-livebench-v1",
     "artifact": "model_judgment_leaderboard.parquet",
     "record_count": 195
   },
   "openrouter_api": {
-    "fetched_at": "2026-03-22T03:27:45+00:00",
+    "fetched_at": "2026-03-26T13:47:10+00:00",
     "source_url": "https://openrouter.ai/api/v1/models",
     "parser_version": "2026-03-22-openrouter-index-v1",
     "record_count": 352
   },
   "openrouter_pages": {
-    "fetched_at": "2026-03-22T03:28:09+00:00",
+    "fetched_at": "2026-03-26T13:47:19+00:00",
     "source_url": "https://openrouter.ai/{slug}/pricing",
     "parser_version": "2026-03-22-openrouter-page-v1",
     "record_count": 329
   },
   "vals_bundle": {
-    "fetched_at": "2026-03-22T03:27:45+00:00",
-    "source_url": "https://www.vals.ai/_astro/constants.BTlBmLY8.js",
+    "fetched_at": "2026-03-26T13:47:10+00:00",
+    "source_url": "https://www.vals.ai/_astro/constants.D-IflAyj.js",
     "parser_version": "2026-03-22-vals-bundle-v2",
-    "record_count": 157,
+    "record_count": 156,
     "artifact": "constants_bundle.js"
   }
 }

@@ -3,7 +3,7 @@
     "canonical_model_id": "moonshot-ai-kimi-k2.5-reasoning-thinking",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.3854,
+    "scenario_score": 0.3858,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -12,8 +12,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.007338309198773169,
-        "contribution": 0.001467661839754634
+        "normalized_input": 0.00895577004894452,
+        "contribution": 0.0017911540097889042
       },
       "budget": {
         "weight": 0.1,
@@ -79,7 +79,7 @@
     "canonical_model_id": "deepseek-v3.2-reasoning-thinking",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.4195,
+    "scenario_score": 0.3458,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -88,8 +88,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.3685345278591578,
-        "contribution": 0.07370690557183156
+        "normalized_input": 0.0,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -117,7 +117,7 @@
     "canonical_model_id": "deepseek-v3.2-non-reasoning",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.4515,
+    "scenario_score": 0.304,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -126,8 +126,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.737455282518251,
-        "contribution": 0.14749105650365021
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -155,7 +155,7 @@
     "canonical_model_id": "google-gemini-3-flash-preview-reasoning",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.4603,
+    "scenario_score": 0.4605,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -164,8 +164,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.00926944319845032,
-        "contribution": 0.0018538886396900639
+        "normalized_input": 0.010369839004041021,
+        "contribution": 0.0020739678008082044
       },
       "budget": {
         "weight": 0.1,
@@ -231,7 +231,7 @@
     "canonical_model_id": "openai-gpt-5-mini-high-reasoning",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.3535,
+    "scenario_score": 0.3536,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -240,8 +240,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0030898143994834396,
-        "contribution": 0.000617962879896688
+        "normalized_input": 0.0037708505469240083,
+        "contribution": 0.0007541701093848018
       },
       "budget": {
         "weight": 0.1,
@@ -269,7 +269,7 @@
     "canonical_model_id": "minimax-m2.7-standard",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.4069,
+    "scenario_score": 0.407,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -278,8 +278,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0077245359987086,
-        "contribution": 0.00154490719974172
+        "normalized_input": 0.008484413730579017,
+        "contribution": 0.0016968827461158035
       },
       "budget": {
         "weight": 0.1,
@@ -535,7 +535,7 @@
     "canonical_model_id": "x-ai-grok-4.20-multi-agent-beta-20260309",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.2323,
+    "scenario_score": 0.1,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -544,8 +544,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6614724197767853,
-        "contribution": 0.13229448395535706
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -763,7 +763,7 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.2743,
+    "scenario_score": 0.0928,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -772,8 +772,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.9071058549986285,
-        "contribution": 0.1814211709997257
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -877,7 +877,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-lite-preview-20260303",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.4684,
+    "scenario_score": 0.3461,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -886,8 +886,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6114747246057619,
-        "contribution": 0.1222949449211524
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -953,7 +953,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-image-preview-20260226",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1437,
+    "scenario_score": 0.0032,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -962,8 +962,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7024790797244209,
-        "contribution": 0.1404958159448842
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -1523,7 +1523,7 @@
     "canonical_model_id": "qwen-qwen3-max-thinking-20260123",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.3063,
+    "scenario_score": 0.3061,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -1532,8 +1532,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0011586803998062888,
-        "contribution": 0.00023173607996125777
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -3005,7 +3005,7 @@
     "canonical_model_id": "mistralai-mistral-large-2512",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.213,
+    "scenario_score": 0.2082,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -3014,8 +3014,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.023628027782085375,
-        "contribution": 0.0047256055564170755
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -3157,7 +3157,7 @@
     "canonical_model_id": "anthropic-claude-4.5-opus-20251124",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0134,
+    "scenario_score": 0.0099,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -3166,8 +3166,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.017589335181429383,
-        "contribution": 0.0035178670362858767
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -3651,7 +3651,7 @@
     "canonical_model_id": "moonshotai-kimi-k2-thinking-20251106",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.3359,
+    "scenario_score": 0.3363,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -3660,8 +3660,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0,
-        "contribution": 0.0
+        "normalized_input": 0.0023567815918275046,
+        "contribution": 0.00047135631836550093
       },
       "budget": {
         "weight": 0.1,
@@ -4107,7 +4107,7 @@
     "canonical_model_id": "anthropic-claude-4.5-haiku-20251001",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1352,
+    "scenario_score": 0.0099,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -4116,8 +4116,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6265631927086576,
-        "contribution": 0.12531263854173152
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -4995,8 +4995,8 @@
       },
       "budget": {
         "weight": 0.1,
-        "normalized_input": 0.00026207870434002967,
-        "contribution": 2.6207870434002967e-05
+        "normalized_input": 0.00026207620499618667,
+        "contribution": 2.6207620499618668e-05
       },
       "latency": {
         "weight": 0.1,
@@ -6349,7 +6349,7 @@
     "canonical_model_id": "google-gemini-2.5-flash-lite",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1962,
+    "scenario_score": 0.0771,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -6358,8 +6358,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5953959169017871,
-        "contribution": 0.11907918338035742
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -6743,8 +6743,8 @@
       },
       "budget": {
         "weight": 0.1,
-        "normalized_input": 0.0002620312168055694,
-        "contribution": 2.620312168055694e-05
+        "normalized_input": 0.0002619312430487408,
+        "contribution": 2.6193124304874084e-05
       },
       "latency": {
         "weight": 0.1,
@@ -7071,7 +7071,7 @@
     "canonical_model_id": "google-gemini-2.5-pro",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.5479,
+    "scenario_score": 0.3479,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -7080,8 +7080,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 1.0,
-        "contribution": 0.2
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -7185,7 +7185,7 @@
     "canonical_model_id": "x-ai-grok-3",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1484,
+    "scenario_score": 0.1699,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -7194,8 +7194,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7097275836076743,
-        "contribution": 0.14194551672153485
+        "normalized_input": 0.8170296780397389,
+        "contribution": 0.1634059356079478
       },
       "budget": {
         "weight": 0.1,
@@ -7261,7 +7261,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-0528",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1687,
+    "scenario_score": 0.0081,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -7270,8 +7270,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8029200954685456,
-        "contribution": 0.16058401909370912
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -8059,7 +8059,7 @@
     "canonical_model_id": "qwen-qwen2.5-coder-7b-instruct",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0718,
+    "scenario_score": 0.0124,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8068,8 +8068,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.29663096992259114,
-        "contribution": 0.05932619398451823
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -8325,7 +8325,7 @@
     "canonical_model_id": "x-ai-grok-3-beta",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.164,
+    "scenario_score": 0.1878,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8334,8 +8334,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7876159172715609,
-        "contribution": 0.15752318345431218
+        "normalized_input": 0.9066538663430026,
+        "contribution": 0.18133077326860053
       },
       "budget": {
         "weight": 0.1,
@@ -8401,7 +8401,7 @@
     "canonical_model_id": "meta-llama-llama-4-maverick-17b-128e-instruct",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.3385,
+    "scenario_score": 0.3599,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8410,8 +8410,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7067613156377043,
-        "contribution": 0.14135226312754087
+        "normalized_input": 0.813616466502235,
+        "contribution": 0.162723293300447
       },
       "budget": {
         "weight": 0.1,
@@ -8515,7 +8515,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3-0324",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.3539,
+    "scenario_score": 0.3784,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8524,8 +8524,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8109606825705222,
-        "contribution": 0.16219213651410447
+        "normalized_input": 0.9335161131343946,
+        "contribution": 0.18670322262687894
       },
       "budget": {
         "weight": 0.1,
@@ -8553,7 +8553,7 @@
     "canonical_model_id": "openai-o1-pro",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.2381,
+    "scenario_score": 0.0673,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8562,8 +8562,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8538871067197458,
-        "contribution": 0.17077742134394916
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -8667,7 +8667,7 @@
     "canonical_model_id": "google-gemma-3-4b-it",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0064,
+    "scenario_score": 0.053,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8676,8 +8676,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.23282905596818404,
+        "contribution": 0.046565811193636814
       },
       "budget": {
         "weight": 0.1,
@@ -8705,7 +8705,7 @@
     "canonical_model_id": "google-gemma-3-12b-it",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0064,
+    "scenario_score": 0.1034,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8714,8 +8714,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4849778815953138,
+        "contribution": 0.09699557631906276
       },
       "budget": {
         "weight": 0.1,
@@ -8743,7 +8743,7 @@
     "canonical_model_id": "cohere-command-a-03-2025",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1471,
+    "scenario_score": 0.1546,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8752,8 +8752,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.24648365087993634,
-        "contribution": 0.04929673017598727
+        "normalized_input": 0.28398628753278204,
+        "contribution": 0.05679725750655641
       },
       "budget": {
         "weight": 0.1,
@@ -8857,7 +8857,7 @@
     "canonical_model_id": "google-gemma-3-27b-it",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0064,
+    "scenario_score": 0.1429,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8866,8 +8866,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6821664332940974,
+        "contribution": 0.13643328665881949
       },
       "budget": {
         "weight": 0.1,
@@ -8971,7 +8971,7 @@
     "canonical_model_id": "perplexity-sonar-pro",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0099,
+    "scenario_score": 0.2089,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -8980,8 +8980,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.995120313295998,
+        "contribution": 0.1990240626591996
       },
       "budget": {
         "weight": 0.1,
@@ -9009,7 +9009,7 @@
     "canonical_model_id": "perplexity-sonar-deep-research",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1683,
+    "scenario_score": 0.0462,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9018,8 +9018,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6106290571654164,
-        "contribution": 0.12212581143308328
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -9047,7 +9047,7 @@
     "canonical_model_id": "qwen-qwq-32b",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.2133,
+    "scenario_score": 0.2381,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9056,8 +9056,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.820187928877371,
-        "contribution": 0.16403758577547423
+        "normalized_input": 0.9441336783283596,
+        "contribution": 0.18882673566567193
       },
       "budget": {
         "weight": 0.1,
@@ -9085,7 +9085,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-lite-001",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0524,
+    "scenario_score": 0.1895,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9094,8 +9094,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.685471043468186,
+        "contribution": 0.1370942086936372
       },
       "budget": {
         "weight": 0.1,
@@ -9123,7 +9123,7 @@
     "canonical_model_id": "anthropic-claude-3-7-sonnet-20250219",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0099,
+    "scenario_score": 0.2099,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9132,8 +9132,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.2
       },
       "budget": {
         "weight": 0.1,
@@ -9237,7 +9237,7 @@
     "canonical_model_id": "openai-o3-mini-high-2025-01-31",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.3574,
+    "scenario_score": 0.3834,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9246,8 +9246,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8585295742862113,
-        "contribution": 0.1717059148572423
+        "normalized_input": 0.9882524659096653,
+        "contribution": 0.19765049318193306
       },
       "budget": {
         "weight": 0.1,
@@ -9275,7 +9275,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-001",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0524,
+    "scenario_score": 0.2141,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9284,8 +9284,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8086890030452903,
+        "contribution": 0.16173780060905807
       },
       "budget": {
         "weight": 0.1,
@@ -9617,7 +9617,7 @@
     "canonical_model_id": "qwen-qwen-max-2025-01-25",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0016,
+    "scenario_score": 0.0015,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9626,8 +9626,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0003862267999354301,
-        "contribution": 7.724535998708602e-05
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -9769,7 +9769,7 @@
     "canonical_model_id": "perplexity-sonar",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0131,
+    "scenario_score": 0.1468,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9778,8 +9778,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.03402861384694262,
-        "contribution": 0.006805722769388524
+        "normalized_input": 0.7029994430014085,
+        "contribution": 0.1405998886002817
       },
       "budget": {
         "weight": 0.1,
@@ -9807,7 +9807,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-distill-llama-70b",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.2243,
+    "scenario_score": 0.2415,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9816,8 +9816,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5701812891030894,
-        "contribution": 0.11403625782061788
+        "normalized_input": 0.6564571919255515,
+        "contribution": 0.13129143838511032
       },
       "budget": {
         "weight": 0.1,
@@ -9845,7 +9845,7 @@
     "canonical_model_id": "deepseek-deepseek-r1",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0031,
+    "scenario_score": 0.1879,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9854,8 +9854,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.924264007477518,
+        "contribution": 0.18485280149550362
       },
       "budget": {
         "weight": 0.1,
@@ -9921,7 +9921,7 @@
     "canonical_model_id": "microsoft-phi-4",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0922,
+    "scenario_score": 0.1061,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -9930,8 +9930,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4575726450247232,
-        "contribution": 0.09151452900494465
+        "normalized_input": 0.5268811970787888,
+        "contribution": 0.10537623941575776
       },
       "budget": {
         "weight": 0.1,
@@ -9997,7 +9997,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1389,
+    "scenario_score": 0.3087,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10006,8 +10006,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8489352586508432,
+        "contribution": 0.16978705173016864
       },
       "budget": {
         "weight": 0.1,
@@ -10073,7 +10073,7 @@
     "canonical_model_id": "openai-o1-2024-12-17",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.2207,
+    "scenario_score": 0.4173,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10082,8 +10082,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.9829104927566099,
+        "contribution": 0.196582098551322
       },
       "budget": {
         "weight": 0.1,
@@ -10187,7 +10187,7 @@
     "canonical_model_id": "amazon-nova-lite-v1",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1002,
+    "scenario_score": 0.0149,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10196,8 +10196,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4262971889415706,
-        "contribution": 0.08525943778831413
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -10225,7 +10225,7 @@
     "canonical_model_id": "amazon-nova-micro-v1",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1399,
+    "scenario_score": 0.0752,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10234,8 +10234,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.32321726002561224,
-        "contribution": 0.06464345200512245
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -10263,7 +10263,7 @@
     "canonical_model_id": "amazon-nova-pro-v1",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.2209,
+    "scenario_score": 0.1024,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10272,8 +10272,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5925138121925119,
-        "contribution": 0.11850276243850238
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -10301,7 +10301,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-11-20",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1662,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10310,8 +10310,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7997755221428711,
+        "contribution": 0.15995510442857422
       },
       "budget": {
         "weight": 0.1,
@@ -10339,7 +10339,7 @@
     "canonical_model_id": "mistralai-mistral-large-2411",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.133,
+    "scenario_score": 0.1522,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10348,8 +10348,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6328210933197964,
-        "contribution": 0.12656421866395928
+        "normalized_input": 0.7285352727408907,
+        "contribution": 0.14570705454817814
       },
       "budget": {
         "weight": 0.1,
@@ -10377,7 +10377,7 @@
     "canonical_model_id": "mistralai-mistral-large-2407",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0681,
+    "scenario_score": 0.0775,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10386,8 +10386,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.308250491265035,
-        "contribution": 0.061650098253007005
+        "normalized_input": 0.3550733376787276,
+        "contribution": 0.07101466753574552
       },
       "budget": {
         "weight": 0.1,
@@ -10529,7 +10529,7 @@
     "canonical_model_id": "anthropic-claude-3-5-haiku",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1962,
+    "scenario_score": 0.2551,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10538,8 +10538,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4269968893826639,
-        "contribution": 0.08539937787653279
+        "normalized_input": 0.7213344605476796,
+        "contribution": 0.14426689210953592
       },
       "budget": {
         "weight": 0.1,
@@ -10681,7 +10681,7 @@
     "canonical_model_id": "nvidia-llama-3.1-nemotron-70b-instruct",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1947,
+    "scenario_score": 0.2096,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -10690,8 +10690,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.49326369769627576,
-        "contribution": 0.09865273953925516
+        "normalized_input": 0.5679500128424012,
+        "contribution": 0.11359000256848024
       },
       "budget": {
         "weight": 0.1,
@@ -11023,7 +11023,7 @@
     "canonical_model_id": "cohere-command-r-08-2024",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0812,
+    "scenario_score": 0.0925,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11032,8 +11032,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.37431687938295066,
-        "contribution": 0.07486337587659013
+        "normalized_input": 0.431080836919456,
+        "contribution": 0.0862161673838912
       },
       "budget": {
         "weight": 0.1,
@@ -11061,7 +11061,7 @@
     "canonical_model_id": "cohere-command-r-plus-08-2024",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.088,
+    "scenario_score": 0.1004,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11070,8 +11070,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4087357183442927,
-        "contribution": 0.08174714366885855
+        "normalized_input": 0.47068574768263616,
+        "contribution": 0.09413714953652724
       },
       "budget": {
         "weight": 0.1,
@@ -11175,7 +11175,7 @@
     "canonical_model_id": "nousresearch-hermes-3-llama-3.1-70b",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0064,
+    "scenario_score": 0.1281,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11184,8 +11184,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.608044490411293,
+        "contribution": 0.12160889808225861
       },
       "budget": {
         "weight": 0.1,
@@ -11289,7 +11289,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-08-06",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1728,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11298,8 +11298,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8326738288023823,
+        "contribution": 0.16653476576047646
       },
       "budget": {
         "weight": 0.1,
@@ -11441,7 +11441,7 @@
     "canonical_model_id": "mistralai-mistral-nemo",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0727,
+    "scenario_score": 0.0064,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11450,8 +11450,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.3313103660729393,
-        "contribution": 0.06626207321458787
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -11479,7 +11479,7 @@
     "canonical_model_id": "openai-gpt-4o-mini-2024-07-18",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1157,
+    "scenario_score": 0.1322,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11488,8 +11488,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5468604810995199,
-        "contribution": 0.10937209621990399
+        "normalized_input": 0.6296225122042511,
+        "contribution": 0.12592450244085024
       },
       "budget": {
         "weight": 0.1,
@@ -11555,7 +11555,7 @@
     "canonical_model_id": "google-gemma-2-27b-it",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.1078,
+    "scenario_score": 0.1241,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11564,8 +11564,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5375898333053608,
-        "contribution": 0.10751796666107216
+        "normalized_input": 0.6189550059871783,
+        "contribution": 0.12379100119743568
       },
       "budget": {
         "weight": 0.1,
@@ -11593,7 +11593,7 @@
     "canonical_model_id": "google-gemma-2-9b-it",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0828,
+    "scenario_score": 0.0953,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11602,8 +11602,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4123552788189295,
-        "contribution": 0.08247105576378591
+        "normalized_input": 0.474850686824277,
+        "contribution": 0.0949701373648554
       },
       "budget": {
         "weight": 0.1,
@@ -11707,7 +11707,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-05-13",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1751,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11716,8 +11716,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8441192811389642,
+        "contribution": 0.16882385622779283
       },
       "budget": {
         "weight": 0.1,
@@ -11935,7 +11935,7 @@
     "canonical_model_id": "openai-gpt-4-turbo",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.3012,
+    "scenario_score": 0.3219,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11944,8 +11944,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6828071639641239,
-        "contribution": 0.1365614327928248
+        "normalized_input": 0.7860530138097899,
+        "contribution": 0.15721060276195797
       },
       "budget": {
         "weight": 0.1,
@@ -11973,7 +11973,7 @@
     "canonical_model_id": "anthropic-claude-3-haiku",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0796,
+    "scenario_score": 0.1779,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -11982,8 +11982,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4916984276925043,
+        "contribution": 0.09833968553850087
       },
       "budget": {
         "weight": 0.1,
@@ -12011,7 +12011,7 @@
     "canonical_model_id": "mistralai-mistral-large",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0922,
+    "scenario_score": 0.0118,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -12020,8 +12020,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.42971943620190256,
-        "contribution": 0.08594388724038052
+        "normalized_input": 0.027551807689445765,
+        "contribution": 0.0055103615378891534
       },
       "budget": {
         "weight": 0.1,
@@ -12239,7 +12239,7 @@
     "canonical_model_id": "openai-gpt-4-1106-preview",
     "scenario_profile": "coding",
     "scenario_label": "Coding-heavy",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1616,
     "explanation": {
       "coding": {
         "weight": 0.35,
@@ -12248,8 +12248,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7765797457315822,
+        "contribution": 0.15531594914631644
       },
       "budget": {
         "weight": 0.1,
@@ -12619,7 +12619,7 @@
     "canonical_model_id": "moonshot-ai-kimi-k2.5-reasoning-thinking",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.4137,
+    "scenario_score": 0.414,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -12628,8 +12628,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.007338309198773169,
-        "contribution": 0.001467661839754634
+        "normalized_input": 0.00895577004894452,
+        "contribution": 0.0017911540097889042
       },
       "latency": {
         "weight": 0.1,
@@ -12695,7 +12695,7 @@
     "canonical_model_id": "deepseek-v3.2-reasoning-thinking",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.433,
+    "scenario_score": 0.3593,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -12704,8 +12704,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.3685345278591578,
-        "contribution": 0.07370690557183156
+        "normalized_input": 0.0,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -12733,7 +12733,7 @@
     "canonical_model_id": "deepseek-v3.2-non-reasoning",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.4274,
+    "scenario_score": 0.2799,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -12742,8 +12742,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.737455282518251,
-        "contribution": 0.14749105650365021
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -12771,7 +12771,7 @@
     "canonical_model_id": "google-gemini-3-flash-preview-reasoning",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.4922,
+    "scenario_score": 0.4924,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -12780,8 +12780,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.00926944319845032,
-        "contribution": 0.0018538886396900639
+        "normalized_input": 0.010369839004041021,
+        "contribution": 0.0020739678008082044
       },
       "latency": {
         "weight": 0.1,
@@ -12847,7 +12847,7 @@
     "canonical_model_id": "openai-gpt-5-mini-high-reasoning",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.3768,
+    "scenario_score": 0.3769,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -12856,8 +12856,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0030898143994834396,
-        "contribution": 0.000617962879896688
+        "normalized_input": 0.0037708505469240083,
+        "contribution": 0.0007541701093848018
       },
       "latency": {
         "weight": 0.1,
@@ -12885,7 +12885,7 @@
     "canonical_model_id": "minimax-m2.7-standard",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.4365,
+    "scenario_score": 0.4367,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -12894,8 +12894,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0077245359987086,
-        "contribution": 0.00154490719974172
+        "normalized_input": 0.008484413730579017,
+        "contribution": 0.0016968827461158035
       },
       "latency": {
         "weight": 0.1,
@@ -13151,7 +13151,7 @@
     "canonical_model_id": "x-ai-grok-4.20-multi-agent-beta-20260309",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2823,
+    "scenario_score": 0.15,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -13160,8 +13160,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6614724197767853,
-        "contribution": 0.13229448395535706
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -13379,7 +13379,7 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.3677,
+    "scenario_score": 0.1863,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -13388,8 +13388,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.9071058549986285,
-        "contribution": 0.1814211709997257
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -13493,7 +13493,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-lite-preview-20260303",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.4939,
+    "scenario_score": 0.3716,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -13502,8 +13502,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6114747246057619,
-        "contribution": 0.1222949449211524
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -13569,7 +13569,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-image-preview-20260226",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1452,
+    "scenario_score": 0.0047,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -13578,8 +13578,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7024790797244209,
-        "contribution": 0.1404958159448842
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -14139,7 +14139,7 @@
     "canonical_model_id": "qwen-qwen3-max-thinking-20260123",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.3417,
+    "scenario_score": 0.3414,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -14148,8 +14148,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0011586803998062888,
-        "contribution": 0.00023173607996125777
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -15621,7 +15621,7 @@
     "canonical_model_id": "mistralai-mistral-large-2512",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1999,
+    "scenario_score": 0.1951,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -15630,8 +15630,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.023628027782085375,
-        "contribution": 0.0047256055564170755
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -15773,7 +15773,7 @@
     "canonical_model_id": "anthropic-claude-4.5-opus-20251124",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0183,
+    "scenario_score": 0.0148,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -15782,8 +15782,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.017589335181429383,
-        "contribution": 0.0035178670362858767
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -16267,7 +16267,7 @@
     "canonical_model_id": "moonshotai-kimi-k2-thinking-20251106",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.3533,
+    "scenario_score": 0.3537,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -16276,8 +16276,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0,
-        "contribution": 0.0
+        "normalized_input": 0.0023567815918275046,
+        "contribution": 0.00047135631836550093
       },
       "latency": {
         "weight": 0.1,
@@ -16723,7 +16723,7 @@
     "canonical_model_id": "anthropic-claude-4.5-haiku-20251001",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1401,
+    "scenario_score": 0.0148,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -16732,8 +16732,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6265631927086576,
-        "contribution": 0.12531263854173152
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -17616,8 +17616,8 @@
       },
       "budget": {
         "weight": 0.05,
-        "normalized_input": 0.00026207870434002967,
-        "contribution": 1.3103935217001483e-05
+        "normalized_input": 0.00026207620499618667,
+        "contribution": 1.3103810249809334e-05
       },
       "coding": {
         "weight": 0.1,
@@ -18965,7 +18965,7 @@
     "canonical_model_id": "google-gemini-2.5-flash-lite",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2636,
+    "scenario_score": 0.1446,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -18974,8 +18974,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5953959169017871,
-        "contribution": 0.11907918338035742
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -19364,8 +19364,8 @@
       },
       "budget": {
         "weight": 0.05,
-        "normalized_input": 0.0002620312168055694,
-        "contribution": 1.310156084027847e-05
+        "normalized_input": 0.0002619312430487408,
+        "contribution": 1.3096562152437042e-05
       },
       "coding": {
         "weight": 0.1,
@@ -19687,7 +19687,7 @@
     "canonical_model_id": "google-gemini-2.5-pro",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.5705,
+    "scenario_score": 0.3705,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -19696,8 +19696,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 1.0,
-        "contribution": 0.2
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -19801,7 +19801,7 @@
     "canonical_model_id": "x-ai-grok-3",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1516,
+    "scenario_score": 0.1731,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -19810,8 +19810,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7097275836076743,
-        "contribution": 0.14194551672153485
+        "normalized_input": 0.8170296780397389,
+        "contribution": 0.1634059356079478
       },
       "latency": {
         "weight": 0.1,
@@ -19877,7 +19877,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-0528",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1727,
+    "scenario_score": 0.0121,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -19886,8 +19886,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8029200954685456,
-        "contribution": 0.16058401909370912
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -20675,7 +20675,7 @@
     "canonical_model_id": "qwen-qwen2.5-coder-7b-instruct",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0907,
+    "scenario_score": 0.0313,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -20684,8 +20684,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.29663096992259114,
-        "contribution": 0.05932619398451823
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -20941,7 +20941,7 @@
     "canonical_model_id": "x-ai-grok-3-beta",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1672,
+    "scenario_score": 0.191,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -20950,8 +20950,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7876159172715609,
-        "contribution": 0.15752318345431218
+        "normalized_input": 0.9066538663430026,
+        "contribution": 0.18133077326860053
       },
       "latency": {
         "weight": 0.1,
@@ -21017,7 +21017,7 @@
     "canonical_model_id": "meta-llama-llama-4-maverick-17b-128e-instruct",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.3558,
+    "scenario_score": 0.3772,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21026,8 +21026,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7067613156377043,
-        "contribution": 0.14135226312754087
+        "normalized_input": 0.813616466502235,
+        "contribution": 0.162723293300447
       },
       "latency": {
         "weight": 0.1,
@@ -21131,7 +21131,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3-0324",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.339,
+    "scenario_score": 0.3635,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21140,8 +21140,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8109606825705222,
-        "contribution": 0.16219213651410447
+        "normalized_input": 0.9335161131343946,
+        "contribution": 0.18670322262687894
       },
       "latency": {
         "weight": 0.1,
@@ -21169,7 +21169,7 @@
     "canonical_model_id": "openai-o1-pro",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.3388,
+    "scenario_score": 0.1681,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21178,8 +21178,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8538871067197458,
-        "contribution": 0.17077742134394916
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -21283,7 +21283,7 @@
     "canonical_model_id": "google-gemma-3-4b-it",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0096,
+    "scenario_score": 0.0562,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21292,8 +21292,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.23282905596818404,
+        "contribution": 0.046565811193636814
       },
       "latency": {
         "weight": 0.1,
@@ -21321,7 +21321,7 @@
     "canonical_model_id": "google-gemma-3-12b-it",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0096,
+    "scenario_score": 0.1066,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21330,8 +21330,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4849778815953138,
+        "contribution": 0.09699557631906276
       },
       "latency": {
         "weight": 0.1,
@@ -21359,7 +21359,7 @@
     "canonical_model_id": "cohere-command-a-03-2025",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1464,
+    "scenario_score": 0.1539,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21368,8 +21368,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.24648365087993634,
-        "contribution": 0.04929673017598727
+        "normalized_input": 0.28398628753278204,
+        "contribution": 0.05679725750655641
       },
       "latency": {
         "weight": 0.1,
@@ -21473,7 +21473,7 @@
     "canonical_model_id": "google-gemma-3-27b-it",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0096,
+    "scenario_score": 0.1461,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21482,8 +21482,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6821664332940974,
+        "contribution": 0.13643328665881949
       },
       "latency": {
         "weight": 0.1,
@@ -21587,7 +21587,7 @@
     "canonical_model_id": "perplexity-sonar-pro",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0148,
+    "scenario_score": 0.2138,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21596,8 +21596,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.995120313295998,
+        "contribution": 0.1990240626591996
       },
       "latency": {
         "weight": 0.1,
@@ -21625,7 +21625,7 @@
     "canonical_model_id": "perplexity-sonar-deep-research",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2166,
+    "scenario_score": 0.0945,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21634,8 +21634,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6106290571654164,
-        "contribution": 0.12212581143308328
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -21663,7 +21663,7 @@
     "canonical_model_id": "qwen-qwq-32b",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2824,
+    "scenario_score": 0.3071,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21672,8 +21672,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.820187928877371,
-        "contribution": 0.16403758577547423
+        "normalized_input": 0.9441336783283596,
+        "contribution": 0.18882673566567193
       },
       "latency": {
         "weight": 0.1,
@@ -21701,7 +21701,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-lite-001",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0786,
+    "scenario_score": 0.2156,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21710,8 +21710,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.685471043468186,
+        "contribution": 0.1370942086936372
       },
       "latency": {
         "weight": 0.1,
@@ -21739,7 +21739,7 @@
     "canonical_model_id": "anthropic-claude-3-7-sonnet-20250219",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0148,
+    "scenario_score": 0.2148,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21748,8 +21748,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.2
       },
       "latency": {
         "weight": 0.1,
@@ -21853,7 +21853,7 @@
     "canonical_model_id": "openai-o3-mini-high-2025-01-31",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.3791,
+    "scenario_score": 0.4051,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21862,8 +21862,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8585295742862113,
-        "contribution": 0.1717059148572423
+        "normalized_input": 0.9882524659096653,
+        "contribution": 0.19765049318193306
       },
       "latency": {
         "weight": 0.1,
@@ -21891,7 +21891,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-001",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0786,
+    "scenario_score": 0.2403,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -21900,8 +21900,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8086890030452903,
+        "contribution": 0.16173780060905807
       },
       "latency": {
         "weight": 0.1,
@@ -22242,8 +22242,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0003862267999354301,
-        "contribution": 7.724535998708602e-05
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -22385,7 +22385,7 @@
     "canonical_model_id": "perplexity-sonar",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0162,
+    "scenario_score": 0.1499,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22394,8 +22394,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.03402861384694262,
-        "contribution": 0.006805722769388524
+        "normalized_input": 0.7029994430014085,
+        "contribution": 0.1405998886002817
       },
       "latency": {
         "weight": 0.1,
@@ -22423,7 +22423,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-distill-llama-70b",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2259,
+    "scenario_score": 0.2432,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22432,8 +22432,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5701812891030894,
-        "contribution": 0.11403625782061788
+        "normalized_input": 0.6564571919255515,
+        "contribution": 0.13129143838511032
       },
       "latency": {
         "weight": 0.1,
@@ -22461,7 +22461,7 @@
     "canonical_model_id": "deepseek-deepseek-r1",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0046,
+    "scenario_score": 0.1895,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22470,8 +22470,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.924264007477518,
+        "contribution": 0.18485280149550362
       },
       "latency": {
         "weight": 0.1,
@@ -22537,7 +22537,7 @@
     "canonical_model_id": "microsoft-phi-4",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0925,
+    "scenario_score": 0.1064,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22546,8 +22546,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4575726450247232,
-        "contribution": 0.09151452900494465
+        "normalized_input": 0.5268811970787888,
+        "contribution": 0.10537623941575776
       },
       "latency": {
         "weight": 0.1,
@@ -22613,7 +22613,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.121,
+    "scenario_score": 0.2908,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22622,8 +22622,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8489352586508432,
+        "contribution": 0.16978705173016864
       },
       "latency": {
         "weight": 0.1,
@@ -22689,7 +22689,7 @@
     "canonical_model_id": "openai-o1-2024-12-17",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2553,
+    "scenario_score": 0.4519,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22698,8 +22698,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.9829104927566099,
+        "contribution": 0.196582098551322
       },
       "latency": {
         "weight": 0.1,
@@ -22803,7 +22803,7 @@
     "canonical_model_id": "amazon-nova-lite-v1",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1076,
+    "scenario_score": 0.0223,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22812,8 +22812,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4262971889415706,
-        "contribution": 0.08525943778831413
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -22841,7 +22841,7 @@
     "canonical_model_id": "amazon-nova-micro-v1",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1467,
+    "scenario_score": 0.0821,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22850,8 +22850,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.32321726002561224,
-        "contribution": 0.06464345200512245
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -22879,7 +22879,7 @@
     "canonical_model_id": "amazon-nova-pro-v1",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2164,
+    "scenario_score": 0.0979,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22888,8 +22888,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5925138121925119,
-        "contribution": 0.11850276243850238
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -22917,7 +22917,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-11-20",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0094,
+    "scenario_score": 0.1694,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22926,8 +22926,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7997755221428711,
+        "contribution": 0.15995510442857422
       },
       "latency": {
         "weight": 0.1,
@@ -22955,7 +22955,7 @@
     "canonical_model_id": "mistralai-mistral-large-2411",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1362,
+    "scenario_score": 0.1554,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -22964,8 +22964,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6328210933197964,
-        "contribution": 0.12656421866395928
+        "normalized_input": 0.7285352727408907,
+        "contribution": 0.14570705454817814
       },
       "latency": {
         "weight": 0.1,
@@ -22993,7 +22993,7 @@
     "canonical_model_id": "mistralai-mistral-large-2407",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0713,
+    "scenario_score": 0.0807,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -23002,8 +23002,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.308250491265035,
-        "contribution": 0.061650098253007005
+        "normalized_input": 0.3550733376787276,
+        "contribution": 0.07101466753574552
       },
       "latency": {
         "weight": 0.1,
@@ -23145,7 +23145,7 @@
     "canonical_model_id": "anthropic-claude-3-5-haiku",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2161,
+    "scenario_score": 0.2749,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -23154,8 +23154,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4269968893826639,
-        "contribution": 0.08539937787653279
+        "normalized_input": 0.7213344605476796,
+        "contribution": 0.14426689210953592
       },
       "latency": {
         "weight": 0.1,
@@ -23297,7 +23297,7 @@
     "canonical_model_id": "nvidia-llama-3.1-nemotron-70b-instruct",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1863,
+    "scenario_score": 0.2012,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -23306,8 +23306,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.49326369769627576,
-        "contribution": 0.09865273953925516
+        "normalized_input": 0.5679500128424012,
+        "contribution": 0.11359000256848024
       },
       "latency": {
         "weight": 0.1,
@@ -23639,7 +23639,7 @@
     "canonical_model_id": "cohere-command-r-08-2024",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0843,
+    "scenario_score": 0.0956,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -23648,8 +23648,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.37431687938295066,
-        "contribution": 0.07486337587659013
+        "normalized_input": 0.431080836919456,
+        "contribution": 0.0862161673838912
       },
       "latency": {
         "weight": 0.1,
@@ -23677,7 +23677,7 @@
     "canonical_model_id": "cohere-command-r-plus-08-2024",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0912,
+    "scenario_score": 0.1036,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -23686,8 +23686,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4087357183442927,
-        "contribution": 0.08174714366885855
+        "normalized_input": 0.47068574768263616,
+        "contribution": 0.09413714953652724
       },
       "latency": {
         "weight": 0.1,
@@ -23791,7 +23791,7 @@
     "canonical_model_id": "nousresearch-hermes-3-llama-3.1-70b",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0096,
+    "scenario_score": 0.1313,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -23800,8 +23800,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.608044490411293,
+        "contribution": 0.12160889808225861
       },
       "latency": {
         "weight": 0.1,
@@ -23905,7 +23905,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-08-06",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0094,
+    "scenario_score": 0.1759,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -23914,8 +23914,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8326738288023823,
+        "contribution": 0.16653476576047646
       },
       "latency": {
         "weight": 0.1,
@@ -24057,7 +24057,7 @@
     "canonical_model_id": "mistralai-mistral-nemo",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0759,
+    "scenario_score": 0.0096,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -24066,8 +24066,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.3313103660729393,
-        "contribution": 0.06626207321458787
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -24095,7 +24095,7 @@
     "canonical_model_id": "openai-gpt-4o-mini-2024-07-18",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1188,
+    "scenario_score": 0.1353,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -24104,8 +24104,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5468604810995199,
-        "contribution": 0.10937209621990399
+        "normalized_input": 0.6296225122042511,
+        "contribution": 0.12592450244085024
       },
       "latency": {
         "weight": 0.1,
@@ -24171,7 +24171,7 @@
     "canonical_model_id": "google-gemma-2-27b-it",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.1079,
+    "scenario_score": 0.1242,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -24180,8 +24180,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5375898333053608,
-        "contribution": 0.10751796666107216
+        "normalized_input": 0.6189550059871783,
+        "contribution": 0.12379100119743568
       },
       "latency": {
         "weight": 0.1,
@@ -24209,7 +24209,7 @@
     "canonical_model_id": "google-gemma-2-9b-it",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0829,
+    "scenario_score": 0.0954,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -24218,8 +24218,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4123552788189295,
-        "contribution": 0.08247105576378591
+        "normalized_input": 0.474850686824277,
+        "contribution": 0.0949701373648554
       },
       "latency": {
         "weight": 0.1,
@@ -24323,7 +24323,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-05-13",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0094,
+    "scenario_score": 0.1782,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -24332,8 +24332,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8441192811389642,
+        "contribution": 0.16882385622779283
       },
       "latency": {
         "weight": 0.1,
@@ -24551,7 +24551,7 @@
     "canonical_model_id": "openai-gpt-4-turbo",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.2455,
+    "scenario_score": 0.2662,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -24560,8 +24560,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6828071639641239,
-        "contribution": 0.1365614327928248
+        "normalized_input": 0.7860530138097899,
+        "contribution": 0.15721060276195797
       },
       "latency": {
         "weight": 0.1,
@@ -24589,7 +24589,7 @@
     "canonical_model_id": "anthropic-claude-3-haiku",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0862,
+    "scenario_score": 0.1846,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -24598,8 +24598,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4916984276925043,
+        "contribution": 0.09833968553850087
       },
       "latency": {
         "weight": 0.1,
@@ -24627,7 +24627,7 @@
     "canonical_model_id": "mistralai-mistral-large",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0954,
+    "scenario_score": 0.0149,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -24636,8 +24636,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.42971943620190256,
-        "contribution": 0.08594388724038052
+        "normalized_input": 0.027551807689445765,
+        "contribution": 0.0055103615378891534
       },
       "latency": {
         "weight": 0.1,
@@ -24855,7 +24855,7 @@
     "canonical_model_id": "openai-gpt-4-1106-preview",
     "scenario_profile": "reasoning",
     "scenario_label": "Premium reasoning",
-    "scenario_score": 0.0094,
+    "scenario_score": 0.1647,
     "explanation": {
       "reasoning": {
         "weight": 0.4,
@@ -24864,8 +24864,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7765797457315822,
+        "contribution": 0.15531594914631644
       },
       "latency": {
         "weight": 0.1,
@@ -25235,7 +25235,7 @@
     "canonical_model_id": "moonshot-ai-kimi-k2.5-reasoning-thinking",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1621,
+    "scenario_score": 0.1624,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -25244,8 +25244,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.007338309198773169,
-        "contribution": 0.001467661839754634
+        "normalized_input": 0.00895577004894452,
+        "contribution": 0.0017911540097889042
       },
       "latency": {
         "weight": 0.1,
@@ -25311,7 +25311,7 @@
     "canonical_model_id": "deepseek-v3.2-reasoning-thinking",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.2164,
+    "scenario_score": 0.1427,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -25320,8 +25320,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.3685345278591578,
-        "contribution": 0.07370690557183156
+        "normalized_input": 0.0,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -25349,7 +25349,7 @@
     "canonical_model_id": "deepseek-v3.2-non-reasoning",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.2674,
+    "scenario_score": 0.1199,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -25358,8 +25358,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.737455282518251,
-        "contribution": 0.14749105650365021
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -25387,7 +25387,7 @@
     "canonical_model_id": "google-gemini-3-flash-preview-reasoning",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.2036,
+    "scenario_score": 0.2038,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -25396,8 +25396,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.00926944319845032,
-        "contribution": 0.0018538886396900639
+        "normalized_input": 0.010369839004041021,
+        "contribution": 0.0020739678008082044
       },
       "latency": {
         "weight": 0.1,
@@ -25463,7 +25463,7 @@
     "canonical_model_id": "openai-gpt-5-mini-high-reasoning",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1513,
+    "scenario_score": 0.1514,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -25472,8 +25472,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0030898143994834396,
-        "contribution": 0.000617962879896688
+        "normalized_input": 0.0037708505469240083,
+        "contribution": 0.0007541701093848018
       },
       "latency": {
         "weight": 0.1,
@@ -25501,7 +25501,7 @@
     "canonical_model_id": "minimax-m2.7-standard",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1713,
+    "scenario_score": 0.1715,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -25510,8 +25510,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0077245359987086,
-        "contribution": 0.00154490719974172
+        "normalized_input": 0.008484413730579017,
+        "contribution": 0.0016968827461158035
       },
       "latency": {
         "weight": 0.1,
@@ -25767,7 +25767,7 @@
     "canonical_model_id": "x-ai-grok-4.20-multi-agent-beta-20260309",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1824,
+    "scenario_score": 0.0501,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -25776,8 +25776,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6614724197767853,
-        "contribution": 0.13229448395535706
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -25995,7 +25995,7 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.2347,
+    "scenario_score": 0.0532,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -26004,8 +26004,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.9071058549986285,
-        "contribution": 0.1814211709997257
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -26109,7 +26109,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-lite-preview-20260303",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.2813,
+    "scenario_score": 0.159,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -26118,8 +26118,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6114747246057619,
-        "contribution": 0.1222949449211524
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -26185,7 +26185,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-image-preview-20260226",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1422,
+    "scenario_score": 0.0017,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -26194,8 +26194,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7024790797244209,
-        "contribution": 0.1404958159448842
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -26755,7 +26755,7 @@
     "canonical_model_id": "qwen-qwen3-max-thinking-20260123",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1308,
+    "scenario_score": 0.1305,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -26764,8 +26764,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0011586803998062888,
-        "contribution": 0.00023173607996125777
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -28237,7 +28237,7 @@
     "canonical_model_id": "mistralai-mistral-large-2512",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0897,
+    "scenario_score": 0.085,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -28246,8 +28246,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.023628027782085375,
-        "contribution": 0.0047256055564170755
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -28389,7 +28389,7 @@
     "canonical_model_id": "anthropic-claude-4.5-opus-20251124",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0086,
+    "scenario_score": 0.005,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -28398,8 +28398,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.017589335181429383,
-        "contribution": 0.0035178670362858767
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -28883,7 +28883,7 @@
     "canonical_model_id": "moonshotai-kimi-k2-thinking-20251106",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.143,
+    "scenario_score": 0.1435,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -28892,8 +28892,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0,
-        "contribution": 0.0
+        "normalized_input": 0.0023567815918275046,
+        "contribution": 0.00047135631836550093
       },
       "latency": {
         "weight": 0.1,
@@ -29339,7 +29339,7 @@
     "canonical_model_id": "anthropic-claude-4.5-haiku-20251001",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1304,
+    "scenario_score": 0.0051,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -29348,8 +29348,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6265631927086576,
-        "contribution": 0.12531263854173152
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -30217,8 +30217,8 @@
     "explanation": {
       "budget": {
         "weight": 0.45,
-        "normalized_input": 0.00026207870434002967,
-        "contribution": 0.00011793541695301335
+        "normalized_input": 0.00026207620499618667,
+        "contribution": 0.000117934292248284
       },
       "value": {
         "weight": 0.2,
@@ -31581,7 +31581,7 @@
     "canonical_model_id": "google-gemini-2.5-flash-lite",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1619,
+    "scenario_score": 0.0428,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -31590,8 +31590,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5953959169017871,
-        "contribution": 0.11907918338035742
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -31965,8 +31965,8 @@
     "explanation": {
       "budget": {
         "weight": 0.45,
-        "normalized_input": 0.0002620312168055694,
-        "contribution": 0.00011791404756250623
+        "normalized_input": 0.0002619312430487408,
+        "contribution": 0.00011786905937193337
       },
       "value": {
         "weight": 0.2,
@@ -32303,7 +32303,7 @@
     "canonical_model_id": "google-gemini-2.5-pro",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.3514,
+    "scenario_score": 0.1514,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -32312,8 +32312,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 1.0,
-        "contribution": 0.2
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -32417,7 +32417,7 @@
     "canonical_model_id": "x-ai-grok-3",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1453,
+    "scenario_score": 0.1667,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -32426,8 +32426,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7097275836076743,
-        "contribution": 0.14194551672153485
+        "normalized_input": 0.8170296780397389,
+        "contribution": 0.1634059356079478
       },
       "latency": {
         "weight": 0.1,
@@ -32493,7 +32493,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-0528",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1647,
+    "scenario_score": 0.0041,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -32502,8 +32502,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8029200954685456,
-        "contribution": 0.16058401909370912
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -33291,7 +33291,7 @@
     "canonical_model_id": "qwen-qwen2.5-coder-7b-instruct",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0675,
+    "scenario_score": 0.0081,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -33300,8 +33300,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.29663096992259114,
-        "contribution": 0.05932619398451823
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -33557,7 +33557,7 @@
     "canonical_model_id": "x-ai-grok-3-beta",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1608,
+    "scenario_score": 0.1847,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -33566,8 +33566,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7876159172715609,
-        "contribution": 0.15752318345431218
+        "normalized_input": 0.9066538663430026,
+        "contribution": 0.18133077326860053
       },
       "latency": {
         "weight": 0.1,
@@ -33633,7 +33633,7 @@
     "canonical_model_id": "meta-llama-llama-4-maverick-17b-128e-instruct",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.2323,
+    "scenario_score": 0.2536,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -33642,8 +33642,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.7067613156377043,
-        "contribution": 0.14135226312754087
+        "normalized_input": 0.813616466502235,
+        "contribution": 0.162723293300447
       },
       "latency": {
         "weight": 0.1,
@@ -33747,7 +33747,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3-0324",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.2368,
+    "scenario_score": 0.2613,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -33756,8 +33756,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8109606825705222,
-        "contribution": 0.16219213651410447
+        "normalized_input": 0.9335161131343946,
+        "contribution": 0.18670322262687894
       },
       "latency": {
         "weight": 0.1,
@@ -33785,7 +33785,7 @@
     "canonical_model_id": "openai-o1-pro",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.214,
+    "scenario_score": 0.0432,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -33794,8 +33794,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8538871067197458,
-        "contribution": 0.17077742134394916
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -33899,7 +33899,7 @@
     "canonical_model_id": "google-gemma-3-4b-it",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0033,
+    "scenario_score": 0.0499,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -33908,8 +33908,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.23282905596818404,
+        "contribution": 0.046565811193636814
       },
       "latency": {
         "weight": 0.1,
@@ -33937,7 +33937,7 @@
     "canonical_model_id": "google-gemma-3-12b-it",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0033,
+    "scenario_score": 0.1003,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -33946,8 +33946,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4849778815953138,
+        "contribution": 0.09699557631906276
       },
       "latency": {
         "weight": 0.1,
@@ -33975,7 +33975,7 @@
     "canonical_model_id": "cohere-command-a-03-2025",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0914,
+    "scenario_score": 0.0989,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -33984,8 +33984,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.24648365087993634,
-        "contribution": 0.04929673017598727
+        "normalized_input": 0.28398628753278204,
+        "contribution": 0.05679725750655641
       },
       "latency": {
         "weight": 0.1,
@@ -34089,7 +34089,7 @@
     "canonical_model_id": "google-gemma-3-27b-it",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0033,
+    "scenario_score": 0.1398,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -34098,8 +34098,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6821664332940974,
+        "contribution": 0.13643328665881949
       },
       "latency": {
         "weight": 0.1,
@@ -34203,7 +34203,7 @@
     "canonical_model_id": "perplexity-sonar-pro",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0051,
+    "scenario_score": 0.2041,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -34212,8 +34212,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.995120313295998,
+        "contribution": 0.1990240626591996
       },
       "latency": {
         "weight": 0.1,
@@ -34241,7 +34241,7 @@
     "canonical_model_id": "perplexity-sonar-deep-research",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1562,
+    "scenario_score": 0.0341,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -34250,8 +34250,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6106290571654164,
-        "contribution": 0.12212581143308328
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -34279,7 +34279,7 @@
     "canonical_model_id": "qwen-qwq-32b",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1971,
+    "scenario_score": 0.2218,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -34288,8 +34288,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.820187928877371,
-        "contribution": 0.16403758577547423
+        "normalized_input": 0.9441336783283596,
+        "contribution": 0.18882673566567193
       },
       "latency": {
         "weight": 0.1,
@@ -34317,7 +34317,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-lite-001",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0263,
+    "scenario_score": 0.1634,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -34326,8 +34326,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.685471043468186,
+        "contribution": 0.1370942086936372
       },
       "latency": {
         "weight": 0.1,
@@ -34355,7 +34355,7 @@
     "canonical_model_id": "anthropic-claude-3-7-sonnet-20250219",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0051,
+    "scenario_score": 0.2051,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -34364,8 +34364,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.2
       },
       "latency": {
         "weight": 0.1,
@@ -34469,7 +34469,7 @@
     "canonical_model_id": "openai-o3-mini-high-2025-01-31",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.258,
+    "scenario_score": 0.2839,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -34478,8 +34478,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.8585295742862113,
-        "contribution": 0.1717059148572423
+        "normalized_input": 0.9882524659096653,
+        "contribution": 0.19765049318193306
       },
       "latency": {
         "weight": 0.1,
@@ -34507,7 +34507,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-001",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0263,
+    "scenario_score": 0.188,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -34516,8 +34516,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8086890030452903,
+        "contribution": 0.16173780060905807
       },
       "latency": {
         "weight": 0.1,
@@ -34858,8 +34858,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.0003862267999354301,
-        "contribution": 7.724535998708602e-05
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -35001,7 +35001,7 @@
     "canonical_model_id": "perplexity-sonar",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.01,
+    "scenario_score": 0.1438,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35010,8 +35010,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.03402861384694262,
-        "contribution": 0.006805722769388524
+        "normalized_input": 0.7029994430014085,
+        "contribution": 0.1405998886002817
       },
       "latency": {
         "weight": 0.1,
@@ -35039,7 +35039,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-distill-llama-70b",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1624,
+    "scenario_score": 0.1797,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35048,8 +35048,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5701812891030894,
-        "contribution": 0.11403625782061788
+        "normalized_input": 0.6564571919255515,
+        "contribution": 0.13129143838511032
       },
       "latency": {
         "weight": 0.1,
@@ -35077,7 +35077,7 @@
     "canonical_model_id": "deepseek-deepseek-r1",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0016,
+    "scenario_score": 0.1865,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35086,8 +35086,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.924264007477518,
+        "contribution": 0.18485280149550362
       },
       "latency": {
         "weight": 0.1,
@@ -35153,7 +35153,7 @@
     "canonical_model_id": "microsoft-phi-4",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.092,
+    "scenario_score": 0.1058,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35162,8 +35162,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4575726450247232,
-        "contribution": 0.09151452900494465
+        "normalized_input": 0.5268811970787888,
+        "contribution": 0.10537623941575776
       },
       "latency": {
         "weight": 0.1,
@@ -35229,7 +35229,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.053,
+    "scenario_score": 0.2228,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35238,8 +35238,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8489352586508432,
+        "contribution": 0.16978705173016864
       },
       "latency": {
         "weight": 0.1,
@@ -35305,7 +35305,7 @@
     "canonical_model_id": "openai-o1-2024-12-17",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1011,
+    "scenario_score": 0.2977,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35314,8 +35314,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.9829104927566099,
+        "contribution": 0.196582098551322
       },
       "latency": {
         "weight": 0.1,
@@ -35419,7 +35419,7 @@
     "canonical_model_id": "amazon-nova-lite-v1",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0928,
+    "scenario_score": 0.0076,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35428,8 +35428,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4262971889415706,
-        "contribution": 0.08525943778831413
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -35457,7 +35457,7 @@
     "canonical_model_id": "amazon-nova-micro-v1",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.117,
+    "scenario_score": 0.0523,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35466,8 +35466,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.32321726002561224,
-        "contribution": 0.06464345200512245
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -35495,7 +35495,7 @@
     "canonical_model_id": "amazon-nova-pro-v1",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1591,
+    "scenario_score": 0.0406,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35504,8 +35504,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5925138121925119,
-        "contribution": 0.11850276243850238
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -35533,7 +35533,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-11-20",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0032,
+    "scenario_score": 0.1632,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35542,8 +35542,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7997755221428711,
+        "contribution": 0.15995510442857422
       },
       "latency": {
         "weight": 0.1,
@@ -35571,7 +35571,7 @@
     "canonical_model_id": "mistralai-mistral-large-2411",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1299,
+    "scenario_score": 0.149,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35580,8 +35580,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6328210933197964,
-        "contribution": 0.12656421866395928
+        "normalized_input": 0.7285352727408907,
+        "contribution": 0.14570705454817814
       },
       "latency": {
         "weight": 0.1,
@@ -35609,7 +35609,7 @@
     "canonical_model_id": "mistralai-mistral-large-2407",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.065,
+    "scenario_score": 0.0743,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35618,8 +35618,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.308250491265035,
-        "contribution": 0.061650098253007005
+        "normalized_input": 0.3550733376787276,
+        "contribution": 0.07101466753574552
       },
       "latency": {
         "weight": 0.1,
@@ -35761,7 +35761,7 @@
     "canonical_model_id": "anthropic-claude-3-5-haiku",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1332,
+    "scenario_score": 0.1921,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35770,8 +35770,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4269968893826639,
-        "contribution": 0.08539937787653279
+        "normalized_input": 0.7213344605476796,
+        "contribution": 0.14426689210953592
       },
       "latency": {
         "weight": 0.1,
@@ -35913,7 +35913,7 @@
     "canonical_model_id": "nvidia-llama-3.1-nemotron-70b-instruct",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1381,
+    "scenario_score": 0.1531,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -35922,8 +35922,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.49326369769627576,
-        "contribution": 0.09865273953925516
+        "normalized_input": 0.5679500128424012,
+        "contribution": 0.11359000256848024
       },
       "latency": {
         "weight": 0.1,
@@ -36255,7 +36255,7 @@
     "canonical_model_id": "cohere-command-r-08-2024",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0781,
+    "scenario_score": 0.0895,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -36264,8 +36264,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.37431687938295066,
-        "contribution": 0.07486337587659013
+        "normalized_input": 0.431080836919456,
+        "contribution": 0.0862161673838912
       },
       "latency": {
         "weight": 0.1,
@@ -36293,7 +36293,7 @@
     "canonical_model_id": "cohere-command-r-plus-08-2024",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.085,
+    "scenario_score": 0.0974,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -36302,8 +36302,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4087357183442927,
-        "contribution": 0.08174714366885855
+        "normalized_input": 0.47068574768263616,
+        "contribution": 0.09413714953652724
       },
       "latency": {
         "weight": 0.1,
@@ -36407,7 +36407,7 @@
     "canonical_model_id": "nousresearch-hermes-3-llama-3.1-70b",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0033,
+    "scenario_score": 0.1249,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -36416,8 +36416,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.608044490411293,
+        "contribution": 0.12160889808225861
       },
       "latency": {
         "weight": 0.1,
@@ -36521,7 +36521,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-08-06",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0032,
+    "scenario_score": 0.1698,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -36530,8 +36530,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8326738288023823,
+        "contribution": 0.16653476576047646
       },
       "latency": {
         "weight": 0.1,
@@ -36673,7 +36673,7 @@
     "canonical_model_id": "mistralai-mistral-nemo",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0696,
+    "scenario_score": 0.0033,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -36682,8 +36682,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.3313103660729393,
-        "contribution": 0.06626207321458787
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "latency": {
         "weight": 0.1,
@@ -36711,7 +36711,7 @@
     "canonical_model_id": "openai-gpt-4o-mini-2024-07-18",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1126,
+    "scenario_score": 0.1292,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -36720,8 +36720,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5468604810995199,
-        "contribution": 0.10937209621990399
+        "normalized_input": 0.6296225122042511,
+        "contribution": 0.12592450244085024
       },
       "latency": {
         "weight": 0.1,
@@ -36787,7 +36787,7 @@
     "canonical_model_id": "google-gemma-2-27b-it",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1078,
+    "scenario_score": 0.124,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -36796,8 +36796,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.5375898333053608,
-        "contribution": 0.10751796666107216
+        "normalized_input": 0.6189550059871783,
+        "contribution": 0.12379100119743568
       },
       "latency": {
         "weight": 0.1,
@@ -36825,7 +36825,7 @@
     "canonical_model_id": "google-gemma-2-9b-it",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0827,
+    "scenario_score": 0.0952,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -36834,8 +36834,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.4123552788189295,
-        "contribution": 0.08247105576378591
+        "normalized_input": 0.474850686824277,
+        "contribution": 0.0949701373648554
       },
       "latency": {
         "weight": 0.1,
@@ -36939,7 +36939,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-05-13",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0032,
+    "scenario_score": 0.1721,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -36948,8 +36948,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8441192811389642,
+        "contribution": 0.16882385622779283
       },
       "latency": {
         "weight": 0.1,
@@ -37167,7 +37167,7 @@
     "canonical_model_id": "openai-gpt-4-turbo",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.1957,
+    "scenario_score": 0.2164,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -37176,8 +37176,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.6828071639641239,
-        "contribution": 0.1365614327928248
+        "normalized_input": 0.7860530138097899,
+        "contribution": 0.15721060276195797
       },
       "latency": {
         "weight": 0.1,
@@ -37205,7 +37205,7 @@
     "canonical_model_id": "anthropic-claude-3-haiku",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0411,
+    "scenario_score": 0.1394,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -37214,8 +37214,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4916984276925043,
+        "contribution": 0.09833968553850087
       },
       "latency": {
         "weight": 0.1,
@@ -37243,7 +37243,7 @@
     "canonical_model_id": "mistralai-mistral-large",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0892,
+    "scenario_score": 0.0088,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -37252,8 +37252,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": 0.42971943620190256,
-        "contribution": 0.08594388724038052
+        "normalized_input": 0.027551807689445765,
+        "contribution": 0.0055103615378891534
       },
       "latency": {
         "weight": 0.1,
@@ -37471,7 +37471,7 @@
     "canonical_model_id": "openai-gpt-4-1106-preview",
     "scenario_profile": "budget",
     "scenario_label": "Budget-heavy",
-    "scenario_score": 0.0032,
+    "scenario_score": 0.1586,
     "explanation": {
       "budget": {
         "weight": 0.45,
@@ -37480,8 +37480,8 @@
       },
       "value": {
         "weight": 0.2,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7765797457315822,
+        "contribution": 0.15531594914631644
       },
       "latency": {
         "weight": 0.1,
@@ -37851,7 +37851,7 @@
     "canonical_model_id": "moonshot-ai-kimi-k2.5-reasoning-thinking",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2188,
+    "scenario_score": 0.219,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -37860,8 +37860,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.007338309198773169,
-        "contribution": 0.0011007463798159754
+        "normalized_input": 0.00895577004894452,
+        "contribution": 0.001343365507341678
       },
       "budget": {
         "weight": 0.1,
@@ -37927,7 +37927,7 @@
     "canonical_model_id": "deepseek-v3.2-reasoning-thinking",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2464,
+    "scenario_score": 0.1911,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -37936,8 +37936,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.3685345278591578,
-        "contribution": 0.05528017917887367
+        "normalized_input": 0.0,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -37965,7 +37965,7 @@
     "canonical_model_id": "deepseek-v3.2-non-reasoning",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2693,
+    "scenario_score": 0.1587,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -37974,8 +37974,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.737455282518251,
-        "contribution": 0.11061829237773764
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -38003,7 +38003,7 @@
     "canonical_model_id": "google-gemini-3-flash-preview-reasoning",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.329,
+    "scenario_score": 0.3292,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -38012,8 +38012,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.00926944319845032,
-        "contribution": 0.0013904164797675477
+        "normalized_input": 0.010369839004041021,
+        "contribution": 0.0015554758506061532
       },
       "budget": {
         "weight": 0.1,
@@ -38079,7 +38079,7 @@
     "canonical_model_id": "openai-gpt-5-mini-high-reasoning",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2218,
+    "scenario_score": 0.2219,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -38088,8 +38088,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0030898143994834396,
-        "contribution": 0.0004634721599225159
+        "normalized_input": 0.0037708505469240083,
+        "contribution": 0.0005656275820386012
       },
       "budget": {
         "weight": 0.1,
@@ -38117,7 +38117,7 @@
     "canonical_model_id": "minimax-m2.7-standard",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2313,
+    "scenario_score": 0.2314,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -38126,8 +38126,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0077245359987086,
-        "contribution": 0.00115868039980629
+        "normalized_input": 0.008484413730579017,
+        "contribution": 0.0012726620595868525
       },
       "budget": {
         "weight": 0.1,
@@ -38383,7 +38383,7 @@
     "canonical_model_id": "x-ai-grok-4.20-multi-agent-beta-20260309",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1992,
+    "scenario_score": 0.1,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -38392,8 +38392,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6614724197767853,
-        "contribution": 0.09922086296651779
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -38611,7 +38611,7 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2289,
+    "scenario_score": 0.0928,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -38620,8 +38620,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.9071058549986285,
-        "contribution": 0.13606587824979427
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -38725,7 +38725,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-lite-preview-20260303",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.3801,
+    "scenario_score": 0.2884,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -38734,8 +38734,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6114747246057619,
-        "contribution": 0.09172120869086428
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -38801,7 +38801,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-image-preview-20260226",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1085,
+    "scenario_score": 0.0032,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -38810,8 +38810,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.7024790797244209,
-        "contribution": 0.10537186195866313
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -39371,7 +39371,7 @@
     "canonical_model_id": "qwen-qwen3-max-thinking-20260123",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1804,
+    "scenario_score": 0.1803,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -39380,8 +39380,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0011586803998062888,
-        "contribution": 0.0001738020599709433
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -40853,7 +40853,7 @@
     "canonical_model_id": "mistralai-mistral-large-2512",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1283,
+    "scenario_score": 0.1248,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -40862,8 +40862,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.023628027782085375,
-        "contribution": 0.003544204167312806
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -41005,7 +41005,7 @@
     "canonical_model_id": "anthropic-claude-4.5-opus-20251124",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0125,
+    "scenario_score": 0.0099,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -41014,8 +41014,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.017589335181429383,
-        "contribution": 0.002638400277214407
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -41499,7 +41499,7 @@
     "canonical_model_id": "moonshotai-kimi-k2-thinking-20251106",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2083,
+    "scenario_score": 0.2087,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -41508,8 +41508,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0,
-        "contribution": 0.0
+        "normalized_input": 0.0023567815918275046,
+        "contribution": 0.00035351723877412566
       },
       "budget": {
         "weight": 0.1,
@@ -41955,7 +41955,7 @@
     "canonical_model_id": "anthropic-claude-4.5-haiku-20251001",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1039,
+    "scenario_score": 0.0099,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -41964,8 +41964,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6265631927086576,
-        "contribution": 0.09398447890629863
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -42843,8 +42843,8 @@
       },
       "budget": {
         "weight": 0.1,
-        "normalized_input": 0.00026207870434002967,
-        "contribution": 2.6207870434002967e-05
+        "normalized_input": 0.00026207620499618667,
+        "contribution": 2.6207620499618668e-05
       },
       "coding": {
         "weight": 0.1,
@@ -44197,7 +44197,7 @@
     "canonical_model_id": "google-gemini-2.5-flash-lite",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1665,
+    "scenario_score": 0.0771,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -44206,8 +44206,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5953959169017871,
-        "contribution": 0.08930938753526806
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -44591,8 +44591,8 @@
       },
       "budget": {
         "weight": 0.1,
-        "normalized_input": 0.0002620312168055694,
-        "contribution": 2.620312168055694e-05
+        "normalized_input": 0.0002619312430487408,
+        "contribution": 2.6193124304874084e-05
       },
       "coding": {
         "weight": 0.1,
@@ -44919,7 +44919,7 @@
     "canonical_model_id": "google-gemini-2.5-pro",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.3929,
+    "scenario_score": 0.2429,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -44928,8 +44928,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 1.0,
-        "contribution": 0.15
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -45033,7 +45033,7 @@
     "canonical_model_id": "x-ai-grok-3",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1129,
+    "scenario_score": 0.129,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -45042,8 +45042,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.7097275836076743,
-        "contribution": 0.10645913754115115
+        "normalized_input": 0.8170296780397389,
+        "contribution": 0.12255445170596083
       },
       "budget": {
         "weight": 0.1,
@@ -45109,7 +45109,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-0528",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1285,
+    "scenario_score": 0.0081,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -45118,8 +45118,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.8029200954685456,
-        "contribution": 0.12043801432028184
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -45907,7 +45907,7 @@
     "canonical_model_id": "qwen-qwen2.5-coder-7b-instruct",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0569,
+    "scenario_score": 0.0124,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -45916,8 +45916,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.29663096992259114,
-        "contribution": 0.04449464548838867
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -46173,7 +46173,7 @@
     "canonical_model_id": "x-ai-grok-3-beta",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1246,
+    "scenario_score": 0.1424,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46182,8 +46182,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.7876159172715609,
-        "contribution": 0.11814238759073413
+        "normalized_input": 0.9066538663430026,
+        "contribution": 0.13599807995145038
       },
       "budget": {
         "weight": 0.1,
@@ -46249,7 +46249,7 @@
     "canonical_model_id": "meta-llama-llama-4-maverick-17b-128e-instruct",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2754,
+    "scenario_score": 0.2915,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46258,8 +46258,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.7067613156377043,
-        "contribution": 0.10601419734565563
+        "normalized_input": 0.813616466502235,
+        "contribution": 0.12204246997533524
       },
       "budget": {
         "weight": 0.1,
@@ -46363,7 +46363,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3-0324",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2159,
+    "scenario_score": 0.2342,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46372,8 +46372,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.8109606825705222,
-        "contribution": 0.12164410238557832
+        "normalized_input": 0.9335161131343946,
+        "contribution": 0.1400274169701592
       },
       "budget": {
         "weight": 0.1,
@@ -46401,7 +46401,7 @@
     "canonical_model_id": "openai-o1-pro",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1954,
+    "scenario_score": 0.0673,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46410,8 +46410,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.8538871067197458,
-        "contribution": 0.12808306600796185
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -46515,7 +46515,7 @@
     "canonical_model_id": "google-gemma-3-4b-it",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0064,
+    "scenario_score": 0.0414,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46524,8 +46524,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.23282905596818404,
+        "contribution": 0.0349243583952276
       },
       "budget": {
         "weight": 0.1,
@@ -46553,7 +46553,7 @@
     "canonical_model_id": "google-gemma-3-12b-it",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0064,
+    "scenario_score": 0.0792,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46562,8 +46562,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4849778815953138,
+        "contribution": 0.07274668223929706
       },
       "budget": {
         "weight": 0.1,
@@ -46591,7 +46591,7 @@
     "canonical_model_id": "cohere-command-a-03-2025",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.106,
+    "scenario_score": 0.1116,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46600,8 +46600,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.24648365087993634,
-        "contribution": 0.03697254763199045
+        "normalized_input": 0.28398628753278204,
+        "contribution": 0.042597943129917305
       },
       "budget": {
         "weight": 0.1,
@@ -46705,7 +46705,7 @@
     "canonical_model_id": "google-gemma-3-27b-it",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0064,
+    "scenario_score": 0.1088,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46714,8 +46714,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6821664332940974,
+        "contribution": 0.10232496499411461
       },
       "budget": {
         "weight": 0.1,
@@ -46819,7 +46819,7 @@
     "canonical_model_id": "perplexity-sonar-pro",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0099,
+    "scenario_score": 0.1592,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46828,8 +46828,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.995120313295998,
+        "contribution": 0.1492680469943997
       },
       "budget": {
         "weight": 0.1,
@@ -46857,7 +46857,7 @@
     "canonical_model_id": "perplexity-sonar-deep-research",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1762,
+    "scenario_score": 0.0846,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46866,8 +46866,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6106290571654164,
-        "contribution": 0.09159435857481245
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -46895,7 +46895,7 @@
     "canonical_model_id": "qwen-qwq-32b",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1824,
+    "scenario_score": 0.201,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46904,8 +46904,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.820187928877371,
-        "contribution": 0.12302818933160564
+        "normalized_input": 0.9441336783283596,
+        "contribution": 0.14162005174925393
       },
       "budget": {
         "weight": 0.1,
@@ -46933,7 +46933,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-lite-001",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0524,
+    "scenario_score": 0.1552,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46942,8 +46942,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.685471043468186,
+        "contribution": 0.1028206565202279
       },
       "budget": {
         "weight": 0.1,
@@ -46971,7 +46971,7 @@
     "canonical_model_id": "anthropic-claude-3-7-sonnet-20250219",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0099,
+    "scenario_score": 0.1599,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -46980,8 +46980,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.15
       },
       "budget": {
         "weight": 0.1,
@@ -47085,7 +47085,7 @@
     "canonical_model_id": "openai-o3-mini-high-2025-01-31",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2794,
+    "scenario_score": 0.2989,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -47094,8 +47094,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.8585295742862113,
-        "contribution": 0.1287794361429317
+        "normalized_input": 0.9882524659096653,
+        "contribution": 0.1482378698864498
       },
       "budget": {
         "weight": 0.1,
@@ -47123,7 +47123,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-001",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0524,
+    "scenario_score": 0.1737,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -47132,8 +47132,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8086890030452903,
+        "contribution": 0.12130335045679355
       },
       "budget": {
         "weight": 0.1,
@@ -47465,7 +47465,7 @@
     "canonical_model_id": "qwen-qwen-max-2025-01-25",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0016,
+    "scenario_score": 0.0015,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -47474,8 +47474,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0003862267999354301,
-        "contribution": 5.7934019990314516e-05
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -47617,7 +47617,7 @@
     "canonical_model_id": "perplexity-sonar",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0114,
+    "scenario_score": 0.1117,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -47626,8 +47626,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.03402861384694262,
-        "contribution": 0.005104292077041393
+        "normalized_input": 0.7029994430014085,
+        "contribution": 0.10544991645021128
       },
       "budget": {
         "weight": 0.1,
@@ -47655,7 +47655,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-distill-llama-70b",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1656,
+    "scenario_score": 0.1785,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -47664,8 +47664,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5701812891030894,
-        "contribution": 0.08552719336546341
+        "normalized_input": 0.6564571919255515,
+        "contribution": 0.09846857878883272
       },
       "budget": {
         "weight": 0.1,
@@ -47693,7 +47693,7 @@
     "canonical_model_id": "deepseek-deepseek-r1",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0031,
+    "scenario_score": 0.1417,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -47702,8 +47702,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.924264007477518,
+        "contribution": 0.1386396011216277
       },
       "budget": {
         "weight": 0.1,
@@ -47769,7 +47769,7 @@
     "canonical_model_id": "microsoft-phi-4",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0693,
+    "scenario_score": 0.0797,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -47778,8 +47778,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4575726450247232,
-        "contribution": 0.06863589675370849
+        "normalized_input": 0.5268811970787888,
+        "contribution": 0.07903217956181831
       },
       "budget": {
         "weight": 0.1,
@@ -47845,7 +47845,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0669,
+    "scenario_score": 0.1943,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -47854,8 +47854,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8489352586508432,
+        "contribution": 0.12734028879762646
       },
       "budget": {
         "weight": 0.1,
@@ -47921,7 +47921,7 @@
     "canonical_model_id": "openai-o1-2024-12-17",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1652,
+    "scenario_score": 0.3127,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -47930,8 +47930,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.9829104927566099,
+        "contribution": 0.1474365739134915
       },
       "budget": {
         "weight": 0.1,
@@ -48035,7 +48035,7 @@
     "canonical_model_id": "amazon-nova-lite-v1",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0789,
+    "scenario_score": 0.0149,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48044,8 +48044,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4262971889415706,
-        "contribution": 0.06394457834123558
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -48073,7 +48073,7 @@
     "canonical_model_id": "amazon-nova-micro-v1",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.2123,
+    "scenario_score": 0.1638,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48082,8 +48082,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.32321726002561224,
-        "contribution": 0.048482589003841836
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -48111,7 +48111,7 @@
     "canonical_model_id": "amazon-nova-pro-v1",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1439,
+    "scenario_score": 0.0551,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48120,8 +48120,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5925138121925119,
-        "contribution": 0.08887707182887677
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -48149,7 +48149,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-11-20",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1263,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48158,8 +48158,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7997755221428711,
+        "contribution": 0.11996632832143066
       },
       "budget": {
         "weight": 0.1,
@@ -48187,7 +48187,7 @@
     "canonical_model_id": "mistralai-mistral-large-2411",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1014,
+    "scenario_score": 0.1157,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48196,8 +48196,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6328210933197964,
-        "contribution": 0.09492316399796946
+        "normalized_input": 0.7285352727408907,
+        "contribution": 0.1092802909111336
       },
       "budget": {
         "weight": 0.1,
@@ -48225,7 +48225,7 @@
     "canonical_model_id": "mistralai-mistral-large-2407",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0527,
+    "scenario_score": 0.0597,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48234,8 +48234,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.308250491265035,
-        "contribution": 0.04623757368975525
+        "normalized_input": 0.3550733376787276,
+        "contribution": 0.053261000651809144
       },
       "budget": {
         "weight": 0.1,
@@ -48377,7 +48377,7 @@
     "canonical_model_id": "anthropic-claude-3-5-haiku",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1289,
+    "scenario_score": 0.173,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48386,8 +48386,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4269968893826639,
-        "contribution": 0.06404953340739958
+        "normalized_input": 0.7213344605476796,
+        "contribution": 0.10820016908215194
       },
       "budget": {
         "weight": 0.1,
@@ -48529,7 +48529,7 @@
     "canonical_model_id": "nvidia-llama-3.1-nemotron-70b-instruct",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1345,
+    "scenario_score": 0.1457,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48538,8 +48538,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.49326369769627576,
-        "contribution": 0.07398955465444136
+        "normalized_input": 0.5679500128424012,
+        "contribution": 0.08519250192636017
       },
       "budget": {
         "weight": 0.1,
@@ -48871,7 +48871,7 @@
     "canonical_model_id": "cohere-command-r-08-2024",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0624,
+    "scenario_score": 0.071,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48880,8 +48880,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.37431687938295066,
-        "contribution": 0.0561475319074426
+        "normalized_input": 0.431080836919456,
+        "contribution": 0.06466212553791839
       },
       "budget": {
         "weight": 0.1,
@@ -48909,7 +48909,7 @@
     "canonical_model_id": "cohere-command-r-plus-08-2024",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0676,
+    "scenario_score": 0.0769,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -48918,8 +48918,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4087357183442927,
-        "contribution": 0.061310357751643896
+        "normalized_input": 0.47068574768263616,
+        "contribution": 0.07060286215239542
       },
       "budget": {
         "weight": 0.1,
@@ -49023,7 +49023,7 @@
     "canonical_model_id": "nousresearch-hermes-3-llama-3.1-70b",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0064,
+    "scenario_score": 0.0977,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49032,8 +49032,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.608044490411293,
+        "contribution": 0.09120667356169396
       },
       "budget": {
         "weight": 0.1,
@@ -49137,7 +49137,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-08-06",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1312,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49146,8 +49146,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8326738288023823,
+        "contribution": 0.12490107432035734
       },
       "budget": {
         "weight": 0.1,
@@ -49289,7 +49289,7 @@
     "canonical_model_id": "mistralai-mistral-nemo",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0561,
+    "scenario_score": 0.0064,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49298,8 +49298,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.3313103660729393,
-        "contribution": 0.04969655491094089
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "budget": {
         "weight": 0.1,
@@ -49327,7 +49327,7 @@
     "canonical_model_id": "openai-gpt-4o-mini-2024-07-18",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0883,
+    "scenario_score": 0.1007,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49336,8 +49336,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5468604810995199,
-        "contribution": 0.08202907216492798
+        "normalized_input": 0.6296225122042511,
+        "contribution": 0.09444337683063767
       },
       "budget": {
         "weight": 0.1,
@@ -49403,7 +49403,7 @@
     "canonical_model_id": "google-gemma-2-27b-it",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0809,
+    "scenario_score": 0.0931,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49412,8 +49412,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5375898333053608,
-        "contribution": 0.08063847499580412
+        "normalized_input": 0.6189550059871783,
+        "contribution": 0.09284325089807675
       },
       "budget": {
         "weight": 0.1,
@@ -49441,7 +49441,7 @@
     "canonical_model_id": "google-gemma-2-9b-it",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0621,
+    "scenario_score": 0.0715,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49450,8 +49450,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4123552788189295,
-        "contribution": 0.061853291822839426
+        "normalized_input": 0.474850686824277,
+        "contribution": 0.07122760302364155
       },
       "budget": {
         "weight": 0.1,
@@ -49555,7 +49555,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-05-13",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1329,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49564,8 +49564,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8441192811389642,
+        "contribution": 0.12661789217084463
       },
       "budget": {
         "weight": 0.1,
@@ -49783,7 +49783,7 @@
     "canonical_model_id": "openai-gpt-4-turbo",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.1819,
+    "scenario_score": 0.1974,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49792,8 +49792,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6828071639641239,
-        "contribution": 0.10242107459461858
+        "normalized_input": 0.7860530138097899,
+        "contribution": 0.11790795207146848
       },
       "budget": {
         "weight": 0.1,
@@ -49821,7 +49821,7 @@
     "canonical_model_id": "anthropic-claude-3-haiku",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0912,
+    "scenario_score": 0.165,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49830,8 +49830,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4916984276925043,
+        "contribution": 0.07375476415387565
       },
       "budget": {
         "weight": 0.1,
@@ -49859,7 +49859,7 @@
     "canonical_model_id": "mistralai-mistral-large",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0708,
+    "scenario_score": 0.0104,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -49868,8 +49868,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.42971943620190256,
-        "contribution": 0.06445791543028538
+        "normalized_input": 0.027551807689445765,
+        "contribution": 0.004132771153416865
       },
       "budget": {
         "weight": 0.1,
@@ -50087,7 +50087,7 @@
     "canonical_model_id": "openai-gpt-4-1106-preview",
     "scenario_profile": "latency",
     "scenario_label": "Low-latency assistant",
-    "scenario_score": 0.0063,
+    "scenario_score": 0.1228,
     "explanation": {
       "latency": {
         "weight": 0.4,
@@ -50096,8 +50096,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7765797457315822,
+        "contribution": 0.11648696185973732
       },
       "budget": {
         "weight": 0.1,
@@ -50467,7 +50467,7 @@
     "canonical_model_id": "moonshot-ai-kimi-k2.5-reasoning-thinking",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2469,
+    "scenario_score": 0.2471,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -50476,8 +50476,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.007338309198773169,
-        "contribution": 0.0011007463798159754
+        "normalized_input": 0.00895577004894452,
+        "contribution": 0.001343365507341678
       },
       "reasoning": {
         "weight": 0.15,
@@ -50543,7 +50543,7 @@
     "canonical_model_id": "deepseek-v3.2-reasoning-thinking",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2609,
+    "scenario_score": 0.2056,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -50552,8 +50552,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.3685345278591578,
-        "contribution": 0.05528017917887367
+        "normalized_input": 0.0,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -50581,7 +50581,7 @@
     "canonical_model_id": "deepseek-v3.2-non-reasoning",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.284,
+    "scenario_score": 0.1734,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -50590,8 +50590,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.737455282518251,
-        "contribution": 0.11061829237773764
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -50619,7 +50619,7 @@
     "canonical_model_id": "google-gemini-3-flash-preview-reasoning",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.4257,
+    "scenario_score": 0.4258,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -50628,8 +50628,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.00926944319845032,
-        "contribution": 0.0013904164797675477
+        "normalized_input": 0.010369839004041021,
+        "contribution": 0.0015554758506061532
       },
       "reasoning": {
         "weight": 0.15,
@@ -50695,7 +50695,7 @@
     "canonical_model_id": "openai-gpt-5-mini-high-reasoning",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2549,
+    "scenario_score": 0.255,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -50704,8 +50704,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0030898143994834396,
-        "contribution": 0.0004634721599225159
+        "normalized_input": 0.0037708505469240083,
+        "contribution": 0.0005656275820386012
       },
       "reasoning": {
         "weight": 0.15,
@@ -50733,7 +50733,7 @@
     "canonical_model_id": "minimax-m2.7-standard",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2488,
+    "scenario_score": 0.2489,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -50742,8 +50742,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0077245359987086,
-        "contribution": 0.00115868039980629
+        "normalized_input": 0.008484413730579017,
+        "contribution": 0.0012726620595868525
       },
       "reasoning": {
         "weight": 0.15,
@@ -50999,7 +50999,7 @@
     "canonical_model_id": "x-ai-grok-4.20-multi-agent-beta-20260309",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.4992,
+    "scenario_score": 0.4,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -51008,8 +51008,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6614724197767853,
-        "contribution": 0.09922086296651779
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -51227,7 +51227,7 @@
     "canonical_model_id": "openai-gpt-5.4-20260305",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.3862,
+    "scenario_score": 0.2501,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -51236,8 +51236,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.9071058549986285,
-        "contribution": 0.13606587824979427
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -51341,7 +51341,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-lite-preview-20260303",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.4606,
+    "scenario_score": 0.3689,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -51350,8 +51350,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6114747246057619,
-        "contribution": 0.09172120869086428
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -51417,7 +51417,7 @@
     "canonical_model_id": "google-gemini-3.1-flash-image-preview-20260226",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.118,
+    "scenario_score": 0.0126,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -51426,8 +51426,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.7024790797244209,
-        "contribution": 0.10537186195866313
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -51987,7 +51987,7 @@
     "canonical_model_id": "qwen-qwen3-max-thinking-20260123",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2091,
+    "scenario_score": 0.2089,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -51996,8 +51996,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0011586803998062888,
-        "contribution": 0.0001738020599709433
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -53469,7 +53469,7 @@
     "canonical_model_id": "mistralai-mistral-large-2512",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1501,
+    "scenario_score": 0.1466,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -53478,8 +53478,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.023628027782085375,
-        "contribution": 0.003544204167312806
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -53621,7 +53621,7 @@
     "canonical_model_id": "anthropic-claude-4.5-opus-20251124",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0422,
+    "scenario_score": 0.0395,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -53630,8 +53630,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.017589335181429383,
-        "contribution": 0.002638400277214407
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -54115,7 +54115,7 @@
     "canonical_model_id": "moonshotai-kimi-k2-thinking-20251106",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1994,
+    "scenario_score": 0.1997,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -54124,8 +54124,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0,
-        "contribution": 0.0
+        "normalized_input": 0.0023567815918275046,
+        "contribution": 0.00035351723877412566
       },
       "reasoning": {
         "weight": 0.15,
@@ -54571,7 +54571,7 @@
     "canonical_model_id": "anthropic-claude-4.5-haiku-20251001",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1335,
+    "scenario_score": 0.0395,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -54580,8 +54580,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6265631927086576,
-        "contribution": 0.09398447890629863
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -55474,8 +55474,8 @@
       },
       "budget": {
         "weight": 0.1,
-        "normalized_input": 0.00026207870434002967,
-        "contribution": 2.6207870434002967e-05
+        "normalized_input": 0.00026207620499618667,
+        "contribution": 2.6207620499618668e-05
       }
     }
   },
@@ -56813,7 +56813,7 @@
     "canonical_model_id": "google-gemini-2.5-flash-lite",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.3235,
+    "scenario_score": 0.2342,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -56822,8 +56822,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5953959169017871,
-        "contribution": 0.08930938753526806
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -57222,8 +57222,8 @@
       },
       "budget": {
         "weight": 0.1,
-        "normalized_input": 0.0002620312168055694,
-        "contribution": 2.620312168055694e-05
+        "normalized_input": 0.0002619312430487408,
+        "contribution": 2.6193124304874084e-05
       }
     }
   },
@@ -57535,7 +57535,7 @@
     "canonical_model_id": "google-gemini-2.5-pro",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.5124,
+    "scenario_score": 0.3624,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -57544,8 +57544,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 1.0,
-        "contribution": 0.15
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -57649,7 +57649,7 @@
     "canonical_model_id": "x-ai-grok-3",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1322,
+    "scenario_score": 0.1483,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -57658,8 +57658,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.7097275836076743,
-        "contribution": 0.10645913754115115
+        "normalized_input": 0.8170296780397389,
+        "contribution": 0.12255445170596083
       },
       "reasoning": {
         "weight": 0.15,
@@ -57725,7 +57725,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-0528",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1527,
+    "scenario_score": 0.0323,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -57734,8 +57734,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.8029200954685456,
-        "contribution": 0.12043801432028184
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -58523,7 +58523,7 @@
     "canonical_model_id": "qwen-qwen2.5-coder-7b-instruct",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0614,
+    "scenario_score": 0.0169,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -58532,8 +58532,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.29663096992259114,
-        "contribution": 0.04449464548838867
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -58789,7 +58789,7 @@
     "canonical_model_id": "x-ai-grok-3-beta",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1439,
+    "scenario_score": 0.1617,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -58798,8 +58798,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.7876159172715609,
-        "contribution": 0.11814238759073413
+        "normalized_input": 0.9066538663430026,
+        "contribution": 0.13599807995145038
       },
       "reasoning": {
         "weight": 0.15,
@@ -58865,7 +58865,7 @@
     "canonical_model_id": "meta-llama-llama-4-maverick-17b-128e-instruct",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.392,
+    "scenario_score": 0.408,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -58874,8 +58874,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.7067613156377043,
-        "contribution": 0.10601419734565563
+        "normalized_input": 0.813616466502235,
+        "contribution": 0.12204246997533524
       },
       "reasoning": {
         "weight": 0.15,
@@ -58979,7 +58979,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3-0324",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2401,
+    "scenario_score": 0.2584,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -58988,8 +58988,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.8109606825705222,
-        "contribution": 0.12164410238557832
+        "normalized_input": 0.9335161131343946,
+        "contribution": 0.1400274169701592
       },
       "reasoning": {
         "weight": 0.15,
@@ -59017,7 +59017,7 @@
     "canonical_model_id": "openai-o1-pro",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.225,
+    "scenario_score": 0.097,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59026,8 +59026,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.8538871067197458,
-        "contribution": 0.12808306600796185
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -59131,7 +59131,7 @@
     "canonical_model_id": "google-gemma-3-4b-it",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0257,
+    "scenario_score": 0.0606,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59140,8 +59140,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.23282905596818404,
+        "contribution": 0.0349243583952276
       },
       "reasoning": {
         "weight": 0.15,
@@ -59169,7 +59169,7 @@
     "canonical_model_id": "google-gemma-3-12b-it",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0257,
+    "scenario_score": 0.0985,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59178,8 +59178,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4849778815953138,
+        "contribution": 0.07274668223929706
       },
       "reasoning": {
         "weight": 0.15,
@@ -59207,7 +59207,7 @@
     "canonical_model_id": "cohere-command-a-03-2025",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1304,
+    "scenario_score": 0.136,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59216,8 +59216,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.24648365087993634,
-        "contribution": 0.03697254763199045
+        "normalized_input": 0.28398628753278204,
+        "contribution": 0.042597943129917305
       },
       "reasoning": {
         "weight": 0.15,
@@ -59321,7 +59321,7 @@
     "canonical_model_id": "google-gemma-3-27b-it",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0257,
+    "scenario_score": 0.128,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59330,8 +59330,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.6821664332940974,
+        "contribution": 0.10232496499411461
       },
       "reasoning": {
         "weight": 0.15,
@@ -59435,7 +59435,7 @@
     "canonical_model_id": "perplexity-sonar-pro",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0395,
+    "scenario_score": 0.1888,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59444,8 +59444,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.995120313295998,
+        "contribution": 0.1492680469943997
       },
       "reasoning": {
         "weight": 0.15,
@@ -59473,7 +59473,7 @@
     "canonical_model_id": "perplexity-sonar-deep-research",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1566,
+    "scenario_score": 0.065,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59482,8 +59482,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6106290571654164,
-        "contribution": 0.09159435857481245
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -59511,7 +59511,7 @@
     "canonical_model_id": "qwen-qwq-32b",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1916,
+    "scenario_score": 0.2102,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59520,8 +59520,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.820187928877371,
-        "contribution": 0.12302818933160564
+        "normalized_input": 0.9441336783283596,
+        "contribution": 0.14162005174925393
       },
       "reasoning": {
         "weight": 0.15,
@@ -59549,7 +59549,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-lite-001",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2095,
+    "scenario_score": 0.3123,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59558,8 +59558,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.685471043468186,
+        "contribution": 0.1028206565202279
       },
       "reasoning": {
         "weight": 0.15,
@@ -59587,7 +59587,7 @@
     "canonical_model_id": "anthropic-claude-3-7-sonnet-20250219",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0395,
+    "scenario_score": 0.1895,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59596,8 +59596,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 1.0,
+        "contribution": 0.15
       },
       "reasoning": {
         "weight": 0.15,
@@ -59701,7 +59701,7 @@
     "canonical_model_id": "openai-o3-mini-high-2025-01-31",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2681,
+    "scenario_score": 0.2875,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59710,8 +59710,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.8585295742862113,
-        "contribution": 0.1287794361429317
+        "normalized_input": 0.9882524659096653,
+        "contribution": 0.1482378698864498
       },
       "reasoning": {
         "weight": 0.15,
@@ -59739,7 +59739,7 @@
     "canonical_model_id": "google-gemini-2.0-flash-001",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.2095,
+    "scenario_score": 0.3308,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -59748,8 +59748,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8086890030452903,
+        "contribution": 0.12130335045679355
       },
       "reasoning": {
         "weight": 0.15,
@@ -60081,7 +60081,7 @@
     "canonical_model_id": "qwen-qwen-max-2025-01-25",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0061,
+    "scenario_score": 0.006,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60090,8 +60090,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.0003862267999354301,
-        "contribution": 5.7934019990314516e-05
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -60233,7 +60233,7 @@
     "canonical_model_id": "perplexity-sonar",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.03,
+    "scenario_score": 0.1304,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60242,8 +60242,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.03402861384694262,
-        "contribution": 0.005104292077041393
+        "normalized_input": 0.7029994430014085,
+        "contribution": 0.10544991645021128
       },
       "reasoning": {
         "weight": 0.15,
@@ -60271,7 +60271,7 @@
     "canonical_model_id": "deepseek-deepseek-r1-distill-llama-70b",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1658,
+    "scenario_score": 0.1788,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60280,8 +60280,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5701812891030894,
-        "contribution": 0.08552719336546341
+        "normalized_input": 0.6564571919255515,
+        "contribution": 0.09846857878883272
       },
       "reasoning": {
         "weight": 0.15,
@@ -60309,7 +60309,7 @@
     "canonical_model_id": "deepseek-deepseek-r1",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0123,
+    "scenario_score": 0.1509,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60318,8 +60318,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.924264007477518,
+        "contribution": 0.1386396011216277
       },
       "reasoning": {
         "weight": 0.15,
@@ -60385,7 +60385,7 @@
     "canonical_model_id": "microsoft-phi-4",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0714,
+    "scenario_score": 0.0818,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60394,8 +60394,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4575726450247232,
-        "contribution": 0.06863589675370849
+        "normalized_input": 0.5268811970787888,
+        "contribution": 0.07903217956181831
       },
       "reasoning": {
         "weight": 0.15,
@@ -60461,7 +60461,7 @@
     "canonical_model_id": "deepseek-deepseek-chat-v3",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0911,
+    "scenario_score": 0.2185,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60470,8 +60470,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8489352586508432,
+        "contribution": 0.12734028879762646
       },
       "reasoning": {
         "weight": 0.15,
@@ -60537,7 +60537,7 @@
     "canonical_model_id": "openai-o1-2024-12-17",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1597,
+    "scenario_score": 0.3071,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60546,8 +60546,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.9829104927566099,
+        "contribution": 0.1474365739134915
       },
       "reasoning": {
         "weight": 0.15,
@@ -60651,7 +60651,7 @@
     "canonical_model_id": "amazon-nova-lite-v1",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1235,
+    "scenario_score": 0.0595,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60660,8 +60660,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4262971889415706,
-        "contribution": 0.06394457834123558
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -60689,7 +60689,7 @@
     "canonical_model_id": "amazon-nova-micro-v1",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1266,
+    "scenario_score": 0.0781,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60698,8 +60698,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.32321726002561224,
-        "contribution": 0.048482589003841836
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -60727,7 +60727,7 @@
     "canonical_model_id": "amazon-nova-pro-v1",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1886,
+    "scenario_score": 0.0997,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60736,8 +60736,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5925138121925119,
-        "contribution": 0.08887707182887677
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -60765,7 +60765,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-11-20",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0251,
+    "scenario_score": 0.1451,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60774,8 +60774,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7997755221428711,
+        "contribution": 0.11996632832143066
       },
       "reasoning": {
         "weight": 0.15,
@@ -60803,7 +60803,7 @@
     "canonical_model_id": "mistralai-mistral-large-2411",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1206,
+    "scenario_score": 0.135,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60812,8 +60812,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6328210933197964,
-        "contribution": 0.09492316399796946
+        "normalized_input": 0.7285352727408907,
+        "contribution": 0.1092802909111336
       },
       "reasoning": {
         "weight": 0.15,
@@ -60841,7 +60841,7 @@
     "canonical_model_id": "mistralai-mistral-large-2407",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0719,
+    "scenario_score": 0.079,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -60850,8 +60850,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.308250491265035,
-        "contribution": 0.04623757368975525
+        "normalized_input": 0.3550733376787276,
+        "contribution": 0.053261000651809144
       },
       "reasoning": {
         "weight": 0.15,
@@ -60993,7 +60993,7 @@
     "canonical_model_id": "anthropic-claude-3-5-haiku",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1585,
+    "scenario_score": 0.2027,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -61002,8 +61002,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4269968893826639,
-        "contribution": 0.06404953340739958
+        "normalized_input": 0.7213344605476796,
+        "contribution": 0.10820016908215194
       },
       "reasoning": {
         "weight": 0.15,
@@ -61145,7 +61145,7 @@
     "canonical_model_id": "nvidia-llama-3.1-nemotron-70b-instruct",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1428,
+    "scenario_score": 0.154,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -61154,8 +61154,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.49326369769627576,
-        "contribution": 0.07398955465444136
+        "normalized_input": 0.5679500128424012,
+        "contribution": 0.08519250192636017
       },
       "reasoning": {
         "weight": 0.15,
@@ -61487,7 +61487,7 @@
     "canonical_model_id": "cohere-command-r-08-2024",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0812,
+    "scenario_score": 0.0898,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -61496,8 +61496,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.37431687938295066,
-        "contribution": 0.0561475319074426
+        "normalized_input": 0.431080836919456,
+        "contribution": 0.06466212553791839
       },
       "reasoning": {
         "weight": 0.15,
@@ -61525,7 +61525,7 @@
     "canonical_model_id": "cohere-command-r-plus-08-2024",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0864,
+    "scenario_score": 0.0957,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -61534,8 +61534,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4087357183442927,
-        "contribution": 0.061310357751643896
+        "normalized_input": 0.47068574768263616,
+        "contribution": 0.07060286215239542
       },
       "reasoning": {
         "weight": 0.15,
@@ -61639,7 +61639,7 @@
     "canonical_model_id": "nousresearch-hermes-3-llama-3.1-70b",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0257,
+    "scenario_score": 0.1169,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -61648,8 +61648,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.608044490411293,
+        "contribution": 0.09120667356169396
       },
       "reasoning": {
         "weight": 0.15,
@@ -61753,7 +61753,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-08-06",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0251,
+    "scenario_score": 0.15,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -61762,8 +61762,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8326738288023823,
+        "contribution": 0.12490107432035734
       },
       "reasoning": {
         "weight": 0.15,
@@ -61905,7 +61905,7 @@
     "canonical_model_id": "mistralai-mistral-nemo",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0754,
+    "scenario_score": 0.0257,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -61914,8 +61914,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.3313103660729393,
-        "contribution": 0.04969655491094089
+        "normalized_input": null,
+        "contribution": 0.0
       },
       "reasoning": {
         "weight": 0.15,
@@ -61943,7 +61943,7 @@
     "canonical_model_id": "openai-gpt-4o-mini-2024-07-18",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1071,
+    "scenario_score": 0.1195,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -61952,8 +61952,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5468604810995199,
-        "contribution": 0.08202907216492798
+        "normalized_input": 0.6296225122042511,
+        "contribution": 0.09444337683063767
       },
       "reasoning": {
         "weight": 0.15,
@@ -62019,7 +62019,7 @@
     "canonical_model_id": "google-gemma-2-27b-it",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0817,
+    "scenario_score": 0.0939,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -62028,8 +62028,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.5375898333053608,
-        "contribution": 0.08063847499580412
+        "normalized_input": 0.6189550059871783,
+        "contribution": 0.09284325089807675
       },
       "reasoning": {
         "weight": 0.15,
@@ -62057,7 +62057,7 @@
     "canonical_model_id": "google-gemma-2-9b-it",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.063,
+    "scenario_score": 0.0723,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -62066,8 +62066,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.4123552788189295,
-        "contribution": 0.061853291822839426
+        "normalized_input": 0.474850686824277,
+        "contribution": 0.07122760302364155
       },
       "reasoning": {
         "weight": 0.15,
@@ -62171,7 +62171,7 @@
     "canonical_model_id": "openai-gpt-4o-2024-05-13",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0251,
+    "scenario_score": 0.1517,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -62180,8 +62180,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.8441192811389642,
+        "contribution": 0.12661789217084463
       },
       "reasoning": {
         "weight": 0.15,
@@ -62399,7 +62399,7 @@
     "canonical_model_id": "openai-gpt-4-turbo",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.1907,
+    "scenario_score": 0.2062,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -62408,8 +62408,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.6828071639641239,
-        "contribution": 0.10242107459461858
+        "normalized_input": 0.7860530138097899,
+        "contribution": 0.11790795207146848
       },
       "reasoning": {
         "weight": 0.15,
@@ -62437,7 +62437,7 @@
     "canonical_model_id": "anthropic-claude-3-haiku",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0814,
+    "scenario_score": 0.1552,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -62446,8 +62446,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.4916984276925043,
+        "contribution": 0.07375476415387565
       },
       "reasoning": {
         "weight": 0.15,
@@ -62475,7 +62475,7 @@
     "canonical_model_id": "mistralai-mistral-large",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0896,
+    "scenario_score": 0.0292,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -62484,8 +62484,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": 0.42971943620190256,
-        "contribution": 0.06445791543028538
+        "normalized_input": 0.027551807689445765,
+        "contribution": 0.004132771153416865
       },
       "reasoning": {
         "weight": 0.15,
@@ -62703,7 +62703,7 @@
     "canonical_model_id": "openai-gpt-4-1106-preview",
     "scenario_profile": "long_context",
     "scenario_label": "Long-context workhorse",
-    "scenario_score": 0.0251,
+    "scenario_score": 0.1416,
     "explanation": {
       "long_context": {
         "weight": 0.4,
@@ -62712,8 +62712,8 @@
       },
       "value": {
         "weight": 0.15,
-        "normalized_input": null,
-        "contribution": 0.0
+        "normalized_input": 0.7765797457315822,
+        "contribution": 0.11648696185973732
       },
       "reasoning": {
         "weight": 0.15,

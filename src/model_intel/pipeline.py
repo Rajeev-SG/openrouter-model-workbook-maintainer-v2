@@ -224,9 +224,26 @@ def _apply_cohort_rules(rows: list[dict[str, Any]], cohort_rules: dict[str, Any]
         row["coverage_score"] = sum(int(value) for value in available_sources.values()) / len(available_sources)
         row["source_flags"] = available_sources
         row["preferred_source_flags"] = {name: available_sources[name] for name in preferred_sources}
-        row["vals_enriched"] = available_sources["vals"]
-        row["livebench_enriched"] = available_sources["livebench"]
+        row["vals_enriched"] = _has_vals_benchmark_signal(row)
+        row["livebench_enriched"] = _has_livebench_benchmark_signal(row)
     return rows
+
+
+def _has_vals_benchmark_signal(row: dict[str, Any]) -> bool:
+    if not row.get("has_vals"):
+        return False
+    benchmark_values = (
+        row.get("vals_accuracy"),
+        row.get("vals_latency_seconds"),
+        row.get("vals_cost_per_test"),
+    )
+    return any(value is not None for value in benchmark_values)
+
+
+def _has_livebench_benchmark_signal(row: dict[str, Any]) -> bool:
+    if not row.get("has_livebench"):
+        return False
+    return row.get("livebench_overall_score") is not None
 
 
 def _write_outputs(

@@ -17,6 +17,8 @@ The identity layer keeps source-specific slugs separate from the canonical guide
 3. high-confidence fuzzy matches are allowed only when unique
 4. ambiguous matches fail into diagnostics
 
+LiveBench is the exception: it uses exact and alias-exact matching first, then a conservative slug-aware disambiguation pass for dated or base variants. It does not use fuzzy fallback because that created incorrect benchmark joins across similarly named models.
+
 ## Manual mapping guidance
 
 Add manual rows when:

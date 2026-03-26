@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import re
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -98,6 +99,119 @@ def choose_exact_unique_match(anchor_name: str, candidates: list[dict[str, Any]]
     return None, []
 
 
+LIVEBENCH_SLUG_DROP_TOKENS = {
+    "chat",
+    "instruct",
+}
+
+LIVEBENCH_VARIANT_TOKENS = {
+    "base",
+    "exp",
+    "experimental",
+    "high",
+    "low",
+    "medium",
+    "preview",
+    "thinking",
+}
+
+
+def choose_livebench_match(
+    anchor_name: str,
+    candidates: list[dict[str, Any]],
+    *,
+    openrouter_slug: str | None = None,
+    variant_label: str | None = None,
+) -> tuple[dict[str, Any] | None, list[dict[str, Any]]]:
+    match, ambiguous = choose_exact_unique_match(anchor_name, candidates, "livebench_normalized_name")
+    if match:
+        return match, []
+
+    if openrouter_slug:
+        slug_match = _choose_livebench_slug_match(openrouter_slug, candidates)
+        if slug_match:
+            return slug_match, []
+
+    preferred = _choose_livebench_variant_candidate(anchor_name, ambiguous or candidates, variant_label)
+    if preferred:
+        return preferred, []
+
+    return None, ambiguous
+
+
+def _choose_livebench_slug_match(openrouter_slug: str, candidates: list[dict[str, Any]]) -> dict[str, Any] | None:
+    tail = openrouter_slug.split("/", 1)[-1]
+    signatures = [
+        _livebench_signature(tail),
+        _livebench_signature(tail, drop_tokens=LIVEBENCH_SLUG_DROP_TOKENS),
+    ]
+    seen: set[str] = set()
+    for signature in signatures:
+        if not signature or signature in seen:
+            continue
+        seen.add(signature)
+        matches = [
+            candidate
+            for candidate in candidates
+            if _livebench_signature(candidate["livebench_model_name"]) == signature
+        ]
+        if len(matches) == 1:
+            return matches[0]
+    return None
+
+
+def _choose_livebench_variant_candidate(
+    anchor_name: str,
+    candidates: list[dict[str, Any]],
+    variant_label: str | None,
+) -> dict[str, Any] | None:
+    anchor_alias = match_normalized_name(anchor_name)
+    pool = [
+        candidate
+        for candidate in candidates
+        if match_normalized_name(candidate["livebench_model_name"]) == anchor_alias
+    ]
+    if not pool:
+        return None
+
+    variant_text = (variant_label or "").lower()
+    if "standard" in variant_text or "non-reasoning" in variant_text:
+        base_matches = [candidate for candidate in pool if _has_livebench_token(candidate["livebench_model_name"], "base")]
+        if len(base_matches) == 1:
+            return base_matches[0]
+
+        plain_matches = [
+            candidate
+            for candidate in pool
+            if not _has_any_livebench_token(candidate["livebench_model_name"], LIVEBENCH_VARIANT_TOKENS)
+        ]
+        if len(plain_matches) == 1:
+            return plain_matches[0]
+
+    if "reason" in variant_text or "thinking" in variant_text:
+        reasoning_matches = [candidate for candidate in pool if _has_livebench_token(candidate["livebench_model_name"], "thinking")]
+        if len(reasoning_matches) == 1:
+            return reasoning_matches[0]
+
+    return None
+
+
+def _livebench_signature(value: str, drop_tokens: set[str] | None = None) -> str:
+    tokens = re.sub(r"[^a-z0-9]+", " ", value.lower()).split()
+    if drop_tokens:
+        tokens = [token for token in tokens if token not in drop_tokens]
+    return " ".join(tokens)
+
+
+def _has_livebench_token(value: str, token: str) -> bool:
+    return token in _livebench_signature(value).split()
+
+
+def _has_any_livebench_token(value: str, tokens: set[str]) -> bool:
+    candidate_tokens = set(_livebench_signature(value).split())
+    return bool(candidate_tokens & tokens)
+
+
 def build_canonical_registry(
     openrouter_models: list[dict[str, Any]],
     aa_models: list[dict[str, Any]],
@@ -117,7 +231,6 @@ def build_canonical_registry(
     openrouter_by_slug = {item["openrouter_slug"]: item for item in openrouter_models}
     aa_by_slug = {(item["aa_creator_slug"], item["aa_model_slug"]): item for item in aa_models}
     vals_by_url = {item["vals_model_url"]: item for item in vals_models}
-    livebench_by_name = {normalized_name(item["livebench_model_name"]): item for item in livebench_models}
 
     for manual in manual_rows:
         canonical_id = make_manual_canonical_id(manual)
@@ -139,22 +252,27 @@ def build_canonical_registry(
                 openrouter_candidates,
                 "display_name",
             )
-        livebench_model = None
-        manual_names = [
-            manual.get("family", ""),
-            manual.get("aa_variant", ""),
-            manual.get("vals_variant", ""),
+        livebench_candidates = [
+            candidate
+            for candidate in livebench_models
+            if candidate["livebench_model_name"] not in consumed["livebench"]
         ]
-        manual_norm = normalized_name(" ".join(manual_names))
-        if manual_norm in livebench_by_name:
-            livebench_model = livebench_by_name[manual_norm]
-        else:
-            match, _ = choose_unique_match(
-                manual_norm,
-                livebench_models,
-                "livebench_normalized_name",
+        livebench_anchor = " ".join(
+            filter(
+                None,
+                [
+                    manual.get("family", ""),
+                    manual.get("aa_variant", ""),
+                    manual.get("vals_variant", ""),
+                ],
             )
-            livebench_model = match
+        )
+        livebench_model, _ = choose_livebench_match(
+            livebench_anchor,
+            livebench_candidates,
+            openrouter_slug=manual.get("openrouter_slug"),
+            variant_label=manual.get("aa_variant") or manual.get("vals_variant") or "Standard",
+        )
 
         row = {
             "canonical_model_id": canonical_id,
@@ -215,8 +333,9 @@ def build_canonical_registry(
         ]
         livebench_candidates = [
             candidate
-            for candidate in livebench_by_provider.get(provider, [])
+            for candidate in livebench_models
             if candidate["livebench_model_name"] not in consumed["livebench"]
+            and candidate["provider"] in {provider, "unknown"}
         ]
         if not livebench_candidates:
             livebench_candidates = [
@@ -226,7 +345,12 @@ def build_canonical_registry(
             ]
         aa_match, aa_ambiguous = choose_unique_match(anchor_name, aa_candidates, "normalized_name")
         vals_match, vals_ambiguous = choose_unique_match(anchor_name, vals_candidates, "normalized_name")
-        livebench_match, livebench_ambiguous = choose_unique_match(anchor_name, livebench_candidates, "livebench_normalized_name")
+        livebench_match, livebench_ambiguous = choose_livebench_match(
+            openrouter_model["display_name"],
+            livebench_candidates,
+            openrouter_slug=openrouter_model["openrouter_slug"],
+            variant_label=openrouter_model["variant_label"],
+        )
 
         if aa_match is None and not aa_ambiguous:
             aa_match, aa_ambiguous = choose_exact_unique_match(
@@ -250,17 +374,6 @@ def build_canonical_registry(
                 ],
                 "normalized_name",
             )
-        if livebench_match is None and not livebench_ambiguous:
-            livebench_match, livebench_ambiguous = choose_exact_unique_match(
-                anchor_name,
-                [
-                    candidate
-                    for candidate in livebench_models
-                    if candidate["livebench_model_name"] not in consumed["livebench"]
-                ],
-                "livebench_normalized_name",
-            )
-
         row = {
             "canonical_model_id": slugify(openrouter_model["openrouter_slug"]),
             "canonical_family": openrouter_model["display_name"],

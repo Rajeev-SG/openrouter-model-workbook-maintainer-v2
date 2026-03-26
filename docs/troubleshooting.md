@@ -34,6 +34,8 @@ Common causes:
 - sparse LiveBench coverage
 - ambiguous variant joins
 
+If LiveBench coverage suddenly drops after a parser change, prefer unmatched rows over reviving fuzzy matches. Wrong benchmark joins are worse than a smaller but honest enrichment layer.
+
 ## Workbook build fails on nested values
 
 Nested dict and list fields are stringified before being written to Excel. If a new nested field breaks the workbook, update the serialization logic in [src/model_intel/workbook/builder.py](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/src/model_intel/workbook/builder.py).

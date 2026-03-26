@@ -197,6 +197,7 @@ def detect_reasoning_mode(*values: str | None) -> str:
 
 def strip_dates(value: str) -> str:
     value = re.sub(r"\b20\d{2}[-/]\d{2}[-/]\d{2}\b", " ", value)
+    value = re.sub(r"\b20\d{6}\b", " ", value)
     value = re.sub(r"\b\d{1,2}/\d{1,2}(?:/\d{2,4})?\b", " ", value)
     value = re.sub(r"\((?:\d{1,2}/\d{2,4}|[0-9]{2}/[0-9]{4}|[0-9]{4})\)", " ", value)
     return value
