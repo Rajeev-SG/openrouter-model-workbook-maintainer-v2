@@ -135,7 +135,7 @@ See [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintaine
 
 The static guide is hosted on Vercel. The daily workflow refreshes the data, rebuilds `site/dist`, and pushes a production deploy to Vercel after a successful refresh.
 
-The Vercel project root is `site`, and the workflow pins the Vercel CLI, uses Node 24-compatible GitHub Actions majors, and runs a post-deploy smoke check so both Git-triggered previews and GitHub Actions use the same deterministic app root.
+The Vercel project root is `site`, and the workflow pins the Vercel CLI, opts GitHub Actions into the Node 24 runtime, and runs a post-deploy smoke check against the production alias so both Git-triggered previews and GitHub Actions use the same deterministic app root without tripping Vercel's protected deployment URLs.
 
 For manual Vercel deploys, build the static output locally and then use a prebuilt deploy from the repo root. That avoids Vercel trying to infer the ETL repo as a Python app or re-running a flaky remote install path. The repo includes [site/vercel.json](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/site/vercel.json), which matches the `site` root and publishes the static guide from `dist`.
 
