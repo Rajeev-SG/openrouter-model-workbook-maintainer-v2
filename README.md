@@ -3,7 +3,7 @@
 This repo builds and maintains two outputs from cached, auditable source data:
 
 - a deterministic model intelligence dataset plus workbook
-- a static interactive guide for answering "what model should I use?"
+- a static interactive guide for answering "what model should I use?" with preset jump buttons and a source-linked comparison table
 
 The project expands the original workbook maintainer into a daily-refreshable pipeline with:
 
