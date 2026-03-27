@@ -55,6 +55,7 @@ const tableSortOptions = [
   { key: 'cost', label: 'Lowest cost', direction: 'asc' },
   { key: 'speed', label: 'Fastest output', direction: 'desc' },
   { key: 'context', label: 'Most context', direction: 'desc' },
+  { key: 'releaseDate', label: 'Newest release', direction: 'desc' },
   { key: 'intelligence', label: 'Highest AA intelligence', direction: 'desc' },
   { key: 'terminalbench', label: 'Best Terminal-Bench', direction: 'desc' },
 ] as const
@@ -64,6 +65,7 @@ const sortableTableColumns = [
   { key: 'cost', label: 'Cost' },
   { key: 'speed', label: 'Speed' },
   { key: 'context', label: 'Context' },
+  { key: 'releaseDate', label: 'Release date' },
   { key: 'intelligence', label: 'AA overall intelligence rating' },
   { key: 'terminalbench', label: 'Terminal-Bench@2.0 leaderboard rating' },
 ] as const
@@ -386,7 +388,7 @@ export default function App() {
           ) : null}
 
           <div className="hidden overflow-x-auto lg:block">
-            <table className="w-full min-w-[1180px] border-collapse text-left">
+            <table className="w-full min-w-[1320px] border-collapse text-left">
               <thead>
                 <tr>
                   <th className="table-head">Compare</th>
@@ -475,6 +477,13 @@ export default function App() {
                       </td>
                       <td className="table-cell align-top">
                         <MetricLink
+                          value={formatReleaseDate(row.openrouter_release_date)}
+                          href={openRouterSourceUrl(row)}
+                          label={`Open release date source for ${row.canonical_family}`}
+                        />
+                      </td>
+                      <td className="table-cell align-top">
+                        <MetricLink
                           value={formatNumber(row.aa_intelligence_index, 1)}
                           href={aaSourceUrl(row)}
                           label={`Open AA intelligence source for ${row.canonical_family}`}
@@ -545,6 +554,11 @@ export default function App() {
                       value={`Context ${formatCompact(row.openrouter_context_tokens)}`}
                       href={openRouterSourceUrl(row)}
                       label={`Open context source for ${row.canonical_family}`}
+                    />
+                    <MetricLink
+                      value={`Release date ${formatReleaseDate(row.openrouter_release_date)}`}
+                      href={openRouterSourceUrl(row)}
+                      label={`Open release date source for ${row.canonical_family}`}
                     />
                     <MetricLink
                       value={`AA intelligence ${formatNumber(row.aa_intelligence_index, 1)}`}
@@ -741,11 +755,14 @@ function compareRows(
   const multiplier = direction === 'desc' ? -1 : 1
   const terminalLeft = terminalBenchSortValue(left)
   const terminalRight = terminalBenchSortValue(right)
+  const releaseDateLeft = releaseDateSortValue(left)
+  const releaseDateRight = releaseDateSortValue(right)
   const valueByKey = {
     model: left.canonical_family.localeCompare(right.canonical_family),
     cost: (left.openrouter_blended_price_per_million ?? 9999) - (right.openrouter_blended_price_per_million ?? 9999),
     speed: (left.aa_median_tokens_per_second ?? -1) - (right.aa_median_tokens_per_second ?? -1),
     context: (left.openrouter_context_tokens ?? 0) - (right.openrouter_context_tokens ?? 0),
+    releaseDate: releaseDateLeft - releaseDateRight,
     intelligence: (left.aa_intelligence_index ?? -1) - (right.aa_intelligence_index ?? -1),
     terminalbench: terminalLeft - terminalRight,
   }[sortKey]
@@ -802,6 +819,17 @@ function formatShortDate(value?: string | null) {
   return new Date(value).toLocaleDateString('en-GB', {
     day: '2-digit',
     month: 'short',
+  })
+}
+
+function formatReleaseDate(value?: string | null) {
+  if (!value) {
+    return '—'
+  }
+  return new Date(value).toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
   })
 }
 
@@ -874,6 +902,14 @@ function terminalBenchSortValue(row: GuideRow) {
     return row.aa_terminalbench_hard * 100
   }
   return -1
+}
+
+function releaseDateSortValue(row: GuideRow) {
+  if (!row.openrouter_release_date) {
+    return -1
+  }
+  const parsed = Date.parse(row.openrouter_release_date)
+  return Number.isNaN(parsed) ? -1 : parsed
 }
 
 function modelRowId(id: string) {
