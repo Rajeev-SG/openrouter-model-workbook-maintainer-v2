@@ -197,6 +197,38 @@ code {
   background: var(--surface-bright);
 }
 
+.table-head-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+  transition: color 140ms ease;
+}
+
+.table-head-button:hover,
+.table-head-button:focus-visible {
+  color: var(--teal-700);
+  outline: none;
+}
+
+.table-head-button-active {
+  color: var(--teal-700);
+}
+
+.table-head-direction {
+  font-size: 12px;
+  line-height: 1;
+}
+
 .table-sticky {
   position: sticky;
   left: 0;
