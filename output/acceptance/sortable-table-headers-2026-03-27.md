@@ -1,0 +1,22 @@
+# Sortable Table Headers Acceptance Proof
+
+- Target flow: open the model chooser, click a table header, and confirm the model row order updates to match that metric.
+- Expected behavior: users can sort the table directly from the visible column headers instead of relying only on the separate sort control.
+- Proof surface: local dev server at `http://127.0.0.1:4173/`.
+- Viewports inspected: desktop `1440x1200` and mobile `390x844`.
+- Final actions proven reachable and completable:
+  - Desktop: clicking `Cost` reordered the top rows from Claude-family entries to the lowest-cost models.
+  - Mobile: clicking `Speed` reordered the top rows to the fastest models, with top visible speeds `994.1 t/s`, `346.4 t/s`, `317.8 t/s`, `259.7 t/s`, and `253.8 t/s`.
+- Observed behavior:
+  - Before desktop sort, the first visible models were `Claude 3 Haiku`, `Claude 3.5 Haiku`, `Claude 3.7 Sonnet`, `Claude Opus 4.5`, and `Claude Opus 4.6`.
+  - After desktop cost sort, the first visible models were `LFM2.5-1.2B-Thinking (free)`, `LFM2.5-1.2B-Instruct (free)`, `LFM2-8B-A1B`, `LFM2-2.6B`, and `Granite 4.0 Micro`.
+  - After mobile speed sort, the first visible models were `Mercury 2`, `Nova Micro 1.0`, `Gemini 2.5 Flash Lite`, `GPT-5.4 Mini`, and `Gemini 3.1 Flash Lite Preview`.
+- Console check: no page errors or warnings; only the expected React DevTools info message appeared during local development.
+- Evidence paths:
+  - `output/playwright/header-sort-20260327/desktop-before.yml`
+  - `output/playwright/header-sort-20260327/desktop-after-cost.yml`
+  - `output/playwright/header-sort-20260327/desktop-cost-sort.png`
+  - `output/playwright/header-sort-20260327/mobile-before-speed.yml`
+  - `output/playwright/header-sort-20260327/mobile-speed-sort.png`
+- Decision: pass.
+- Residual risk: this proof covered header-driven sorting on desktop and mobile for two representative metrics. It does not individually click every sortable header, but they all share the same toggle path in the component.

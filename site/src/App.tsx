@@ -59,6 +59,15 @@ const tableSortOptions = [
   { key: 'terminalbench', label: 'Best Terminal-Bench', direction: 'desc' },
 ] as const
 
+const sortableTableColumns = [
+  { key: 'model', label: 'Model' },
+  { key: 'cost', label: 'Cost' },
+  { key: 'speed', label: 'Speed' },
+  { key: 'context', label: 'Context' },
+  { key: 'intelligence', label: 'AA overall intelligence rating' },
+  { key: 'terminalbench', label: 'Terminal-Bench@2.0 leaderboard rating' },
+] as const
+
 export default function App() {
   const [data, setData] = useState<LoadState | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -70,6 +79,23 @@ export default function App() {
   const [selectedModels, setSelectedModels] = useState<string[]>([])
   const [pendingScrollId, setPendingScrollId] = useState<string | null>(null)
   const [focusedRowId, setFocusedRowId] = useState<string | null>(null)
+
+  const applySortKey = (nextKey: (typeof tableSortOptions)[number]['key']) => {
+    const option = tableSortOptions.find((item) => item.key === nextKey)
+    setSortKey(nextKey)
+    setSortDirection((option?.direction ?? 'asc') as 'asc' | 'desc')
+  }
+
+  const toggleHeaderSort = (nextKey: (typeof tableSortOptions)[number]['key']) => {
+    const option = tableSortOptions.find((item) => item.key === nextKey)
+    const defaultDirection = (option?.direction ?? 'asc') as 'asc' | 'desc'
+    if (sortKey !== nextKey) {
+      setSortKey(nextKey)
+      setSortDirection(defaultDirection)
+      return
+    }
+    setSortDirection((current) => (current === 'asc' ? 'desc' : 'asc'))
+  }
 
   useEffect(() => {
     const base = import.meta.env.BASE_URL
@@ -308,9 +334,7 @@ export default function App() {
                   value={sortKey}
                   onChange={(event) => {
                     const nextKey = event.target.value as (typeof tableSortOptions)[number]['key']
-                    const option = tableSortOptions.find((item) => item.key === nextKey)
-                    setSortKey(nextKey)
-                    setSortDirection((option?.direction ?? 'asc') as 'asc' | 'desc')
+                    applySortKey(nextKey)
                   }}
                 >
                   {tableSortOptions.map((option) => (
@@ -366,12 +390,35 @@ export default function App() {
               <thead>
                 <tr>
                   <th className="table-head">Compare</th>
-                  <th className="table-head">Model</th>
-                  <th className="table-head">Cost</th>
-                  <th className="table-head">Speed</th>
-                  <th className="table-head">Context</th>
-                  <th className="table-head">AA overall intelligence rating</th>
-                  <th className="table-head">Terminal-Bench@2.0 leaderboard rating</th>
+                  {sortableTableColumns.map((column) => (
+                    <th
+                      key={column.key}
+                      className="table-head"
+                      aria-sort={
+                        sortKey === column.key
+                          ? sortDirection === 'asc'
+                            ? 'ascending'
+                            : 'descending'
+                          : 'none'
+                      }
+                    >
+                      <button
+                        type="button"
+                        className={clsx(
+                          'table-head-button',
+                          sortKey === column.key && 'table-head-button-active',
+                        )}
+                        onClick={() => toggleHeaderSort(column.key)}
+                        aria-label={`Sort by ${column.label}`}
+                      >
+                        <span>{column.label}</span>
+                        <SortGlyph
+                          active={sortKey === column.key}
+                          direction={sortDirection}
+                        />
+                      </button>
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
@@ -558,6 +605,24 @@ function KpiCard({
       <p className="mt-2 text-2xl font-semibold text-[var(--teal-700)]">{value}</p>
       <p className="mt-1 text-xs text-[var(--ink-muted)]">{meta}</p>
     </div>
+  )
+}
+
+function SortGlyph({
+  active,
+  direction,
+}: {
+  active: boolean
+  direction: 'asc' | 'desc'
+}) {
+  if (!active) {
+    return <ArrowUpDown className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+  }
+
+  return (
+    <span className="table-head-direction" aria-hidden="true">
+      {direction === 'asc' ? '↑' : '↓'}
+    </span>
   )
 }
 
