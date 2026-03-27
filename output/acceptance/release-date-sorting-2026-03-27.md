@@ -1,0 +1,22 @@
+# Release Date Sorting Acceptance Proof
+
+- Target flow: open the model chooser, verify the new OpenRouter-backed `Release date` metric is visible, then sort the desktop table by the `Release date` header.
+- Expected behavior: users can compare models by OpenRouter release date directly in the table, and the mobile card view also exposes the same release date metric.
+- Proof surface: local dev server at `http://127.0.0.1:4173/`.
+- Viewports inspected: desktop `1440x1200` and mobile `390x844`.
+- Final actions proven reachable and completable:
+  - Desktop: clicking `Release date` activated `Release date ↓` and reordered the first visible rows to the newest OpenRouter releases.
+  - Mobile: the first visible card exposed `Release date 18 Mar 2026`, and the sorted order carried over into the stacked card view.
+- Observed behavior:
+  - Before desktop sort, the first visible models were `Claude 3 Haiku`, `Claude 3.5 Haiku`, `Claude 3.7 Sonnet`, `Claude Opus 4.5`, and `Claude Opus 4.6`, with release dates spanning `13 Mar 2024` through `04 Feb 2026`.
+  - After desktop release-date sort, the active header was `Release date ↓` and the first visible rows were `MiniMax M2.7`, `MiMo-V2-Omni`, `MiMo-V2-Pro`, `GPT-5.4 Nano`, and `GPT-5.4 Mini`, with top release dates `18 Mar 2026`, `18 Mar 2026`, `18 Mar 2026`, `17 Mar 2026`, and `17 Mar 2026`.
+  - In mobile view, the first card rendered `Release date 18 Mar 2026` and the first three cards were `MiniMax M2.7`, `MiMo-V2-Omni`, and `MiMo-V2-Pro`.
+- Console check: no page errors or warnings; only the expected React DevTools info message appeared during local development.
+- Evidence paths:
+  - `output/playwright/release-date-20260327/desktop-before.yml`
+  - `output/playwright/release-date-20260327/desktop-after-release-sort.yml`
+  - `output/playwright/release-date-20260327/desktop-before.png`
+  - `output/playwright/release-date-20260327/mobile-release-date.yml`
+  - `output/playwright/release-date-20260327/mobile-release-date.png`
+- Decision: pass.
+- Residual risk: the proof covered the newest-first path, which is the default direction for the new header. It did not separately click again to prove oldest-first toggle behavior, though that second state uses the same header toggle path.
