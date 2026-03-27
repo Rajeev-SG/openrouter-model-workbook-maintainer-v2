@@ -1,47 +1,51 @@
-version: 1
+version: 2
 profiles:
   coding:
-    label: Coding-heavy
+    label: Best coding model
     weights:
-      coding: 0.35
-      value: 0.20
-      budget: 0.10
-      latency: 0.10
-      reasoning: 0.15
-      long_context: 0.10
+      coding: 0.75
+      reasoning: 0.10
+      latency: 0.1
+      long_context: 0.05
   reasoning:
     label: Premium reasoning
     weights:
-      reasoning: 0.40
-      value: 0.20
-      latency: 0.10
-      budget: 0.05
-      coding: 0.10
+      reasoning: 0.60
+      coding: 0.15
       long_context: 0.15
+      latency: 0.05
+      budget: 0.05
   budget:
-    label: Budget-heavy
+    label: Cheap all-rounder
     weights:
-      budget: 0.45
-      value: 0.20
-      latency: 0.10
+      budget: 0.70
+      latency: 0.08
       coding: 0.10
       reasoning: 0.10
-      long_context: 0.05
+      long_context: 0.02
+    hard_filters:
+      max_price_per_million: 1.0
+      min_tokens_per_second: 20
+      min_coding_index: 30
+      min_reasoning_index: 35
   latency:
     label: Low-latency assistant
     weights:
-      latency: 0.40
-      value: 0.15
-      budget: 0.10
+      latency: 0.55
+      budget: 0.15
       coding: 0.10
-      reasoning: 0.15
+      reasoning: 0.10
       long_context: 0.10
+    hard_filters:
+      min_tokens_per_second: 30
   long_context:
     label: Long-context workhorse
     weights:
-      long_context: 0.40
-      value: 0.15
+      long_context: 0.55
+      latency: 0.15
       reasoning: 0.15
       coding: 0.10
-      latency: 0.10
-      budget: 0.10
+      budget: 0.05
+    hard_filters:
+      min_context_tokens: 500000
+      min_tokens_per_second: 20

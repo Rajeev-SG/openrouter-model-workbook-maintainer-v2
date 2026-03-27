@@ -9,11 +9,13 @@ import pandas as pd
 from .config import RunConfig, load_cohort_rules, load_scenario_profiles
 from .fetch import CachedFetcher
 from .helpers import coalesce, mean, percentile_from_rank, read_json, slugify, write_json
-from .identity import build_canonical_registry, load_manual_links
+from .identity import build_canonical_registry, choose_unique_match, load_manual_links
 from .scoring import enrich_model_scores
 from .sources.artificial_analysis import fetch_aa_index, fetch_aa_provider_pages
 from .sources.livebench import fetch_livebench_scores
 from .sources.openrouter import fetch_openrouter_index, fetch_openrouter_pages
+from .sources.swebench import fetch_swebench_leaderboards
+from .sources.toolathlon import fetch_toolathlon_leaderboard
 from .sources.vals import fetch_vals_models
 from .workbook.builder import build_workbook
 
@@ -24,6 +26,8 @@ def run_pipeline(config: RunConfig, refresh: bool = False) -> dict[str, Any]:
     aa_index = fetch_aa_index(fetcher)
     vals_index = fetch_vals_models(fetcher)
     livebench_index = fetch_livebench_scores(fetcher)
+    swebench_index = fetch_swebench_leaderboards(fetcher)
+    toolathlon_index = fetch_toolathlon_leaderboard(fetcher)
     manual_links = load_manual_links(config.mapping_csv)
 
     registry_rows, diagnostics = build_canonical_registry(
@@ -42,7 +46,17 @@ def run_pipeline(config: RunConfig, refresh: bool = False) -> dict[str, Any]:
     openrouter_pages = fetch_openrouter_pages(fetcher, matched_openrouter)
 
     source_manifest = _load_source_manifest(config.cache_dir)
-    master_rows = _enrich_registry_rows(registry_rows, openrouter_index, openrouter_pages, aa_index, aa_provider_pages, vals_index, livebench_index)
+    master_rows = _enrich_registry_rows(
+        registry_rows,
+        openrouter_index,
+        openrouter_pages,
+        aa_index,
+        aa_provider_pages,
+        vals_index,
+        livebench_index,
+        swebench_index,
+        toolathlon_index,
+    )
 
     cohort_rules = load_cohort_rules(config.cohort_rules_path)
     scenario_profiles = load_scenario_profiles(config.scenario_profiles_path)
@@ -111,6 +125,8 @@ def _enrich_registry_rows(
     aa_provider_pages: dict[str, dict[str, Any]],
     vals_index: list[dict[str, Any]],
     livebench_index: list[dict[str, Any]],
+    swebench_index: list[dict[str, Any]],
+    toolathlon_index: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
     openrouter_by_slug = {item["openrouter_slug"]: item for item in openrouter_index}
     aa_by_slug = {item["aa_model_slug"]: item for item in aa_index}
@@ -124,6 +140,9 @@ def _enrich_registry_rows(
         aa_page = aa_provider_pages.get(aa["aa_source_key"]) if aa else None
         vals = vals_by_url.get(row.get("vals_model_url"))
         livebench = livebench_by_name.get(row.get("livebench_model_name"))
+        swebench_bash = _match_external_row(row, [item for item in swebench_index if item["swebench_board"] == "bash-only"], "swebench_model_tag")
+        swebench_verified = _match_external_row(row, [item for item in swebench_index if item["swebench_board"] == "Verified"], "swebench_model_tag")
+        toolathlon = _match_external_row(row, toolathlon_index, "toolathlon_model_name")
         merged = {
             **row,
             "openrouter_input_price_per_million": openrouter.get("openrouter_input_price_per_million") if openrouter else None,
@@ -184,10 +203,52 @@ def _enrich_registry_rows(
             "livebench_overall_score": livebench.get("livebench_overall_score") if livebench else None,
             "livebench_categories": livebench.get("livebench_categories") if livebench else {},
             "livebench_tasks": livebench.get("livebench_tasks") if livebench else {},
+            "swebench_bash_resolved": swebench_bash.get("swebench_resolved") if swebench_bash else None,
+            "swebench_bash_date": swebench_bash.get("swebench_date") if swebench_bash else None,
+            "swebench_verified_resolved": swebench_verified.get("swebench_resolved") if swebench_verified else None,
+            "swebench_verified_date": swebench_verified.get("swebench_date") if swebench_verified else None,
+            "swebench_leaderboard_url": (
+                swebench_bash.get("swebench_leaderboard_url")
+                if swebench_bash
+                else swebench_verified.get("swebench_leaderboard_url")
+                if swebench_verified
+                else None
+            ),
+            "toolathlon_pass_at_1": toolathlon.get("toolathlon_pass_at_1") if toolathlon else None,
+            "toolathlon_pass_at_3": toolathlon.get("toolathlon_pass_at_3") if toolathlon else None,
+            "toolathlon_pass_power_3": toolathlon.get("toolathlon_pass_power_3") if toolathlon else None,
+            "toolathlon_turns": toolathlon.get("toolathlon_turns") if toolathlon else None,
+            "toolathlon_agent": toolathlon.get("toolathlon_agent") if toolathlon else None,
+            "toolathlon_date": toolathlon.get("toolathlon_date") if toolathlon else None,
+            "toolathlon_leaderboard_url": toolathlon.get("toolathlon_leaderboard_url") if toolathlon else None,
         }
         merged["source_freshness"] = _source_freshness(merged)
         rows.append(merged)
     return rows
+
+
+def _match_external_row(
+    row: dict[str, Any],
+    candidates: list[dict[str, Any]],
+    name_key: str,
+) -> dict[str, Any] | None:
+    provider = row.get("provider")
+    provider_candidates = [candidate for candidate in candidates if candidate.get("provider") == provider]
+    if not provider_candidates:
+        return None
+
+    anchors = [
+        (row.get("openrouter_slug") or "").split("/", 1)[-1],
+        row.get("aa_model_slug"),
+        row.get("canonical_family"),
+    ]
+    for anchor in anchors:
+        if not anchor:
+            continue
+        match, _ = choose_unique_match(anchor, provider_candidates, name_key)
+        if match:
+            return match
+    return None
 
 
 def _apply_cohort_rules(rows: list[dict[str, Any]], cohort_rules: dict[str, Any]) -> list[dict[str, Any]]:
@@ -224,9 +285,26 @@ def _apply_cohort_rules(rows: list[dict[str, Any]], cohort_rules: dict[str, Any]
         row["coverage_score"] = sum(int(value) for value in available_sources.values()) / len(available_sources)
         row["source_flags"] = available_sources
         row["preferred_source_flags"] = {name: available_sources[name] for name in preferred_sources}
-        row["vals_enriched"] = available_sources["vals"]
-        row["livebench_enriched"] = available_sources["livebench"]
+        row["vals_enriched"] = _has_vals_benchmark_signal(row)
+        row["livebench_enriched"] = _has_livebench_benchmark_signal(row)
     return rows
+
+
+def _has_vals_benchmark_signal(row: dict[str, Any]) -> bool:
+    if not row.get("has_vals"):
+        return False
+    benchmark_values = (
+        row.get("vals_accuracy"),
+        row.get("vals_latency_seconds"),
+        row.get("vals_cost_per_test"),
+    )
+    return any(value is not None for value in benchmark_values)
+
+
+def _has_livebench_benchmark_signal(row: dict[str, Any]) -> bool:
+    if not row.get("has_livebench"):
+        return False
+    return row.get("livebench_overall_score") is not None
 
 
 def _write_outputs(
@@ -289,6 +367,8 @@ def _blend_price(openrouter: dict[str, Any] | None) -> float | None:
     output_price = openrouter.get("openrouter_output_price_per_million")
     if input_price is None or output_price is None:
         return None
+    if input_price < 0 or output_price < 0:
+        return None
     return (input_price * 3 + output_price) / 4
 
 
@@ -315,4 +395,6 @@ def _source_freshness(row: dict[str, Any]) -> dict[str, Any]:
         "openrouter_last_seen": row.get("openrouter_release_date"),
         "artificial_analysis_last_seen": row.get("aa_release_date"),
         "vals_last_seen": row.get("vals_release_date"),
+        "swebench_last_seen": row.get("swebench_bash_date") or row.get("swebench_verified_date"),
+        "toolathlon_last_seen": row.get("toolathlon_date"),
     }

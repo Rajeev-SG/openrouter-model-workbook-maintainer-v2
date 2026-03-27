@@ -3,7 +3,7 @@
 This repo builds and maintains two outputs from cached, auditable source data:
 
 - a deterministic model intelligence dataset plus workbook
-- a static interactive guide for answering "what model should I use?"
+- a static interactive guide for answering "what model should I use?" with preset jump buttons and a source-linked comparison table
 
 The project expands the original workbook maintainer into a daily-refreshable pipeline with:
 
@@ -18,6 +18,8 @@ The project expands the original workbook maintainer into a daily-refreshable pi
 
 - OpenRouter for routed model metadata and pricing
 - Artificial Analysis for model performance and provider data
+- SWE-bench for software-engineering task resolution signal
+- Toolathlon for tool-use and agent benchmark signal
 - Vals for application-style quality, latency, and cost signals
 - LiveBench for public benchmark enrichment
 
@@ -73,13 +75,22 @@ Vals and LiveBench are tracked as enrichment layers:
 - `strict_cohort_eligible=true`
   Guide rows that also have Vals coverage for the stricter application-quality subset.
 - `vals_enriched=true`
-  The row has Vals coverage and can expose application-style benchmark signals.
+  The row has current Vals benchmark metrics and can expose application-style benchmark signals.
 - `livebench_enriched=true`
-  The row has LiveBench coverage and can expose category and task benchmark signals.
+  The row has a conservative LiveBench benchmark match and can expose category and task benchmark signals.
 
 This prevents the live guide from hiding useful OpenRouter + AA models just because a secondary benchmark source has gaps, while still preserving explicit provenance and stricter benchmark subsets.
 
 The current cohort rules live in [config/cohort_rules.yaml](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/config/cohort_rules.yaml).
+
+## Preset calibration
+
+The recommendation presets are intentionally opinionated:
+
+- `Best coding model`
+  Calibrated against coding-heavy AA signals plus official SWE-bench and Toolathlon results, so coding recommendations are anchored in software-engineering and tool-use evidence instead of drifting on secondary traits.
+- `Cheap all-rounder`
+  Uses ranked price normalization plus explicit minimum floors for coding, reasoning, and speed, so extremely cheap but weak rows do not outrank better-balanced budget options.
 
 ## Repo structure
 
@@ -114,7 +125,7 @@ The daily workflow needs:
 
 - Runtime secrets from Infisical via GitHub OIDC:
   - required: `AA_API_KEY`
-  - required: `VERCEL_REFRESH_TOKEN`
+  - required: `VERCEL_TOKEN`
   - optional: `OPENROUTER_API_KEY`
   - repository variables: `INFISICAL_IDENTITY_ID` and `INFISICAL_PROJECT_SLUG`
 
@@ -124,7 +135,9 @@ See [docs/ops/secrets.md](/Users/rajeev/Code/openrouter-model-workbook-maintaine
 
 The static guide is hosted on Vercel. The daily workflow refreshes the data, rebuilds `site/dist`, and pushes a production deploy to Vercel after a successful refresh.
 
-For manual preview deployments, the repo includes [vercel.json](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/vercel.json), which tells Vercel to build and publish the static guide from `site/dist` instead of trying to treat the ETL repo root as a Python web app.
+The Vercel project root is `site`, and the workflow pins the Vercel CLI, fetches Infisical secrets through GitHub OIDC plus the Infisical API instead of a deprecated Node 20 action runtime, and runs a post-deploy smoke check against the production alias so both Git-triggered previews and GitHub Actions use the same deterministic app root without tripping Vercel's protected deployment URLs.
+
+For manual Vercel deploys, build the static output locally and then use a prebuilt deploy from the repo root. That avoids Vercel trying to infer the ETL repo as a Python app or re-running a flaky remote install path. The repo includes [site/vercel.json](/Users/rajeev/Code/openrouter-model-workbook-maintainer-v2/site/vercel.json), which matches the `site` root and publishes the static guide from `dist`.
 
 ## Docs
 

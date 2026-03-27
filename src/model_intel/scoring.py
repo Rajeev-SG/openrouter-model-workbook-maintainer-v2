@@ -14,12 +14,25 @@ SCORE_FIELDS = {
     "value": ("overall_value_score", False),
 }
 
+CODING_COMPONENT_WEIGHTS = {
+    "aa_coding_index": 0.20,
+    "aa_scicode": 0.14,
+    "aa_terminalbench_hard": 0.14,
+    "aa_livecodebench": 0.08,
+    "aa_ifbench": 0.04,
+    "aa_tau2": 0.03,
+    "swebench_bash_resolved": 0.20,
+    "toolathlon_pass_at_1": 0.10,
+    "coding_external_evidence_score": 0.07,
+}
+
 
 def enrich_model_scores(rows: list[dict[str, Any]], profiles: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     _derive_metric_scores(rows)
     scenario_rows: list[dict[str, Any]] = []
     for profile_name, config in profiles["profiles"].items():
         weights = config["weights"]
+        hard_filters = config.get("hard_filters", {})
         for row in rows:
             explanation = {}
             total = 0.0
@@ -33,25 +46,34 @@ def enrich_model_scores(rows: list[dict[str, Any]], profiles: dict[str, Any]) ->
                     "contribution": contribution,
                 }
                 total += contribution
+            preset_eligible, ineligibility_reasons = _apply_profile_filters(row, hard_filters)
             scenario_rows.append(
                 {
                     "canonical_model_id": row["canonical_model_id"],
                     "scenario_profile": profile_name,
                     "scenario_label": config["label"],
-                    "scenario_score": round(total, 4),
+                    "scenario_score": round(total, 4) if preset_eligible else None,
                     "explanation": explanation,
+                    "preset_eligible": preset_eligible,
+                    "ineligibility_reasons": ineligibility_reasons,
                 }
             )
     return rows, scenario_rows
 
 
 def _derive_metric_scores(rows: list[dict[str, Any]]) -> None:
-    metrics = {
+    for row in rows:
+        row["coding_external_evidence_score"] = mean(
+            [
+                1.0 if row.get("swebench_bash_resolved") is not None else 0.0,
+                1.0 if row.get("toolathlon_pass_at_1") is not None else 0.0,
+            ]
+        )
+
+    base_metrics = {
         "reasoning_strength_score": [row.get("aa_intelligence_index") for row in rows],
-        "coding_strength_score": [row.get("aa_coding_index") for row in rows],
         "latency_score": [row.get("aa_median_tokens_per_second") for row in rows],
         "context_score": [row.get("openrouter_context_tokens") for row in rows],
-        "value_cost_score": [row.get("openrouter_blended_price_per_million") for row in rows],
         "overall_value_score": [
             mean(
                 [
@@ -62,11 +84,30 @@ def _derive_metric_scores(rows: list[dict[str, Any]]) -> None:
             for row in rows
         ],
     }
-    normalized = {
-        name: _normalize(values, invert=name == "value_cost_score")
-        for name, values in metrics.items()
+
+    coding_components = {
+        name: _normalize([row.get(name) for row in rows])
+        for name in CODING_COMPONENT_WEIGHTS
     }
+    normalized = {
+        name: _normalize(values)
+        for name, values in base_metrics.items()
+    }
+    normalized["value_cost_score"] = _normalize_ranked(
+        [row.get("openrouter_blended_price_per_million") for row in rows],
+        invert=True,
+    )
     for index, row in enumerate(rows):
+        weighted_components = [
+            (coding_components[name][index], weight)
+            for name, weight in CODING_COMPONENT_WEIGHTS.items()
+            if coding_components[name][index] is not None
+        ]
+        row["coding_strength_score"] = (
+            sum(value * weight for value, weight in weighted_components) / sum(weight for _, weight in weighted_components)
+            if weighted_components
+            else None
+        )
         for score_name, values in normalized.items():
             row[score_name] = values[index]
 
@@ -87,3 +128,49 @@ def _normalize(values: list[float | int | None], invert: bool = False) -> list[f
         normalized = (float(value) - minimum) / (maximum - minimum)
         results.append(1 - normalized if invert else normalized)
     return results
+
+
+def _normalize_ranked(values: list[float | int | None], invert: bool = False) -> list[float | None]:
+    present = sorted(float(value) for value in values if value is not None)
+    if not present:
+        return [None for _ in values]
+    if len(present) == 1:
+        return [1.0 if value is not None else None for value in values]
+
+    results: list[float | None] = []
+    for value in values:
+        if value is None:
+            results.append(None)
+            continue
+        current = float(value)
+        lower = sum(1 for item in present if item < current)
+        equal = sum(1 for item in present if item == current)
+        rank = lower + ((equal + 1) / 2)
+        normalized = 1 - ((rank - 1) / (len(present) - 1))
+        results.append(normalized if invert else 1 - normalized)
+    return results
+
+
+def _apply_profile_filters(row: dict[str, Any], hard_filters: dict[str, Any]) -> tuple[bool, list[str]]:
+    reasons: list[str] = []
+    max_price = hard_filters.get("max_price_per_million")
+    if max_price is not None and (row.get("openrouter_blended_price_per_million") or float("inf")) > max_price:
+        reasons.append("price_above_cap")
+
+    min_speed = hard_filters.get("min_tokens_per_second")
+    if min_speed is not None and (row.get("aa_median_tokens_per_second") or 0.0) < min_speed:
+        reasons.append("speed_below_floor")
+
+    min_context = hard_filters.get("min_context_tokens")
+    if min_context is not None and (row.get("openrouter_context_tokens") or 0) < min_context:
+        reasons.append("context_below_floor")
+
+    min_reasoning = hard_filters.get("min_reasoning_index")
+    if min_reasoning is not None and (row.get("aa_intelligence_index") or 0.0) < min_reasoning:
+        reasons.append("reasoning_below_floor")
+
+    min_coding = hard_filters.get("min_coding_index")
+    if min_coding is not None and (row.get("aa_coding_index") or 0.0) < min_coding:
+        reasons.append("coding_below_floor")
+
+    return not reasons, reasons

@@ -15,18 +15,22 @@ jobs:
     env:
       INFISICAL_DOMAIN: ${{ vars.INFISICAL_DOMAIN || 'https://app.infisical.com' }}
       INFISICAL_ENV_SLUG: ${{ vars.INFISICAL_ENV_SLUG || 'prod' }}
+      INFISICAL_IDENTITY_ID: ${{ vars.INFISICAL_IDENTITY_ID }}
+      INFISICAL_PROJECT_SLUG: ${{ vars.INFISICAL_PROJECT_SLUG }}
       VERCEL_ORG_ID: team_48scplPIjV88LCscQpDUoNWo
       VERCEL_PROJECT_ID: prj_nMlpkIMU9wkuDl8eK904g5C63p9b
+      VERCEL_CLI_VERSION: 50.37.1
+      VERCEL_PRODUCTION_ALIAS: https://openrouter-model-workbook-maintaine.vercel.app
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
 
       - name: Set up uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v7
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
@@ -34,16 +38,13 @@ jobs:
           version: 10
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: "pnpm"
           cache-dependency-path: site/pnpm-lock.yaml
 
       - name: Validate Infisical configuration
-        env:
-          INFISICAL_IDENTITY_ID: ${{ vars.INFISICAL_IDENTITY_ID }}
-          INFISICAL_PROJECT_SLUG: ${{ vars.INFISICAL_PROJECT_SLUG }}
         run: |
           missing=0
           for name in INFISICAL_IDENTITY_ID INFISICAL_PROJECT_SLUG; do
@@ -57,13 +58,72 @@ jobs:
           fi
 
       - name: Fetch secrets from Infisical
-        uses: Infisical/secrets-action@v1.0.15
-        with:
-          method: "oidc"
-          identity-id: ${{ vars.INFISICAL_IDENTITY_ID }}
-          project-slug: ${{ vars.INFISICAL_PROJECT_SLUG }}
-          env-slug: ${{ env.INFISICAL_ENV_SLUG }}
-          domain: ${{ env.INFISICAL_DOMAIN }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+          import uuid
+
+          def request_json(request: urllib.request.Request) -> dict:
+              with urllib.request.urlopen(request) as response:
+                  return json.load(response)
+
+          oidc_request = urllib.request.Request(
+              os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"],
+              headers={
+                  "Authorization": f"bearer {os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']}"
+              },
+          )
+          github_jwt = request_json(oidc_request)["value"]
+
+          base_url = os.environ["INFISICAL_DOMAIN"].rstrip("/")
+          login_body = urllib.parse.urlencode(
+              {
+                  "identityId": os.environ["INFISICAL_IDENTITY_ID"],
+                  "jwt": github_jwt,
+              }
+          ).encode()
+          login_request = urllib.request.Request(
+              f"{base_url}/api/v1/auth/oidc-auth/login",
+              data=login_body,
+              headers={"Content-Type": "application/x-www-form-urlencoded"},
+          )
+          infisical_token = request_json(login_request)["accessToken"]
+
+          query = urllib.parse.urlencode(
+              {
+                  "workspaceSlug": os.environ["INFISICAL_PROJECT_SLUG"],
+                  "environment": os.environ["INFISICAL_ENV_SLUG"],
+                  "secretPath": "/",
+                  "include_imports": "true",
+                  "recursive": "false",
+                  "expandSecretReferences": "true",
+              }
+          )
+          secrets_request = urllib.request.Request(
+              f"{base_url}/api/v3/secrets/raw?{query}",
+              headers={"Authorization": f"Bearer {infisical_token}"},
+          )
+          payload = request_json(secrets_request)
+
+          secrets = {
+              item["secretKey"]: item["secretValue"]
+              for item in payload.get("secrets", [])
+          }
+          for imported_group in reversed(payload.get("imports", [])):
+              for item in imported_group.get("secrets", []):
+                  secrets.setdefault(item["secretKey"], item["secretValue"])
+
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as github_env:
+              for key, value in secrets.items():
+                  print(f"::add-mask::{value}")
+                  delimiter = f"EOF_{uuid.uuid4().hex}"
+                  github_env.write(f"{key}<<{delimiter}\n{value}\n{delimiter}\n")
+
+          print(f"Exported {len(secrets)} Infisical secrets")
+          PY
 
       - name: Validate fetched secrets
         run: |
@@ -93,30 +153,37 @@ jobs:
           exit 1
 
       - name: Upload workbook artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: model-intelligence-workbook
           path: out/openrouter_model_pricing_performance.xlsx
 
       - name: Upload dataset artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: model-intelligence-data
           path: data/latest
 
       - name: Pull Vercel project settings
-        run: pnpm dlx vercel@latest pull --yes --environment=production --token="${VERCEL_TOKEN}"
+        run: pnpm dlx vercel@${VERCEL_CLI_VERSION} pull --yes --environment=production --token="${VERCEL_TOKEN}"
 
       - name: Build Vercel deployment
-        run: pnpm dlx vercel@latest build --prod --token="${VERCEL_TOKEN}"
+        run: pnpm dlx vercel@${VERCEL_CLI_VERSION} build --prod --token="${VERCEL_TOKEN}"
 
       - name: Deploy to Vercel
         id: vercel_deploy
         run: |
-          deployment_url="$(pnpm dlx vercel@latest deploy --prebuilt --prod --token="${VERCEL_TOKEN}" | tail -n 1)"
+          deployment_url="$(pnpm dlx vercel@${VERCEL_CLI_VERSION} deploy --prebuilt --prod --token="${VERCEL_TOKEN}" | tail -n 1)"
           echo "deployment_url=${deployment_url}" >> "$GITHUB_OUTPUT"
           {
             echo "## Vercel Deploy"
             echo
             echo "- Production URL: ${deployment_url}"
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify production deployment
+        run: |
+          deployment_url="${{ steps.vercel_deploy.outputs.deployment_url }}"
+          pnpm dlx vercel@${VERCEL_CLI_VERSION} inspect "${deployment_url}" --token="${VERCEL_TOKEN}"
+          curl --fail --silent --show-error "${VERCEL_PRODUCTION_ALIAS}" > /tmp/vercel-deploy.html
+          grep -Fq '<div id="root"></div>' /tmp/vercel-deploy.html

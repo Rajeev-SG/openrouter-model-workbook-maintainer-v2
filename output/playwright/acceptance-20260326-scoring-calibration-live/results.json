@@ -1,0 +1,92 @@
+{
+  "url": "https://openrouter-model-workbook-maintaine.vercel.app",
+  "expected": [
+    [
+      "Coding",
+      "GPT-5.4"
+    ],
+    [
+      "Reasoning",
+      "Gemini 3.1 Pro Preview"
+    ],
+    [
+      "Budget",
+      "MiMo-V2-Flash"
+    ],
+    [
+      "Latency",
+      "Mercury 2"
+    ],
+    [
+      "Context",
+      "Grok 4.1 Fast"
+    ]
+  ],
+  "checks": [
+    {
+      "viewport": "desktop",
+      "preset": "Coding",
+      "expected_winner": "GPT-5.4",
+      "card_contains_winner": true,
+      "panel_contains_winner": true
+    },
+    {
+      "viewport": "desktop",
+      "preset": "Reasoning",
+      "expected_winner": "Gemini 3.1 Pro Preview",
+      "card_contains_winner": true,
+      "panel_contains_winner": true
+    },
+    {
+      "viewport": "desktop",
+      "preset": "Budget",
+      "expected_winner": "MiMo-V2-Flash",
+      "card_contains_winner": true,
+      "panel_contains_winner": true
+    },
+    {
+      "viewport": "desktop",
+      "preset": "Latency",
+      "expected_winner": "Mercury 2",
+      "card_contains_winner": true,
+      "panel_contains_winner": true
+    },
+    {
+      "viewport": "desktop",
+      "preset": "Context",
+      "expected_winner": "Grok 4.1 Fast",
+      "card_contains_winner": true,
+      "panel_contains_winner": true
+    },
+    {
+      "viewport": "mobile",
+      "preset": "Coding",
+      "expected_winner": "GPT-5.4",
+      "panel_contains_winner": true
+    },
+    {
+      "viewport": "mobile",
+      "preset": "Reasoning",
+      "expected_winner": "Gemini 3.1 Pro Preview",
+      "panel_contains_winner": true
+    },
+    {
+      "viewport": "mobile",
+      "preset": "Budget",
+      "expected_winner": "MiMo-V2-Flash",
+      "panel_contains_winner": true
+    },
+    {
+      "viewport": "mobile",
+      "preset": "Latency",
+      "expected_winner": "Mercury 2",
+      "panel_contains_winner": true
+    },
+    {
+      "viewport": "mobile",
+      "preset": "Context",
+      "expected_winner": "Grok 4.1 Fast",
+      "panel_contains_winner": true
+    }
+  ]
+}

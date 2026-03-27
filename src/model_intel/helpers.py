@@ -19,10 +19,12 @@ PROVIDER_ALIASES = {
     "allen institute for ai": "allen-institute-for-ai",
     "amazon": "amazon",
     "anthropic": "anthropic",
+    "claude": "anthropic",
     "cohere": "cohere",
     "cohere for ai": "cohere",
     "deepseek": "deepseek",
     "google": "google",
+    "gemini": "google",
     "ibm": "ibm",
     "ibm granite": "ibm",
     "kimi": "moonshot-ai",
@@ -74,14 +76,20 @@ STOP_TOKENS = {
 MATCH_DROP_TOKENS = {
     "base",
     "custom",
+    "effort",
     "free",
     "high",
     "low",
     "medium",
     "miniimal",
     "minimal",
+    "nonreasoning",
+    "nonthinking",
     "preview",
+    "reasoning",
+    "thinking",
     "tools",
+    "xhigh",
 }
 
 LEADING_PROVIDER_PREFIXES = (
@@ -197,6 +205,7 @@ def detect_reasoning_mode(*values: str | None) -> str:
 
 def strip_dates(value: str) -> str:
     value = re.sub(r"\b20\d{2}[-/]\d{2}[-/]\d{2}\b", " ", value)
+    value = re.sub(r"\b20\d{6}\b", " ", value)
     value = re.sub(r"\b\d{1,2}/\d{1,2}(?:/\d{2,4})?\b", " ", value)
     value = re.sub(r"\((?:\d{1,2}/\d{2,4}|[0-9]{2}/[0-9]{4}|[0-9]{4})\)", " ", value)
     return value

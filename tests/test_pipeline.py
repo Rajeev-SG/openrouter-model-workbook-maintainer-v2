@@ -1,4 +1,4 @@
-from model_intel.pipeline import _apply_cohort_rules, _enrich_registry_rows
+from model_intel.pipeline import _apply_cohort_rules, _blend_price, _enrich_registry_rows
 
 
 def test_apply_cohort_rules_sets_primary_and_strict_flags() -> None:
@@ -54,6 +54,23 @@ def test_apply_cohort_rules_sets_primary_and_strict_flags() -> None:
             "vals_cost_per_test": None,
             "livebench_overall_score": None,
         },
+        {
+            "canonical_model_id": "gpt-4.1-metadata-only",
+            "has_openrouter": True,
+            "has_aa": True,
+            "has_vals": True,
+            "has_livebench": False,
+            "openrouter_input_price_per_million": 2.0,
+            "openrouter_output_price_per_million": 8.0,
+            "openrouter_context_tokens": 1_000_000,
+            "aa_intelligence_index": 45.0,
+            "aa_coding_index": 33.0,
+            "aa_median_tokens_per_second": 71.0,
+            "vals_accuracy": None,
+            "vals_latency_seconds": None,
+            "vals_cost_per_test": None,
+            "livebench_overall_score": None,
+        },
     ]
     cohort_rules = {
         "required_sources": ["openrouter", "artificial_analysis"],
@@ -91,6 +108,11 @@ def test_apply_cohort_rules_sets_primary_and_strict_flags() -> None:
     assert result[2]["strict_cohort_eligible"] is False
     assert result[2]["vals_enriched"] is False
     assert "missing:vals" in result[2]["strict_exclusion_reasons"]
+    assert result[3]["cohort_eligible"] is True
+    assert result[3]["strict_cohort_eligible"] is False
+    assert result[3]["vals_enriched"] is False
+    assert "missing:vals" not in result[3]["strict_exclusion_reasons"]
+    assert "missing_metric:vals_accuracy" in result[3]["strict_exclusion_reasons"]
 
 
 def test_enrich_registry_rows_carries_all_available_aa_metrics() -> None:
@@ -172,6 +194,8 @@ def test_enrich_registry_rows_carries_all_available_aa_metrics() -> None:
         aa_provider_pages,
         [],
         [],
+        [],
+        [],
     )
 
     row = rows[0]
@@ -188,3 +212,78 @@ def test_enrich_registry_rows_carries_all_available_aa_metrics() -> None:
     assert row["aa_json_support"] == "8 / 8"
     assert row["aa_function_calling"] == "8 / 8"
     assert row["source_freshness"]["artificial_analysis_last_seen"] == "2026-02-05"
+
+
+def test_enrich_registry_rows_attaches_swebench_and_toolathlon_metrics() -> None:
+    registry_rows = [
+        {
+            "canonical_model_id": "anthropic-claude-4.6-opus-20260205",
+            "canonical_family": "Claude Opus 4.6",
+            "canonical_variant": "Standard",
+            "provider": "anthropic",
+            "reasoning_mode": "standard",
+            "openrouter_slug": "anthropic/claude-4.6-opus",
+            "aa_model_slug": "claude-opus-4-6",
+            "vals_model_url": None,
+            "livebench_model_name": None,
+        }
+    ]
+
+    rows = _enrich_registry_rows(
+        registry_rows,
+        [],
+        {},
+        [],
+        {},
+        [],
+        [],
+        [
+            {
+                "swebench_board": "bash-only",
+                "swebench_model_name": "Claude Opus 4.6",
+                "swebench_model_tag": "claude-opus-4-6",
+                "provider": "anthropic",
+                "normalized_name": "claude opus 4 6",
+                "swebench_resolved": 75.6,
+                "swebench_date": "2026-02-17",
+                "swebench_leaderboard_url": "https://www.swebench.com/verified.html",
+            }
+        ],
+        [
+            {
+                "toolathlon_model_name": "Claude-4.6-Opus",
+                "provider": "anthropic",
+                "normalized_name": "claude 4 6 opus",
+                "toolathlon_pass_at_1": 47.2,
+                "toolathlon_pass_at_3": None,
+                "toolathlon_pass_power_3": None,
+                "toolathlon_turns": None,
+                "toolathlon_agent": "Claude Agent SDK",
+                "toolathlon_date": "2026-03-06",
+                "toolathlon_leaderboard_url": "https://toolathlon.xyz/docs/leaderboard",
+            }
+        ],
+    )
+
+    row = rows[0]
+    assert row["swebench_bash_resolved"] == 75.6
+    assert row["swebench_leaderboard_url"] == "https://www.swebench.com/verified.html"
+    assert row["toolathlon_pass_at_1"] == 47.2
+    assert row["toolathlon_agent"] == "Claude Agent SDK"
+    assert row["source_freshness"]["swebench_last_seen"] == "2026-02-17"
+    assert row["source_freshness"]["toolathlon_last_seen"] == "2026-03-06"
+
+
+def test_blend_price_ignores_negative_openrouter_sentinel_values() -> None:
+    assert _blend_price(
+        {
+            "openrouter_input_price_per_million": -1_000_000.0,
+            "openrouter_output_price_per_million": 0.4,
+        }
+    ) is None
+    assert _blend_price(
+        {
+            "openrouter_input_price_per_million": 0.1,
+            "openrouter_output_price_per_million": -1_000_000.0,
+        }
+    ) is None

@@ -68,6 +68,10 @@ def build_workbook(
             "AA Cheapest Blended $/M": row.get("aa_cheapest_blended_price_per_million"),
             "AA JSON Support": row.get("aa_json_support"),
             "AA Function Calling": row.get("aa_function_calling"),
+            "SWE-bench Bash Resolved": row.get("swebench_bash_resolved"),
+            "SWE-bench Verified Resolved": row.get("swebench_verified_resolved"),
+            "Toolathlon Pass@1": row.get("toolathlon_pass_at_1"),
+            "Toolathlon Pass@3": row.get("toolathlon_pass_at_3"),
             "Vals Accuracy": row.get("vals_accuracy"),
             "Vals Latency (s)": row.get("vals_latency_seconds"),
             "Vals Cost/Test": row.get("vals_cost_per_test"),
@@ -155,6 +159,10 @@ def _build_recommendation_rows(
     by_model = {row["canonical_model_id"]: row for row in cohort_rows}
     best_by_profile: dict[str, dict[str, Any]] = {}
     for row in scenario_rows:
+        if row.get("canonical_model_id") not in by_model:
+            continue
+        if row.get("scenario_score") is None:
+            continue
         current = best_by_profile.get(row["scenario_profile"])
         if current is None or row["scenario_score"] > current["scenario_score"]:
             best_by_profile[row["scenario_profile"]] = row
@@ -170,6 +178,8 @@ def _build_recommendation_rows(
                 "canonical_variant": model.get("canonical_variant"),
                 "provider": model.get("provider"),
                 "scenario_score": row["scenario_score"],
+                "preset_eligible": row.get("preset_eligible"),
+                "ineligibility_reasons": row.get("ineligibility_reasons"),
                 "explanation": row.get("explanation"),
             }
         )
@@ -206,6 +216,10 @@ def _flatten_aa_benchmarks(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         "aa_ifbench": "IFBench",
         "aa_tau2": "TAU2",
         "aa_lcr": "LCR",
+        "swebench_bash_resolved": "SWE-bench Bash Resolved",
+        "swebench_verified_resolved": "SWE-bench Verified Resolved",
+        "toolathlon_pass_at_1": "Toolathlon Pass@1",
+        "toolathlon_pass_at_3": "Toolathlon Pass@3",
         "aa_aime": "AIME",
         "aa_aime_25": "AIME 2025",
         "aa_math_500": "Math-500",
