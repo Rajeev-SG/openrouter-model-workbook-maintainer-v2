@@ -17,9 +17,6 @@ jobs:
       INFISICAL_ENV_SLUG: ${{ vars.INFISICAL_ENV_SLUG || 'prod' }}
       INFISICAL_IDENTITY_ID: ${{ vars.INFISICAL_IDENTITY_ID }}
       INFISICAL_PROJECT_SLUG: ${{ vars.INFISICAL_PROJECT_SLUG }}
-      VERCEL_ORG_ID: team_48scplPIjV88LCscQpDUoNWo
-      VERCEL_PROJECT_ID: prj_nMlpkIMU9wkuDl8eK904g5C63p9b
-      VERCEL_CLI_VERSION: 50.37.1
       VERCEL_PRODUCTION_ALIAS: https://openrouter-model-workbook-maintaine.vercel.app
     steps:
       - uses: actions/checkout@v5
@@ -164,26 +161,23 @@ jobs:
           name: model-intelligence-data
           path: data/latest
 
-      - name: Pull Vercel project settings
-        run: pnpm dlx vercel@${VERCEL_CLI_VERSION} pull --yes --environment=production --token="${VERCEL_TOKEN}"
-
-      - name: Build Vercel deployment
-        run: pnpm dlx vercel@${VERCEL_CLI_VERSION} build --prod --token="${VERCEL_TOKEN}"
-
-      - name: Deploy to Vercel
-        id: vercel_deploy
+      - name: Commit refreshed data when changed
+        id: data_commit
         run: |
-          deployment_url="$(pnpm dlx vercel@${VERCEL_CLI_VERSION} deploy --prebuilt --prod --token="${VERCEL_TOKEN}" | tail -n 1)"
-          echo "deployment_url=${deployment_url}" >> "$GITHUB_OUTPUT"
-          {
-            echo "## Vercel Deploy"
-            echo
-            echo "- Production URL: ${deployment_url}"
-          } >> "$GITHUB_STEP_SUMMARY"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest site/public/data/latest
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No dataset changes; skipping deploy."
+          else
+            git commit -m "chore(data): refresh model intelligence datasets [skip ci]"
+            git push origin HEAD:main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
-      - name: Verify production deployment
+      - name: Verify refreshed data artifact
+        if: steps.data_commit.outputs.changed == 'true'
         run: |
-          deployment_url="${{ steps.vercel_deploy.outputs.deployment_url }}"
-          pnpm dlx vercel@${VERCEL_CLI_VERSION} inspect "${deployment_url}" --token="${VERCEL_TOKEN}"
-          curl --fail --silent --show-error "${VERCEL_PRODUCTION_ALIAS}" > /tmp/vercel-deploy.html
-          grep -Fq '<div id="root"></div>' /tmp/vercel-deploy.html
+          test -s site/public/data/latest/master_registry.json
+          test -s site/public/data/latest/source_manifest.json
