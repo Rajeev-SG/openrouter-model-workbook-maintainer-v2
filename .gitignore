@@ -13,3 +13,5 @@ site/dist/
 site/public/downloads/model-intelligence-workbook.xlsx
 .DS_Store
 .vercel
+
+work/
