@@ -30,3 +30,6 @@ dev = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/model_intel"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -165,6 +165,7 @@ export default function App() {
     : []
 
   const latestRefresh = data ? latestManifestDate(data.manifest) : null
+  const freshness = snapshotFreshness(latestRefresh)
   const workbookUrl = `${import.meta.env.BASE_URL}downloads/model-intelligence-workbook.xlsx`
   const providerCount = data ? new Set(data.cohort.map((row) => row.provider)).size : 0
   const pendingTargetVisible = pendingScrollId
@@ -247,6 +248,16 @@ export default function App() {
               <KpiCard label="Selected" value={`${selectedDetails.length}`} meta="Compare queue" />
               <KpiCard label="Updated" value={formatShortDate(latestRefresh)} meta="Latest rebuild" />
             </div>
+          </div>
+
+          <div className={clsx(
+            'mt-5 flex items-start gap-3 border px-4 py-3 text-sm',
+            freshness.tone === 'stale'
+              ? 'border-[var(--rust)] bg-[var(--surface-bright)] text-[var(--rust)]'
+              : 'border-[var(--ghost-line)] bg-[var(--surface)] text-[var(--ink-muted)]',
+          )} role="status">
+            <Clock3 className="mt-0.5 h-4 w-4 shrink-0" />
+            <p className="m-0"><strong className="text-[var(--ink)]">{freshness.label}</strong> · {freshness.detail}</p>
           </div>
 
           <section className="mt-5">
@@ -839,6 +850,21 @@ function latestManifestDate(manifest: SourceManifest) {
     .filter((item): item is string => Boolean(item))
     .sort()
   return values.at(-1) ?? null
+}
+
+function snapshotFreshness(value: string | null) {
+  if (!value) {
+    return { tone: 'stale' as const, label: 'Snapshot date unavailable', detail: 'Treat the bundled data as unverified until the manifest is rebuilt.' }
+  }
+  const timestamp = Date.parse(value)
+  if (!Number.isFinite(timestamp)) {
+    return { tone: 'stale' as const, label: 'Snapshot date invalid', detail: 'The data loaded, but its freshness cannot be established.' }
+  }
+  const ageDays = Math.max(0, Math.floor((Date.now() - timestamp) / 86_400_000))
+  if (ageDays > 14) {
+    return { tone: 'stale' as const, label: 'Dated snapshot', detail: `Latest rebuild ${formatShortDate(value)} · ${ageDays} days old. This is not a live market feed.` }
+  }
+  return { tone: 'current' as const, label: 'Recent snapshot', detail: `Latest rebuild ${formatShortDate(value)} · source dates remain visible per row.` }
 }
 
 function openRouterSourceUrl(row: GuideRow) {
